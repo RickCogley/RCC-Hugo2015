@@ -1,0 +1,130 @@
+baseurl = "http://localhost"
+languageCode = "en-us"
+title = "Rick Cogley Central"
+disqusShortname = "rickcogley" # Optional, enable Disqus integration
+MetaDataFormat = "toml"
+# theme = "hyde-x"
+theme = "redlounge"
+paginate = 10
+
+[author]
+    name = "Rick Cogley"
+
+[permalinks]
+    # Optional. Change the permalink format for the 'post' content type.
+    # The format shown here is the same one Jekyll/Octopress uses by default.
+    post = "/:section/:slug"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
+#
+# All parameters below here are optional and can be mixed and matched.
+#
+[params]
+    # Used when a given page doesn't set its own.
+    defaultDescription = "A post by Rick Cogley"
+    defaultKeywords = "cogley,post"
+
+    
+    categoriescss = "/css/categories.css"
+
+
+    sidebartitle = "Rick Cogley Central"
+    sidebartagline = "create > consume"
+
+    [[menu.main]]
+    name = "BlogCogley"
+    url = "/post"
+
+    [[menu.main]]
+    name = "About"
+    url = "/about"    
+
+    [[menu.social]]
+    pre = "<i class='fa fa-twitter'></i>"
+    url = "http://www.twitter.com/rickcogley"
+    identifier = "twitter"
+
+    [[menu.social]]
+    pre = "<i class='fa fa-github'></i>"
+    url = "https://github.com/RickCogley"
+    identifier = "github"
+
+    [[menu.social]]
+    pre = "<i class='fa fa-facebook'></i>"
+    url = "https://www.facebook.com/rickcogley"
+    identifier = "facebook"
+
+    [[menu.social]]
+    pre = "<i class='fa fa-flickr'></i>"
+    url = "http://www.flickr.com/photos/rickcogley/"
+    identifier = "flickr"
+
+    [[menu.social]]
+    pre = "<i class='fa fa-photo'></i>"
+    url = "http://500px.com/rickcogley"
+    identifier = "500px" 
+
+    [[menu.social]]
+    pre = "<i class='fa fa-youtube'></i>"
+    url = "http://www.youtube.com/user/rickcogley?sub_confirmation=1"
+    identifier = "youtube" 
+
+    [[menu.social]]
+    pre = "<i class='fa fa-vimeo-square'></i>"
+    url = "https://vimeo.com/rickcogley"
+    identifier = "vimeo" 
+
+    [[menu.social]]
+    pre = "<i class='fa fa-thumb-tack'></i>"
+    url = "https://pinboard.in/u:rickcogley"
+    identifier = "pinboard" 
+
+    [[menu.social]]
+    pre = "<i class='fa fa-linkedin-square'></i>"
+    url = "http://www.linkedin.com/in/rickcogley"
+    identifier = "linkedin" 
+
+    [[menu.social]]
+    pre = "<i class='fa fa-google-plus'></i>"
+    url = "https://plus.google.com/+RickCogley?rel=author"
+    identifier = "google-plus"
+
+    [[menu.social]]
+    pre = "<i class='fa fa-adn'></i>"
+    url = "https://alpha.app.net/rickcogley"
+    identifier = "app dot net"
+
+
+
+    [[menu.footer]]
+    name = "BlogCogley"
+    url = "/post"
+
+    [[menu.footer]]
+    name = "eSolia Inc"
+    url = "http://esolia.com"
+
+
+    # Select a syntax highight.
+    # Check the static/css/highlight directory for options.
+    highlight = "sunburst"
+
+    # Displays under the author name in the sidebar, keep it short.
+    # You can use markdown here.
+    tagline = "Create more than you consume."
+
+    # Metadata used to drive integrations.
+    googleAuthorship = "+RickCogley"
+    googleAnalytics = "UA-1040233-5"
+    gravatarHash = "42f19a567cf937b98d2ab4cc09918461"
+
+    # Sidebar social links, these must be full URLs.
+    github = "https://github.com/rickcogley"
+    linkedin = "http://www.linkedin.com/in/rickcogley"
+    googleplus = "https://plus.google.com/+RickCogley/posts"
+    facebook = "https://www.facebook.com/rickcogley"
+    twitter = "https://twitter.com/rickcogley"
