@@ -6,6 +6,8 @@ subtitle = "pithy, no?"
 description = "This is the description of this post."
 author = "Rick Cogley"
 authorlink = "/about"
+authortwitter = "https://twitter.com/rickcogley"
+socialsharing = "true"
 tags = [
     "Lipsum",
     "Nihongo",

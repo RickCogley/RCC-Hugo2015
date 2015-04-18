@@ -156,6 +156,20 @@ h2.brand-tagline {
 	background: #fff;
 }
 
+/* Home Page */
+
+h3 {
+	font-family: 'Alegreya Sans', 'Helvetica', 'Arial', sans-serif;
+	margin-bottom: .25rem;
+	font-size: 1.4rem;
+	font-weight: 500;
+	color: #032536;
+}
+
+.l-box {
+	padding: 0.1rem;
+}
+
 /* Posts */
 h1.post-title a {
 	text-decoration: none;
@@ -335,6 +349,8 @@ p.post-meta {
     color: #fff;
     background: #999;
     font-size: 0.75rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
 }
 a.post-category {
 	text-decoration: none;
@@ -417,9 +433,9 @@ a.post-category:hover {
 /* Decorative Marker */
 .decorative-marker {
 	color: #FF009B;
-	letter-spacing: -0.25rem;
+	letter-spacing: -0.01rem;
 	margin-right: 0.4rem;
-	margin-lefT: 0.1rem;
+	margin-left: 0.1rem;
 }
 
 /* Paging */
@@ -444,9 +460,12 @@ a.post-category:hover {
 	padding: 0 1rem 1rem 1rem;
 	border-left: 1px solid #eee;
 	font-size: 0.9rem;
+	font-weight: 100;
+    font-family: 'Alegreya Sans', 'Helvetica', 'Arial', sans-serif;
 }
 nav#TableOfContents li {
 	padding-bottom: 0.25rem;
+	margin-left: -1.5rem;
 }
 .toc-label {
 	font-size: 0.8rem;

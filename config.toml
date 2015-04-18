@@ -1,5 +1,6 @@
 baseurl = "http://localhost"
 languageCode = "en-us"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License."
 title = "Rick Cogley Central"
 disqusShortname = "rickcogley" # Optional, enable Disqus integration
 MetaDataFormat = "toml"
@@ -27,95 +28,95 @@ paginate = 10
     # Used when a given page doesn't set its own.
     defaultDescription = "A post by Rick Cogley"
     defaultKeywords = "cogley,post"
-
     
     categoriescss = "/css/categories.css"
-
 
     sidebartitle = "Rick Cogley Central"
     sidebartagline = "create > consume"
 
     [[menu.main]]
-    name = "BlogCogley"
-    url = "/post"
+        name = "BlogCogley"
+        url = "/post"
 
     [[menu.main]]
-    name = "About"
-    url = "/about"    
+        name = "About"
+        url = "/about"    
 
     [[menu.social]]
-    pre = "<i class='fa fa-twitter'></i>"
-    url = "http://www.twitter.com/rickcogley"
-    identifier = "twitter"
+        pre = "<i class='fa fa-twitter'></i>"
+        url = "http://www.twitter.com/rickcogley"
+        identifier = "twitter"
+        weight = 1
 
     [[menu.social]]
-    pre = "<i class='fa fa-github'></i>"
-    url = "https://github.com/RickCogley"
-    identifier = "github"
+        pre = "<i class='fa fa-google-plus'></i>"
+        url = "https://plus.google.com/+RickCogley?rel=author"
+        identifier = "google-plus"
+        weight = 2
 
     [[menu.social]]
-    pre = "<i class='fa fa-facebook'></i>"
-    url = "https://www.facebook.com/rickcogley"
-    identifier = "facebook"
+        pre = "<i class='fa fa-facebook'></i>"
+        url = "https://www.facebook.com/rickcogley"
+        identifier = "facebook"
+        weight = 3
 
     [[menu.social]]
-    pre = "<i class='fa fa-flickr'></i>"
-    url = "http://www.flickr.com/photos/rickcogley/"
-    identifier = "flickr"
+        pre = "<i class='fa fa-linkedin-square'></i>"
+        url = "http://www.linkedin.com/in/rickcogley"
+        identifier = "linkedin"
+        weight = 4 
 
     [[menu.social]]
-    pre = "<i class='fa fa-photo'></i>"
-    url = "http://500px.com/rickcogley"
-    identifier = "500px" 
+        pre = "<i class='fa fa-camera-retro'></i>"
+        url = "http://500px.com/rickcogley"
+        identifier = "500px" 
+        weight = 5
 
     [[menu.social]]
-    pre = "<i class='fa fa-youtube'></i>"
-    url = "http://www.youtube.com/user/rickcogley?sub_confirmation=1"
-    identifier = "youtube" 
+        pre = "<i class='fa fa-flickr'></i>"
+        url = "http://www.flickr.com/photos/rickcogley/"
+        identifier = "flickr"
+        weight = 6
 
     [[menu.social]]
-    pre = "<i class='fa fa-vimeo-square'></i>"
-    url = "https://vimeo.com/rickcogley"
-    identifier = "vimeo" 
+        pre = "<i class='fa fa-vimeo-square'></i>"
+        url = "https://vimeo.com/rickcogley"
+        identifier = "vimeo" 
+        weight = 7
 
     [[menu.social]]
-    pre = "<i class='fa fa-thumb-tack'></i>"
-    url = "https://pinboard.in/u:rickcogley"
-    identifier = "pinboard" 
+        pre = "<i class='fa fa-youtube'></i>"
+        url = "http://www.youtube.com/user/rickcogley?sub_confirmation=1"
+        identifier = "youtube"
+        weight = 8  
 
     [[menu.social]]
-    pre = "<i class='fa fa-linkedin-square'></i>"
-    url = "http://www.linkedin.com/in/rickcogley"
-    identifier = "linkedin" 
+        pre = "<i class='fa fa-adn'></i>"
+        url = "https://alpha.app.net/rickcogley"
+        identifier = "app dot net"
+        weight = 9
 
     [[menu.social]]
-    pre = "<i class='fa fa-google-plus'></i>"
-    url = "https://plus.google.com/+RickCogley?rel=author"
-    identifier = "google-plus"
+        pre = "<i class='fa fa-github'></i>"
+        url = "https://github.com/RickCogley"
+        identifier = "github"
+        weight = 10
 
     [[menu.social]]
-    pre = "<i class='fa fa-adn'></i>"
-    url = "https://alpha.app.net/rickcogley"
-    identifier = "app dot net"
-
-
+        pre = "<i class='fa fa-thumb-tack'></i>"
+        url = "https://pinboard.in/u:rickcogley"
+        identifier = "pinboard"
+        weight = 11
 
     [[menu.footer]]
-    name = "BlogCogley"
-    url = "/post"
+        name = "BlogCogley"
+        url = "/post"
 
     [[menu.footer]]
-    name = "eSolia Inc"
-    url = "http://esolia.com"
+        name = "eSolia Inc"
+        url = "http://esolia.com"
 
 
-    # Select a syntax highight.
-    # Check the static/css/highlight directory for options.
-    highlight = "sunburst"
-
-    # Displays under the author name in the sidebar, keep it short.
-    # You can use markdown here.
-    tagline = "Create more than you consume."
 
     # Metadata used to drive integrations.
     googleAuthorship = "+RickCogley"
