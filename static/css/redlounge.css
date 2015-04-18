@@ -158,7 +158,7 @@ h2.brand-tagline {
 
 /* Home Page */
 
-h3 {
+.topgrid h3 {
 	font-family: 'Alegreya Sans', 'Helvetica', 'Arial', sans-serif;
 	margin-bottom: .25rem;
 	font-size: 1.4rem;
@@ -167,7 +167,44 @@ h3 {
 }
 
 .l-box {
-	padding: 0.1rem;
+	margin-bottom: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.1rem;
+	padding-bottom: 1rem;
+	/* background: hsla(0, 75%, 75%, 0.5) */
+}
+
+hr.sepchar {
+  font-family: 'Alegreya Sans', 'Helvetica', 'Arial', sans-serif; /* choose the font you like */
+  text-align: center; /* horizontal centering */
+  line-height: 1px; /* vertical centering */
+  height: 5px; /* gap between the lines */
+  font-size: 1.6rem; /* choose font size you like */
+  border-width: 1px 0; /* top and bottom borders */
+  border-style: dotted;
+  border-color: #aeaeae;
+  margin: 20px 10px; /* 20px space above/below, 10px left/right */
+
+  /* ensure 1px gap between borders */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+hr.sepchar:after {
+  content: "§"; /* section sign */
+  color: #aeaeae;
+  display: inline; /* for vertical centering and background knockout */
+  background-color: #ffffff; /* same as background color */
+  padding: 0 0.5rem; /* size of background color knockout */
+}
+
+/* opera doesn't render correctly. hide section sign */
+x:-o-prefocus, hr.sepchar:after {
+  content: "";
 }
 
 /* Posts */
