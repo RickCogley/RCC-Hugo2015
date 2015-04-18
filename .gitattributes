@@ -1,0 +1,69 @@
+# Set default behaviour for text files, in case users don't have core.autocrlf set. 
+# This handles all files not specified.
+
+* text=auto eol=lf
+
+# Explicitly declare text files we want to always be normalized and converted 
+# to native line endings on checkout.
+
+*.c text
+*.h text
+*.markdown text
+*.md text
+*.rb text
+*.txt text
+*.gitattributes text
+*.css text
+*.engine text diff=php
+*.html text diff=html
+*.inc text diff=php
+*.info text
+*.install text diff=php
+*.readme text
+*.js text
+*.json text
+*.lock text
+*.module text diff=php
+*.php text diff=php
+*.po text
+*.script text
+*.sh text
+*.pl text
+*.perl text
+*.cgi text
+*.py text
+*.sql text
+*.test text
+*.xml text
+*.yml text
+
+# Declare files that will always have CRLF line endings on checkout. From github.
+*.sln text eol=crlf
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.PNG binary
+*.jpg binary
+*.JPG binary
+*.jpeg binary
+*.JPEG binary
+*.gif binary
+*.GIF binary
+*.gz binary
+*.GZ binary
+*.phar binary
+*.PHAR binary
+*.ico binary
+*.ICO binary
+*.icns binary
+*.ICNS binary
+*.woff binary
+*.WOFF binary
+*.ttf binary
+*.TTF binary
+*.svg binary
+*.SVG binary
+*.eot binary
+*.EOT binary
+*.otf binary
+*.OTF binary
