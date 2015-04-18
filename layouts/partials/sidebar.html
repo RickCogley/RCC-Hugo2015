@@ -16,7 +16,7 @@
 
     {{ if .Site.Menus.social }}
     <div class="social-buttons">
-      {{ range .Site.Menus.social }}
+      {{ range .Site.Menus.social.ByWeight }}
         {{ if .Url }}
         <a href="{{ .Url }}" target="_blank">{{ .Pre }}</a>
         {{ end }}
