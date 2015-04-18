@@ -1,3 +1,7 @@
+public/
 *.log
 *.sh
-public/
+*.markdown~
+*.md~
+.DS_Store
+
