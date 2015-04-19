@@ -8,7 +8,7 @@
       {{ partial "listtop.html" . }}
 
       <div class="posts">
-        {{ range .Data.Pages }}
+        {{ range .Paginator.Pages }}
           <section  class="post">
             <header class="post-header">
             {{ if .Params.thumbnail }}
@@ -50,7 +50,7 @@
           </section>
         {{ end }}
       </div>
-
+      {{ partial "pagination.html" . }}
       {{ partial "footer.html" . }}
     </div>
   </div>
