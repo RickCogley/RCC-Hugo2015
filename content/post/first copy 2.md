@@ -14,7 +14,7 @@ tags = [
     "日本語だ"
 ]
 categories = [
-    "Japan",
+    "Hugo",
     "Web"
 ]
 slug = "this-is-my-first-post-yo"

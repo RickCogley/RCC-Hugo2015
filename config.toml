@@ -33,9 +33,9 @@ paginate = 5
     categoriescss = "/css/categories.css"
 
     sidebartitle = "Rick Cogley Central"
-    sidebartagline = "create > consume"
+    sidebartagline = "Don't just consume. Use the incredible power at your fingertips to create something useful to others."
 
-    postsblurb = "Wherein we chronologically list pithy-yet-informative articles on tech, productivity, Japan, business and whatever else strikes our fancy."
+    postsblurb = "Wherein we catalog a most excellent list of pithy-yet-informative articles on tech, productivity, Japan, business and whatever else strikes our fancy. Please link the articles in your own postings."
 
 
     [[menu.main]]

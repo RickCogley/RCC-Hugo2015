@@ -1,0 +1,9 @@
+{{ with .Params.tags }}
+   <div class="tags-list">
+      <span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+         {{ $sort := sort . }}
+         {{ $links := apply $sort "partial" "post/tag/link" "." }}
+         {{ $clean := apply $links "chomp" "." }}
+         {{ delimit $clean ",  " }}
+   </div>
+{{ end }}
