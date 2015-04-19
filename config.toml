@@ -6,7 +6,7 @@ disqusShortname = "rickcogley" # Optional, enable Disqus integration
 MetaDataFormat = "toml"
 # theme = "hyde-x"
 theme = "redlounge"
-paginate = 10
+paginate = 5
 
 [author]
     name = "Rick Cogley"
@@ -21,6 +21,7 @@ paginate = 10
   category = "categories"
   series = "series"
 
+
 #
 # All parameters below here are optional and can be mixed and matched.
 #
@@ -33,6 +34,9 @@ paginate = 10
 
     sidebartitle = "Rick Cogley Central"
     sidebartagline = "create > consume"
+
+    postsblurb = "Wherein we chronologically list pithy-yet-informative articles on tech, productivity, Japan, business and whatever else strikes our fancy."
+
 
     [[menu.main]]
         name = "BlogCogley"

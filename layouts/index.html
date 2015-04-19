@@ -12,7 +12,7 @@
 
           <div class="posts">
             {{ $Site := .Site }}
-            {{ range .Site.Recent }}
+            {{ range .Paginator.Pages }}
             <section  class="post">
                 <header class="post-header">
                     {{ if .Params.thumbnail }}
@@ -54,6 +54,7 @@
           {{ end }}
         </div>
 
+        {{ partial "pagination.html" . }}
         {{ partial "footer.html" . }}
         </div>
     </div>
