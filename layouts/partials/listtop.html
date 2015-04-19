@@ -8,13 +8,29 @@
                       {{ .Site.Params.postsblurb }}
                     {{ end }}
                 </p>
+                <p>
+                	Click to filter the content by category: 
+                    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+    					<a href="/categories/{{ $name | urlize }}"> {{ $name }}, </a>
+  					{{ end }}
+                </p>
+                <p>
+                {{ with.Site.Taxonomies.categories }}
+                 <div class="categories-list">
+                  Cats:
+                   {{ delimit (apply (apply (sort .) "partial" "categories" ".") "chomp" ".") ", " }}
+                 </div>
+                {{ end }}
+                </p>
             </div>
         </div>
 
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
             <div class="l-box">
                 <p>
-                    <img class="pure-img" src="/img/Cogley-TopPhotos-Obi-Color.jpg" alt="Beautiful Obi Belt for a Formal Kimono">
+                {{ if eq .Title "Posts" }}
+                      <img class="pure-img" src="/img/Cogley-TopPhotos-Obi-Color.jpg" alt="Beautiful Obi Belt for a Formal Kimono">
+                {{ end }}  
                 </p>
             </div>
         </div>

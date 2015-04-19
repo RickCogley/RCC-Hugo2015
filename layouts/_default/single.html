@@ -69,14 +69,7 @@
 		    	{{ partial "socialsharing.html" . }}
 		    {{ end }}
 
-			{{ if .Params.tags }}
-				<div class="tags-list">
-					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
-					{{ range .Params.tags }}
-	                <a class="post-tag post-tag-{{ . | urlize }}" href="{{ $Site.BaseUrl}}/tags/{{ . | urlize }}">{{ . }}</a>,
-	                {{ end }}
-				</div>
-			{{ end }}
+			{{ partial "post/tag/list" . }}
 
 			{{ if not .Params.nopaging }}
 				<div class="paging">
