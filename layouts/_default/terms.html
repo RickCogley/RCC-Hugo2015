@@ -8,11 +8,12 @@
       {{ partial "listtop.html" . }}
 
       <div class="posts"> 
-        {{ range .Paginator.Pages }}
-          {{ .Render "summary" }}
-        {{ end }}
+        <h1 id="title">Site {{ .Title }}</h1>
+          {{ $data := .Data }}
+            {{ range $key,$value := .Data.Terms.ByCount }}
+              <h3><a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}"> {{ $value.Name }} </a> &nbsp; {{ $value.Count }} </h3>  
+            {{ end }}
       </div>
-      {{ partial "pagination.html" . }}
       {{ partial "footer.html" . }}
     </div>
   </div>

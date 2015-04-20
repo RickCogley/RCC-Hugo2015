@@ -10,6 +10,7 @@ authortwitter = "https://twitter.com/rickcogley"
 socialsharing = "true"
 tags = [
     "Lipsum",
+    "Dimsum",
     "Nihongo",
     "日本語だ"
 ]
