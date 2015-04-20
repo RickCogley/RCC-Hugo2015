@@ -17,6 +17,13 @@
 
     <div class="content pure-u-1 pure-u-md-3-4">
 		<a name="top"></a>
+		
+		
+      <section id="main">
+         <div class="post">
+
+		<header id="header">
+		
 		{{ partial "singletop.html" . }}
 
 		{{ if not .Params.notoc }}
@@ -27,7 +34,9 @@
 		    </div>
 		    {{ end }}
 	    {{ end }}
-  		<section class="post">
+
+
+
             <h1 class="post-title">
               <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </h1>
@@ -58,13 +67,16 @@
 			{{ if .Params.socialsharing }}
 		    	{{ partial "socialsharing.html" . }}
 		    {{ end }}
-
+		    
+          </header>
+          
 			{{ if .Params.bannerinline }}
 				<img src="{{ .Params.bannerinline }}" class="pure-img content-banner-image-inline" />
 			{{ end }}
 
             {{ .Content }}
-	
+            
+         <aside id="meta">
 			{{ if .Params.socialsharing }}
 		    	{{ partial "socialsharing.html" . }}
 		    {{ end }}
@@ -79,22 +91,31 @@
 						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
 						<a class="paging-link" href="{{ .Prev.RelPermalink }}">{{ .Prev.Title }}</a>
 		            </div>
-		            {{ end }}
+               {{ end }}
 
 					{{ if .Next }}
 					<div class="paging-older">
 						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
 			            <a class="paging-link" href="{{ .Next.RelPermalink }}">{{ .Next.Title  }}</a>
 		            </div>
-		            {{ end }}
+		          {{ end }}
 	            </div>
             {{ end }}
-          </section>
+          </aside>
+
+          
+          <aside id="comments">
           {{ if not .Params.nocomment }}
           	{{ template "_internal/disqus.html" . }}
           {{ end }}
-        
+          </aside>
+          
+          </div>
+          </section>
+          
+      <footer>  
       {{ partial "footer.html" . }}
+      </footer>
     </div>
   </div>
 	{{ if .Params.totop }}

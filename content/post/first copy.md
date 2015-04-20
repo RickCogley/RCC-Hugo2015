@@ -1,7 +1,7 @@
 +++
 date = "2014-11-29T17:25:04+09:00"
 draft = false
-title = "This is my first post"
+title = "This is my second post"
 subtitle = "pithy, no?"
 description = "This is the description of this post."
 author = "Rick Cogley"
@@ -17,7 +17,7 @@ categories = [
     "Japan",
     "Web"
 ]
-slug = "this-is-my-first-post-yo"
+slug = "this-is-my-second-post-yo"
 banner = "https://farm5.staticflickr.com/4059/5135448447_95b026227b_o.jpg"
 # bannerheight = "700"
 # bannerfill = "false"
