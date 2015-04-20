@@ -14,14 +14,7 @@
     					<a href="/categories/{{ $name | urlize }}"> {{ $name }}, </a>
   					{{ end }}
                 </p>
-                <p>
-                {{ with.Site.Taxonomies.categories }}
-                 <div class="categories-list">
-                  Cats:
-                   {{ delimit (apply (apply (sort .) "partial" "categories" ".") "chomp" ".") ", " }}
-                 </div>
-                {{ end }}
-                </p>
+     
             </div>
         </div>
 
