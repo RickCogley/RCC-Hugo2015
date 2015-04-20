@@ -1,4 +1,4 @@
-<section  class="post">
+<article class="post">
             <header class="post-header">
             {{ if .Params.thumbnail }}
             <div class="post-avatar-wrapper">
@@ -30,11 +30,11 @@
       					</div>
       				{{ end }}
             </p>
-            <article class="post-summary"> 
+            <div class="post-summary"> 
               {{ .Summary }}
-            </article>
-			<div class="read-more-link">
+            </div>
+			<footer class="read-more-link">
 				<a href="{{ .RelPermalink }}"><span class="read-more-slashes">//</span>Read More...</a>
-			</div>
-          </section>
+			</footer>
+</article>
 
