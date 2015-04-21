@@ -1,39 +1,39 @@
 {{ partial "header.html" . }}
 <body>
-	{{ if eq .Params.showtotop "true" }}
-		<div id="nav-to-top">
-			<span class="decorative-marker">//</span><a href="#top">To Top</a>
-		</div>
-	{{ end }}
+    {{ if eq .Params.showtotop "true" }}
+        <div id="nav-to-top">
+            <span class="decorative-marker">//</span><a href="#top">To Top</a>
+        </div>
+    {{ end }}
 
-	<div id="layout" class="pure-g">
+    <div id="layout" class="pure-g">
     {{ partial "sidebar.html" . }}
-	
-	{{ if .Params.banner }}
-	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="{{ if .Params.bannerheight }}height: {{ .Params.bannerheight }}px;{{ end }}">
-		<img src="{{ .Params.banner }}" class="pure-img" style="{{ if .Params.bannerfill }}width: 100%;{{ end }}" />
-	</div>
-	{{ end }}
+
+    {{ if .Params.banner }}
+    <div class="content-banner-image pure-u-1 pure-u-md-3-4" style="{{ if .Params.bannerheight }}height: {{ .Params.bannerheight }}px;{{ end }}">
+        <img src="{{ .Params.banner }}" class="pure-img" style="{{ if .Params.bannerfill }}width: 100%;{{ end }}" />
+    </div>
+    {{ end }}
 
     <div class="content pure-u-1 pure-u-md-3-4">
-		<a name="top"></a>
-		
-		
-      <section id="main">
+        <a name="top"></a>
+
+
+      <main>
          <div class="post">
 
-		<header id="header">
-		
-		{{ partial "singletop.html" . }}
+        <header id="header">
 
-		{{ if eq .Params.showtoc "true" }}
-			{{ if .TableOfContents }}
-		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
-				<small class="toc-label">Contents</small>
-		   	 	{{ .TableOfContents }}
-		    </div>
-		    {{ end }}
-	    {{ end }}
+        {{ partial "singletop.html" . }}
+
+        {{ if eq .Params.showtoc "true" }}
+            {{ if .TableOfContents }}
+            <div id="toc" class="pure-u-1 pure-u-md-1-4">
+                <small class="toc-label">Contents</small>
+                {{ .TableOfContents }}
+            </div>
+            {{ end }}
+        {{ end }}
 
 
 
@@ -41,109 +41,109 @@
               <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </h1>
             <h3 class="post-subtitle">
-            	{{ .Params.subtitle }}
+                {{ .Params.subtitle }}
             </h3>
             {{ if eq .Params.showdate "true" }}
-            	<span class="post-date">
-                	<span class="post-date-day"><sup>{{ .Date.Format "2" }}</sup></span><span class="post-date-separator">/</span><span class="post-date-month">{{ .Date.Format "Jan" }}</span> <span class="post-date-year">{{ .Date.Format "2006" }}</span>
-            	</span>
-            	{{ end }}
+                <span class="post-date">
+                    <span class="post-date-day"><sup>{{ .Date.Format "2" }}</sup></span><span class="post-date-separator">/</span><span class="post-date-month">{{ .Date.Format "Jan" }}</span> <span class="post-date-year">{{ .Date.Format "2006" }}</span>
+                </span>
+                {{ end }}
             {{ if eq .Params.showauthor "true" }}
-            	{{ if .Params.author }}
-            		<span class="post-author-single">By <a class="post-author" {{ if .Params.authorlink }}href="{{ .Params.authorlink }}"{{ end }} target="{{ .Params.authorlinktarget }}">{{ .Params.author }}</a></span>
-            		{{ partial "authorsocial.html" . }}
-            	{{ end }}
+                {{ if .Params.author }}
+                    <span class="post-author-single">By <a class="post-author" {{ if .Params.authorlink }}href="{{ .Params.authorlink }}"{{ end }} target="{{ .Params.authorlinktarget }}">{{ .Params.author }}</a></span>
+                    {{ partial "authorsocial.html" . }}
+                {{ end }}
             {{ end }}
 
-			{{ $Site := .Site }}
-			{{ if .Params.categories }}
-				<div class="post-categories">
-				{{ range .Params.categories }}
-					<a class="post-category post-category-{{ . | urlize }}" href="{{ $Site.BaseUrl}}/categories/{{ . | urlize }}">{{ . }}</a>
-				{{ end }}
-				</div>
-			{{ end }}
+            {{ $Site := .Site }}
+            {{ if .Params.categories }}
+                <div class="post-categories">
+                {{ range .Params.categories }}
+                    <a class="post-category post-category-{{ . | urlize }}" href="{{ $Site.BaseUrl}}/categories/{{ . | urlize }}">{{ . }}</a>
+                {{ end }}
+                </div>
+            {{ end }}
 
-			{{ if eq .Params.showsocialsharing "true" }}
-		    	{{ partial "socialsharing.html" . }}
-		    {{ end }}
-		    
+            {{ if eq .Params.showsocialsharing "true" }}
+                {{ partial "socialsharing.html" . }}
+            {{ end }}
+
           </header>
-          
-			{{ if .Params.bannerinline }}
-				<img src="{{ .Params.bannerinline }}" class="pure-img content-banner-image-inline" />
-			{{ end }}
+
+            {{ if .Params.bannerinline }}
+                <img src="{{ .Params.bannerinline }}" class="pure-img content-banner-image-inline" />
+            {{ end }}
 
             {{ .Content }}
-            
+
          <aside id="meta">
-			{{ if eq .Params.showsocialsharing "true" }}
-		    	{{ partial "socialsharing.html" . }}
-		    {{ end }}
+            {{ if eq .Params.showsocialsharing "true" }}
+                {{ partial "socialsharing.html" . }}
+            {{ end }}
 
-			{{ partial "post/tag/list" . }}
+            {{ partial "post/tag/list" . }}
 
-			{{ if eq .Params.showpaging  "true" }}
-				<div class="paging">
-					<span class="paging-label">More Reading</span>
-					{{ if .Prev }}
-					<div class="paging-newer">
-						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="{{ .Prev.RelPermalink }}">{{ .Prev.Title }}</a>
-		            </div>
+            {{ if eq .Params.showpaging  "true" }}
+                <div class="paging">
+                    <span class="paging-label">More Reading</span>
+                    {{ if .Prev }}
+                    <div class="paging-newer">
+                        <span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+                        <a class="paging-link" href="{{ .Prev.RelPermalink }}">{{ .Prev.Title }}</a>
+                    </div>
                {{ end }}
 
-					{{ if .Next }}
-					<div class="paging-older">
-						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
-			            <a class="paging-link" href="{{ .Next.RelPermalink }}">{{ .Next.Title  }}</a>
-		            </div>
-		          {{ end }}
-	            </div>
+                    {{ if .Next }}
+                    <div class="paging-older">
+                        <span class="dark-red">Older</span><span class="decorative-marker">//</span>
+                        <a class="paging-link" href="{{ .Next.RelPermalink }}">{{ .Next.Title  }}</a>
+                    </div>
+                  {{ end }}
+                </div>
             {{ end }}
           </aside>
 
-          
+
           <aside id="comments">
           {{ if eq .Params.showcomment "true" }}
-          	{{ template "_internal/disqus.html" . }}
+            {{ template "_internal/disqus.html" . }}
           {{ end }}
           </aside>
-          
+
           </div>
-          </section>
-          
-      <footer>  
+          </main>
+
+      <footer>
       {{ partial "footer.html" . }}
       </footer>
     </div>
   </div>
-	{{ if eq .Params.showtotop "true" }}
-		<script type="text/javascript">
-			onscroll = function() {
-			  var toTopVisible = false;
-			  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-			  if (scrollTop > 1000) {
-			    if (!toTopVisible) {
-			      document.getElementById('nav-to-top').style.display = 'block';
-			    }
-			  } else {
-			    if (scrollTop < 1000 || toTopVisible) {
-			      document.getElementById('nav-to-top').style.display = 'none';
-			    }
-			  }
-			};
-		</script>
-	{{ end }}
+    {{ if eq .Params.showtotop "true" }}
+        <script type="text/javascript">
+            onscroll = function() {
+              var toTopVisible = false;
+              var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+              if (scrollTop > 1000) {
+                if (!toTopVisible) {
+                  document.getElementById('nav-to-top').style.display = 'block';
+                }
+              } else {
+                if (scrollTop < 1000 || toTopVisible) {
+                  document.getElementById('nav-to-top').style.display = 'none';
+                }
+              }
+            };
+        </script>
+    {{ end }}
 
-	{{ if .Params.socialsharing }}
-		<script type="text/javascript">
-			function popupShare(url) {
-				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
-				return false;
-			}
-		</script>
-	{{ end }}
+    {{ if .Params.socialsharing }}
+        <script type="text/javascript">
+            function popupShare(url) {
+                window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+                return false;
+            }
+        </script>
+    {{ end }}
 
   {{ partial "bodyend.html" . }}
 </body>
