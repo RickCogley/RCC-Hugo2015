@@ -123,6 +123,10 @@ paginate = 5
         name = "License"
         url = "/license"
         
+    [[menu.footer]]
+        name = "Colophon"
+        url = "/colophon"
+        
 
 
 
