@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 <body>
-	{{ if .Params.totop }}
+	{{ if eq .Params.showtotop "true" }}
 		<div id="nav-to-top">
 			<span class="decorative-marker">//</span><a href="#top">To Top</a>
 		</div>
@@ -26,7 +26,7 @@
 		
 		{{ partial "singletop.html" . }}
 
-		{{ if not .Params.notoc }}
+		{{ if eq .Params.showtoc "true" }}
 			{{ if .TableOfContents }}
 		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
 				<small class="toc-label">Contents</small>
@@ -43,12 +43,12 @@
             <h3 class="post-subtitle">
             	{{ .Params.subtitle }}
             </h3>
-            {{ if not .Params.nodate }}
+            {{ if eq .Params.showdate "true" }}
             	<span class="post-date">
                 	<span class="post-date-day"><sup>{{ .Date.Format "2" }}</sup></span><span class="post-date-separator">/</span><span class="post-date-month">{{ .Date.Format "Jan" }}</span> <span class="post-date-year">{{ .Date.Format "2006" }}</span>
             	</span>
             	{{ end }}
-            {{ if not .Params.noauthor }}
+            {{ if eq .Params.showauthor "true" }}
             	{{ if .Params.author }}
             		<span class="post-author-single">By <a class="post-author" {{ if .Params.authorlink }}href="{{ .Params.authorlink }}"{{ end }} target="{{ .Params.authorlinktarget }}">{{ .Params.author }}</a></span>
             		{{ partial "authorsocial.html" . }}
@@ -64,7 +64,7 @@
 				</div>
 			{{ end }}
 
-			{{ if .Params.socialsharing }}
+			{{ if eq .Params.showsocialsharing "true" }}
 		    	{{ partial "socialsharing.html" . }}
 		    {{ end }}
 		    
@@ -77,13 +77,13 @@
             {{ .Content }}
             
          <aside id="meta">
-			{{ if .Params.socialsharing }}
+			{{ if eq .Params.showsocialsharing "true" }}
 		    	{{ partial "socialsharing.html" . }}
 		    {{ end }}
 
 			{{ partial "post/tag/list" . }}
 
-			{{ if not .Params.nopaging }}
+			{{ if eq .Params.showpaging  "true" }}
 				<div class="paging">
 					<span class="paging-label">More Reading</span>
 					{{ if .Prev }}
@@ -105,7 +105,7 @@
 
           
           <aside id="comments">
-          {{ if not .Params.nocomment }}
+          {{ if eq .Params.showcomment "true" }}
           	{{ template "_internal/disqus.html" . }}
           {{ end }}
           </aside>
@@ -118,7 +118,7 @@
       </footer>
     </div>
   </div>
-	{{ if .Params.totop }}
+	{{ if eq .Params.showtotop "true" }}
 		<script type="text/javascript">
 			onscroll = function() {
 			  var toTopVisible = false;

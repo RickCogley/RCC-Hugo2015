@@ -23,6 +23,15 @@ banner = "https://farm5.staticflickr.com/4059/5135448447_95b026227b_o.jpg"
 # bannerfill = "false"
 # bannerinline = "false"
 
+showtotop = "true"
+showsocialsharing = "true"
+showdate = "true"
+showreadingtime = "true"
+showauthor = "true"
+showtoc = "true"
+showpaging = "true"
+showcomment = "true"
+
 +++
 This is the intro. 日本語日本語。Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 

@@ -1,10 +1,9 @@
 baseurl = "http://localhost"
 languageCode = "en-us"
-copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License."
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License. Some rights reserved by James R. Cogley"
 title = "Rick Cogley Central"
 disqusShortname = "rickcogley" # Optional, enable Disqus integration
 MetaDataFormat = "toml"
-# theme = "hyde-x"
 theme = "redlounge"
 paginate = 5
 
@@ -33,7 +32,7 @@ paginate = 5
     categoriescss = "/css/categories.css"
 
     sidebartitle = "Rick Cogley Central"
-    sidebartagline = "Don't just consume. Use the incredible power at your fingertips to create something useful to others."
+    sidebartagline = "Don't just consume. Use the power at your fingertips to create something useful."
 
     postsblurb = "Wherein we catalog a most excellent list of pithy-yet-informative articles on tech, productivity, Japan, business and whatever else strikes our fancy. Please link the articles in your own postings."
 
@@ -117,8 +116,13 @@ paginate = 5
         url = "/post"
 
     [[menu.footer]]
-        name = "eSolia Inc"
+        name = "My Firm eSolia Inc"
         url = "http://esolia.com"
+        
+    [[menu.footer]]
+        name = "License"
+        url = "/license"
+        
 
 
 

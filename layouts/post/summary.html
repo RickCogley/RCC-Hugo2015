@@ -10,15 +10,15 @@
             </h1>
             </header>
             <p class="post-meta">
-            	{{ if not .Params.nodate }}
+            	{{ if eq .Params.showdate "true" }}
 		          <span class="post-date">
 		            <span class="post-date-day"><sup>{{ .Date.Format "2" }}</sup></span><span class="post-date-separator">/</span><span class="post-date-month">{{ .Date.Format "Jan" }}</span> <span class="post-date-year">{{ .Date.Format "2006" }}</span>
 		          </span>
       				{{ end }}
-      				{{ if not .Params.noauthor }}
+      				{{ if eq .Params.showauthor "true" }}
       					{{ if .Params.author }}<span class="post-author">By <a class="post-author" {{ if .Params.authorlink }}href="{{ .Params.authorlink }}"{{ end }}>{{ .Params.author }}</a></span>{{ end }}
       				{{ end }}
-              {{ if not .Params.noread }}
+              {{ if eq .Params.showreadingtime "true" }}
                 <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>{{.ReadingTime}} min. read</em></span>
               {{ end }}
       				{{ if .Params.categories }}
