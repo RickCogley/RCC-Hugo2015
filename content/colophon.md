@@ -14,7 +14,7 @@ tags = [
     "Attributions",
     "Technical"
 ]
-categories = [
+topics = [
     "Site"
 ]
 

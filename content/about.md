@@ -14,7 +14,7 @@ tags = [
     "Bio",
     "Me"
 ]
-categories = [
+topics = [
     "Self"
 ]
 

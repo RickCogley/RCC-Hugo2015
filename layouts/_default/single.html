@@ -56,10 +56,10 @@
             {{ end }}
 
             {{ $Site := .Site }}
-            {{ if .Params.categories }}
-                <div class="post-categories">
-                {{ range .Params.categories }}
-                    <a class="post-category post-category-{{ . | urlize }}" href="{{ $Site.BaseUrl}}/categories/{{ . | urlize }}">{{ . }}</a>
+            {{ if .Params.topics }}
+                <div class="post-topics">
+                {{ range .Params.topics }}
+                    <a class="post-topic post-topic-{{ . | urlize }}" href="{{ $Site.BaseUrl}}/topics/{{ . | urlize }}">{{ . }}</a>
                 {{ end }}
                 </div>
             {{ end }}
