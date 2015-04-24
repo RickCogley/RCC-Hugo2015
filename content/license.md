@@ -3,6 +3,14 @@ date = "2015-04-21T14:24:37+09:00"
 draft = false
 title = "License"
 
+tags = [
+    "CC 4.0",
+    "BY-SA"
+]
+topics = [
+    "Colophon"
+]
+
 showtotop = "false"
 showsocialsharing = "false"
 showdate = "false"

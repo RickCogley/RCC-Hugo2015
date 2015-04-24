@@ -395,10 +395,10 @@ p.post-meta {
 .post-meta a:hover {
     color: #FF009B;
 }
-.post-categories {
+.post-topics {
     clear: left;
 }
-.post-category {
+.post-topic {
     margin: 0 0.1rem;
     padding: 0.2rem 0.5rem;
     color: #fff;
@@ -407,10 +407,10 @@ p.post-meta {
     -moz-border-radius: 0.5rem;
     border-radius: 0.5rem;
 }
-a.post-category {
+a.post-topic {
     text-decoration: none;
 }
-a.post-category:hover {
+a.post-topic:hover {
     color: #fff;
     text-decoration: underline;
 }

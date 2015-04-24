@@ -13,7 +13,7 @@ tags = [
     "Nihongo",
     "日本語だ"
 ]
-categories = [
+topics = [
     "Japan",
     "Web"
 ]
