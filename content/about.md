@@ -15,7 +15,8 @@ tags = [
     "Me"
 ]
 topics = [
-    "Self"
+    "Professional",
+    "Personal"
 ]
 
 showtotop = "true"

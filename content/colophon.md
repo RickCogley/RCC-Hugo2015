@@ -15,7 +15,9 @@ tags = [
     "Technical"
 ]
 topics = [
-    "Site"
+    "Web",
+    "Design",
+    "Process"
 ]
 
 showtotop = "true"
