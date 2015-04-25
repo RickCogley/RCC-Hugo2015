@@ -15,7 +15,7 @@ tags = [
 ]
 topics = [
     "Japan",
-    "Web"
+    "Popular"
 ]
 slug = "this-is-my-second-post-yo"
 banner = "https://farm5.staticflickr.com/4059/5135448447_95b026227b_o.jpg"

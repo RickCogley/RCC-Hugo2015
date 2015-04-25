@@ -8,7 +8,7 @@ tags = [
     "BY-SA"
 ]
 topics = [
-    "Colophon"
+    "Culture"
 ]
 
 showtotop = "false"
