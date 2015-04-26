@@ -9,12 +9,12 @@
                     {{ end }}
                 </p>
                 <p>
-                	Click to filter the content by topic: 
+                    Click to filter the content by topic:<span class="decorative-marker2">&#10033;</span>
                     {{ range $name, $taxonomy := .Site.Taxonomies.topics }}
-    					<a href="/topics/{{ $name | urlize }}"> {{ $name }}, </a>
-  					{{ end }}
+                        <a href="/topics/{{ $name | urlize }}">{{ $name }}</a><span class="decorative-marker2">&#10033;</span>
+                    {{ end }}
+                    <br>
                 </p>
-     
             </div>
         </div>
 
@@ -32,6 +32,4 @@
         <hr class="sepchar" /> 
     </div>
 </div>
-
-
 

@@ -1,0 +1,10 @@
+{{ $Site := .Site }}
+{{ with "$Site.Taxonomies.topics" }}
+<div>
+    {{ $sort := sort . }}
+    {{ $links := apply $sort "partial" "topic_link" "." }}
+    {{ $clean := apply $links "chomp" "." }}
+    {{ delimit $clean ", " }}
+</div>
+{{ end }}
+

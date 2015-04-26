@@ -493,6 +493,21 @@ a.post-topic:hover {
     margin-left: 0.1rem;
 }
 
+.decorative-marker2 {
+    color: #D3D3D3;
+    margin-right: 0.1rem;
+    margin-left: 0.3rem;
+}
+
+
+/* Topics */
+.topics-list {
+    clear: left;
+    margin-bottom: 0.75rem;
+    font-size: 1.0rem;
+    color: #999;
+}
+
 /* Paging */
 .paging {
     margin-bottom: 0.75rem;
@@ -534,7 +549,8 @@ nav#TableOfContents li {
     font-weight: 100;
     font-family: 'Alegreya Sans', 'Helvetica', 'Arial', sans-serif;
     color: #aeaeae;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
 }
 .footer a, .footer p {
     color: #aeaeae;
@@ -553,7 +569,7 @@ nav#TableOfContents li {
 ul.footer-menu {
     list-style: none;
     display: block;
-    text-align:center;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -561,6 +577,8 @@ ul.footer-menu {
     display: inline-block;
     margin-right: 0.5rem;
     font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
 }
 hr.thin {
     height: 1px;

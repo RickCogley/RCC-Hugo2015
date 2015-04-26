@@ -9,14 +9,12 @@ authorlink = "/about"
 authortwitter = "https://twitter.com/rickcogley"
 socialsharing = "true"
 tags = [
-    "Lipsum",
-    "Dimsum",
     "Nihongo",
-    "日本語だ"
+    "Why"
 ]
 topics = [
     "Japan",
-    "Web"
+    "Professional"
 ]
 slug = "this-is-my-first-post-yo"
 banner = "https://farm5.staticflickr.com/4059/5135448447_95b026227b_o.jpg"

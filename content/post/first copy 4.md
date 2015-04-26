@@ -17,7 +17,7 @@ topics = [
     "Language",
     "Tips"
 ]
-slug = "this-is-my-first-post-yo"
+slug = "this-is-first-copy4"
 banner = "https://farm5.staticflickr.com/4059/5135448447_95b026227b_o.jpg"
 # bannerheight = "700"
 # bannerfill = "false"
