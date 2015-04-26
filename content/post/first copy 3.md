@@ -10,14 +10,14 @@ authortwitter = "https://twitter.com/rickcogley"
 socialsharing = "true"
 tags = [
     "Lipsum",
-    "Nihongo",
+    "Swahili",
     "日本語だ"
 ]
 topics = [
     "Performance",
     "Reviews"
 ]
-slug = "this-is-my-first-post-yo"
+slug = "this-is-first-copy3"
 banner = "https://farm5.staticflickr.com/4059/5135448447_95b026227b_o.jpg"
 # bannerheight = "700"
 # bannerfill = "false"
