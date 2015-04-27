@@ -1,0 +1,9 @@
+{{ "<!-- ENTERING partial list_tags.html -->" | safeHtml }}
+<p>
+    Also filter by <a href="/tags">tag:</a> <span class="decorative-marker2">&#10033;</span>
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+        <a href="/tags/{{ $name | urlize }}">{{ $name }}</a><span class="decorative-marker2">&#10033;</span>
+    {{ end }}
+    <br>
+</p>
+{{ "<!-- LEAVING partial list_tags.html -->" | safeHtml }}

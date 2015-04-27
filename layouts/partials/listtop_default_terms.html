@@ -5,16 +5,14 @@
             <div class="l-box">
                 <h3>Welcome to the {{ .Title }} Section (listtop default_terms)</h3>
                 <p>
-                    {{ if eq .Title "Posts" }}
-                      {{ .Site.Params.postsblurb }}
+                    {{ if eq .Title "Topics" }}
+                      {{ .Site.Params.topicsblurb }}
+                      {{ partial "list_tags.html" . }}
                     {{ end }}
-                </p>
-                <p>
-                    Click to filter the content by topic:<span class="decorative-marker2">&#10033;</span>
-                    {{ range $name, $taxonomy := .Site.Taxonomies.topics }}
-                        <a href="/topics/{{ $name | urlize }}">{{ $name }}</a><span class="decorative-marker2">&#10033;</span>
+                    {{ if eq .Title "Tags" }}
+                      {{ .Site.Params.tagsblurb }}
+                      {{ partial "list_topics.html" . }}
                     {{ end }}
-                    <br>
                 </p>
             </div>
         </div>
@@ -22,9 +20,12 @@
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
             <div class="l-box">
                 <p>
-                {{ if eq .Title "Posts" }}
-                      <img class="pure-img" src="/img/Cogley-TopPhotos-Obi-Color.jpg" alt="Beautiful Obi Belt for a Formal Kimono">
-                {{ end }}  
+                {{ if eq .Title "Topics" }}
+                      <img class="pure-img" src="/img/Cogley-SectionPhotos-Omikuji-Color.jpg" alt="Omikuji fortunes">
+                {{ end }}
+                {{ if eq .Title "Tags" }}
+                      <img class="pure-img" src="/img/Cogley-TopPhotos-Fire-Color.jpg" alt="Fire sign">
+                {{ end }}
                 </p>
             </div>
         </div>

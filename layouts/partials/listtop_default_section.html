@@ -9,13 +9,7 @@
                       {{ .Site.Params.postsblurb }}
                     {{ end }}
                 </p>
-                <p>
-                    Click to filter the content by topic:<span class="decorative-marker2">&#10033;</span>
-                    {{ range $name, $taxonomy := .Site.Taxonomies.topics }}
-                        <a href="/topics/{{ $name | urlize }}">{{ $name }}</a><span class="decorative-marker2">&#10033;</span>
-                    {{ end }}
-                    <br>
-                </p>
+                You can also filter by <a href="/topics">topic</a> or by <a href="/tags">tag</a>. 
             </div>
         </div>
 
