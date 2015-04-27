@@ -1,3 +1,4 @@
+{{ "<!-- ENTERING partial pagination.html -->" | safeHtml }}
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
 <div class="pagination">
   <nav role="pagination" class="post-list-pagination">
@@ -15,3 +16,4 @@
   </nav>
 </div>
 {{ end }}
+{{ "<!-- LEAVING partial pagination.html -->" | safeHtml }}

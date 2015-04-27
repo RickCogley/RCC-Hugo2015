@@ -1,6 +1,8 @@
+{{ "<!-- ENTERING layouts/_default/li.html -->" | safeHtml }}
 <article class="post">
 <li>
    <a href="{{ .Permalink }}">{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</a>
       <div class="meta">{{ .Date.Format "Mon, 2 Jan, 2006" }}</div>
 </li>
 </article>
+{{ "<!-- ENTERING layouts/_default/li.html -->" | safeHtml }}

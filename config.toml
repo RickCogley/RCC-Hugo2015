@@ -7,6 +7,7 @@ MetaDataFormat = "toml"
 theme = "redlounge"
 paginate = 5
 
+
 [author]
     name = "Rick Cogley"
 
@@ -29,9 +30,8 @@ paginate = 5
     # Used when a given page doesn't set its own.
     defaultDescription = "A post by Rick Cogley"
     defaultKeywords = "cogley,post"
-    
+    highlightStyle = "solarized_dark"
     topicscss = "/css/topics.css"
-
     sidebartitle = "Rick Cogley Central"
     sidebartagline = "Don't just consume. Use the power at your fingertips to create something useful."
 

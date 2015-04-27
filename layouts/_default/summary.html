@@ -1,3 +1,4 @@
+{{ "<!-- ENTERING layouts/_default/summary.html -->" | safeHtml }}
 <article class="post">
             <header class="post-header">
             {{ if .Params.thumbnail }}
@@ -37,4 +38,5 @@
 				<a href="{{ .RelPermalink }}"><span class="read-more-slashes">//</span>Read More...</a>
 			</footer>
 </article>
+{{ "<!-- LEAVING layouts/_default/summary.html -->" | safeHtml }}
 
