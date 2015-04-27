@@ -1,3 +1,4 @@
+{{ "<!-- ENTERING layouts/_default/single.html -->" | safeHtml }}
 {{ partial "header.html" . }}
 <body>
     {{ if eq .Params.showtotop "true" }}
@@ -148,3 +149,4 @@
   {{ partial "bodyend.html" . }}
 </body>
 </html>
+{{ "<!-- LEAVING layouts/_default/single.html -->" | safeHtml }}

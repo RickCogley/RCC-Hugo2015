@@ -1,3 +1,4 @@
+{{ "<!-- ENTERING partial header.html -->" | safeHtml }}
 {{ partial "doctype.html" . }}
 <head>
   <title>
@@ -55,3 +56,4 @@
 
   {{ partial "headend.html" . }}
 </head>
+{{ "<!-- LEAVING partial header.html -->" | safeHtml }}

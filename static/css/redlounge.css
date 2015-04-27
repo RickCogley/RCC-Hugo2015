@@ -6,6 +6,9 @@
 html {
     color: #2d303b;
 }
+body {
+    background-color: white;
+}
 html, body, main, div, p, nav, section, article, ol, ul {
     font-family: 'Alegreya Sans', 'Helvetica', 'Arial', sans-serif;
 }
@@ -432,6 +435,7 @@ a.post-topic:hover {
 /* Banner Image */
 .content-banner-image {
     overflow: hidden;
+    background-color: #101820;
 }
 
 .content-banner-image-inline {
