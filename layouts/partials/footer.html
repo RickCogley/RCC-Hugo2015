@@ -1,10 +1,10 @@
-{{ "<!-- ENTERING partial footer.html -->" | safeHtml }}
+{{ "<!-- ENTERING partial footer.html -->" | safeHTML }}
 <div class="footer">
 	<hr class="thin" />
 	<div class="pure-menu pure-menu-horizontal pure-menu-open">
 		<ul class="footer-menu">
 		{{ range .Site.Menus.footer }}
-			<li><a href="{{.Url}}">{{ .Name }}</a></li>
+			<li><a href="{{.URL}}">{{ .Name }}</a></li>
 		{{ end }}
 		</ul>
 	</div>	
@@ -16,4 +16,4 @@
         </p>
     </div>
 </div>
-{{ "<!-- LEAVING partial footer.html -->" | safeHtml }}
+{{ "<!-- LEAVING partial footer.html -->" | safeHTML }}

@@ -1,4 +1,4 @@
-{{ "<!-- ENTERING partial topic_list.html -->" | safeHtml }}
+{{ "<!-- ENTERING partial topic_list.html -->" | safeHTML }}
 {{ $Site := .Site }}
 {{ with "$Site.Taxonomies.topics" }}
 <div>
@@ -8,5 +8,5 @@
     {{ delimit $clean ", " }}
 </div>
 {{ end }}
-{{ "<!-- LEAVING partial topic_list.html -->" | safeHtml }}
+{{ "<!-- LEAVING partial topic_list.html -->" | safeHTML }}
 

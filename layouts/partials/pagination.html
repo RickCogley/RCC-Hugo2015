@@ -1,19 +1,19 @@
-{{ "<!-- ENTERING partial pagination.html -->" | safeHtml }}
+{{ "<!-- ENTERING partial pagination.html -->" | safeHTML }}
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
 <div class="pagination">
   <nav role="pagination" class="post-list-pagination">
       {{ if .Paginator.HasPrev }}
-      <a href="{{.Paginator.Prev.Url}}" class="post-list-pagination-item pure-button post-list-pagination-item-prev">
+      <a href="{{.Paginator.Prev.URL}}" class="post-list-pagination-item pure-button post-list-pagination-item-prev">
         <i class="fa fa-angle-double-left"></i>&nbsp;Newer
       </a>
       {{ end }}
     <span class="post-list-pagination-item post-list-pagination-item-current">Page {{.Paginator.PageNumber}} of {{.Paginator.TotalPages}}</span>
     {{ if .Paginator.HasNext }}
-      <a href="{{.Paginator.Next.Url}}" class="post-list-pagination-item pure-button post-list-pagination-item-next">
+      <a href="{{.Paginator.Next.URL}}" class="post-list-pagination-item pure-button post-list-pagination-item-next">
         Older&nbsp;<i class="fa fa-angle-double-right"></i>
       </a>
     {{ end }}
   </nav>
 </div>
 {{ end }}
-{{ "<!-- LEAVING partial pagination.html -->" | safeHtml }}
+{{ "<!-- LEAVING partial pagination.html -->" | safeHTML }}

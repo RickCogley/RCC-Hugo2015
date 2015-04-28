@@ -1,4 +1,4 @@
-{{ "<!-- ENTERING partial sidebar.html -->" | safeHtml }}
+{{ "<!-- ENTERING partial sidebar.html -->" | safeHTML }}
 <div class="sidebar pure-u-1 pure-u-md-1-4">
   <div class="header">
     {{ partial "sidebarheader.html" . }}
@@ -8,9 +8,9 @@
 
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-item"><span class="nav-item-separator">//</span><a href="{{ .Site.BaseUrl }}">Home</a></li>
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="{{ .Site.BaseURL }}">Home</a></li>
         {{ range .Site.Menus.main }}
-          <li class="nav-item"><span class="nav-item-separator">//</span><a href="{{ .Url }}">{{ .Name }}</a></li>
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="{{ .URL }}">{{ .Name }}</a></li>
         {{ end }}
       </ul>
     </nav>
@@ -18,8 +18,8 @@
     {{ if .Site.Menus.social }}
     <div class="social-buttons">
       {{ range .Site.Menus.social.ByWeight }}
-        {{ if .Url }}
-        <a href="{{ .Url }}" target="_blank">{{ .Pre }}</a>
+        {{ if .URL }}
+        <a href="{{ .URL }}" target="_blank">{{ .Pre }}</a>
         {{ end }}
       {{ end }}
       
@@ -28,5 +28,5 @@
 
   </div>
 </div>
-{{ "<!-- LEAVING partial socialsharing.html -->" | safeHtml }}
+{{ "<!-- LEAVING partial socialsharing.html -->" | safeHTML }}
 

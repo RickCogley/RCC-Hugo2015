@@ -1,9 +1,9 @@
-{{ "<!-- ENTERING partial list_topics.html -->" | safeHtml }}
+{{ "<!-- ENTERING partial list_topics.html -->" | safeHTML }}
 <p>
-    Filter by <a href="/topics">topic:</a> <span class="decorative-marker2">&#10033;</span>
+    <em>Filter by</em> <a href="/topics">topic:</a> <span class="decorative-marker2">&#10033;</span>
     {{ range $name, $taxonomy := .Site.Taxonomies.topics }}
         <a href="/topics/{{ $name | urlize }}">{{ $name }}</a><span class="decorative-marker2">&#10033;</span>
     {{ end }}
     <br>
 </p>
-{{ "<!-- LEAVING partial list_topics.html -->" | safeHtml }}
+{{ "<!-- LEAVING partial list_topics.html -->" | safeHTML }}
