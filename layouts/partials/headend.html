@@ -1,4 +1,4 @@
-{{ "<!-- ENTERING partial headend.html -->" | safeHtml }}
+{{ "<!-- ENTERING partial headend.html -->" | safeHTML }}
 {{ if .Site.Params.gaid }}
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -10,4 +10,4 @@
   ga('send', 'pageview');
 </script>
 {{ end }}
-{{ "<!-- LEAVING partial headend.html -->" | safeHtml }}
+{{ "<!-- LEAVING partial headend.html -->" | safeHTML }}

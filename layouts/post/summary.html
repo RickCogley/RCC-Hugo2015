@@ -1,8 +1,8 @@
 <article class="post">
             <header class="post-header">
-            {{ if .Params.thumbnail }}
+            {{ if .Site.Params.thumbnail }}
             <div class="post-avatar-wrapper">
-              <img class="post-avatar" alt="" src="{{ .Params.thumbnail }}">
+              <img class="post-avatar" alt="" src="{{ .Site.Params.thumbnail }}">
             </div>
             {{ end }}
             <h1 class="post-title">
@@ -25,7 +25,7 @@
       					<div class="post-topics">
 				        {{ $Site := .Site }}
       					{{ range .Params.topics }}
-					        <a class="post-topic post-topic-{{ . | urlize }}" href="{{ $Site.BaseUrl}}/topics/{{ . | urlize }}">{{ . }}</a>
+					        <a class="post-topic post-topic-{{ . | urlize }}" href="{{ $Site.BaseURL}}/topics/{{ . | urlize }}">{{ . }}</a>
       					{{ end }}
       					</div>
       				{{ end }}

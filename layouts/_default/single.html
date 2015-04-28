@@ -1,4 +1,4 @@
-{{ "<!-- ENTERING layouts/_default/single.html -->" | safeHtml }}
+{{ "<!-- ENTERING layouts/_default/single.html -->" | safeHTML }}
 {{ partial "header.html" . }}
 <body>
     {{ if eq .Params.showtotop "true" }}
@@ -60,7 +60,7 @@
             {{ if .Params.topics }}
                 <div class="post-topics">
                 {{ range .Params.topics }}
-                    <a class="post-topic post-topic-{{ . | urlize }}" href="{{ $Site.BaseUrl}}/topics/{{ . | urlize }}">{{ . }}</a>
+                    <a class="post-topic post-topic-{{ . | urlize }}" href="{{ $Site.BaseURL}}/topics/{{ . | urlize }}">{{ . }}</a>
                 {{ end }}
                 </div>
             {{ end }}
@@ -149,4 +149,4 @@
   {{ partial "bodyend.html" . }}
 </body>
 </html>
-{{ "<!-- LEAVING layouts/_default/single.html -->" | safeHtml }}
+{{ "<!-- LEAVING layouts/_default/single.html -->" | safeHTML }}

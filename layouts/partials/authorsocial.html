@@ -1,4 +1,4 @@
-{{ "<!-- ENTERING partial authorsocial.html -->" | safeHtml }}
+{{ "<!-- ENTERING partial authorsocial.html -->" | safeHTML }}
 {{ if .Params.authortwitter }}
 	<span class="post-author-social post-author-twitter"><a href="{{ .Params.authortwitter }}" target="_blank"><i class="fa fa-twitter"></i></a></span>
 {{ end }}
@@ -11,4 +11,4 @@
 {{ if .Params.authorlinkedin }}
       <span class="post-author-social post-author-linkedin"><a href="{{ .Params.authorlinkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a></span>
 {{ end }}
-{{ "<!-- LEAVING partial authorsocial.html -->" | safeHtml }}
+{{ "<!-- LEAVING partial authorsocial.html -->" | safeHTML }}

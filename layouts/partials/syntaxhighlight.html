@@ -1,4 +1,4 @@
-{{ "<!-- ENTERING partial syntaxhighlight.html -->" | safeHtml }}
+{{ "<!-- ENTERING partial syntaxhighlight.html -->" | safeHTML }}
   {{ if isset .Site.Params "highlightStyle" }}
     <link rel="stylesheet" href="/js/highlight/styles/{{ .Site.Params.highlightStyle }}.css">
   {{ else }}
@@ -6,4 +6,4 @@
   {{ end }}
     <script src="/js/highlight/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-{{ "<!-- LEAVING partial syntaxhighlight.html -->" | safeHtml }}
+{{ "<!-- LEAVING partial syntaxhighlight.html -->" | safeHTML }}
