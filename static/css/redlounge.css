@@ -431,11 +431,10 @@ a.post-topic:hover {
     font-size: 2.0rem; 
 }
 
-
 /* Banner Image */
 .content-banner-image {
     overflow: hidden;
-    background-color: #101820;
+    background-color: black;
 }
 
 .content-banner-image-inline {

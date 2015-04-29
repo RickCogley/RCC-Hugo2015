@@ -1,34 +1,29 @@
-+++
-date = "2015-04-20T17:24:37+09:00"
-draft = false
-title = "About Me"
-slug = "about"
-subtitle = "More info that you could ever want."
-description = "Rick Cogley's bio page."
-author = "Rick Cogley"
-authorlink = "/about"
-authortwitter = "https://twitter.com/rickcogley"
-
-tags = [
-    "About",
-    "Bio",
-    "Me"
-]
-topics = [
-    "Professional",
-    "Personal"
-]
-
-showtotop = "true"
-showsocialsharing = "true"
-showdate = "false"
-showreadingtime = "false"
-showauthor = "true"
-showtoc = "true"
-showpaging = "true"
-showcomment = "false"
-
-+++
+---
+author: Rick Cogley
+authorlink: /about
+authortwitter: https://twitter.com/rickcogley
+date: 2015-04-20T17:24:37+09:00
+description: Rick Cogley's bio page.
+draft: false
+showauthor: "true"
+showcomment: "false"
+showdate: "false"
+showpaging: "true"
+showreadingtime: "false"
+showsocialsharing: "true"
+showtoc: "true"
+showtotop: "true"
+slug: about
+subtitle: More info that you could ever want.
+tags:
+- About
+- Bio
+- Me
+title: About Me
+topics:
+- Professional
+- Personal
+---
 
 <div itemscope itemtype="http://schema.org/AboutPage">
     <h1 align="center">I&#8217;m <span itemprop="author">Rick Cogley</span></h1>

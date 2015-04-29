@@ -1,38 +1,32 @@
-+++
-date = "2014-11-29T17:25:04+09:00"
-draft = false
-title = "This is my first post"
-subtitle = "pithy, no?"
-description = "This is the description of this post."
-author = "Rick Cogley"
-authorlink = "/about"
-authortwitter = "https://twitter.com/rickcogley"
-socialsharing = "true"
-tags = [
-    "Code",
-    "Nihongo",
-    "日本語だ"
-]
-topics = [
-    "Web Development",
-    "Tips"
-]
-slug = "this-is-first-copy4"
-banner = "https://farm5.staticflickr.com/4059/5135448447_95b026227b_o.jpg"
-# bannerheight = "700"
-# bannerfill = "false"
-# bannerinline = "false"
+---
+author: Rick Cogley
+authorlink: /about
+authortwitter: https://twitter.com/rickcogley
+banner: https://farm5.staticflickr.com/4059/5135448447_95b026227b_o.jpg
+date: 2014-11-29T17:25:04+09:00
+description: This is the description of this post.
+draft: false
+showauthor: "true"
+showcomment: "true"
+showdate: "true"
+showpaging: "true"
+showreadingtime: "true"
+showsocialsharing: "true"
+showtoc: "true"
+showtotop: "true"
+slug: this-is-first-copy4
+socialsharing: "true"
+subtitle: pithy, no?
+tags:
+- Code
+- Nihongo
+- 日本語だ
+title: This is my first post
+topics:
+- Web Development
+- Tips
+---
 
-showtotop = "true"
-showsocialsharing = "true"
-showdate = "true"
-showreadingtime = "true"
-showauthor = "true"
-showtoc = "true"
-showpaging = "true"
-showcomment = "true"
-
-+++
 This is the intro. 日本語日本語。Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
 # Header 1
