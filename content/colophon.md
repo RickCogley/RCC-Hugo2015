@@ -1,35 +1,30 @@
-+++
-date = "2015-04-20T17:24:37+09:00"
-draft = false
-title = "Colophon"
-slug = "colophon"
-subtitle = "On the shoulders of giants."
-description = "RCC site colophon"
-author = "Rick Cogley"
-authorlink = "/about"
-authortwitter = "https://twitter.com/rickcogley"
-
-tags = [
-    "Colophon",
-    "Attributions",
-    "Technical"
-]
-topics = [
-    "Web",
-    "Design",
-    "Process"
-]
-
-showtotop = "true"
-showsocialsharing = "true"
-showdate = "false"
-showreadingtime = "true"
-showauthor = "true"
-showtoc = "true"
-showpaging = "true"
-showcomment = "true"
-
-+++
+---
+author: Rick Cogley
+authorlink: /about
+authortwitter: https://twitter.com/rickcogley
+date: 2015-04-20T17:24:37+09:00
+description: RCC site colophon
+draft: false
+showauthor: "true"
+showcomment: "true"
+showdate: "false"
+showpaging: "true"
+showreadingtime: "true"
+showsocialsharing: "true"
+showtoc: "true"
+showtotop: "true"
+slug: colophon
+subtitle: On the shoulders of giants.
+tags:
+- Colophon
+- Attributions
+- Technical
+title: Colophon
+topics:
+- Web
+- Design
+- Process
+---
 
 
       <h4>Colophon</h4>

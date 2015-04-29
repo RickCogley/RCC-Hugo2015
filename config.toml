@@ -3,7 +3,7 @@ languageCode = "en-us"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License. Some rights reserved by James R. Cogley"
 title = "Rick Cogley Central"
 disqusShortname = "rickcogley" # Optional, enable Disqus integration
-MetaDataFormat = "toml"
+MetaDataFormat = "yaml"
 theme = "redlounge"
 paginate = 5
 
