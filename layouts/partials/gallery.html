@@ -1,46 +1,25 @@
 {{ "<!-- ENTERING partial gallery.html -->" | safeHTML }}
 {{if isset .Params "gallery_id" }}
+<h2>Gallery</h2>
 <div class="gallery" id="nanoGallery2"></div>
 <script type="text/javascript">
-
 $(document).ready(function () {
-     var myColorScheme = {
-        navigationbar: {
-            background: '#141E24',
-            border: '0px dotted #555',
-            color: '#ccc',
-            colorHover: '#fff'
-        },
-        thumbnail: {
-            background: '#141E24',
-            border: '1px solid #141E24',
-            labelBackground: 'transparent',
-            labelOpacity: '0.8',
-            titleColor: '#fff',
-            descriptionColor: '#eee'
-        }
-    };
-    var myColorSchemeViewer = {
-        background: 'rgba(1, 1, 1, 0.75)',
-        imageBorder: '15px solid #f8f8f8',
-        imageBoxShadow: '#888 0px 0px 20px',
-        barBackground: '#222',
-        barBorder: '2px solid #111',
-        barColor: '#eee',
-        barDescriptionColor: '#aaa'
-    };
-    jQuery("#nanoGallery2").nanoGallery({
-        kind: 'picasa',
-        userID: 'rick.cogley@gmail.com',
-        
-        // uncomment line to display one specific album:
-        album: '6110990833513306977',
-        
-        thumbnailHoverEffect:'borderLighter',
-        colorScheme: myColorScheme
+    $("#nanoGallery2").nanoGallery({
+      
+      thumbnailWidth: 'auto',
+      thumbnailHeight: 250,
+      
+      userID: 'rick.cogley@gmail.com', kind:'picasa',
+      album: '{{ .Params.gallery_id }}',
+      colorScheme: 'none',
+      thumbnailHoverEffect: [{ name: 'labelAppear75', duration: 300 }],
+      theme: 'clean',
+      thumbnailGutterWidth : 1,
+      thumbnailGutterHeight : 1,
+      i18n: { thumbnailImageDescription: 'View Photo', thumbnailAlbumDescription: 'Open Album' },
+      thumbnailLabel: { display: true, position: 'overImageOnMiddle', align: 'center' }
     });
-    
-});
+  });
 
 </script>
 {{ end }}
