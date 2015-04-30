@@ -2,7 +2,7 @@
 author: Rick Cogley
 authorlink: /about
 authortwitter: https://twitter.com/rickcogley
-date: 2015-04-20T17:24:37+09:00
+date: 1966-01-01T17:24:37+09:00
 description: RCC site colophon
 draft: false
 showauthor: "true"

@@ -1,4 +1,4 @@
-baseurl = "http://localhost"
+BaseURL = "http://localhost"
 languageCode = "en-us"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License. Some rights reserved by James R. Cogley"
 title = "Rick Cogley Central"
@@ -138,12 +138,12 @@ paginate = 5
     googleAnalytics = "UA-1040233-5"
     gravatarHash = "42f19a567cf937b98d2ab4cc09918461"
 
-    # Sidebar social links, these must be full URLs.
-    github = "https://github.com/rickcogley"
-    linkedin = "http://www.linkedin.com/in/rickcogley"
-    googleplus = "https://plus.google.com/+RickCogley/posts"
-    facebook = "https://www.facebook.com/rickcogley"
-    twitter = "https://twitter.com/rickcogley"
+    # Reminder social links, which should be added to each md file.
+    authorgithub = "https://github.com/rickcogley"
+    authorlinkedin = "http://www.linkedin.com/in/rickcogley"
+    authorgoogleplus = "https://plus.google.com/+RickCogley/posts"
+    authorfacebook = "https://www.facebook.com/rickcogley"
+    authortwitter = "https://twitter.com/rickcogley"
     
     
     

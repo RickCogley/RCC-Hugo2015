@@ -11,4 +11,7 @@
 {{ if .Params.authorlinkedin }}
       <span class="post-author-social post-author-linkedin"><a href="{{ .Params.authorlinkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a></span>
 {{ end }}
+{{ if .Params.authorgithub }}
+      <span class="post-author-social post-author-github"><a href="{{ .Params.authorgithub }}" target="_blank"><i class="fa fa-github"></i></a></span>
+{{ end }}
 {{ "<!-- LEAVING partial authorsocial.html -->" | safeHTML }}
