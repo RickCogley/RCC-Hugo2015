@@ -38,6 +38,9 @@ topics:
     </div>
     <div class="span10">
       <!--Body content-->
+      
+
+      
 <div itemscope itemtype="http://schema.org/Person"><p>My full name is <a itemprop="url name" href="http://rick.cogley.info"><em><span itemprop="givenName">James</span> <span itemprop="additionalName">Rickard</span> <span itemprop="familyName">Cogley</span></em></a>, though people call me "Rick". <span class="pullquote-right" data-pullquote="I&#8217;m an experienced technology manager and consultant, avid cyclist, and family man who is based in Japan and fluent in Japanese." itemprop="description">I'm an experienced technology manager and consultant, avid cyclist, and family man who is based in Japan, and fluent in Japanese.</span> I'm <span itemprop="jobTitle">Founder</span> and <span itemprop="jobTitle">CEO</span> of <a rel="bookmark" href="http://www.esolia.com" target="_blank"><span itemprop="affiliation">eSolia Inc.</span></a>, specializing in bilingual (English - Japanese) IT management and support services. 
 </p>
 <p>
