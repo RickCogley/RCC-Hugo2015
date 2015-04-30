@@ -45,9 +45,15 @@
   {{ partial "syntaxhighlight.html" . }}
 
   {{ if .Params.lightbox }}
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/lightbox.css">
-  <script src="{{ .Site.BaseURL }}/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/lightbox.css">
+    <script src="{{ .Site.BaseURL }}/js/lightbox.min.js"></script>
+  {{ end }}
+  
+  {{if isset .Params "gallery_id" }}
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="{{ .Site.BaseUrl }}nano/nanogallery.min.css" rel="stylesheet" type="text/css">
+    <script  type="text/javascript" src="{{ .Site.BaseUrl }}nano/jquery.nanogallery.min.js"></script>
   {{ end }}
 
   {{ if .Site.Params.topicscss }}

@@ -76,6 +76,9 @@
             {{ end }}
 
             {{ .Content }}
+            
+            {{ partial "gallery.html" . }}
+
 
          <aside id="meta">
             {{ if eq .Params.showsocialsharing "true" }}

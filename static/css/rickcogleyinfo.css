@@ -545,6 +545,13 @@ nav#TableOfContents li {
     color: #aeaeae;
 }
 
+/* Gallery */
+
+.gallery {
+    width: 100%;
+    margin: 2.2rem 0;
+    }
+
 /* Footer */
 .footer {
     text-align: center;

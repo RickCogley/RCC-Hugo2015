@@ -1,0 +1,47 @@
+{{ "<!-- ENTERING partial gallery.html -->" | safeHTML }}
+{{if isset .Params "gallery_id" }}
+<div class="gallery" id="nanoGallery2"></div>
+<script type="text/javascript">
+
+$(document).ready(function () {
+     var myColorScheme = {
+        navigationbar: {
+            background: '#141E24',
+            border: '0px dotted #555',
+            color: '#ccc',
+            colorHover: '#fff'
+        },
+        thumbnail: {
+            background: '#141E24',
+            border: '1px solid #141E24',
+            labelBackground: 'transparent',
+            labelOpacity: '0.8',
+            titleColor: '#fff',
+            descriptionColor: '#eee'
+        }
+    };
+    var myColorSchemeViewer = {
+        background: 'rgba(1, 1, 1, 0.75)',
+        imageBorder: '15px solid #f8f8f8',
+        imageBoxShadow: '#888 0px 0px 20px',
+        barBackground: '#222',
+        barBorder: '2px solid #111',
+        barColor: '#eee',
+        barDescriptionColor: '#aaa'
+    };
+    jQuery("#nanoGallery2").nanoGallery({
+        kind: 'picasa',
+        userID: 'rick.cogley@gmail.com',
+        
+        // uncomment line to display one specific album:
+        album: '6110990833513306977',
+        
+        thumbnailHoverEffect:'borderLighter',
+        colorScheme: myColorScheme
+    });
+    
+});
+
+</script>
+{{ end }}
+{{ "<!-- LEAVING partial gallery.html -->" | safeHTML }}
