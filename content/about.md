@@ -19,10 +19,15 @@ tags:
 - About
 - Bio
 - Me
-title: About Me
 topics:
 - Professional
 - Personal
+menu:
+  footer:
+    Name: "Bio"
+    Weight: -110
+    Identifier: "about"
+    Url: "/about"
 ---
 
 <div itemscope itemtype="http://schema.org/AboutPage">
