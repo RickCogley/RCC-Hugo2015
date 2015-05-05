@@ -92,21 +92,20 @@
                     <span class="paging-label">More Reading</span>
                     {{ if .Prev }}
                     <div class="paging-newer">
-                        <span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+                        <span class="dark-red">Newer</span><span class="decorative-marker">&#9879;</span>
                         <a class="paging-link" href="{{ .Prev.RelPermalink }}">{{ .Prev.Title }}</a>
                     </div>
                {{ end }}
 
                     {{ if .Next }}
                     <div class="paging-older">
-                        <span class="dark-red">Older</span><span class="decorative-marker">//</span>
+                        <span class="dark-red">Older</span><span class="decorative-marker">&#9879;</span>
                         <a class="paging-link" href="{{ .Next.RelPermalink }}">{{ .Next.Title  }}</a>
                     </div>
                   {{ end }}
                 </div>
             {{ end }}
           </aside>
-
 
           <aside id="comments">
           {{ if eq .Params.showcomment "true" }}
