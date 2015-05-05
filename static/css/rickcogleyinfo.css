@@ -580,7 +580,7 @@ nav#TableOfContents li {
     border-radius: 5px;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
-    line-height:1.1;
+    line-height:1.2rem;
     font-weight: 100;
 }
 .contactcard a {
@@ -589,10 +589,24 @@ nav#TableOfContents li {
 .contactcard em {
     font-weight: 400;
 }
+.contactcard h3 {
+    color: white;
+    margin-top: 0.8rem;
+    margin-bottom: 1.1rem;
+    letter-spacing: 0.15rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 .contactcardphoto {
-    border: solid 4px green;
+    border: solid 4px #679A06;
     border-radius: 40px;
     overflow: hidden;
+    margin-top: 0.8rem;
+    margin-right: 1rem;
+    margin-left: 0.2rem;
+}
+.contactcardbadge {
+    float: right;
     margin-right: 1rem;
 }
 
