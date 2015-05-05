@@ -15,6 +15,12 @@ tags:
 title: License
 topics:
 - Culture
+menu:
+  footer:
+    Name: "License"
+    Weight: -10
+    Identifier: "license"
+    Url: "/license"
 ---
 
 ## Text Content License

@@ -137,11 +137,4 @@ paginate = 5
     [[menu.footer]]
         name = "My Firm eSolia Inc"
         url = "http://esolia.com"
-        
-    [[menu.footer]]
-        name = "License"
-        url = "/license"
-        
-    [[menu.footer]]
-        name = "Colophon"
-        url = "/colophon"
+

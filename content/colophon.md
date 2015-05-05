@@ -24,6 +24,12 @@ topics:
 - Web
 - Design
 - Process
+menu:
+  footer:
+    Name: "Colophon"
+    Weight: -20
+    Identifier: "colophon"
+    Url: "/colophon"
 ---
 
 
