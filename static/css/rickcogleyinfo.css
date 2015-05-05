@@ -64,7 +64,7 @@ a:focus {
     text-decoration: underline;
 }
 a.pure-button:hover, a.pure-button:focus {
-    color: inherit;
+    color: #FF009B;
     text-decoration: none;
 }
 a.pure-button-primary:hover, a.pure-button-primary:focus {

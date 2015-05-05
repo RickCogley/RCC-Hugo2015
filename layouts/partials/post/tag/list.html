@@ -1,6 +1,6 @@
 {{ with .Params.tags }}
 <div class="tags-list">
-  <span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+  <span class="dark-red">Tags</span><span class="decorative-marker">&#9879;</span>
  {{ delimit (apply (apply (sort .) "partial" "post/tag/link" ".") "chomp" ".") ", " }}
 </div>
 {{ end }}
