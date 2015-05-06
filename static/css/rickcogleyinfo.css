@@ -19,7 +19,7 @@ pre {
     padding: 0;
 }
 blockquote {
-    margin: 1rem 3rem;
+    margin: 1rem 3rem 1.75rem;
     padding: 1rem 1rem 1rem;
     border-left: 5px solid #fce27c;
     background-color: #f6ebc1; 
@@ -608,6 +608,17 @@ nav#TableOfContents li {
 .contactcardbadge {
     float: right;
     margin-right: 1rem;
+}
+
+/* |||||||| GOOGLE CUSTOM SEARCH |||||||| */
+
+.gcse-searchbox {
+    font-weight: 400;
+    font-family: 'Alegreya Sans', 'Helvetica', 'Arial', sans-serif;
+    color: white;
+}
+.gsc-clear-button {
+    display: none;
 }
 
 /* Buttons */
