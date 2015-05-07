@@ -5,6 +5,7 @@ authortwitter: https://twitter.com/rickcogley
 date: 1966-01-01T17:24:37+09:00
 description: Rick Cogley's bio page.
 draft: false
+seopagetype: "aboutpage"
 showauthor: "true"
 showcomment: "false"
 showdate: "false"
@@ -67,7 +68,7 @@ menu:
       "http://500px.com/rickcogley",
       "http://flickr.com/rickcogley/",
       "https://instagram.com/rickcogley/",
-      "http://www.youtube.com/user/rickcogley?sub_confirmation=1",      
+      "http://www.youtube.com/user/rickcogley?sub_confirmation=1",
       "https://vimeo.com/rickcogley",
       "https://github.com/RickCogley",
       "https://www.pinterest.com/rickcogley/",
@@ -124,7 +125,8 @@ See below for my [Contact Information](#contactinfo).
 My firm is called "[eSolia Inc.](http://www.esolia.com)", and we specialize in multi-lingual IT management and support services. You can think of us as a "virtual IT department" for multinational firms entering or already in Japan, who want someone to help navigate and negotiate here. We stand on the side of our clients, making the most difficult projects succeed.
 
 ### Project Success
-In my professional career so far, I was a charter member, co-owner and the CIO of PTS, a professional IT training and IT services firm. 
+In my professional career so far, I've been a coder, a network admin, a linux admin, a trainer, an English teacher, a technical translator (Japanese to English), a sales rep and a buyer, all working for companies I didn't own. Then in the 1990's, I was a charter member, co-owner and the CIO of PTS, a professional IT training and IT services firm, where I also provided extensive training at and consulting for IT dept's in Japan, while running the IT ops. Since 1999, I've been building [eSolia](http://www.esolia.com), where I'm acting as part owner-manager, and part practitioner. 
+
 <blockquote class="right">You've got huge power right at your fingertips, so create and share more than you consume.</blockquote>
 <p>I’ve led large projects including Mobil’s standard managed environment Japan localization effort, Boston Scientific Japan’s IT re-structuring for SAP R/3, project management training development and execution for UBS Japan IT, Ocular Sciences Japan and CooperVision Japan’s ERP, EDI, and SOX compliance efforts, Cook Medical Japan’s IT infrastructure and ERP rollouts, Sullivan Cromwell's Tokyo office IT infrastructure refresh, amongst others. Lately, I've been focused on eSolia's rock-solid cloud database "PROdb", and building websites for clients. </p>
 

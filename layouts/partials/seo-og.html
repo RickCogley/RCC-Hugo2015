@@ -1,4 +1,4 @@
-{{ "<!-- ENTERING partial og.html -->" | safeHTML }}
+{{ "<!-- ENTERING partial seo-og.html -->" | safeHTML }}
 <meta property="og:title" content="{{ if .Params.ogtitle }}{{ .Params.ogtitle }}{{ else }}{{ .Title }}{{ end }}" />
 <meta property="og:description" content="{{ if .Params.ogdescription }}{{ .Params.ogdescription }}{{ else }}{{ .Description }}{{ end }}" />
 <meta property="og:type" content="website" />
@@ -7,4 +7,4 @@
 {{ if .Params.ogimage }}
 <meta property="og:image" content="{{ .Params.ogimage }}" />
 {{ end }}
-{{ "<!-- LEAVING partial og.html -->" | safeHTML }}
+{{ "<!-- LEAVING partial seo-og.html -->" | safeHTML }}
