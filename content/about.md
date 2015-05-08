@@ -16,6 +16,7 @@ showtoc: "true"
 showtotop: "true"
 slug: about
 subtitle: Biographical and Contact Info for Rick Cogley
+summary: This is the summary. 
 tags:
 - About
 - Bio
@@ -91,7 +92,7 @@ menu:
     "accountablePerson" : "Rick Cogley",
     "url" : "http://rick.cogley.info/about",
     "keywords" : [ "Rick Cogley",
-      "Japan"
+      "Japan",
       "Project Management",
       "CEO",
       "Consulting",
@@ -117,6 +118,8 @@ menu:
 I'm an experienced technology manager, a company founder and owner, avid photographer, jogger and cyclist, percussionist music lover, web developer, family man with a wonderful wife and daughters, pun-smith puzzle solver, and fluent in Japanese. 
 
 I'm from the US, but I've been in Japan since 1987, which is 28 years as of 2015 (wow). I love to help people and companies succeed here in Japan, and I'm always taking people around to see the sights. 
+
+<!--more-->
 
 See below for my [Contact Information](#contactinfo). 
 

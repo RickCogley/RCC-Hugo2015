@@ -12,6 +12,7 @@
 
   {{ partial "meta.html" . }}
   {{ partial "seo-og.html" . }}
+  {{ partial "seo-schema.html" . }}
 
   <!-- CSS -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
@@ -46,10 +47,10 @@
   
   {{if isset .Params "gallery_id" }}
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link href="{{ .Site.BaseURL }}nano/nanogallery.min.css" rel="stylesheet" type="text/css">
-    <link href="{{ .Site.BaseURL }}nano/themes/clean/light.min.css" rel="stylesheet" type="text/css">
-    <link href="{{ .Site.BaseURL }}nano/themes/clean/nanogallery_clean.min.css" rel="stylesheet" type="text/css">
-    <script  type="text/javascript" src="{{ .Site.BaseURL }}nano/jquery.nanogallery.min.js"></script>
+    <link href="{{ .Site.BaseURL }}/nano/nanogallery.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ .Site.BaseURL }}/nano/themes/clean/light.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ .Site.BaseURL }}/nano/themes/clean/nanogallery_clean.min.css" rel="stylesheet" type="text/css">
+    <script  type="text/javascript" src="{{ .Site.BaseURL }}/nano/jquery.nanogallery.min.js"></script>
   {{ end }}
 
   {{ partial "headend.html" . }}

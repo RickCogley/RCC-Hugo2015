@@ -399,12 +399,14 @@ a.post-author {
 .read-more-link a:hover, .read-more-link a:focus {
     color: #FF009B;
 }
-.read-more-slashes {
+.read-more-separator {
     font-weight: 100;
     font-family: 'Alegreya Sans', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.6rem;
     color: #FF009B;
     letter-spacing: -0.1rem;
     margin-right: 0.3rem;
+    line-height: inherit;
 }
 
 .post-description {
@@ -459,6 +461,13 @@ a.post-topic:hover {
 .content-banner-image-inline {
     float: right;
     margin: 0.5rem 0 1.5rem 2rem;
+}
+
+/* Photo */
+
+.photo-inline-right {
+    float: right;
+    margin: 0.1rem 0.1rem 0.1rem 1.1rem;
 }
 
 /* Social Sharing */
