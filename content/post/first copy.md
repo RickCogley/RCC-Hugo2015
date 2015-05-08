@@ -4,8 +4,8 @@ authorlink: /about
 authortwitter: https://twitter.com/rickcogley
 banner: https://farm5.staticflickr.com/4059/5135448447_95b026227b_o.jpg
 date: 2014-11-29T17:25:04+09:00
-description: This is the description of this post.
-draft: false
+description: This is the a nanogallery test.
+draft: "false"
 showauthor: "true"
 showcomment: "true"
 showdate: "true"
@@ -14,7 +14,7 @@ showreadingtime: "true"
 showsocialsharing: "true"
 showtoc: "true"
 showtotop: "true"
-slug: this-is-my-second-post-yo
+slug: this-is-a-gallery-test
 socialsharing: "true"
 subtitle: pithy, no?
 gallery_id: 6110990833513306977
@@ -22,7 +22,7 @@ tags:
 - Lipsum
 - Nihongo
 - 日本語だ
-title: This is my second post
+title: Gallery Test
 topics:
 - Japan
 - Popular
@@ -30,44 +30,10 @@ topics:
 
 This is the intro. 日本語日本語。Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
-# Header 1
+# Trip to xxxxxxx
 
 Ut enim ad minim veniam, _quis nostrud exercitation ullamco_ laboris nisi ut aliquip ex ea commodo consequat. 
 
 Lorem ipsum dolor **sit amet**, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-
-## Header 2
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proidents, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-
-### Header 3  
-  
-Three reasons we do this:  
-
-1. this
-1. that
-    1. another
-    1. one more
-1. the other
-
-> A blockquote don't ya know? Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-
-### What else? 
-
-And some bullets: 
-
-* asdfasdf
-* asdfasdf
-    * asdfasdf
-    * asdfasdfasdf
-* asdfasdf
-
-Now some code: 
-
-~~~
-<html>
-    <body> This HTML </body>
-</html>
-~~~
 
 

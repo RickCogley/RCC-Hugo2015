@@ -1,4 +1,4 @@
-BaseURL = "http://localhost"
+BaseURL = "http://rick3.cogley.info"
 languageCode = "en-us"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License. Some rights reserved by James R. Cogley"
 title = "Rick Cogley Central"
@@ -34,6 +34,7 @@ paginate = 5
     topicscss = "/css/topics.css"
     sidebartitle = "Rick Cogley Central"
     sidebartagline = "Don't just consume. Use the power at your fingertips to create something useful."
+    ISO8601 = "2006-01-02T15:04:05-07:00"
     
     # Metadata used to drive integrations.
     googleAuthorship = "+RickCogley"
@@ -129,7 +130,13 @@ paginate = 5
         url = "https://pinboard.in/u:rickcogley"
         identifier = "pinboard"
         weight = 11
-
+        
+    [[menu.social]]
+        pre = "<i class='fa fa-rss'></i>"
+        url = "/index.xml"
+        identifier = "rss"
+        weight = 12
+    
     [[menu.footer]]
         name = "Blog"
         url = "/post"
