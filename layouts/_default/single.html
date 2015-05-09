@@ -3,7 +3,7 @@
 <body>
     {{ if eq .Params.showtotop "true" }}
         <div id="nav-to-top">
-            <span class="decorative-marker">//</span><a href="#top">To Top</a>
+            <span class="decorative-marker">&#8984;</span><a href="#top">To Top</a>
         </div>
     {{ end }}
 
@@ -12,7 +12,7 @@
 
     {{ if .Params.banner }}
     <div class="content-banner-image pure-u-1 pure-u-md-3-4" style="{{ if .Params.bannerheight }}height: {{ .Params.bannerheight }}px;{{ end }}">
-        <img src="{{ .Params.banner }}" class="pure-img" style="{{ if .Params.bannerfill }}width: 100%;{{ end }}" />
+        <img src="{{ .Params.banner }}" class="pure-img" {{ if .Params.banneralt }}alt="{{ .Params.banneralt }}"{{ end }} style="{{ if .Params.bannerfill }}width: 100%;{{ end }}" />
     </div>
     {{ end }}
 
@@ -51,7 +51,7 @@
                 {{ end }}
             {{ if eq .Params.showauthor "true" }}
                 {{ if .Params.author }}
-                    <span class="post-author-single">By <a class="post-author" {{ if .Params.authorlink }}href="{{ .Params.authorlink }}"{{ end }} target="{{ .Params.authorlinktarget }}">{{ .Params.author }}</a></span>
+                    <span class="post-author-single">By <a class="post-author" {{ if .Params.authorlink }}href="{{ .Params.authorlink }}"{{ end }} target="_blank" rel="author">{{ .Params.author }}</a></span>
                     {{ partial "authorsocial.html" . }}
                 {{ end }}
             {{ end }}
