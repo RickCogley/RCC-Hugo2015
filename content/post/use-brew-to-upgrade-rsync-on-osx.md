@@ -3,9 +3,9 @@ author: Rick Cogley
 authorlink: /about
 authortwitter: https://twitter.com/rickcogley
 banner: https://farm5.staticflickr.com/4059/5135448447_95b026227b_o.jpg
-date: 2015-05-08T12:33:19+09:00
+banneralt: Photo of Totsuka near Totsukana, monochrome, cloudy, by Rick Cogley. 
+date: 2015-05-09T09:05:19+09:00
 publishdate: 2015-05-08T12:33:19+09:00
-createdate: 2015-05-08T12:33:19+09:00
 description: The rsync that Apple provides in OS X Yosemite is out of date, but you can easily upgrade it using the homebrew package manager - a post by Rick Cogley.
 draft: "false"
 showauthor: "true"
