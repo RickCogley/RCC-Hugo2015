@@ -2,8 +2,9 @@
 author: Rick Cogley
 authorlink: /about
 authortwitter: https://twitter.com/rickcogley
-date: 1966-01-01T17:24:37+09:00
-description: RCC site colophon
+date: 2015-05-09T22:05:19+09:00
+publishdate: 2012-01-10T09:05:19+09:00
+description: Colophon page for Rick Cogley Central site.
 draft: false
 showauthor: "true"
 showcomment: "true"
@@ -15,11 +16,32 @@ showtoc: "true"
 showtotop: "true"
 slug: colophon
 subtitle: On the shoulders of giants.
+weight: 9999
 tags:
 - Colophon
 - Attributions
+- Acknowledgements
 - Technical
+- Typography
+- Hosting
+- Semantic Markup
+- JSON-LD
+- Microdata
+- Schema.org
+- AWS
+- Route53
+- Webfaction
+- nanoGallery
+- Alegreya
+- Hugo
+- Golang
 title: Colophon
+type: colophonpage
+images:
+- /img/hugo-logo.png
+- /img/alegreya-sans.png
+- /img/webfaction-logo.png
+- /img/rick-cogley-avatar-240x240.png
 topics:
 - Web
 - Design
@@ -34,7 +56,7 @@ menu:
 
 ## History
 
-As they say, we "stand on the shoulders of giants", and this site is certainly no exception. Two previous iterations are still online [here](http://rick3.cogley.info) and [here](http://rick2.cogley.info), having been built in [Octopress 2](http://octopress.org/) (with thanks to [Paul Ser](http://about.me/paul_ser)) and [RapidWeaver](http://www.realmacsoftware.com/rapidweaver), respectively. Ancient history, but my very first blog was on [Radio Userland](http://radio.userland.com)!
+As they say, we "[stand on the shoulders of giants](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants "Wikipedia article about etymology of standing on the shoulders of giants")", and this site is certainly no exception. Two previous iterations are still online [here](http://rick3.cogley.info) and [here](http://rick2.cogley.info), having been built in [Octopress 2](http://octopress.org/) (with thanks to [Paul Ser](http://about.me/paul_ser)) and [RapidWeaver](http://www.realmacsoftware.com/rapidweaver), respectively. Ancient history, but my very first blog was on [Radio Userland](http://radio.userland.com)!
 
 ## Go Hugo
 

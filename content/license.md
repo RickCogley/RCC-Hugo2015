@@ -1,5 +1,10 @@
 ---
-date: 1966-01-01T14:24:37+09:00
+author: Rick Cogley
+authorlink: /about
+authortwitter: https://twitter.com/rickcogley
+date: 2015-05-09T22:05:19+09:00
+publishdate: 2015-05-01T22:05:19+09:00
+description: License for Rick Cogley Central site.
 draft: false
 showauthor: "true"
 showcomment: "false"
@@ -9,10 +14,22 @@ showreadingtime: "false"
 showsocialsharing: "false"
 showtoc: "false"
 showtotop: "false"
+slug: "license"
+weight: 9999
 tags:
 - CC 4.0
 - BY-SA
+- Attribution
+- Share Alike
+- Creative Commons
+- MIT
 title: License
+subtitle: Creative Commons and MIT Licenses
+type: licensepage
+images:
+- /img/cc-by-sa.png
+- /img/cc.logo.png
+- /img/rick-cogley-avatar-240x240.png
 topics:
 - Culture
 menu:
@@ -25,7 +42,9 @@ menu:
 
 ## Text Content License
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;float:right;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Unless otherwise noted, the text content on "Rick Cogley Central"</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://rick.cogley.info/about" property="cc:attributionName" rel="cc:attributionURL">James R. Cogley</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Permissions beyond the scope of this license may be available by reaching out to me via the contact info <a xmlns:cc="http://creativecommons.org/ns#" href="http://rick.cogley.info/about" rel="cc:morePermissions">http://rick.cogley.info/about</a>.
+![Creative Commons Logo](/img/cc.logo.svg)
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;float:right;" src="/img/cc-by-sa.svg" width="150px" /></a><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Unless otherwise noted, the text content on "Rick Cogley Central"</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://rick.cogley.info/about" property="cc:attributionName" rel="cc:attributionURL">James R. Cogley</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Permissions beyond the scope of this license may be available by reaching out to me via the contact info <a xmlns:cc="http://creativecommons.org/ns#" href="http://rick.cogley.info/about" rel="cc:morePermissions">http://rick.cogley.info/about</a>.
 
 ## Source License
 
