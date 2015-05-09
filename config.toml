@@ -34,7 +34,7 @@ paginate = 5
     topicscss = "/css/topics.css"
     sidebartitle = "Rick Cogley Central"
     sidebartagline = "Don't just consume. Use the power at your fingertips to create something useful."
-    ISO8601 = "2006-01-02T15:04:05-07:00"
+    ISO8601 = "2006-01-02T15:04:05JST"
     
     # Metadata used to drive integrations.
     googleAuthorship = "+RickCogley"

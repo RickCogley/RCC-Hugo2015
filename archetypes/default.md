@@ -3,6 +3,7 @@ author: Rick Cogley
 authorlink: /about
 authortwitter: https://twitter.com/rickcogley
 banner: https://farm5.staticflickr.com/4059/5135448447_95b026227b_o.jpg
+banneralt: Photo of xxxx, by Rick Cogley. 
 draft: "true"
 gallery_id: ""
 title: This Is The Title
@@ -18,7 +19,6 @@ showsocialsharing: "true"
 showtoc: "true"
 showtotop: "true"
 publishdate: 2015-05-08T12:33:19+09:00
-createdate: 2015-05-08T12:33:19+09:00
 tags:
 - one
 - two
@@ -28,8 +28,7 @@ news_keywords:
 topics:
 - Personal
 images:
-- http://static.cogley.info/img/rick-cogley-avatar-900x900.jpg
-- https://farm5.staticflickr.com/4059/5135448447_95b026227b_o.jpg
+- http://static.cogley.info/img/rick-cogley-avatar-240x240.png
 videos:
 - https://www.youtube.com/watch?v=WeON54DhMW4
 ---
