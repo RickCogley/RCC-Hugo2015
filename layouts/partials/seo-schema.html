@@ -2,10 +2,145 @@
 {{ if .IsPage }}
 {{ if eq .Type "post" }}
 <script type="application/ld+json">
-{
+{ 
     "@context" : "http://schema.org",
     "@type" : "BlogPosting",
     "articleSection" : "{{ .Section }}",
+    "name" : "{{ .Title }}",
+    "headline" : "{{ .Title }}",
+    "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
+    "inLanguage" : "en-US",
+    "license" : "/license",
+    "author" : "{{ .Params.author }}",
+    "creator" : "{{ .Params.author }}",
+    "accountablePerson" : "{{ .Params.author }}",
+    "copyrightHolder" : "{{ .Params.author }}",
+    "copyrightYear" : "{{ .Date.Format "2006" }}",
+    "datePublished": "{{ .PublishDate.Format $.Site.Params.ISO8601 }}",
+    "dateModified" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
+    "url" : "{{ .Permalink }}",
+    "wordCount" : "{{ .WordCount }}",
+    "image" : [ {{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ],
+    "keywords" : [ {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ]
+}
+</script>
+
+{{ else if eq .Type "aboutpage" }}
+<script type="application/ld+json">
+{ 
+    "@context" : "http://schema.org",
+    "@type" : "Person",
+    "name" : "Rick Cogley",
+    "image" : {
+        "@type" : "ImageObject",
+        "author" : "{{ .Params.author }}",
+        "contentLocation" : "Yokohama, Japan",
+        "contentUrl" : "/img/rick-cogley-avatar-900x900.jpg",
+        "thumbnailUrl" : "/img/rick-cogley-avatar-90x90.png"
+        "datePublished" : "2014-09-25",
+        "description" : "Photo taken by myself in Yokohama Japan.",
+        "name" : "Rick Cogley Autumn 2014"
+    },
+    "description" : "Rick Cogley: helping people in Japan since 1987. Experienced technology manager. CEO and co-owner of eSolia Inc. Jogger and cyclist. Fluent in Japanese. Family man with Japanese wife and daughters. Pun-smith puzzle solver."
+    "nationality" : "USA"
+    "jobTitle" : "CEO",
+    "telephone" : "+81-3-6273-3501",
+    "email" : "rick@cogley.info",
+    "birthDate" : "1966-01-01",
+    "birthPlace" : "Pittsburgh, PA, USA",
+    "gender" : "Male",
+    "affiliation" : {
+        "@type" : "Organization",
+        "legalName" : "eSolia Inc.",
+        "foundingDate" : "1999-07-07",
+        "email" : "info@esolia.co.jp",
+        "telephone" : "+81-3-6273-3510",
+        "fax" : "+81-3-3593-3511",
+        "logo" : "http://static.cogley.info/img/eSolia_Logo-500px.gif"  
+    },
+    "address" : {
+        "@type" : "PostalAddress",
+        "addressLocality" : "Minato-ku",
+        "addressRegion" : "Tokyo",
+        "addressCountry" : "Japan",
+        "postalCode" : "105-0003",
+        "streetAddress" : "Sawa Bldg. 6F, Nishi-Shimbashi 2-2-2"
+    },
+    "url" : "http://rick.cogley.info",
+    "sameAs" : [ "https://plus.google.com/+RickCogley",
+        "http://twitter.com/rickcogley",
+        "http://www.linkedin.com/in/rickcogley",
+        "https://www.facebook.com/rickcogley",
+        "http://500px.com/rickcogley",
+        "http://flickr.com/rickcogley/",
+        "https://instagram.com/rickcogley/",
+        "http://www.youtube.com/user/rickcogley?sub_confirmation=1",
+        "https://vimeo.com/rickcogley",
+        "https://github.com/RickCogley",
+        "https://www.pinterest.com/rickcogley/",
+        "https://pinboard.in/u:rickcogley"] 
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "AboutPage",
+    "name" : "Rick Cogley's About Page",
+    "author" : "{{ .Params.author }}",
+    "datePublished": "{{ .PublishDate.Format $.Site.Params.ISO8601 }}",
+    "dateModified" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
+    "lastReviewed" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
+    "reviewedBy" : "{{ .Params.author }}",
+    "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
+    "inLanguage" : "en-US",
+    "copyrightHolder" : "{{ .Params.author }}",
+    "copyrightYear" : "{{ .Date.Format "2006" }}",
+    "accountablePerson" : "{{ .Params.author }}",
+    "license" : "/license",
+    "url" : "{{ .Permalink }}",
+    "primaryImageOfPage" : {
+        "@type" : "ImageObject",
+        "author" : "{{ .Params.author }}",
+        "contentLocation" : "Yokohama, Japan",
+        "contentUrl" : "/img/rick-cogley-avatar-900x900.jpg",
+        "thumbnailUrl" : "/img/rick-cogley-avatar-90x90.png"
+        "datePublished" : "2014-09-25",
+        "description" : "Photo taken by myself in Yokohama Japan.",
+        "name" : "Rick Cogley Autumn 2014"
+    },
+    "keywords" : [ {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ]
+}
+</script>
+
+{{ else if eq .Type "colophonpage" }}
+<script type="application/ld+json">
+{ 
+    "@context" : "http://schema.org",
+    "@type" : "WebPage",
+    "name" : "{{ .Title }}",
+    "headline" : "{{ .Title }}",
+    "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
+    "inLanguage" : "en-US",
+    "author" : "{{ .Params.author }}",
+    "creator" : "{{ .Params.author }}",
+    "accountablePerson" : "{{ .Params.author }}",
+    "copyrightHolder" : "{{ .Params.author }}",
+    "copyrightYear" : "{{ .Date.Format "2006" }}",
+    "license" : "/license",
+    "datePublished": "{{ .PublishDate.Format $.Site.Params.ISO8601 }}",
+    "dateModified" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
+    "url" : "{{ .Permalink }}",
+    "wordCount" : "{{ .WordCount }}",
+    "image" : [ {{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ],
+    "keywords" : [ {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ]
+}
+</script>
+
+{{ else if eq .Type "licensepage" }}
+<script type="application/ld+json">
+{ 
+    "@context" : "http://schema.org",
+    "@type" : "WebPage",
     "name" : "{{ .Title }}",
     "headline" : "{{ .Title }}",
     "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
@@ -23,6 +158,8 @@
     "keywords" : [ {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ]
 }
 </script>
+
+
 {{ end }}
 {{ end }}
 {{ "<!-- LEAVING partial seo-schema.html -->" | safeHTML }}

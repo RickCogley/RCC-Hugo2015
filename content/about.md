@@ -2,10 +2,10 @@
 author: Rick Cogley
 authorlink: /about
 authortwitter: https://twitter.com/rickcogley
-date: 1966-01-01T17:24:37+09:00
-description: Rick Cogley's bio page.
+date: 2015-05-09T09:05:19+09:00
+publishdate: 2012-01-10T09:05:19+09:00
+description: Biographical and Contact Info for Rick Cogley.
 draft: false
-seopagetype: "aboutpage"
 showauthor: "true"
 showcomment: "false"
 showdate: "false"
@@ -16,15 +16,24 @@ showtoc: "true"
 showtotop: "true"
 slug: about
 subtitle: Biographical and Contact Info for Rick Cogley
-summary: This is the summary. 
+weight: 9999
 tags:
-- About
 - Bio
-- Me
-title: About
+- About Page
+- History
+- Hobbies
+- eSolia
+- Work
+- Play
+- Rick Cogley
+title: About Me
 topics:
 - Professional
 - Personal
+- Me
+type: aboutpage
+images:
+- /img/rick-cogley-avatar-240x240.png
 menu:
   footer:
     Name: "Bio"
@@ -32,76 +41,6 @@ menu:
     Identifier: "about"
     Url: "/about"
 ---
-
-<script type="application/ld+json">
-{ "@context" : "http://schema.org",
-  "@type" : "Person",
-  "name" : "Rick Cogley",
-  "image" : "http://static.cogley.info/img/rick-cogley-avatar-900x900.jpg",
-  "description" : "Helping people in Japan since 1987. Experienced technology manager. CEO and co-owner of eSolia Inc. Jogger and cyclist. Fluent in Japanese. Family man with Japanese wife and daughters. Pun-smith puzzle solver."
-  "nationality" : "USA"
-  "jobTitle" : "CEO",
-  "telephone" : "+81-3-6273-3501",
-  "email" : "rick@cogley.info",
-  "birthDate" : "1966-01-01",
-  "affiliation" : {
-    "@type" : "Organization",
-    "legalName" : "eSolia Inc.",
-    "foundingDate" : "1999-07-07",
-    "email" : "info@esolia.co.jp",
-    "telephone" : "+81-3-6273-3510",
-    "fax" : "+81-3-3593-3511",
-    "logo" : "http://static.cogley.info/img/eSolia_Logo-500px.gif"  
-  },
-  "address" : {
-    "@type" : "PostalAddress",
-    "addressLocality" : "Minato-ku",
-    "addressRegion" : "Tokyo",
-    "addressCountry" : "Japan",
-    "postalCode" : "105-0003",
-    "streetAddress" : "Sawa Bldg. 6F, Nishi-Shimbashi 2-2-2"
-  },
-  "url" : "http://rick.cogley.info",
-  "sameAs" : [ "https://plus.google.com/+RickCogley",
-      "http://twitter.com/rickcogley",
-      "http://www.linkedin.com/in/rickcogley",
-      "https://www.facebook.com/rickcogley",
-      "http://500px.com/rickcogley",
-      "http://flickr.com/rickcogley/",
-      "https://instagram.com/rickcogley/",
-      "http://www.youtube.com/user/rickcogley?sub_confirmation=1",
-      "https://vimeo.com/rickcogley",
-      "https://github.com/RickCogley",
-      "https://www.pinterest.com/rickcogley/",
-      "https://pinboard.in/u:rickcogley"] 
-}
-</script>
-
-<script type="application/ld+json">
-{
-    "@context" : "http://schema.org",
-    "@type" : "AboutPage",
-    "name" : "Rick Cogley's About Page",
-    "author" : "Rick Cogley",
-    "lastReviewed" : "2015-05-05",
-    "reviewedBy" : "Rick Cogley",
-    "description" : "Biographical and contact information for Rick Cogley.",
-    "inLanguage" : "en-US",
-    "copyrightHolder" : "Rick Cogley",
-    "copyrightYear" : "2015",
-    "accountablePerson" : "Rick Cogley",
-    "url" : "http://rick.cogley.info/about",
-    "keywords" : [ "Rick Cogley",
-      "Japan",
-      "Project Management",
-      "CEO",
-      "Consulting",
-      "IT",
-      "Drumming",
-      "Bio",
-      "Nihongo"]
-}
-</script>
 
 <div align="center">
     <h1>I'm Rick Cogley</h1>
