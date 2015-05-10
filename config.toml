@@ -21,7 +21,6 @@ paginate = 5
   category = "categories"
   series = "series"
 
-
 #
 # All parameters below here are optional and can be mixed and matched.
 #
