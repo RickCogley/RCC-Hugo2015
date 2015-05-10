@@ -470,6 +470,31 @@ a.post-topic:hover {
     margin: 0.1rem 0.1rem 0.1rem 1.1rem;
 }
 
+.photo-inline-left {
+    float: left;
+    margin: 0.1rem 1.1rem 0.1rem 0.1rem;
+}
+
+.photo100 {
+    width: 100px;
+}
+
+.photo200 {
+    width: 200px;
+}
+
+.photo300 {
+    width: 300px;
+}
+
+.photo400 {
+    width: 400px;
+}
+
+.photo500 {
+    width: 500px;
+}
+
 /* Social Sharing */
 .social-sharing {
     clear: left;
@@ -594,9 +619,9 @@ nav#TableOfContents li {
     padding: #{(385/640) * 100}% 0 0 0;
 }
 
-.twitter-tweet {
+blockquote.twitter-tweet {
   display: inline-block;
-  font-family: 'Alegreya Sans', 'Helvetica', 'Arial', sans-serif;
+  font-family: Times, Roboto, 'Alegreya Sans', 'Helvetica', 'Arial', sans-serif;
   font-size: 12px;
   font-weight: bold;
   line-height: 16px;
