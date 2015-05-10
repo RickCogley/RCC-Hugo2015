@@ -1,0 +1,11 @@
+{{ "<!-- ENTERING partial seo-googlenews.html -->" | safeHTML }}
+{{ if .IsPage }}
+{{ if eq .Type "post" }}
+<!-- Output news_keywords taxonomy as Google news_keywords -->
+{{ with .Params.news_keywords }}
+	<meta name="news_keywords" content="{{ range $i, $kw := first 10 . }}{{ if $i }},{{ end }}{{ $kw }}{{ end }}" />
+{{ end }}
+{{ end }}
+{{ end }}
+{{ "<!-- LEAVING partial seo-googlenews.html -->" | safeHTML }}
+

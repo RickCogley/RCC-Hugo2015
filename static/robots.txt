@@ -1,0 +1,7 @@
+---
+layout: nil
+---
+User-agent: *
+Disallow: /site-dev-notes/
+
+Sitemap: {{ site.url }}/sitemap.xml 
