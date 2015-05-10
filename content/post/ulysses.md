@@ -36,6 +36,12 @@ Lorem ipsum dolor **sit amet**, consectetur adipisicing elit, sed do eiusmod tem
 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proidents, sunt in culpa qui officia deserunt mollit anim id est laborum. 
 
+{{< tweet 597254159864238080 >}}
+
+{{< youtube ky71bv7112I >}}
+
+{{< vimeo 96794193 >}}
+
 ### Header 3  
 
 Three reasons we do this:  
