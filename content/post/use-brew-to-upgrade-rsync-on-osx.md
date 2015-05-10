@@ -2,7 +2,7 @@
 author: Rick Cogley
 authorlink: /about
 authortwitter: https://twitter.com/rickcogley
-banner: https://farm5.staticflickr.com/4059/5135448447_95b026227b_o.jpg
+banner: /img/Cogley-Banner-JR_Totsuka_Near_Totsukana-Mono2.jpg
 banneralt: Photo of Totsuka near Totsukana, monochrome, cloudy, by Rick Cogley. 
 date: 2015-05-09T09:05:19+09:00
 publishdate: 2015-05-08T12:33:19+09:00
@@ -42,7 +42,7 @@ news_keywords:
 images:
 - /img/homebrew.png
 - http://static.cogley.info/img/rick-cogley-avatar-900x900.jpg
-- https://farm5.staticflickr.com/4059/5135448447_95b026227b_o.jpg
+- /img/Cogley-Banner-JR_Totsuka_Near_Totsukana-Mono2.jpg
 videos:
 - https://www.youtube.com/watch?v=WeON54DhMW4
 ---

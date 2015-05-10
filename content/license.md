@@ -15,7 +15,7 @@ showsocialsharing: "false"
 showtoc: "false"
 showtotop: "false"
 slug: "license"
-weight: 9999
+weight: 10009
 tags:
 - CC 4.0
 - BY-SA
