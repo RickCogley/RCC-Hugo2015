@@ -20,7 +20,7 @@
     "dateModified" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
     "url" : "{{ .Permalink }}",
     "wordCount" : "{{ .WordCount }}",
-    "image" : {{ apply .Params.images "absURL" "." }}
+    "image" : [ {{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ],
     "keywords" : [ {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ]
 }
 </script>
@@ -131,7 +131,7 @@
     "dateModified" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
     "url" : "{{ .Permalink }}",
     "wordCount" : "{{ .WordCount }}",
-    "image" : {{ apply .Params.images "absURL" "." }}
+    "image" : [ {{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ],
     "keywords" : [ {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ]
 }
 </script>
@@ -154,7 +154,7 @@
     "dateModified" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
     "url" : "{{ .Permalink }}",
     "wordCount" : "{{ .WordCount }}",
-    "image" : {{ apply .Params.images "absURL" "." }}
+    "image" : [ {{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ],
     "keywords" : [ {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ]
 }
 </script>
