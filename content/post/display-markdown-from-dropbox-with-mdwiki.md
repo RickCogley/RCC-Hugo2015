@@ -25,6 +25,7 @@ description: A post on how to display markdown textfiles directly from your Drop
 topics: [Software, SysAdmin, Tips, Productivity]
 tags: [Markdown,MDWiki,Dropbox,OSS,opensource]
 draft: "false"
+aliases: /articles/2013/12/31/display-markdown-from-dropbox-with-mdwiki/
 ---
 
 _On this last day in 2013, I was thinking about how I can edit Markdown files locally and have those displayed in the easiest manner possible._
