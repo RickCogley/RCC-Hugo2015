@@ -314,19 +314,19 @@ a.post-author {
 .post li {
     line-height: 1.4rem;
     font-size: 1.2rem;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.5rem;
 }
 
 .post li ul li {
     line-height: 1.1rem;
     font-size: 1.2rem;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.3rem;
 }
 
 .post li ol li {
     line-height: 1.1rem;
     font-size: 1.2rem;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.3rem;
 }
 
 
