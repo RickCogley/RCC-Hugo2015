@@ -22,7 +22,7 @@ images:
 - /img/rick-cogley-avatar-240x240.png
 description: The Flickr May 2013 re-design is just more lipstick on a pig.
 topics: [Web, Reviews, Design]
-tags: [Flickr, Redesign, Failure, Downgrade, 1TB, Pro, Free]
+tags: [Flickr, Redesign, Failure, Downgrade, 1TB, Pro, Free, Ads]
 draft: "false"
 aliases:
 - /articles/2013/05/21/flickring-out/
