@@ -1,7 +1,8 @@
 {{ "<!-- ENTERING partial header.html -->" | safeHTML }}
 {{ partial "doctype.html" . }}
 <head>
-  <base href="{{ .Site.BaseUrl }}">
+  <!-- <base href="{{ .Site.BaseUrl }}/"> -->
+
   <title>
     {{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}
   </title>
@@ -17,9 +18,9 @@
   {{ partial "seo-googlenews.html" . }}
 
   <!-- CSS -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/rickcogleyinfo.css">
   {{ if .Site.Params.topicscss }}
   <link rel="stylesheet" type="text/css" href="{{ .Site.Params.topicscss }}">
