@@ -28,7 +28,7 @@ slug: system-uptime-and-downtime-calculations-for-slas
 aliases: /articles/2014/01/20/system-uptime-and-downtime-calculations-for-slas/
 ---
 
-_Marketing speak, when it comes to system uptime or downtime, can be  misleading. Learn some basic relationships between your "nines" of downtime to be ready._ 
+Marketing speak, when it comes to system uptime or downtime, can be  misleading. Learn some basic relationships between your "nines" of downtime to be ready.
 
 <!--more--> 
 

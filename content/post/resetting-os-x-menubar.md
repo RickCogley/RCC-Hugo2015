@@ -29,7 +29,7 @@ aliases:
 - /articles/2013/05/22/resetting-os-x-menubar/
 ---
 
-_Has your OS X menubar, Dock or Finder crashed? These very simple Terminal commands should do the trick, at least in version 10.10.3 as of 1 May 2015._
+Has your OS X menubar, Dock or Finder crashed? These very simple Terminal commands should do the trick, at least in version 10.10.3 as of 1 May 2015.
 
 <!--more--> 
 

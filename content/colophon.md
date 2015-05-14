@@ -2,7 +2,7 @@
 author: Rick Cogley
 authorlink: /about
 authortwitter: https://twitter.com/rickcogley
-date: 2015-05-09T22:05:19+09:00
+date: 2015-05-14T18:45:19+09:00
 publishdate: 2012-01-10T09:05:19+09:00
 description: Colophon page for Rick Cogley Central site.
 draft: false
@@ -35,6 +35,9 @@ tags:
 - Alegreya
 - Hugo
 - Golang
+- Humans.txt
+- Markdown
+- InstantClick
 title: Colophon
 type: colophonpage
 images:
@@ -64,7 +67,7 @@ After some steady use, I got used to the basics of git, but dealing with local R
 
 > Hugo is written for speed and performance. Great care has been taken to ensure that Hugo build time is as short as possible. We’re talking milliseconds to build your entire site for most setups.
 
-The reason it's so fast is, it's a compiled binary that you run against your folders of content in [Markdown](Markdown) format, html templates, css and javascript. Let me put it to you this way: it takes far longer to upload the site to your web space, than it does for Hugo to generate it. 
+The reason it's so fast is, it's a compiled binary that you run against your folders of content in [Markdown](http://daringfireball.net/projects/markdown/) format, html templates, css and javascript. Let me put it to you this way: it takes far longer to upload the site to your web space, than it does for Hugo to generate it. 
 
 {{< figure src="/img/hugo-logo.png" alt="Hugo Logo" width="300px" class="photo-inline-right pure-img" >}} 
 
@@ -100,7 +103,11 @@ Considering [Semantic HTML](http://en.wikipedia.org/wiki/Semantic_HTML "Semantic
 
 ## TL;DR Thanks!
 
-Anyway, looong story short, thanks to everyone. _Now to get down to the content creation!_
+{{< figure src="/img/humans-txt-large-logo2.png" alt="Humans.txt Logo" width="220px" class="photo-inline-right pure-img" >}} 
+
+I even have a [humans.txt](/humans.txt) file. [Humans.txt](http://humanstxt.org) is an attempt to standardize on a way of making a site colophon, in text format. If you [click](/humans.txt) it, you'll see some of the same information as on this page, in simple form. Anyway, looong story short, thanks to everyone. 
+
+_Now to get down to the content creation!_
 
 
 

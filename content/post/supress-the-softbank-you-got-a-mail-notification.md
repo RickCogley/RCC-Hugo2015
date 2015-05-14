@@ -23,14 +23,14 @@ images:
 description: How to suppress the irritating Softbank you-got-a-mail notification, a post by Rick Cogley.
 topics: [Japan, Technology, Tips, Gadgets, Mobile]
 tags: [Softbank, iPhone, iOS 7, Popup, Suppress, Japan]
-draft: "true"
+draft: "false"
 aliases:
 - /articles/2014/02/02/supress-the-softbank-you-got-a-mail-notification/
 ---
 <br>
 <button class="button-warning pure-button">UPDATE:</button> 
 
-_**Softbank finally came to their senses and discontinued this "you got a mail" service as of Jan 2015 anyway, so this information is not relevant.**_ 
+**Softbank finally came to their senses and discontinued this "you got a mail" service as of Jan 2015 anyway, so this information is not relevant.**
 
 <!--more--> 
 

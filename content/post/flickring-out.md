@@ -28,7 +28,7 @@ aliases:
 - /articles/2013/05/21/flickring-out/
 ---
 
-_Flickr upgraded their site and offerings today, and I cannot say I'm impressed. Looks like free users are worth more to Yahoo than the long-term paying ones._ 
+Flickr upgraded their site and offerings today, and I cannot say I'm impressed. Looks like free users are worth more to Yahoo than the long-term paying ones.
 
 <!--more--> 
 

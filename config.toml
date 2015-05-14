@@ -5,7 +5,6 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
 title = "Rick Cogley Central"
 disqusShortname = "rickcogley" # Optional, enable Disqus integration
 MetaDataFormat = "yaml"
-theme = "redlounge"
 paginate = 5
 
 [author]
