@@ -18,7 +18,7 @@
   {{ partial "seo-googlenews.html" . }}
 
   <!-- CSS -->
-  <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/base-min.cs">
+  <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/base-min.css">
   <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/rickcogleyinfo.css">
@@ -34,6 +34,7 @@
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
   <![endif]-->
+  <link href="/css/prism.css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:100,400,500,100italic,400italic,500italic|Alegreya:400,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
   <!-- Icons -->
@@ -56,8 +57,7 @@
   <meta name="msapplication-TileImage" content="/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- Syntax highlight, lightbox, gallery -->
-  {{ partial "syntaxhighlight.html" . }}
+  <!-- lightbox, gallery -->
   {{ if .Params.lightbox }}
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/lightbox.css">
@@ -69,7 +69,7 @@
     <link href="{{ .Site.BaseURL }}/nano/nanogallery.min.css" rel="stylesheet" type="text/css">
     <link href="{{ .Site.BaseURL }}/nano/themes/clean/light.min.css" rel="stylesheet" type="text/css">
     <link href="{{ .Site.BaseURL }}/nano/themes/clean/nanogallery_clean.min.css" rel="stylesheet" type="text/css">
-    <script  type="text/javascript" src="{{ .Site.BaseURL }}/nano/jquery.nanogallery.min.js"></script>
+    <script  type="text/javascript" src="{{ .Site.BaseURL }}/nano/jquery.nanogallery.min.js" data-no-instant></script>
   {{ end }}
 
   {{ partial "headend.html" . }}

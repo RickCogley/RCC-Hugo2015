@@ -6,7 +6,7 @@ date: 2015-01-12T09:33:19+09:00
 author: Rick Cogley
 authorlink: /about
 authortwitter: https://twitter.com/rickcogley
-banner: /img/Cogley-Banner-Green-LEDs-1170x350-004-2mono.JPG
+banner: /img/Cogley-Banner-Green-LEDs-1170x350-004-mono.jpg
 banneralt: Photo of JR Green Car Suica Lights, by Rick Cogley.
 showauthor: "true"
 showcomment: "true"
@@ -19,7 +19,7 @@ showtotop: "true"
 subtitle: killall -KILL, baby
 images:
 - /img/Cogley-Post-Mac-Force-Quit-Finder.png
-- /img/Cogley-Banner-Green-LEDs-1170x350-004-2mono.JPG
+- /img/Cogley-Banner-Green-LEDs-1170x350-004-mono.jpg
 - /img/rick-cogley-avatar-240x240.png
 description: OS X Menubar, Dock or Finder crashed? Read this post by Rick Cogley on how to reset it.
 topics: [Software, Tips, SysAdmin]
@@ -39,19 +39,19 @@ If you find yourself with a hung Menu-bar, Finder or Dock, just start up Termina
 
 ### Menubar restart
 
-~~~shell
+~~~bash
 myuser@myhost % killall -KILL SystemUIServer
 ~~~
 
 ### Dock or Spaces restart
 
-~~~shell
+~~~bash
 myuser@myhost % killall -KILL Dock
 ~~~
 
 ### Finder restart
 
-~~~shell
+~~~bash
 myuser@myhost % killall -KILL Finder
 ~~~
 

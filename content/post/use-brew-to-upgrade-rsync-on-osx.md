@@ -55,7 +55,7 @@ The rsync that Apple provides in OS X Yosemite is out of date, as of May 2015. T
 
 Confirm your rsync version like this: 
 
-~~~shell
+~~~bash
 rsync --version
 ~~~
 
@@ -69,14 +69,14 @@ I myself have standardized on [homebrew](http://brew.sh "Homebrew or brew home p
 
 There's a repository for "[system duplicate formulae](https://github.com/Homebrew/homebrew-dupes)", or, formulae to install programs which are already provided in OS X by default, or, at least via installing X Code. To use one of these apps, you need to ``tap`` the repository, then do the install as normal. 
 
-~~~shell
+~~~bash
 brew tap homebrew/dupes
 brew install rsync
 ~~~
 
 Or, you can do: 
 
-~~~shell
+~~~bash
 brew install homebrew/dupes/rsync
 ~~~
 
