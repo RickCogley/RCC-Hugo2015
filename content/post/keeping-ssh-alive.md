@@ -38,7 +38,7 @@ If you do any system admin work at all, you'll know this problem: the host you c
 
 The fix is simple. You just add some keepalive packet settings to your _local_ ssh's config file, located in ``~/.ssh/config``. 
 
-~~~apache
+~~~bash
 Host *
     ServerAliveInterval 30
     ServerAliveCountMax 2

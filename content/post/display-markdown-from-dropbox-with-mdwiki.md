@@ -72,23 +72,22 @@ Any Markdown-formatted text file will do for this experiment, so let's start by 
 That's a pretty simple file, so here's a file that uses more Markdown features:  
   
 [http://dl.dropboxusercontent.com/u/5987939/!Shared/mdwiki.html#!Test.md](http://dl.dropboxusercontent.com/u/5987939/!Shared/mdwiki.html#!Test.md)  
-  
+
 ~~~markdown
-# Online Repository Managers
+# Header
+Online Repository Managers:
 
 ## GitHub
-[http://github.com](http://github.com)  
-GIT only  
-10 private repo, 25$ / mon, no hard disk limit.  
+* URL: [http://github.com](http://github.com)  
+* Repo type: GIT only  
+* 10 private repo, 25$ / mon, no hard disk limit.  
 
 ## Beanstalk  
-[http://beanstalkapp.com](http://beanstalkapp.com)    
-SVN and GIT  
-Has deployment  
-Gold plan, $50 / mon, 12GB, 40 user, 10 server / repo  
-S3 backup  
-...  
-![Rick Photo](http://dl.dropboxusercontent.com/u/5987939/!Shared/Test.JPG)  
+* URL: [http://beanstalkapp.com](http://beanstalkapp.com)    
+* Repo type: SVN and GIT  
+* Has deployment  
+* Gold plan, $50 / mon, 12GB, 40 user, 10 server / repo  
+* S3 backup   
 ~~~
   
 Just look into Markdown syntax, and you'll be able to figure it out: The ``#`` and ``##`` create h1 and h2 tags, the ``[Display Text](http://www.somesite.com)`` displays a link, and putting a ``!`` in front of a link displays an image, assuming the URL points to an image file. 
