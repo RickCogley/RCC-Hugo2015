@@ -56,7 +56,7 @@ I put together the handy spreadsheet below, to show the number relationships bet
 
 <div class="figure-center">
 <figure>
-<iframe width='560px' height='410px' frameborder='1px' allowtransparency='true' scrolling='no' src='https://docs.google.com/spreadsheet/pub?key=0AoreQ_hTvc2XdGQxZURCdU9YTUJheVVwd1h5MGZhTUE&single=true&gid=0&range=A1%3AH24&output=html'></iframe>
+<iframe width='580px' height='480px' frameborder='1px' allowtransparency='true' scrolling='no' src='https://docs.google.com/spreadsheet/pub?key=0AoreQ_hTvc2XdGQxZURCdU9YTUJheVVwd1h5MGZhTUE&single=true&gid=0&range=A1%3AH24&output=html'></iframe>
 <figcaption><em>Figure</em>: System Downtimes as Percentages and Durations, by Rick Cogley</figcaption>
 </figure>
 </div>

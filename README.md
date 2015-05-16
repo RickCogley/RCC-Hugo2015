@@ -1,6 +1,6 @@
 # Rick Cogley Central
 
-Hi, this is the repository for my "Rick Cogley Central" site, which is built on the blazing fast static site generator called "[Hugo](http://gohugo.io)". Hugo's compiled, so once you have the binary in your system path, you can use it to generate your site in seconds, viewing a local copy in real time. You create content in markdown using toml or yaml frontmatter, templates in html using some codes which Hugo will substitute when building, and static assets like css, javascript or images. The project provides compiled binaries, and if you're on a Mac, it's easy to install via homebrew, as `brew install hugo` for the stable, or `brew install hugo --HEAD` for the dev version.
+Hi, this is the repository for my "[Rick Cogley Central](http://rick.cogley.info)" site, which is built on the blazing fast static site generator called "[Hugo](http://gohugo.io)". Hugo's compiled, so once you have the binary in your system path, you can use it to generate your site in seconds, viewing a local copy in real time. You create content in markdown using toml or yaml frontmatter, templates in html using some codes which Hugo will substitute when building, and static assets like css, javascript or images. The project provides compiled binaries, and if you're on a Mac, it's easy to install via homebrew, as `brew install hugo` for the stable, or `brew install hugo --HEAD` for the dev version.
 
 ## Acknowledgements
 
