@@ -2,15 +2,15 @@
 author: Rick Cogley
 authorlink: /about
 authortwitter: https://twitter.com/rickcogley
-banner: /img/Cogley-Banner-JR_Shimbashi_Controls2.JPG
+banner: /img/Cogley-Banner-JR_Shimbashi_Controls2-mono.jpg
 banneralt: Photo of a Japan Rail control board at Shimbashi, with blinking lights. By Rick Cogley.
 date: 2008-01-09T15:48:15+09:00
 publishdate: 2008-01-09T15:48:15+09:00
 description: On the famous blinkenlights sign, a post by Rick Cogley.
 draft: "false"
 images:
-- /img/Cogley-Banner-JR_Shimbashi_Controls2.JPG
-- http://static.cogley.info/img/rick-cogley-avatar-240x240.png
+- /img/Cogley-Banner-JR_Shimbashi_Controls2-mono.jpg
+- /img/rick-cogley-avatar-240x240.png
 news_keywords:
 - blinkenlights
 - stanford
