@@ -67,7 +67,9 @@ You'll see that OSX provides version 2.2 or something like that, whereas rsync i
 
 I myself have standardized on [homebrew](http://brew.sh "Homebrew or brew home page"), and upgrading could not be simpler. 
 
-There's a repository for "[system duplicate formulae](https://github.com/Homebrew/homebrew-dupes)", or, formulae to install programs which are already provided in OS X by default, or, at least via installing X Code. To use one of these apps, you need to ``tap`` the repository, then do the install as normal. 
+There's a repository for "[system duplicate formulae](https://github.com/Homebrew/homebrew-dupes)", or, formulae to install programs which are already provided in OS X by default, or, at least via installing X Code. 
+
+To use one of these apps, you need to ``tap`` the repository, then do the install as normal. 
 
 ~~~bash
 brew tap homebrew/dupes
