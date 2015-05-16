@@ -2,8 +2,8 @@
 author: Rick Cogley
 authorlink: /about
 authortwitter: https://twitter.com/rickcogley
-banner: https://farm5.staticflickr.com/4059/5135448447_95b026227b_o.jpg
-banneralt: Photo of xxxx, by Rick Cogley. 
+banner: /img/Cogley-Banner-JR_Totsuka_Near_Totsukana-Mono2.jpg
+banneralt: Photo of Totsuka West, after Totsukana opened, by Rick Cogley. 
 draft: "true"
 gallery_id: ""
 title: This Is The Title
@@ -28,7 +28,7 @@ news_keywords:
 topics:
 - Personal
 images:
-- http://static.cogley.info/img/rick-cogley-avatar-240x240.png
+- /img/rick-cogley-avatar-240x240.png
 videos:
 - https://www.youtube.com/watch?v=WeON54DhMW4
 ---
