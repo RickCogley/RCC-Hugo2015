@@ -40,6 +40,8 @@ Open source projects are a wonderful opportunity to collaborate with others on c
 
 Communities, sometimes vibrant, sometimes quiet. Contribute how you can. 
 
+Open source projects are true social media. 
+
 Its culture is made up of the whole community, from the leads to the casual participants. 
 
 Attitude. Read the damn docs.  
@@ -49,6 +51,10 @@ Draw.io. I'll be sure to refund.
 Some people have expectations when they join. But you should be polite and offer something. Why demand? 
 
 Devs should not assume people have nothing to offer. Just because a person cannot code, does not mean they cannot do something really good for a community. 
+
+Does the ADD cause it? 
+
+Manners! What a concept!
 
 Don't be a dick. 
 
