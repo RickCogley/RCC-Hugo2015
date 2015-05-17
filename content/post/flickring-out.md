@@ -6,7 +6,7 @@ date: 2013-05-21T12:33:19+09:00
 author: Rick Cogley
 authorlink: /about
 authortwitter: https://twitter.com/rickcogley
-banner: /img/Cogley-Banner-Tokyo-Night-Lights-mono.JPG
+banner: /img/Cogley-Banner-Tokyo-Night-Lights-mono.jpg
 banneralt: Photo of holiday lights at Shinjuku Southern Terrace, by Rick Cogley.
 showauthor: "true"
 showcomment: "true"
@@ -18,7 +18,7 @@ showtoc: "true"
 showtotop: "true"
 subtitle: Free is far more expensive than Pro
 images:
-- /img/Cogley-Banner-Tokyo-Night-Lights-mono.JPG
+- /img/Cogley-Banner-Tokyo-Night-Lights-mono.jpg
 - /img/rick-cogley-avatar-240x240.png
 description: The Flickr May 2013 re-design is just more lipstick on a pig.
 topics: [Web, Reviews, Design]
