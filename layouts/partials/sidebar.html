@@ -19,10 +19,13 @@
     <div class="social-buttons">
       {{ range .Site.Menus.social.ByWeight }}
         {{ if .URL }}
-        <a href="{{ .URL }}" target="_blank">{{ .Pre }}</a>
+          {{ if eq .Identifier "rss"}}
+          <a href="{{ .URL }}" type="application/rss+xml" target="_blank">{{ .Pre }}</a>
+          {{ else }}
+          <a href="{{ .URL }}" target="_blank">{{ .Pre }}</a>
+          {{ end }}
         {{ end }}
       {{ end }}
-      
     </div>
     {{ end }}
     <br>
