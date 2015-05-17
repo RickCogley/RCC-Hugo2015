@@ -1,14 +1,20 @@
 {{ "<!-- ENTERING partial gallery.html -->" | safeHTML }}
-{{if isset .Params "gallery_id" }}
+
+<!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+<link href="/nano/nanogallery.min.css" rel="stylesheet" type="text/css">
+<link href="/nano/themes/clean/nanogallery_clean.min.css" rel="stylesheet" type="text/css">
+<link href="/nano/themes/clean/nanogallery_clean.min.css" rel="stylesheet" type="text/css">
+<script  type="text/javascript" src="/nano/jquery.nanogallery.min.js"></script>
+
 <h2>Gallery</h2>
 <div class="gallery" id="nanoGallery2"></div>
 <script type="text/javascript">
 $(document).ready(function () {
     $("#nanoGallery2").nanoGallery({
-      
+
       thumbnailWidth: 'auto',
       thumbnailHeight: 250,
-      
+
       userID: 'rick.cogley@gmail.com', kind:'picasa',
       album: '{{ .Params.gallery_id }}',
       colorScheme: 'none',
@@ -22,5 +28,4 @@ $(document).ready(function () {
   });
 
 </script>
-{{ end }}
 {{ "<!-- LEAVING partial gallery.html -->" | safeHTML }}

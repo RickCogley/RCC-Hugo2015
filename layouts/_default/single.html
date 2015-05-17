@@ -78,7 +78,9 @@
 
             {{ .Content }}
 
+            {{if isset .Params "gallery_id" }}
             {{ partial "gallery.html" . }}
+            {{ end }}
 
 
          <aside id="meta">
