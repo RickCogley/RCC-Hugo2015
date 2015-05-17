@@ -5,7 +5,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
 title = "Rick Cogley Central"
 disqusShortname = "rickcogley" # Optional, enable Disqus integration
 MetaDataFormat = "yaml"
-paginate = 5
+paginate = 7
 
 [author]
     name = "Rick Cogley"
@@ -29,11 +29,10 @@ paginate = 5
     defaultKeywords = "cogley,post"
     highlightStyle = "solarized_dark"
     thumbnail = "/img/rick-cogley-avatar-90x90.png"
-    topicscss = "/css/topics.css"
     sidebartitle = "Rick Cogley Central"
     sidebartagline = "Don't just consume. Use the power at your fingertips to create something useful."
     ISO8601 = "2006-01-02T15:04:05JST"
-    
+
     # Metadata used to drive integrations.
     googleAuthorship = "+RickCogley"
     googleAnalytics = "UA-1040233-5"
@@ -45,13 +44,13 @@ paginate = 5
     authorgoogleplus = "https://plus.google.com/+RickCogley/posts"
     authorfacebook = "https://www.facebook.com/rickcogley"
     authortwitter = "https://twitter.com/rickcogley"
-    
+
     # Blurbs to pull onto taxo pages
     postsblurb = "Wherein we catalog a most excellent list of pithy-yet-informative articles on tech, productivity, Japan, business and whatever else strikes our fancy. Please link the articles in your own postings."
     topicsblurb = "These are the high-level topics discussed on this site. Please link the articles in your own postings."
     tagsblurb = "These are the tags used to focus attention on the content of this site. Please link the articles in your own postings."
-    
-    
+
+
     # Try a comment block
     headercommentblock = "\u003c\u0021\u002d\u002d\n              \u005f\u005f\u005f\u005f\u005f                    \u005f\u005f\u005f\u005f\u005f                    \u005f\u005f\u005f\u005f\u005f          \n             \u002f\u005c    \u005c                  \u002f\u005c    \u005c                  \u002f\u005c    \u005c         \n            \u002f\u003a\u003a\u005c    \u005c                \u002f\u003a\u003a\u005c    \u005c                \u002f\u003a\u003a\u005c    \u005c        \n            \u005c\u003a\u003a\u003a\u005c    \u005c              \u002f\u003a\u003a\u003a\u003a\u005c    \u005c              \u002f\u003a\u003a\u003a\u003a\u005c    \u005c       \n             \u005c\u003a\u003a\u003a\u005c    \u005c            \u002f\u003a\u003a\u003a\u003a\u003a\u003a\u005c    \u005c            \u002f\u003a\u003a\u003a\u003a\u003a\u003a\u005c    \u005c      \n              \u005c\u003a\u003a\u003a\u005c    \u005c          \u002f\u003a\u003a\u003a\u002f\u005c\u003a\u003a\u003a\u005c    \u005c          \u002f\u003a\u003a\u003a\u002f\u005c\u003a\u003a\u003a\u005c    \u005c     \n               \u005c\u003a\u003a\u003a\u005c    \u005c        \u002f\u003a\u003a\u003a\u002f\u005f\u005f\u005c\u003a\u003a\u003a\u005c    \u005c        \u002f\u003a\u003a\u003a\u002f  \u005c\u003a\u003a\u003a\u005c    \u005c    \n               \u002f\u003a\u003a\u003a\u003a\u005c    \u005c      \u002f\u003a\u003a\u003a\u003a\u005c   \u005c\u003a\u003a\u003a\u005c    \u005c      \u002f\u003a\u003a\u003a\u002f    \u005c\u003a\u003a\u003a\u005c    \u005c   \n      \u005f\u005f\u005f\u005f\u005f   \u002f\u003a\u003a\u003a\u003a\u003a\u003a\u005c    \u005c    \u002f\u003a\u003a\u003a\u003a\u003a\u003a\u005c   \u005c\u003a\u003a\u003a\u005c    \u005c    \u002f\u003a\u003a\u003a\u002f    \u002f \u005c\u003a\u003a\u003a\u005c    \u005c  \n     \u002f\u005c    \u005c \u002f\u003a\u003a\u003a\u002f\u005c\u003a\u003a\u003a\u005c    \u005c  \u002f\u003a\u003a\u003a\u002f\u005c\u003a\u003a\u003a\u005c   \u005c\u003a\u003a\u003a\u005c\u005f\u005f\u005f\u005f\u005c  \u002f\u003a\u003a\u003a\u002f    \u002f   \u005c\u003a\u003a\u003a\u005c    \u005c \n    \u002f\u003a\u003a\u005c    \u002f\u003a\u003a\u003a\u002f  \u005c\u003a\u003a\u003a\u005c\u005f\u005f\u005f\u005f\u005c\u002f\u003a\u003a\u003a\u002f  \u005c\u003a\u003a\u003a\u005c   \u005c\u003a\u003a\u003a\u007c    \u007c\u002f\u003a\u003a\u003a\u002f\u005f\u005f\u005f\u005f\u002f     \u005c\u003a\u003a\u003a\u005c\u005f\u005f\u005f\u005f\u005c\n    \u005c\u003a\u003a\u003a\u005c  \u002f\u003a\u003a\u003a\u002f    \u005c\u003a\u003a\u002f    \u002f\u005c\u003a\u003a\u002f   \u007c\u003a\u003a\u003a\u003a\u005c  \u002f\u003a\u003a\u003a\u007c\u005f\u005f\u005f\u005f\u007c\u005c\u003a\u003a\u003a\u005c    \u005c      \u005c\u003a\u003a\u002f    \u002f\n     \u005c\u003a\u003a\u003a\u005c\u002f\u003a\u003a\u003a\u002f    \u002f \u005c\u002f\u005f\u005f\u005f\u005f\u002f  \u005c\u002f\u005f\u005f\u005f\u005f\u007c\u003a\u003a\u003a\u003a\u003a\u005c\u002f\u003a\u003a\u003a\u002f    \u002f  \u005c\u003a\u003a\u003a\u005c    \u005c      \u005c\u002f\u005f\u005f\u005f\u005f\u002f \n      \u005c\u003a\u003a\u003a\u003a\u003a\u003a\u002f    \u002f                 \u007c\u003a\u003a\u003a\u003a\u003a\u003a\u003a\u003a\u003a\u002f    \u002f    \u005c\u003a\u003a\u003a\u005c    \u005c             \n       \u005c\u003a\u003a\u003a\u003a\u002f    \u002f                  \u007c\u003a\u003a\u007c\u005c\u003a\u003a\u003a\u003a\u002f    \u002f      \u005c\u003a\u003a\u003a\u005c    \u005c            \n        \u005c\u003a\u003a\u002f    \u002f                   \u007c\u003a\u003a\u007c \u005c\u003a\u003a\u002f\u005f\u005f\u005f\u005f\u002f        \u005c\u003a\u003a\u003a\u005c    \u005c           \n         \u005c\u002f\u005f\u005f\u005f\u005f\u002f                    \u007c\u003a\u003a\u007c  \u007e\u007c               \u005c\u003a\u003a\u003a\u005c    \u005c          \n                                    \u007c\u003a\u003a\u007c   \u007c                \u005c\u003a\u003a\u003a\u005c    \u005c         \n                                    \u005c\u003a\u003a\u007c   \u007c                 \u005c\u003a\u003a\u003a\u005c\u005f\u005f\u005f\u005f\u005c        \n                                     \u005c\u003a\u007c   \u007c                  \u005c\u003a\u003a\u002f    \u002f        \n                                      \u005c\u007c\u005f\u005f\u005f\u007c                   \u005c\u002f\u005f\u005f\u005f\u005f\u002f         \n                                                                               \n\u002d\u002d\u003e\n"
 
@@ -61,7 +60,7 @@ paginate = 5
 
     [[menu.main]]
         name = "About"
-        url = "/about"    
+        url = "/about"
 
     [[menu.social]]
         pre = "<i class='fa fa-twitter'></i>"
@@ -85,12 +84,12 @@ paginate = 5
         pre = "<i class='fa fa-linkedin-square'></i>"
         url = "http://www.linkedin.com/in/rickcogley"
         identifier = "linkedin"
-        weight = 4 
+        weight = 4
 
     [[menu.social]]
         pre = "<i class='fa fa-camera-retro'></i>"
         url = "http://500px.com/rickcogley"
-        identifier = "500px" 
+        identifier = "500px"
         weight = 5
 
     [[menu.social]]
@@ -102,14 +101,14 @@ paginate = 5
     [[menu.social]]
         pre = "<i class='fa fa-vimeo-square'></i>"
         url = "https://vimeo.com/rickcogley"
-        identifier = "vimeo" 
+        identifier = "vimeo"
         weight = 7
 
     [[menu.social]]
         pre = "<i class='fa fa-youtube'></i>"
         url = "http://www.youtube.com/user/rickcogley?sub_confirmation=1"
         identifier = "youtube"
-        weight = 8  
+        weight = 8
 
     [[menu.social]]
         pre = "<i class='fa fa-adn'></i>"
@@ -128,13 +127,13 @@ paginate = 5
         url = "https://pinboard.in/u:rickcogley"
         identifier = "pinboard"
         weight = 11
-        
+
     [[menu.social]]
         pre = "<i class='fa fa-rss'></i>"
         url = "/index.xml"
         identifier = "rss"
         weight = 12
-    
+
     [[menu.footer]]
         name = "Blog"
         url = "/post"
