@@ -22,27 +22,27 @@ blockquote {
     margin: 1rem 3rem 1.75rem;
     padding: 1rem 1rem 1rem;
     border-left: 5px solid #fce27c;
-    background-color: #f6ebc1; 
+    background-color: #f6ebc1;
     font-weight: 100;
-    font-size: 2.0rem; 
+    font-size: 2.0rem;
 }
 
-blockquote.left { 
-    width: 200px; 
-    margin: .5rem 1rem 1rem 1rem; 
+blockquote.left {
+    width: 200px;
+    margin: .5rem 1rem 1rem 1rem;
     padding: .5rem .9rem .5rem .5rem;
-    font-size: 1.35rem; 
-    text-align: center; 
-    float: left; 
+    font-size: 1.35rem;
+    text-align: center;
+    float: left;
 }
 
-blockquote.right { 
-    width: 200px; 
-    margin: .5rem 1rem 1rem 1rem; 
+blockquote.right {
+    width: 200px;
+    margin: .5rem 1rem 1rem 1rem;
     padding: .5rem .9rem .5rem .5rem;
-    font-size: 1.35rem; 
-    text-align: center; 
-    float: right; 
+    font-size: 1.35rem;
+    text-align: center;
+    float: right;
 }
 
 p {
@@ -114,7 +114,7 @@ h1 {
 h1.brand-title {
     font-family: 'Alegreya', serif;
     font-weight: 700;
-    font-style: italic; 
+    font-style: italic;
     padding-top: 1rem;
     font-size: 3rem;
     margin-bottom: 0.25rem;
@@ -134,7 +134,7 @@ h2.brand-tagline {
 .sidebar {
     /* background-image: url(img/Cogley-Sidebar-Tile-Dark-01.png); */
     /* background-repeat: repeat; */
-    background: #00256F; 
+    background: #00256F;
     background:
         linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
         linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
@@ -165,7 +165,7 @@ h2.brand-tagline {
 }
 .nav-item {
     display: inline-block;
-    *display: inline;
+    /* display: inline; */
     zoom: 1;
 }
 .nav-item a {
@@ -258,7 +258,7 @@ h1.post-title a {
     text-decoration: none;
     color: #111111;
     font-weight: 700;
-    font-style: italic; 
+    font-style: italic;
 }
 .post-date {
     color: #FF009B;
@@ -449,7 +449,7 @@ a.post-topic:hover {
 
 .post blockquote p {
     margin: 0;
-    font-size: 2.0rem; 
+    font-size: 2.0rem;
 }
 
 /* Banner Image */
@@ -480,13 +480,11 @@ a.post-topic:hover {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 10rem
     margin: 0.1rem 0.1rem 0.1rem 0.1rem;
 }
 
 .iframe-center {
     text-align: center;
-
 }
 
 .photo100 {
@@ -629,6 +627,7 @@ nav#TableOfContents li {
 .slideshare {
     padding: #{(487/599) * 100}% 0 0 0;
 }
+
 .video-player {
     padding: #{(385/640) * 100}% 0 0 0;
 }
@@ -648,20 +647,20 @@ blockquote.twitter-tweet {
   padding: 0 16px 16px 16px;
   max-width: 468px;
 }
- 
+
 blockquote.twitter-tweet p {
   font-size: 16px;
   font-weight: normal;
   line-height: 20px;
 }
- 
+
 blockquote.twitter-tweet a {
   color: inherit;
   font-weight: normal;
   text-decoration: none;
   outline: 0 none;
 }
- 
+
 blockquote.twitter-tweet a:hover,
 blockquote.twitter-tweet a:focus {
   text-decoration: underline;
@@ -711,7 +710,6 @@ blockquote.twitter-tweet a:focus {
 .gcse-searchbox {
     font-weight: 400;
     font-family: 'Alegreya Sans', 'Helvetica', 'Arial', sans-serif;
-    color: white;
 }
 .gsc-clear-button {
     display: none;
