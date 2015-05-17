@@ -1,6 +1,7 @@
 {{ "<!-- ENTERING layouts/taxonomy/tag.html -->" | safeHTML }}
 {{ partial "header.html" . }}
 <body>
+{{ partial "bodytop.html" . }}
     <div id="layout" class="pure-g">
     {{ partial "sidebar.html" . }}
 
@@ -9,7 +10,7 @@
       {{ partial "listtop_taxo_tag.html" . }}
 
        <main>
-          <div class="posts"> 
+          <div class="posts">
             {{ range .Paginator.Pages }}
               {{ .Render "li" }}
             {{ end }}
