@@ -83,7 +83,7 @@ I'm using the "Alegreya" type faces by [Juan Pablo del Peral](http://www.huertat
 
 The "carbon fiber" sidebar background is pure css, and was written by [Atle Mo and Sebastien Grosjean](http://lea.verou.me/css3patterns/#carbon). If it does not work, upgrade your browser. If it does work, upgrade anyway. 
 
-My photos are being displayed by the slick javascript [nanoGALLERY](http://nanogallery.brisbois.fr), and thanks to [Bjørn Erik Pedersen](http://bep.is) ([@bep](https://github.com/bep)) for the guidance on how to integrate it with Hugo (and for his many kindnesses to this newbie on the Hugo [discussion forums](http://discuss.hugo.io)). 
+The photos on this site are mine, unless otherwise noted. I enjoy photography, and have a whole lot of photos I can use, so I though I would weave them throughout the site, featuring them in banners, accent squares and galleries. My galleries are being displayed by the slick javascript [nanoGALLERY](http://nanogallery.brisbois.fr), and thanks to [Bjørn Erik Pedersen](http://bep.is) ([@bep](https://github.com/bep)) for the guidance on how to integrate it with Hugo (and for his many kindnesses to this newbie on the Hugo [discussion forums](http://discuss.hugo.io)). 
 
 ## Hosting
 
