@@ -124,7 +124,7 @@ Options -MultiViews
 
 <IfModule mod_headers.c>
 
-    Header set X-UA-Compatible "IE=edge"
+    Header set X-UA-Compatible "IE=Edge,chrome=1"
 
     # `mod_headers` cannot match based on the content-type, however,
     # the `X-UA-Compatible` response header should be send only for

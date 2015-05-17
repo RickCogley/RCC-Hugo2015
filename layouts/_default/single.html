@@ -1,6 +1,7 @@
 {{ "<!-- ENTERING layouts/_default/single.html -->" | safeHTML }}
 {{ partial "header.html" . }}
 <body>
+{{ partial "bodytop.html" . }}
     {{ if eq .Params.showtotop "true" }}
         <div id="nav-to-top">
             <span class="decorative-marker">&#8984;</span><a href="#top">To Top</a>
@@ -76,8 +77,10 @@
             {{ end }}
 
             {{ .Content }}
-            
+
+            {{if isset .Params "gallery_id" }}
             {{ partial "gallery.html" . }}
+            {{ end }}
 
 
          <aside id="meta">
