@@ -24,6 +24,8 @@ paginate = 7
 # All parameters below here are optional and can be mixed and matched.
 #
 [params]
+    description = "RCC is Rick Cogley Central, a site about Life in Japan, System Administration and Tech."
+    keywords = "Cogley,Japan,Project,Help,IT,Web,Sysadmin"
     # Used when a given page doesn't set its own.
     defaultDescription = "A post by Rick Cogley"
     defaultKeywords = "cogley,post"
@@ -141,4 +143,3 @@ paginate = 7
     [[menu.footer]]
         name = "My Firm eSolia Inc"
         url = "http://esolia.com"
-
