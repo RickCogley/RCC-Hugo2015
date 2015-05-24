@@ -6,7 +6,7 @@
   <!-- IN .HTACCESS!! <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
   <title>{{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{if .IsPage}}{{ .Summary }}{{else}}{{.Site.Params.description}}{{end}}">
-  <meta name="keywords" content="{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">
+  <meta name="keywords" content="{{if .IsPage}}{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}{{else}}{{.Site.Params.keywords}}{{end}}">
   {{ if .Params.author }}<meta name="author" content="{{ .Params.author }}">{{ end }}
   <link href="http://gmpg.org/xfn/11" rel="profile">
   {{ .Hugo.Generator }}
@@ -60,6 +60,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">

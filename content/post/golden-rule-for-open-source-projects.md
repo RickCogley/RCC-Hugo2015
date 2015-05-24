@@ -3,8 +3,8 @@ author: Rick Cogley
 authorlink: /about
 authortwitter: https://twitter.com/rickcogley
 title: The Golden Rule For Open Source Projects
-slug: golden-rule-for-open-source-projects
 subtitle: Just don't be a dick
+slug: golden-rule-for-open-source-projects
 banner: /img/Cogley-Banner-Hashioki-1170x350-001-mono.JPG
 banneralt: Photo of Japan hashioki chopstick stands, by Rick Cogley.
 date: 2015-05-14T09:11:40+09:00
