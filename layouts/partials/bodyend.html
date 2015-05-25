@@ -27,3 +27,6 @@ document.addEventListener('DOMContentLoaded',function(){
 });
 </script> -->
 {{ "<!-- LEAVING partial bodyend.html -->" | safeHTML }}
+{{ if .Site.BuildDrafts }}
+{{ "<!-- N.B. the livereload.js script is being injected by hugo server -->" | safeHTML }}
+{{ end }}
