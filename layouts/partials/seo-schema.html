@@ -2,7 +2,7 @@
 {{ if .IsPage }}
 {{ if eq .Type "post" }}
 <script type="application/ld+json">
-{ 
+{
     "@context" : "http://schema.org",
     "@type" : "BlogPosting",
     "articleSection" : "{{ .Section }}",
@@ -20,14 +20,14 @@
     "dateModified" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
     "url" : "{{ .Permalink }}",
     "wordCount" : "{{ .WordCount }}",
-    "image" : {{ apply .Params.images "absURL" "." }}
+    "image" : {{ apply .Params.images "absURL" "." }},
     "keywords" : [ {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ]
 }
 </script>
 
 {{ else if eq .Type "aboutpage" }}
 <script type="application/ld+json">
-{ 
+{
     "@context" : "http://schema.org",
     "@type" : "Person",
     "name" : "Rick Cogley",
@@ -56,7 +56,7 @@
         "email" : "info@esolia.co.jp",
         "telephone" : "+81-3-6273-3510",
         "fax" : "+81-3-3593-3511",
-        "logo" : "http://static.cogley.info/img/eSolia_Logo-500px.gif"  
+        "logo" : "http://static.cogley.info/img/eSolia_Logo-500px.gif"
     },
     "address" : {
         "@type" : "PostalAddress",
@@ -78,7 +78,7 @@
         "https://vimeo.com/rickcogley",
         "https://github.com/RickCogley",
         "https://www.pinterest.com/rickcogley/",
-        "https://pinboard.in/u:rickcogley"] 
+        "https://pinboard.in/u:rickcogley"]
 }
 </script>
 <script type="application/ld+json">
@@ -114,7 +114,7 @@
 
 {{ else if eq .Type "colophonpage" }}
 <script type="application/ld+json">
-{ 
+{
     "@context" : "http://schema.org",
     "@type" : "WebPage",
     "name" : "{{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}",
@@ -130,15 +130,14 @@
     "datePublished": "{{ .PublishDate.Format $.Site.Params.ISO8601 }}",
     "dateModified" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
     "url" : "{{ .Permalink }}",
-    "wordCount" : "{{ .WordCount }}",
-    "image" : {{ apply .Params.images "absURL" "." }}
+    "image" : {{ apply .Params.images "absURL" "." }},
     "keywords" : [ {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ]
 }
 </script>
 
 {{ else if eq .Type "licensepage" }}
 <script type="application/ld+json">
-{ 
+{
     "@context" : "http://schema.org",
     "@type" : "WebPage",
     "name" : "{{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}",
@@ -153,8 +152,7 @@
     "datePublished": "{{ .PublishDate.Format $.Site.Params.ISO8601 }}",
     "dateModified" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
     "url" : "{{ .Permalink }}",
-    "wordCount" : "{{ .WordCount }}",
-    "image" : {{ apply .Params.images "absURL" "." }}
+    "image" : {{ apply .Params.images "absURL" "." }},
     "keywords" : [ {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ]
 }
 </script>
