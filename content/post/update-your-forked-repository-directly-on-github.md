@@ -12,6 +12,7 @@ publishdate: 2015-06-07T08:11:40.000Z
 description: 'Avoid git entirely and update your fork right on github, a post by Rick Cogley.'
 draft: 'false'
 images:
+  - /img/Cogley-Post-git-fork-merge.svg
   - /img/Cogley-Banner-Enoshima-Fuji-mono.jpg
   - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
 showauthor: 'true'
