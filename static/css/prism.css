@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+apacheconf+applescript+bash+c+csharp+cpp+coffeescript+css-extras+git+go+haml+handlebars+http+ini+less+lolcode+markdown+perl+php+php-extras+powershell+python+rest+ruby+scss+smarty+sql+wiki+yaml&plugins=line-highlight+line-numbers+show-invisibles+autolinker+wpd+file-highlight+show-language+highlight-keywords */
+/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+apacheconf+applescript+bash+c+csharp+cpp+coffeescript+css-extras+git+go+haml+handlebars+http+ini+less+lolcode+markdown+perl+php+php-extras+powershell+python+rest+ruby+scss+smarty+sql+wiki+yaml&plugins=line-highlight+line-numbers+show-invisibles+autolinker+wpd+file-highlight+show-language+highlight-keywords  */
 /**
  * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
@@ -77,7 +77,7 @@ pre[class*="language-"] {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* 
+/*
 pre[class*="language-"]:before,
 pre[class*="language-"]:after {
 	content: '';
@@ -249,9 +249,9 @@ pre[data-line] {
 	background: -webkit-linear-gradient(left, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
 	background: -o-linear-gradient(left, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
 	background: linear-gradient(left, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-	
+
 	pointer-events: none;
-	
+
 	line-height: inherit;
 	white-space: pre;
 }
@@ -273,7 +273,7 @@ pre[data-line] {
 		text-shadow: none;
 		box-shadow: 0 1px white;
 	}
-	
+
 	.line-highlight[data-end]:after {
 		content: attr(data-end);
 		top: auto;
