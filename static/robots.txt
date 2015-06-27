@@ -1,7 +1,4 @@
----
-layout: nil
----
 User-agent: *
 Disallow: /site-dev-notes/
 
-Sitemap: {{ site.url }}/sitemap.xml 
+Sitemap: http://rick.cogley.info/sitemap.xml
