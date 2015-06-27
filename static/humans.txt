@@ -6,47 +6,45 @@
     Owner & Jack-of-all-trades: Rick Cogley
     Contact: http://rick.cogley.info/about
     Twitter: @rickcogley
-    
+
 /* THANKS */
 
     Hugo Author: Steve Francia
     Contact: http://spf13.com
     Twitter: @spf13
-    
+
     Hugo Contributor: Bjørn Erik Pedersen
     Contact: http://bep.is/
-    
+
     Various Hugo Contributors: https://github.com/spf13/hugo/graphs/contributors
-    
+
     Hugo Theme Authors: @tmaiaroto, @halostatue
-    
+
     Alegreya Font Author: Juan Pablo del Peral
     Contact: http://www.huertatipografica.com/about
-    
+
 /* TECHNOLOGY */
 
     Static Site Generator: Hugo, http://gohugo.io/
-    
+
     Language Used by Hugo, go, http://golang.org/
-    
-    Site Base: HTML5, CSS3, PureCSS http://purecss.io/, Markdown http://localhost:1313/colophon/Markdown
-    
+
+    Site Base: HTML5, CSS3, Javascript, Jquery, PureCSS http://purecss.io/
+
     Type Hosting: Google Web Fonts
-    
+
     Icons: Font Awesome, http://fortawesome.github.io/Font-Awesome/
-    
+
     Site Repository: Github, https://github.com/RickCogley/RCC-Hugo2015
-    
+
     Site Hosting: Webfaction, http://www.webfaction.com/?affiliate=rcogley
-    
+
     DNS Hosting: Amazon AWS Route53, https://aws.amazon.com/route53/
-    
+
     Markup: Markdown, http://daringfireball.net/projects/markdown/
-    
+
     Gallery: nanoGallery, http://nanogallery.brisbois.fr
-    
-    Libraries: jQuery
-    
+
 /* SITE */
 
 	Last update: 2015/05/14
