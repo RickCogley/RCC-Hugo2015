@@ -94,7 +94,7 @@ DNS is hosted on Amazon Web Services [Route53](https://aws.amazon.com/route53/),
 The [repository](https://github.com/RickCogley/RCC-Hugo2015) for this site is hosted at [Github](https://github.com). I had been hosting elsewhere, but Github is probably here to stay, so I moved everything over.  
 
 # Semantic Markup
-{{< figure src="/img/json-ld-logo.svg" alt="JSON-LD Logo" width="150px" class="photo-inline-right pure-img" >}} 
+{{< figure src="/img/json-ld-logo.svg" alt="JSON-LD Logo" width="150px" class="photo-inline-right pure-img" >}}
 
 Considering [Semantic HTML](http://en.wikipedia.org/wiki/Semantic_HTML "Semantic H.T.M.L. Wikipedia article link"), I'm using some now-well-accepted [Microdata](http://schema.org "Canonical site for Microdata, Schema.org") such as the [Person Schema](http://schema.org/Person "Microdata Person Schema"), and [Microformats 2](http://microformats.org/wiki/microformats2 "V2 of Microformats, improving ease-of-use for authors and implementers") such as [h-card](http://microformats.org/wiki/h-card "Microformats 2 update to hCard") with some others sprinkled in. To mark up my [About](/about) page with the [Person Schema](http://schema.org/Person "Microdata Person Schema"), I'm now using the much-easier [JSON-LD](http://www.w3.org/TR/json-ld/#embedding-json-ld-in-html-documents), because it's officially supported by Google. It lets you put the markup in a script tag, which you can simply include in the page. No more interspersed `itemscope`, `itemtype` or `itemprop`.
 
