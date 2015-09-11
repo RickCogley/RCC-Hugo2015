@@ -7,8 +7,8 @@ subtitle: Great for nihongo-learning Mac users
 slug: generate-passwords-from-japanese-romaji-words-on-mac
 banner: /img/Cogley-Banner-PapaBubble-Candy-2.jpg
 banneralt: 'Photo PapaBubble Candy, by Rick Cogley.'
-date: 2015-09-10T21:00:15+09:00
-publishdate: 2015-09-10T21:00:15+09:00
+date: 2015-09-11T15:20:15+09:00
+publishdate: 2015-09-11T15:20:15+09:00
 description: 'Mac users, easily generate passwords using Japanese romaji, a post by Rick Cogley.'
 draft: 'false'
 images:
