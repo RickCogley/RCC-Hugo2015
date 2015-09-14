@@ -31,8 +31,8 @@ paginate = 7
     defaultKeywords = "cogley,post"
     highlightStyle = "solarized_dark"
     thumbnail = "/img/rick-cogley-avatar-90x90.png"
-    sidebartitle = "Rick Cogley Central"
-    sidebartagline = "Don't just consume. Use the power at your fingertips to create something useful."
+    sidebartitle = "RC Central"
+    sidebartagline = "Welcome to Rick Cogley's site. Create, don't just consume."
     ISO8601 = "2006-01-02T15:04:05JST"
 
     # Metadata used to drive integrations.
