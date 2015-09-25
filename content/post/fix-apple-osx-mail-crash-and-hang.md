@@ -3,7 +3,7 @@ author: Rick Cogley
 authorlink: /about
 authortwitter: 'https://twitter.com/rickcogley'
 title: Fix Apple OS X Mail Crashing and Hanging
-subtitle: ...by deleting mail envelopes
+subtitle: ...by deleting Mail's Envelope Index
 slug: fix-apple-osx-mail-crash-and-hang
 banner: /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
 banneralt: 'Photo Hula Dancers at Shonan Mall, by Rick Cogley.'
