@@ -23,6 +23,7 @@ showreadingtime: 'true'
 showsocialsharing: 'true'
 showtoc: 'true'
 showtotop: 'true'
+lightbox: 'true'
 tags:
   - osx
   - bug
@@ -50,7 +51,7 @@ I noticed that my HHKB's don't work, after upgrading to OS X El Capitan. I use t
 > **System Integrity Protection** - A new security policy that applies to every running process, including privileged code and code that runs out of the sandbox. The policy extends additional protections to components on disk and at run-time, only allowing system binaries to be modified by the system installer and software updates. Code injection and runtime attachments to system binaries are no longer permitted.
 
 <figure class="photo-inline-right">
-  <img class="photo300 pure-img" src="/img/Cogley-Post-PFU-HHKB-Pro-JP.jpg" alt="Screenshot showing Activity Monitor Quit Dialog">
+  <a href="/img/Cogley-Post-PFU-HHKB-Pro-JP.jpg" title="" data-lightbox="set1" data-title="PFU HHKP Pro JP Type-S keyboard"><img class="photo300 pure-img" src="/img/Cogley-Post-PFU-HHKB-Pro-JP.jpg" alt="Photo showing a PFU HHKP Pro JP Type-S keyboard" ></a>
   <figcaption><em>Photo</em>: Rick's PFU HHKB Pro JP keyboard</figcaption>
 </figure>
 
