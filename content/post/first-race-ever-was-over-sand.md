@@ -37,6 +37,7 @@ tags:
   - shonan
   - 湘南平塚 シーサイド マラソン
 topics:
+  - Fitness
   - Personal
   - Japan
   - Culture
