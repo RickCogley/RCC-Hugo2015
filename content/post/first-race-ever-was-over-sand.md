@@ -29,9 +29,10 @@ tags:
   - running
   - 5K
   - first race
-  - sand
+  - sand running
   - beach
   - hiratsuka
+  - japan
   - renault
   - zekken
   - shonan
@@ -62,15 +63,22 @@ Well, I finally recovered, and meanwhile I had been reading about running, and l
   <figcaption><em>Photo</em>: Capturing the first bib number</figcaption>
 </figure>
 
-I figured I would like to try entering a short running race, despite never having done so in my whole life. I was nervous about trying it for whatever reason (excuses, excuses), but my family was supportive, and I decided it is more about trying to improve myself than to race against someone. So, I found the "3rd Shonan Hiratsuka Seaside Marathon" (第三回 湘南平塚 シーサイド マラソン) on [Runnet](http://runnet.jp/), and signed up for the 5K version of the race (N.b., Japanese call any running race a "marathon". It's used as a general verb.).
+I figured I would like to try entering a short running race, despite never having done so in my whole life. I was nervous about trying it for whatever reason (excuses, excuses), but my family was supportive, and I decided it is more about trying to improve myself than to race against someone. So, I found the "3rd Shonan Hiratsuka Seaside Marathon" (第三回 湘南平塚 シーサイド マラソン) on [Runnet Japan](http://runnet.jp/), and signed up for the 5K version of the race.
 
-The organizer was the "[Yoyogi Fun Run Committee](http://yoyogi-funrun.com/)", a group that organizes all kinds of shorter running events, perfect for beginners like me. They sent a reminder e-mail one week before the event, so I read through it. Slowly, as is usual for me having to read anything with a lot of kanji characters. I saw the characters for beach, and noticed it did not say that the run would be "_by_ the beach" but rather "_on_ the beach."
+N.b.:
+
+1. Japanese call any running race a "marathon". It's used as a general verb as in "Marathon suru?"
+1. Hiratsuka Beach is considered Shonan, and [Hiratsuka](https://en.wikipedia.org/wiki/Hiratsuka,_Kanagawa) is in Kanagawa Prefecture, Japan.
+
+The race organizer was the "[Yoyogi Fun Run Committee](http://yoyogi-funrun.com/)", a group that organizes all kinds of shorter running events in Japan, perfect for beginners like me. They sent a reminder e-mail one week before the event, so I read through it. Slowly, as is usual for me having to read anything with a lot of kanji characters. I saw the characters for beach, and noticed it did not say that the run would be "_by_ the beach" but rather "_on_ the beach."
 
 Oh no.
 
 ## Running on Sand?!
 
-Oh man. I started Googling about sand running, and mostly everything you read about it is that it's really tough. Studies show (yeah, there are actual studies) that it requires 1.6 times the effort. Some various things I read about it:
+Oh man. I started Googling about sand running, and mostly everything you read about it is that it's really tough. Studies show (yeah, there are actual studies) that it requires 1.6 times the effort.
+
+Here are some various things I read about sand running:
 
 * since it's a lot more effort compared to concrete running, you will quickly learn where your weakness is, from the soreness (it's my lower back as always!)
 * try to run nearer the water, where the sand is more packed
