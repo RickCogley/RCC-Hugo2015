@@ -7,7 +7,7 @@ subtitle: ... on OS X El Capitan 10.11
 slug: pfu-hhkb-keyboard-osx-el-capitan-status
 banner: /img/Cogley-Banner-Train-Romance-Car-1170x350-003-mono.jpg
 banneralt: 'Photo of the Romance Car bound for Hakone, near Yoyogi Koen stop, by Rick Cogley.'
-date: 2015-10-06T15:20:15+09:00
+date: 2015-10-30T14:11:15+09:00
 publishdate: 2015-10-06T15:20:15+09:00
 description: 'Status of PFU Happy Hacking Keyboard HHKB Drivers on OS X El Capitan, a post by Rick Cogley.'
 draft: 'false'
@@ -60,3 +60,14 @@ I speak Japanese so I contacted PFU, only to get some corporate double-speak in 
 The tech pointed me at their [Japanese FAQ page](http://www.pfu.fujitsu.com/hhkeyboard/hhkb_support/faq_el_capitan.html), on which he says's they'll publish new info, once they are ready.
 
 So stay tuned, folks.
+
+## Update
+
+### 30 Oct 2015
+
+<figure class="photo-inline-right">
+  <a href="/img/Cogley-Post-PFU-HHKB-fixed-on-El-Capitan-by-Seil-20151030.png" title="" data-lightbox="set1" data-title="Use Seil to Fix PFU HHKP Pro JP Type-S keyboard on El Capitan"><img class="photo300 pure-img" src="/img/Cogley-Post-PFU-HHKB-fixed-on-El-Capitan-by-Seil-20151030.png" alt="Photo showing the settings in Seil, to make a PFU HHKP Pro JP Type-S keyboard work in OS X El Capitan" ></a>
+  <figcaption><em>Screenshot</em>: Seil Settings for HHKB in El Capitan</figcaption>
+</figure>
+
+I've followed up with PFU several times since this post, and although they now say they have a beta available, they won't let me test it. Whatever. I confirm you can fix it using [Seil](https://pqrs.org/osx/karabiner/seil.html.en), though. Just download Seil, mount its ``.dmg``, double click the installer and follow the prompts. Then just run it, and set the three checkboxes you can see in the screenshot. _Click to embiggen >>_.
