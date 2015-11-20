@@ -7,7 +7,7 @@ subtitle: ... on OS X El Capitan 10.11
 slug: pfu-hhkb-keyboard-osx-el-capitan-status
 banner: /img/Cogley-Banner-Train-Romance-Car-1170x350-003-mono.jpg
 banneralt: 'Photo of the Romance Car bound for Hakone, near Yoyogi Koen stop, by Rick Cogley.'
-date: 2015-10-30T14:11:15+09:00
+date: 2015-11-20T13:00:00+09:00
 publishdate: 2015-10-06T15:20:15+09:00
 description: 'Status of PFU Happy Hacking Keyboard HHKB Drivers on OS X El Capitan, a post by Rick Cogley.'
 draft: 'false'
@@ -74,4 +74,4 @@ I've followed up with PFU several times since this post, and although they now s
 
 ### 20 Nov 2015
 
-PFU states on their FAQ site that they should be able to release updated drivers for OS X El Capitan near the end of Nov 2015. 
+PFU states on their FAQ site that they should be able to release updated drivers for OS X El Capitan near the end of Nov 2015.
