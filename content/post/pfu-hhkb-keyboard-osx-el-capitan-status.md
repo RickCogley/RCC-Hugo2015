@@ -71,3 +71,7 @@ So stay tuned, folks.
 </figure>
 
 I've followed up with PFU several times since this post, and although they now say they have a beta available, they won't let me test it. Whatever. I confirm you can fix it using [Seil](https://pqrs.org/osx/karabiner/seil.html.en), though. Just download Seil, mount its ``.dmg``, double click the installer and follow the prompts. Then just run it, and set the three checkboxes you can see in the screenshot. _Click to embiggen >>_.
+
+### 20 Nov 2015
+
+PFU states on their FAQ site that they should be able to release updated drivers for OS X El Capitan near the end of Nov 2015. 
