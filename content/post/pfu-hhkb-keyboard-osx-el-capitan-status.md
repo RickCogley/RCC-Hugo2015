@@ -7,7 +7,7 @@ subtitle: ... on OS X El Capitan 10.11
 slug: pfu-hhkb-keyboard-osx-el-capitan-status
 banner: /img/Cogley-Banner-Train-Romance-Car-1170x350-003-mono.jpg
 banneralt: 'Photo of the Romance Car bound for Hakone, near Yoyogi Koen stop, by Rick Cogley.'
-date: 2015-11-20T13:00:00+09:00
+date: 2015-12-03T06:20:00+09:00
 publishdate: 2015-10-06T15:20:15+09:00
 description: 'Status of PFU Happy Hacking Keyboard HHKB Drivers on OS X El Capitan, a post by Rick Cogley.'
 draft: 'false'
@@ -40,7 +40,7 @@ topics:
   - Troubleshooting
 ---
 
-If you jumped on the OS X El Capitan upgrade, and you are a user of the PFU HHKB "Happy Hacking" keyboard with its buttery smooth Topre switches, you might have noticed it does not work.
+If you jumped on the OS X El Capitan upgrade, and you are a user of the PFU HHKB "Happy Hacking" keyboard with its buttery smooth Topre switches, you might have noticed it does not work. (**Note**: now fixed, see update section.)
 
 <!--more-->
 
@@ -61,7 +61,18 @@ The tech pointed me at their [Japanese FAQ page](http://www.pfu.fujitsu.com/hhke
 
 So stay tuned, folks.
 
-## Update
+## Updates
+
+### 3 Dec 2015
+
+PFU sent an email saying that they had released the driver, now available [here](http://www.pfu.fujitsu.com/hhkeyboard/download.html). Specifically:
+
+* [HHKB Pro, Pro2, Pro HG, Pro JP, Type-S Mac Driver](http://www.pfu.fujitsu.com/hhkeyboard/macdownload.html)
+* [HHKB Lite2 Driver](http://www.pfu.fujitsu.com/hhkeyboard/macdownload_lite2.html)
+
+### 20 Nov 2015
+
+PFU states on their FAQ site that they should be able to release updated drivers for OS X El Capitan near the end of Nov 2015.
 
 ### 30 Oct 2015
 
@@ -71,7 +82,3 @@ So stay tuned, folks.
 </figure>
 
 I've followed up with PFU several times since this post, and although they now say they have a beta available, they won't let me test it. Whatever. I confirm you can fix it using [Seil](https://pqrs.org/osx/karabiner/seil.html.en), though. Just download Seil, mount its ``.dmg``, double click the installer and follow the prompts. Then just run it, and set the three checkboxes you can see in the screenshot. _Click to embiggen >>_.
-
-### 20 Nov 2015
-
-PFU states on their FAQ site that they should be able to release updated drivers for OS X El Capitan near the end of Nov 2015.
