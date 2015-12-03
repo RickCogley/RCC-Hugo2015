@@ -7,7 +7,7 @@ subtitle: ... on OS X El Capitan 10.11
 slug: pfu-hhkb-keyboard-osx-el-capitan-status
 banner: /img/Cogley-Banner-Train-Romance-Car-1170x350-003-mono.jpg
 banneralt: 'Photo of the Romance Car bound for Hakone, near Yoyogi Koen stop, by Rick Cogley.'
-date: 2015-12-03T06:20:00+09:00
+date: 2015-12-04T08:40:00+09:00
 publishdate: 2015-10-06T15:20:15+09:00
 description: 'Status of PFU Happy Hacking Keyboard HHKB Drivers on OS X El Capitan, a post by Rick Cogley.'
 draft: 'false'
@@ -40,7 +40,7 @@ topics:
   - Troubleshooting
 ---
 
-If you jumped on the OS X El Capitan upgrade, and you are a user of the PFU HHKB "Happy Hacking" keyboard with its buttery smooth Topre switches, you might have noticed it does not work. (**Note**: now fixed, see update section.)
+If you jumped on the OS X El Capitan upgrade, and you are a user of the PFU HHKB "Happy Hacking" keyboard with its buttery smooth Topre switches, you might have noticed it does not work. (**Note**: now fixed, see update section and if you install, you can disable the relevant part of SEIL if you were using it.)
 
 <!--more-->
 
@@ -69,6 +69,8 @@ PFU sent an email saying that they had released the driver, now available [here]
 
 * [HHKB Pro, Pro2, Pro HG, Pro JP, Type-S Mac Driver](http://www.pfu.fujitsu.com/hhkeyboard/macdownload.html)
 * [HHKB Lite2 Driver](http://www.pfu.fujitsu.com/hhkeyboard/macdownload_lite2.html)
+
+If you're using SEIL as a workaround, be sure to un-check the checkboxes in the Japanese section, that you enabled.
 
 ### 20 Nov 2015
 
