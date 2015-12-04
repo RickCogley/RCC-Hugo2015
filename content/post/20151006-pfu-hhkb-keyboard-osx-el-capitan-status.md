@@ -79,7 +79,7 @@ PFU states on their FAQ site that they should be able to release updated drivers
 ### 30 Oct 2015
 
 <figure class="photo-inline-right">
-  <a href="/img/Cogley-Post-PFU-HHKB-fixed-on-El-Capitan-by-Seil-20151030.png" title="" data-lightbox="set1" data-title="Use Seil to Fix PFU HHKP Pro JP Type-S keyboard on El Capitan"><img class="photo300 pure-img" src="/img/Cogley-Post-PFU-HHKB-fixed-on-El-Capitan-by-Seil-20151030.png" alt="Photo showing the settings in Seil, to make a PFU HHKP Pro JP Type-S keyboard work in OS X El Capitan" ></a>
+  <a href="/img/Cogley-Post-PFU-HHKB-fixed-on-El-Capitan-by-Seil-20151030.png" title="Screenshot showing the settings in Seil" data-lightbox="set1" data-title="Use Seil to Fix PFU HHKP Pro JP Type-S keyboard on El Capitan"><img class="photo300 pure-img" src="/img/Cogley-Post-PFU-HHKB-fixed-on-El-Capitan-by-Seil-20151030.png" alt="Screenshot showing the settings in Seil, to make a PFU HHKP Pro JP Type-S keyboard work in OS X El Capitan" ></a>
   <figcaption><em>Screenshot</em>: Seil Settings for HHKB in El Capitan</figcaption>
 </figure>
 
