@@ -7,7 +7,7 @@ subtitle: ... for 2015
 slug: ucan-new-words-and-buzzwords-japan-2015
 banner: /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
 banneralt: 'Photo of Hula Dancers at a mall in Japan, by Rick Cogley.'
-date: 2015-12-04T20:51:00+09:00
+date: 2015-12-05T07:30:00+09:00
 publishdate: 2015-12-04T20:51:00+09:00
 description: 'U-Can Japan New Words and Buzzwords winners, a post by Rick Cogley.'
 draft: 'false'
@@ -31,17 +31,18 @@ tags:
   - Nihongo
   - Language
   - Slang
+  - Neologisms
 topics:
   - Japan
   - Culture
   - Humor
 ---
 
-I love autumn in Japan for various reasons: the crisp weather, the excellent food, the approach of the holiday season. And new words and buzzwords!
+I love autumn in Japan for various reasons: the crisp weather, the excellent food, the approach of the holiday season. And "new words and buzzwords"!
 
 <!--more-->
 
-Fall marks when the annual "[U-Can New Words and Buzzwords](http://singo.jiyu.co.jp)" list (1) comes out from _Jiyukokuminsha Publishing_. Changes to language are inevitable, and the Japanese are particularly creative in producing more new words and variants each year.
+Fall marks when the annual "[U-Can New Words and Buzzwords](http://singo.jiyu.co.jp)" Japan neologisms list (1) comes out from _Jiyukokuminsha Publishing_. Changes to language are inevitable, and the Japanese are particularly creative in producing more new words and variants each year.
 
 Let's take a look at a few of them.
 
