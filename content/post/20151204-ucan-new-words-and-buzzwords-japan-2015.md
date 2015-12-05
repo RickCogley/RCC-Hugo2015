@@ -57,9 +57,11 @@ The 2015 Grand Prize winners were:
 
 This means "explosive buying" (2), and was meant to describe the voracious buying done by visitors to Japan from China. Well-off Chinese come to Japan, buy suitcases, and fill them full of goodies to take back.
 
-### Torippuru Surii
+### Toripuru Surii
 
-The "triple three" (3) is a seasonal baseball record, when a player bats better than .300, hits more than 30 home runs, and steals more than 30 bases, hence 3-3-3 for the triple. Tetsuto Yamada of the Tokyo Yakult Swallows and Yuki Yanagita of the SoftBank Hawks achieved this rare feat.
+The "triple three" (3) is a seasonal baseball record, when a player bats better than .300, hits more than 30 home runs, and steals more than 30 bases, hence 3-3-3 for the triple-three name. Tetsuto Yamada of the Tokyo Yakult Swallows and Yuki Yanagita of the SoftBank Hawks achieved this rare feat.
+
+There's a Japanese [page on Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%AA%E3%83%97%E3%83%AB%E3%82%B9%E3%83%AA%E3%83%BC) that lists the record-holders. Having two in one year is rare, and it happened in 1950 in Japan, and a little more regularly in the US major leagues. The US majors even had a year in which _three_ players achieved this: 2011. The player with the most triple-threes is Barry Bonds, at 3.
 
 ## Selections from the Top Ten
 
@@ -96,7 +98,7 @@ Nihongo learners, I hope you'll keep your eyes peeled for this competition every
 
 1. ユーキャン新語流行語大賞、しんごりゅうこうごたいしょう、_shingo ryuukougo taishou_
 2. 爆買、ばくがい、_bakugai_
-3. トリプルスリー、_torippuru surii_
+3. トリプルスリー、_toripuru surii_
 4. エンブレム、_enburemu_
 5. 五郎丸ポーズ、ごろまるぽーず、_goromaru pozu_
 6. アベ政治を許さない、あべせいじをゆるさない、_Abe seiji wo yurusanai_
