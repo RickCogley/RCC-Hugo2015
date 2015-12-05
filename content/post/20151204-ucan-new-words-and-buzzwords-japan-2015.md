@@ -14,6 +14,7 @@ draft: 'false'
 images:
   - /img/Cogley-Post-Japan-New-Words-and-Buzzwords-20151204.jpg
   - /img/Cogley-Post-Goromaru-Pose-Howto-2015.png
+  - /img/Cogley-Post-Mainichi-Shuzo-2015.jpg
   - /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
   - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
 showauthor: 'true'
@@ -100,9 +101,16 @@ Indeed, to quote another winning phrase, "Abe seiji wo yurusanai" (6) or "We wil
 
 ### Mainichi Shuzo!
 
-Shuzo Matsuoka is a former tennis pro, who's been a fixture on Japanese TV for as long as I can remember. He's insanely "high tension" I'd say, but, he's a great coach, and especially knows how to motivate kids. I'm always impressed how he tailors his coaching perfectly to each kid he is coaching on TV.
+<figure class="photo-inline-right">
+  <a href="/img/Cogley-Post-Mainichi-Shuzo-2015.jpg" title="Book Cover: Mainichi Shuzo" data-lightbox="set1" data-title="Book Cover: Mainichi Shuzo"><img class="photo200 pure-img" src="/img/Cogley-Post-Mainichi-Shuzo-2015.jpg" alt="Book Cover: Mainichi Shuzo" ></a>
+  <figcaption><em>Screenshot</em>: Mainichi Shuzo Cover</figcaption>
+</figure>
+
+Shuzo Matsuoka is a former tennis pro, who's been a fixture on Japanese TV for as long as I can remember. He's insanely "high tension" I'd say, but, he's a great coach, quite the charismatic personality, and especially knows how to motivate kids. I'm always impressed how he tailors his coaching perfectly to each kid he is coaching on TV.
 
 Anyway, the "Mainichi Shuzo" (7) is a page-a-day calendar, so you can get your daily fill of motivation from the man himself.
+
+There is even a parody of this by a comedian called Hiroshi, who is famously negative. It's called (what else?) "[Mainichi Negative](http://www.amazon.co.jp/dp/4426119928)".
 
 ## The Whole Enchilada
 
