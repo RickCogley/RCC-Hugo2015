@@ -52,7 +52,7 @@ Let's take a look at a few of them, and for the nihongo learners among you, chec
 The 2015 Grand Prize winners were:
 
 1. Bakugai
-2. Torippuru Surii
+2. Toripuru Surii
 
 ### Bakugai
 
