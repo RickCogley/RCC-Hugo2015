@@ -7,12 +7,13 @@ subtitle: ... for 2015
 slug: ucan-new-words-and-buzzwords-japan-2015
 banner: /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
 banneralt: 'Photo of Hula Dancers at a mall in Japan, by Rick Cogley.'
-date: 2015-12-05T07:30:00+09:00
+date: 2015-12-05T09:50:00+09:00
 publishdate: 2015-12-04T20:51:00+09:00
 description: 'U-Can Japan New Words and Buzzwords winners, a post by Rick Cogley.'
 draft: 'false'
 images:
   - /img/Cogley-Post-Japan-New-Words-and-Buzzwords-20151204.jpg
+  - /img/Cogley-Post-Goromaru-Pose-Howto-2015.png
   - /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
   - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
 showauthor: 'true'
@@ -44,7 +45,7 @@ I love autumn in Japan for various reasons: the crisp weather, the excellent foo
 
 Fall marks when the annual "[U-Can New Words and Buzzwords](http://singo.jiyu.co.jp)" Japan neologisms list (1) comes out from _Jiyukokuminsha Publishing_. Changes to language are inevitable, and the Japanese are particularly creative in producing more new words and variants each year.
 
-Let's take a look at a few of them.
+Let's take a look at a few of them, and for the nihongo learners among you, check out the little glossary at the end.
 
 ## Grand Prix
 
@@ -55,7 +56,14 @@ The 2015 Grand Prize winners were:
 
 ### Bakugai
 
+<figure class="photo-inline-right">
+  <a href="/img/Cogley-Post-Japan-New-Words-and-Buzzwords-20151204.jpg" title="Book Cover: Gendai Yougo no Kiso Chishiki" data-lightbox="set1" data-title="Book Cover: Gendai Yougo no Kiso Chishiki"><img class="photo300 pure-img" src="/img/Cogley-Post-Japan-New-Words-and-Buzzwords-20151204.jpg" alt="Screenshot of cover of Gendai Yougo no Kiso Chishiki" ></a>
+  <figcaption><em>Screenshot</em>: Gendai Yougo no Kiso Chishiki Cover</figcaption>
+</figure>
+
 This means "explosive buying" (2), and was meant to describe the voracious buying done by visitors to Japan from China. Well-off Chinese come to Japan, buy suitcases, and fill them full of goodies to take back.
+
+Of course retailers would not be complaining that their entire stock is getting purchased, but sometimes this is genuinely a problem for locals, when visitors buy up all stock of something like diapers. Gaman gaman.
 
 ### Toripuru Surii
 
@@ -65,32 +73,38 @@ There's a Japanese [page on Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%88%E
 
 ## Selections from the Top Ten
 
-<figure class="photo-inline-right">
-  <a href="/img/Cogley-Post-Japan-New-Words-and-Buzzwords-20151204.jpg" title="Book Cover: Gendai Yougo no Kiso Chishiki" data-lightbox="set1" data-title="Book Cover: Gendai Yougo no Kiso Chishiki"><img class="photo300 pure-img" src="/img/Cogley-Post-Japan-New-Words-and-Buzzwords-20151204.jpg" alt="Screenshot of cover of Gendai Yougo no Kiso Chishiki" ></a>
-  <figcaption><em>Screenshot</em>: Gendai Yougo no Kiso Chishiki Cover</figcaption>
-</figure>
-
 Here are a couple more from the top ten.
 
 ### Enburemu
 
 When Kenjiro Sano was accused of plagiarism for his 2020 Tokyo Olympics logo, the romanized version of the word emblem, "enburemu" (4), was bandied about in the news.
 
+It's surely _emblematic_ of a larger, Olympic-sized corruption problem, though, and so far, the 2020 games planning has been quite the farce.
+
 ### Goromaru Pozu
 
+<figure class="photo-inline-right">
+  <a href="/img/Cogley-Post-Goromaru-Pose-Howto-2015.png" title="Goromaru Pose Annotated" data-lightbox="set1" data-title="How to do the Goromaru Pose"><img class="photo300 pure-img" src="/img/Cogley-Post-Goromaru-Pose-Howto-2015.png" alt="Screenshot showing how to do the Goromaru Pose" ></a>
+  <figcaption><em>Screenshot</em>: Goromaru Pose Annotated</figcaption>
+</figure>
+
 It was great to see Japan do well in the Rugby World Cup, and as it proceeded, we saw a lot of man-in-the-street interviews asking people if they knew how to do Ayumu Goromaru's famous pose. It was typically Japanese and always humorous that they had diagrams and demos showing people how to do the "Goromaru Pose" (5) correctly. Goromaru himself even played into it, testing people and making sure they knew.
+
+Well, I'm a cool guy, so I made a handy annotated "how to do the Goromaru Pose" screenshot. Print it out and hang it up, so you'll never get it wrong!
 
 ### SEALDs
 
 The Students Emergency Action for Liberal Democracy group is a youth protest group that brought thousands to Nagatacho to protest the Abe Government's legislative changes to Article 9 of the constitution.
 
-Indeed, to quote another winning phrase, "Abe seiji wo yurusanai" (6) or "We will not tolerate Abe’s politics". Keep repeating that while they do what they want anyway.
+Indeed, to quote another winning phrase, "Abe seiji wo yurusanai" (6) or "We will not tolerate Abe’s politics". Keep repeating that like a mantra, while they do what they want anyway.
 
 ### Mainichi Shuzo!
 
 Shuzo Matsuoka is a former tennis pro, who's been a fixture on Japanese TV for as long as I can remember. He's insanely "high tension" I'd say, but, he's a great coach, and especially knows how to motivate kids. I'm always impressed how he tailors his coaching perfectly to each kid he is coaching on TV.
 
 Anyway, the "Mainichi Shuzo" (7) is a page-a-day calendar, so you can get your daily fill of motivation from the man himself.
+
+## The Whole Enchilada
 
 Nihongo learners, I hope you'll keep your eyes peeled for this competition every year. You can buy the book these phrases are gleaned from [at Amazon](http://www.amazon.co.jp/dp/4426101344); it's called "現代用語の基礎知識2016", or "Basic Knowledge on Modern Phrases 2016" (8).
 
