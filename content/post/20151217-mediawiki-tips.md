@@ -7,8 +7,8 @@ subtitle: ... and notes to myself
 slug: mediawiki-tips
 banner: /img/Cogley-Banner-PSU-1170x350-008-mono.jpg
 banneralt: 'Photo of a Power Supply Unit, by Rick Cogley.'
-date: 2015-12-05T09:50:00+09:00
-publishdate: 2015-12-04T20:51:00+09:00
+date: 2015-12-17T22:48:00+09:00
+publishdate: 2015-12-17T17:51:00+09:00
 description: 'Quick list of tips for MediaWiki system administrators, a post by Rick Cogley.'
 draft: 'false'
 images:
