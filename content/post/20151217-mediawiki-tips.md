@@ -8,7 +8,7 @@ slug: mediawiki-tips
 banner: /img/Cogley-Banner-PSU-1170x350-008-mono.jpg
 banneralt: 'Photo of a Power Supply Unit, by Rick Cogley.'
 date: 2015-12-17T22:48:00+09:00
-publishdate: 2015-12-17T17:51:00+09:00
+publishdate: 2015-12-17T17:52:00+09:00
 description: 'Quick list of tips for MediaWiki system administrators, a post by Rick Cogley.'
 draft: 'false'
 images:
@@ -55,7 +55,7 @@ MediaWiki's setup is quite well developed by now, and a lot of settings are done
 In `LocalSettings.php`, edit this value:
 
 ~~~bash
-$wgSitename = "DK Intranet";
+$wgSitename = "Acme Inc. Wiki";
 ~~~
 
 ### Set the Logo
