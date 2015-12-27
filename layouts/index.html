@@ -4,21 +4,22 @@
     <div class="rcc-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
         <!--{{ partial "sidebar.html" . }}-->
         <!--{{ partial "hometop.html" . }}-->
-
+      <main class="mdl-layout__content">
         <div class="content pure-u-1 pure-u-md-3-4">
             <a name="top"></a> {{ partial "listtop_home.html" . }}
 
-            <main>
+            <div>
                 <div class="posts">
                     {{ $Site := .Site }}
                     {{ range .Paginator.Pages }}
                         {{ .Render "summary" }}
                     {{ end }}
                 </div>
-            </main>
+            </div>
             {{ partial "pagination.html" . }}
             {{ partial "footer.html" . }}
         </div>
+      </main>
     </div>
     {{ partial "bodyend.html" . }}
 </body>
