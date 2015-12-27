@@ -210,8 +210,8 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-order: -1;
           order: -1;
 }
-.rcc-blog .coffee-pic .mdl-card__media {
-  background-image: url('images/coffee.jpg');
+.rcc-blog .bnr-enoshima-fuji-mono .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-Enoshima-Fuji-mono.jpg');
 }
 .rcc-blog .something-else .mdl-card__media {
   display: -webkit-box;
@@ -515,11 +515,11 @@ h1, h2, h3, h4, h5, h6 {
 .rcc-blog .minilogo {
   width: 44px;
   height: 44px;
-  background-image: url('images/avatar.png');
+  background-image: url('/img/rcc-logo-1.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
-  border-radius: 22px;
+  border-radius: 12px;
   background-color: #F5F5F5;
 }
 
