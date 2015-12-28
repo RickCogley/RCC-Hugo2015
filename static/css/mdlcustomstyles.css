@@ -259,9 +259,67 @@ h1, h2, h3, h4, h5, h6 {
 .rcc-blog .bnr-speeding-train-mono .mdl-card__media {
   background-image: url('/img/Cogley-Banner-Speeding-Train-mono.jpg');
 }
-.rcc-blog .shopping .mdl-card__media {
-  background-image: url('images/shopping.jpg');
+.rcc-blog .bnr-daibutsu-shop-mono .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-Daibutsu-Shop-mono.jpg');
 }
+.rcc-blog .bnr-electrics-mono .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-Electrics-1170x350-007-mono.jpg');
+}
+.rcc-blog .bnr-green-leds-mono2 .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-Green-LEDs-1170x350-004-2mono.JPG');
+}
+.rcc-blog .bnr-green-leds-mono .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-Green-LEDs-1170x350-004-mono.jpg');
+}
+.rcc-blog .bnr-hashioki-mono .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-Hashioki-1170x350-001-mono.JPG');
+}
+.rcc-blog .bnr-hula-dancers-mono .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg');
+}
+.rcc-blog .bnr-jr-shimbashi-controls-mono .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-JR_Shimbashi_Controls2-mono.jpg');
+}
+.rcc-blog .bnr-jr-totsuka-near-totsukana-mono .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-JR_Totsuka_Near_Totsukana-Mono.jpg');
+}
+.rcc-blog .bnr-jr-totsuka-near-totsukana-mono2 .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-JR_Totsuka_Near_Totsukana-Mono2.jpg');
+}
+.rcc-blog .bnr-jr-totsuka-bridge-mono2 .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-JR-Totsuka-Bridge-2-mono.jpg');
+}
+.rcc-blog .bnr-life-noble-note-mono .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-LIFE-Noble-Note-mono.jpg');
+}
+.rcc-blog .bnr-papabubble-candy2 .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-PapaBubble-Candy-2.jpg');
+}
+.rcc-blog .bnr-papabubble-candy3 .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-PapaBubble-Candy-3.jpg');
+}
+.rcc-blog .bnr-psu-mono .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-PSU-1170x350-008-mono.jpg');
+}
+.rcc-blog .bnr-shrine-mono .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-Shrine-1170x350-006-mono.jpg');
+}
+.rcc-blog .bnr-switch-mono2 .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-Switch-2-mono.jpg');
+}
+.rcc-blog .bnr-tokyo-night-lights-mono .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-Tokyo-Night-Lights-mono.jpg');
+}
+.rcc-blog .bnr-totsuka-west-shopping-mono2 .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-Totsuka-West-Shopping-2-mono.jpg');
+}
+.rcc-blog .bnr-train-romance-car-mono .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-Train-Romance-Car-1170x350-003-mono.jpg');
+}
+.rcc-blog .bnr-wine-window-mono .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-Wine-Window-1170x350-005-mono.jpg');
+}
+
 .rcc-blog .rcc-blog__posts > .rcc-nav {
   margin: 12px 15px;
   display: -webkit-box;
