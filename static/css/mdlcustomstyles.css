@@ -568,3 +568,23 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   box-sizing: border-box;
 }
+
+.post-topics {
+    clear: left;
+}
+.post-topic {
+    margin: 0 0.1rem;
+    padding: 0.2rem 0.5rem;
+    color: #fff;
+    background: #999;
+    font-size: 0.75rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+}
+a.post-topic {
+    text-decoration: none;
+}
+a.post-topic:hover {
+    color: #fff;
+    text-decoration: underline;
+}
