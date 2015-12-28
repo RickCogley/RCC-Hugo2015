@@ -35,12 +35,14 @@ body::before {
   }
 }
 body .rcc-blog {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+/*body .rcc-blog {
   font-family: 'Alegreya Sans', 'Roboto', 'Helvetica', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
+}*/
+/*h1, h2, h3, h4, h5, h6 {
     font-family: 'Alegreya', serif;
-}
+}*/
 
 .rcc-blog .rcc-blog__posts {
   max-width: 900px;
