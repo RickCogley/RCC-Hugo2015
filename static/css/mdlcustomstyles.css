@@ -319,6 +319,9 @@ h1, h2, h3, h4, h5, h6 {
 .rcc-blog .bnr-wine-window-mono .mdl-card__media {
   background-image: url('/img/Cogley-Banner-Wine-Window-1170x350-005-mono.jpg');
 }
+.rcc-blog .bnr-hiratsuka-beach-windsurfers .mdl-card__media {
+  background-image: url('/img/Cogley-Banner-Hiratsuka-Beach-Windsurfers.jpg');
+}
 
 .rcc-blog .rcc-blog__posts > .rcc-nav {
   margin: 12px 15px;
