@@ -1,11 +1,11 @@
 {{ "<!-- ENTERING layouts/post/summary.html -->" | safeHTML }}
 <article>
-	
-	<div class="mdl-card bnr-speeding-train-mono mdl-cell mdl-cell--12-col">
+
+	<div class="mdl-card {{.Params.bannercss}} mdl-cell mdl-cell--12-col">
     	<div class="mdl-card__media mdl-color-text--grey-50">
 			<h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
     	</div>
-	    <div class="mdl-color-text--grey-600 mdl-card__supporting-text">{{ .Summary }} <a href="{{ .RelPermalink }}">&#10087; Read More...</a></div>
+	    <div class="mdl-color-text--grey-600 mdl-card__supporting-text">{{ .Summary }} <a href="{{ .RelPermalink }}">Read More</a></div>
 		<div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
 			<div class="minilogo"></div>
 			<div>
@@ -22,7 +22,6 @@
 	      	</div>
     	</div>
   	</div>
-			
+
 </article>
 {{ "<!-- LEAVING layouts/post/summary.html -->" | safeHTML }}
-
