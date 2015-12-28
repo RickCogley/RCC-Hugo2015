@@ -1,0 +1,40 @@
+<article class="post">
+            <header class="post-header">
+            {{ if .Site.Params.thumbnail }}
+            <div class="post-avatar-wrapper">
+              <img class="post-avatar" alt="" src="{{ .Site.Params.thumbnail }}">
+            </div>
+            {{ end }}
+            <h1 class="post-title">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a> SUMMARY
+            </h1>
+            </header>
+            <p class="post-meta">
+            	{{ if eq .Params.showdate "true" }}
+		          <span class="post-date">
+		            <span class="post-date-day"><sup>{{ .Date.Format "2" }}</sup></span><span class="post-date-separator">/</span><span class="post-date-month">{{ .Date.Format "Jan" }}</span> <span class="post-date-year">{{ .Date.Format "2006" }}</span>
+		          </span>
+      				{{ end }}
+      				{{ if eq .Params.showauthor "true" }}
+      					{{ if .Params.author }}<span class="post-author">By <a class="post-author" {{ if .Params.authorlink }}href="{{ .Params.authorlink }}"{{ end }}>{{ .Params.author }}</a></span>{{ end }}
+      				{{ end }}
+              {{ if eq .Params.showreadingtime "true" }}
+                <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>{{.ReadingTime}} min. read</em></span>
+              {{ end }}
+      				{{ if .Params.topics }}
+      					<div class="post-topics">
+				        {{ $Site := .Site }}
+      					{{ range .Params.topics }}
+					        <a class="post-topic post-topic-{{ . | urlize }}" href="{{ $Site.BaseURL}}/topics/{{ . | urlize }}">{{ . }}</a>
+      					{{ end }}
+      					</div>
+      				{{ end }}
+            </p>
+            <div class="post-summary"> 
+              {{ .Summary }}
+            </div>
+			<footer class="read-more-link">
+				<a href="{{ .RelPermalink }}"><span class="read-more-separator">&#10087;</span>Read More...</a>
+			</footer>
+</article>
+

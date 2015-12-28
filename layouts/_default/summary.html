@@ -1,42 +1,27 @@
 {{ "<!-- ENTERING layouts/_default/summary.html -->" | safeHTML }}
-<article class="post">
-            <header class="post-header">
-            {{ if .Site.Params.thumbnail }}
-            <div class="post-avatar-wrapper">
-              <img class="post-avatar" alt="" src="{{ .Site.Params.thumbnail }}">
-            </div>
-            {{ end }}
-            <h1 class="post-title">
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h1>
-            </header>
-            <p class="post-meta">
-            	{{ if eq .Params.showdate "true" }}
-		          <span class="post-date">
-		            <span class="post-date-day"><sup>{{ .Date.Format "2" }}</sup></span><span class="post-date-separator">/</span><span class="post-date-month">{{ .Date.Format "Jan" }}</span> <span class="post-date-year">{{ .Date.Format "2006" }}</span>
-		          </span>
-      				{{ end }}
-      				{{ if eq .Params.showauthor "true" }}
-      					{{ if .Params.author }}<span class="post-author">By <a class="post-author" {{ if .Params.authorlink }}href="{{ .Params.authorlink }}"{{ end }}>{{ .Params.author }}</a></span>{{ end }}
-      				{{ end }}
-              {{ if eq .Params.showreadingtime "true" }}
-                <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>{{.ReadingTime}} min. read</em></span>
-              {{ end }}
-      				{{ if .Params.topics }}
-      					<div class="post-topics">
-				        {{ $Site := .Site }}
-      					{{ range .Params.topics }}
-					        <a class="post-topic post-topic-{{ . | urlize }}" href="{{ $Site.BaseURL}}/topics/{{ . | urlize }}">{{ . }}</a>
-      					{{ end }}
-      					</div>
-      				{{ end }}
-            </p>
-            <div class="post-summary"> 
-                {{ .Summary }}
-            </div>
-			<footer class="read-more-link">
-				<a href="{{ .RelPermalink }}"><span class="read-more-separator">&#10087;</span>Read More...</a>
-			</footer>
+<article>
+	
+	<div class="mdl-card bnr-speeding-train-mono mdl-cell mdl-cell--12-col">
+    	<div class="mdl-card__media mdl-color-text--grey-50">
+			<h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    	</div>
+	    <div class="mdl-color-text--grey-600 mdl-card__supporting-text">{{ .Summary }} <a href="{{ .RelPermalink }}">&#10087; Read More...</a></div>
+		<div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+			<div class="minilogo"></div>
+			<div>
+				<span><strong>{{ if eq .Params.showauthor "true" }}{{ if .Params.author }}By <a {{ if .Params.authorlink }}href="{{ .Params.authorlink }}"{{ end }}>{{ .Params.author }}</a>{{ end }}{{ end }}</strong>
+				on {{ if eq .Params.showdate "true" }} {{ .Date.Format "2" }} {{ .Date.Format "Jan" }}, {{ .Date.Format "2006" }} {{ end }} {{ if eq .Params.showreadingtime "true" }} <i class="fa fa-clock-o"></i> <em>{{.ReadingTime}} min. read</em> {{ end }}</span>
+				{{ if .Params.topics }}
+      			<div class="post-topics">
+				{{ $Site := .Site }}
+      			{{ range .Params.topics }}
+				<a class="post-topic post-topic-{{ . | urlize }}" href="{{ $Site.BaseURL}}/topics/{{ . | urlize }}">{{ . }}</a>
+      			{{ end }}
+      			</div>
+      			{{ end }}
+	      	</div>
+    	</div>
+  	</div>
+			
 </article>
 {{ "<!-- LEAVING layouts/_default/summary.html -->" | safeHTML }}
-
