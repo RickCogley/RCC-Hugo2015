@@ -1,19 +1,32 @@
 {{ "<!-- ENTERING partial footer.html -->" | safeHTML }}
-<div class="footer">
-	<hr class="thin" />
-	<div class="pure-menu pure-menu-horizontal pure-menu-open">
-		<ul class="footer-menu">
-		{{ range .Site.Menus.footer }}
-			<li><a href="{{.URL}}">{{ .Name }}</a></li>
-		{{ end }}
-		</ul>
-	</div>	
-    <div>
-        <p>&copy; 1966-{{ .Now.Year }} <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span itemprop="name">Rick Cogley</span></span>.
-            <em><a href="/license" title="Creative Commons Attribution">Some rights reserved</a>; please attribute properly and link back. </em><br>
-            Powered by <a href="http://hugo.spf13.com">Hugo</a> and <a href="/colophon">Friends</a>.
-        </p>
-    </div>
-</div>
+
+<footer class="mdl-mini-footer">
+	<div class="mdl-mini-footer--left-section">
+		<button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
+			<span class="visuallyhidden">Twitter</span>
+		</button>
+		<button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
+			<span class="visuallyhidden">Facebook</span>
+		</button>
+		<button class="mdl-mini-footer--social-btn social-btn social-btn__gplus">
+			<span class="visuallyhidden">Google Plus</span>
+		</button>
+
+		<br>
+		<p>&copy; 1966-{{ .Now.Year }} <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+				<span itemprop="name">Rick Cogley</span></span>.
+				<em><a href="/license" title="Creative Commons Attribution">Some rights reserved</a>; please attribute properly and link back. </em><br>
+				Powered by <a href="http://hugo.spf13.com">Hugo</a> and <a href="/colophon">Friends</a>. {{ range .Site.Menus.footer }}
+					<button><a href="{{.URL}}">{{ .Name }} </a></button>
+				{{ end }}</p>
+	</div>
+	<div class="mdl-mini-footer--right-section">
+		<button class="mdl-mini-footer--social-btn social-btn__share">
+			<i class="material-icons" role="presentation">share</i>
+			<span class="visuallyhidden">share</span>
+		</button>
+	</div>
+
+</footer>
+
 {{ "<!-- LEAVING partial footer.html -->" | safeHTML }}
