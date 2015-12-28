@@ -7,6 +7,7 @@ subtitle: ... you just can't get it anywhere else
 slug: japan-rail-sensational-signage
 banner: /img/Cogley-Banner-Speeding-Train-mono.jpg
 banneralt: 'Photo of a speeding train in Japan, by Rick Cogley.'
+bannercss: bnr-speeding-train-mono
 date: 2015-12-23T14:48:00+09:00
 publishdate: 2015-12-23T14:52:00+09:00
 description: 'Wherein Rick Cogley posts about the diabolical Japan Rail signage, that never shows what you need it to, when you need it.'
