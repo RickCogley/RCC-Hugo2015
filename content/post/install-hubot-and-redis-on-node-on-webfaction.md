@@ -7,6 +7,7 @@ subtitle: ... on Webfaction
 slug: install-hubot-and-redis-on-node-on-webfaction
 banner: /img/Cogley-Banner-Train-Romance-Car-1170x350-003-mono.jpg
 banneralt: 'Photo of the Romance Car bound for Hakone, near Yoyogi Koen stop, by Rick Cogley.'
+bannercss: bnr-train-romance-car-mono
 date: 2015-11-20T13:00:00+09:00
 publishdate: 2015-11-20T13:00:00+09:00
 description: 'Installing Node, Hubot and Redis for its brain, on Webfaction, a post by Rick Cogley.'

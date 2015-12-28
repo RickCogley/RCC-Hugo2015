@@ -7,6 +7,7 @@ subtitle: ... but, it was over sand!
 slug: first-race-ever-was-a-5k-over-sand
 banner: /img/Cogley-Banner-Hiratsuka-Beach-Windsurfers.jpg
 banneralt: Photo of Hiratsuka Beach Windsurfers, monochrome, cloudy, by Rick Cogley.
+bannercss: bnr-hiratsuka-beach-windsurfers
 date: 2015-10-10T21:40:27+09:00
 publishdate: 2015-10-10T21:40:27+09:00
 description: 'The first race ever in my life, a 5K, happened to be over sand, a post by Rick Cogley.'
@@ -44,7 +45,7 @@ topics:
   - Culture
 ---
 
-I have been running for a while, so I thought I would run in a race, my first ever. I signed up, then later got a pretty big surprise.
+I have been running for a couple of years now, and steadily improving, so I thought I would run in a race, my first ever. I signed up for a fun run, but later got a pretty big surprise.
 
 <!--more-->
 

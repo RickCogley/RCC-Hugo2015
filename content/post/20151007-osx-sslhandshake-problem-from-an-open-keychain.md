@@ -7,6 +7,7 @@ subtitle: ... on Apple OS X
 slug: osx-sslhandshake-problem-from-an-open-keychain
 banner: /img/Cogley-Banner-JR-Totsuka-Bridge-2-mono.jpg
 banneralt: Photo of Totsuka near Totsukana, monochrome, cloudy, by Rick Cogley.
+bannercss: bnr-jr-totsuka-bridge-mono2
 date: 2015-10-07T15:20:15+09:00
 publishdate: 2015-10-07T15:20:15+09:00
 description: 'An odd and esoteric problem with SSL, caused by an old open keychain, a post by Rick Cogley.'
