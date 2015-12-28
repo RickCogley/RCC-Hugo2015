@@ -7,6 +7,7 @@ subtitle: ... and notes to myself
 slug: mediawiki-tips
 banner: /img/Cogley-Banner-PSU-1170x350-008-mono.jpg
 banneralt: 'Photo of a Power Supply Unit, by Rick Cogley.'
+bannercss: bnr-psu-mono
 date: 2015-12-17T22:48:00+09:00
 publishdate: 2015-12-17T17:52:00+09:00
 description: 'Quick list of tips for MediaWiki system administrators, a post by Rick Cogley.'
@@ -32,7 +33,7 @@ topics:
   - Software
 ---
 
-To jog my own memory for the next time, I assembled this handy list of tips for setting up a MediaWiki site.
+To jog my own memory for the next time I need to do this, I assembled this handy list of tips for setting up a MediaWiki site, as I went along making settings. It might help you, too. 
 
 <!--more-->
 

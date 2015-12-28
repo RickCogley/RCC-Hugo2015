@@ -7,6 +7,7 @@ subtitle: ... for 2015
 slug: ucan-new-words-and-buzzwords-japan-2015
 banner: /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
 banneralt: 'Photo of Hula Dancers at a mall in Japan, by Rick Cogley.'
+bannercss: bnr-hula-dancers-mono
 date: 2015-12-05T09:50:00+09:00
 publishdate: 2015-12-04T20:51:00+09:00
 description: 'U-Can Japan New Words and Buzzwords winners, a post by Rick Cogley.'

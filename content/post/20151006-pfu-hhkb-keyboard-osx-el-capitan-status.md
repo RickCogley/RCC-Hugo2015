@@ -7,6 +7,7 @@ subtitle: ... on OS X El Capitan 10.11
 slug: pfu-hhkb-keyboard-osx-el-capitan-status
 banner: /img/Cogley-Banner-Train-Romance-Car-1170x350-003-mono.jpg
 banneralt: 'Photo of the Romance Car bound for Hakone, near Yoyogi Koen stop, by Rick Cogley.'
+bannercss: bnr-train-romance-car-mono
 date: 2015-12-04T08:40:00+09:00
 publishdate: 2015-10-06T15:20:15+09:00
 description: 'Status of PFU Happy Hacking Keyboard HHKB Drivers on OS X El Capitan, a post by Rick Cogley.'
