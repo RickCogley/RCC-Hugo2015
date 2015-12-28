@@ -1,19 +1,25 @@
 {{ "<!-- ENTERING partial pagination.html -->" | safeHTML }}
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
-<div class="pagination">
-  <nav role="pagination" class="post-list-pagination">
-      {{ if .Paginator.HasPrev }}
-      <a href="{{.Paginator.Prev.URL}}" class="post-list-pagination-item pure-button post-list-pagination-item-prev">
-        <i class="fa fa-angle-double-left"></i>&nbsp;Newer
-      </a>
-      {{ end }}
-    <span class="post-list-pagination-item post-list-pagination-item-current">Page {{.Paginator.PageNumber}} of {{.Paginator.TotalPages}}</span>
-    {{ if .Paginator.HasNext }}
-      <a href="{{.Paginator.Next.URL}}" class="post-list-pagination-item pure-button post-list-pagination-item-next">
-        Older&nbsp;<i class="fa fa-angle-double-right"></i>
-      </a>
-    {{ end }}
-  </nav>
-</div>
+
+<nav class="rcc-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+  {{ if .Paginator.HasNext }}
+  <a href="{{.Paginator.Next.URL}}" class="rcc-nav__button">
+    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+      <i class="material-icons">arrow_back</i>
+    </button>
+    Older
+  </a>
+  {{ end }}
+  <div class="section-spacer"> &nbsp;(Page {{.Paginator.PageNumber}} of {{.Paginator.TotalPages}})&nbsp; </div>
+  {{ if .Paginator.HasPrev }}
+  <a href="{{.Paginator.Prev.URL}}" class="rcc-nav__button">
+    Newer
+    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+      <i class="material-icons">arrow_forward</i>
+    </button>
+  </a>
+  {{ end }}
+</nav>
+
 {{ end }}
 {{ "<!-- LEAVING partial pagination.html -->" | safeHTML }}
