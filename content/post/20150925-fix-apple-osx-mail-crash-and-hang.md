@@ -7,6 +7,7 @@ subtitle: ...by deleting Mail's Envelope Index
 slug: fix-apple-osx-mail-crash-and-hang
 banner: /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
 banneralt: 'Photo Hula Dancers at Shonan Mall, by Rick Cogley.'
+bannercss: bnr-hula-dancers-mono
 date: 2015-09-25T11:30:15+09:00
 publishdate: 2015-09-25T11:30:15+09:00
 description: 'Mac users, fix your Mail OS X crashes and hangs, a post by Rick Cogley.'
