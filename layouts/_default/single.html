@@ -1,12 +1,19 @@
 {{ "<!-- ENTERING layouts/_default/single.html -->" | safeHTML }}
 {{ partial "header.html" . }}
 <body>
-{{ partial "bodytop.html" . }}
-    {{ if eq .Params.showtotop "true" }}
+  <div class="demo-blog demo-blog--blogpost mdl-layout mdl-js-layout has-drawer is-upgraded">
+    <main class="mdl-layout__content">
+      {{ partial "bodytop.html" . }}
+      {{ if eq .Params.showtotop "true" }}
         <div id="nav-to-top">
             <span class="decorative-marker">&#8984;</span><a href="#top">To Top</a>
         </div>
-    {{ end }}
+      {{ end }}
+      <div class="rcc-back">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="index.html" title="go back" role="button">
+          <i class="material-icons" role="presentation">arrow_back</i>
+        </a>
+      </div>
 
     <div id="layout" class="pure-g">
     {{ partial "sidebar.html" . }}
@@ -150,7 +157,8 @@
             }
         </script>
     {{ end }}
-
+    </main>
+  </div>
   {{ partial "bodyend.html" . }}
 </body>
 </html>
