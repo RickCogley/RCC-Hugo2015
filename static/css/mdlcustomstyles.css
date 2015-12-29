@@ -651,3 +651,11 @@ a.post-topic:hover {
     color: #fff;
     text-decoration: underline;
 }
+
+.rcc-larger {
+    font-size: larger;
+}
+
+.rcc-smaller {
+    font-size: smaller;
+}
