@@ -1,26 +1,14 @@
 body {
   color: $base-font-color;
-  font-family: $base-font-family;
+  font-family: $typl8-custom-font;
   font-feature-settings: "kern", "liga", "pnum";
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+  font-size: $typl8-font-base;
+  line-height: $typl8-line-height;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $heading-font-family;
-  font-size: $base-font-size;
-  line-height: $heading-line-height;
+/*p {
   margin: 0 0 $small-spacing;
-}
-
-p {
-  margin: 0 0 $small-spacing;
-}
+}*/
 
 a {
   color: $action-color;
@@ -46,4 +34,179 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+article.blog-article-1 {
+  @include span-columns(8);
+  @include shift(2);
+  // $base-border-radius: 6px !default;
+  // $base-spacing: 1.5em !default;
+  // $action-color: #477DCA !default;
+  // $dark-gray: #333 !default;
+  // $light-gray: #DDD !default;
+  // $medium-screen: em(640) !default;
+  // $base-font-color: $dark-gray !default;
+  /***** $serif: 'Lusitana', serif; *****/
+  /***** $serif-2: 'Merriweather', serif; *****/
+  /***** $sans-serif: 'Merriweather Sans', sans-serif; *****/
+
+  // $serif: 'Lusitana', serif;
+  $serif-2: 'rooney-web', serif;
+  $sans-serif: 'camingodos-web', sans-serif;
+  $sans-serif-2: 'rooney-sans', sans-serif;
+  $monospaced: 'source-code-pro', monaco, monospace;
+
+  @include clearfix;
+  font-family: $serif-2;
+  text-align: left;
+
+  // h1, h2, h3, p {
+    // margin: 0;
+  // }
+
+  hr {
+    border-bottom: 1px solid $light-gray;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: $base-spacing 0;
+  }
+
+  p {
+    // color: $base-font-color;
+    // line-height: $typl8-line-height;
+    margin-bottom: 1.8em;
+  }
+
+  a {
+    // color: $action-color;
+    // text-decoration: none;
+  }
+
+  .type {
+    border-bottom: 1px solid;
+    display: inline-block;
+    font-family: $sans-serif-2;
+    font-weight: 300;
+    font-size: 0.7em;
+    // font-weight: 700;
+    margin-bottom: 2em;
+    padding: 0.3em 0;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    // font-family: $sans-serif;
+    // font-size: 2em;
+    margin-bottom: 0.25em;
+    font-weight: 700;
+    @include media(max-width $medium-screen) {
+      font-size: 3.3em;
+    }
+  }
+  h2 {
+    margin-bottom: 0.22em;
+    font-weight: 600;
+    font-style: italic;
+    @include media(max-width $medium-screen) {
+      font-size: 2.666em;
+    }
+  }
+  h3 {
+    margin-bottom: 0.2em;
+    font-weight: 300;
+    @include media(max-width $medium-screen) {
+      font-size: 2em;
+      // font-weight: 200;
+      line-height: 1.3em;
+      // margin-bottom: .4em;
+    }
+  }
+
+  summary {
+    font-family: $sans-serif-2;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.3em;
+    margin-bottom: 0.9em;
+
+    @include media(max-width $medium-screen) {
+      font-size: 1.2em;
+    }
+  }
+
+  p code {
+    background: #F7F7F7;
+    border-radius: $base-border-radius * 1.5;
+    border: 1px solid #E0E0E0;
+    font-family: $monospaced;
+    font-size: 0.75em;
+    font-style: normal;
+    padding: 0.1em 0.4em;
+    white-space: nowrap;
+  }
+  code{
+    font-family: $monospaced;
+  }
+
+  p.date {
+    color: transparentize($base-font-color, .6);
+    font-family: $serif-2;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 0.3em;
+  }
+
+  p {
+    // font-family: $serif-2;
+    // font-size: 0.9em;
+    // line-height: 1.6em;
+    // margin-bottom: 1.5em;
+
+    span {
+      font-family: $sans-serif-2;
+      // font-weight: 700;
+    }
+  }
+
+  a.read-more {
+    display: inline-block;
+    font-family: $sans-serif-2;
+    font-size: 0.8em;
+    // font-weight: 700;
+    margin-left: 0.2em;
+    position: relative;
+    text-transform: uppercase;
+
+    span {
+      // font-family: $sans-serif-2;
+      font-size: 1.5em;
+      // font-style: normal;
+      // position: absolute;
+      // right: 12px;
+      // top: 5px;
+    }
+  }
+
+  hr {
+    width: 3em;
+  }
+
+  p.author {
+    font-family: $sans-serif-2;
+    font-style: italic;
+  }
+}
+
+blockquote {
+		font-style: italic;
+    font-weight: 300;
+    margin-bottom: -2em;
+		// @include typl8-blockquote("");
+		& + figcaption {
+			@extend .typl8-delta;
+      margin-bottom: 1.2em;
+		}
 }
