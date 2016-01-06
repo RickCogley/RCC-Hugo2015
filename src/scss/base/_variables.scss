@@ -1,29 +1,38 @@
+
 // Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
 
 // Font Sizes
-$base-font-size: 1em;
+// $heading2-font-size: em(28);
+// $article-font-size: em(18);
+// $small-font-size: em(14);
+// $recommended-reading-font-size: em(22);
 
-// Line height
-$base-line-height: 1.5;
-$heading-line-height: 1.2;
+// Font sizes covered in TypePlate vars
 
 // Other Sizes
-$base-border-radius: 3px;
-$base-spacing: $base-line-height * 1em;
+$base-border-radius: 6px;
+$base-spacing: $typl8-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
+$teaser-image-size: 100% 228px;
+$main-image-size: 100% 348px;
+$content-image-size: 100% 264px;
+$author-image-size: 108px 108px;
 
 // Colors
 $blue: #477dca;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$light-beige: #f7f6f1;
+$darker-beige: desaturate(darken($light-beige, 30%), 30%);
+$red: #E3857D;
+$cyan: #00c6dc;
+$menublue: #7dc3e0;
 
 // Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+$base-font-color: $typl8-copy-color;
+$action-color: $cyan;
 
 // Border
 $base-border-color: $light-gray;
