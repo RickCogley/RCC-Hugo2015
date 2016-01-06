@@ -9,16 +9,18 @@ input,
 label,
 select {
   display: block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: $typl8-custom-font;
+  font-size: $typl8-font-base;
 }
 
 label {
-  font-weight: 600;
+  font-weight: 300;
+  font-size: modular-scale(-1);
   margin-bottom: $small-spacing / 2;
 
   &.required::after {
     content: "*";
+    color: red;
   }
 
   abbr {
@@ -33,8 +35,8 @@ select[multiple=multiple] {
   border-radius: $base-border-radius;
   box-shadow: $form-box-shadow;
   box-sizing: border-box;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: $typl8-custom-font;
+  font-size: $typl8-font-base;
   margin-bottom: $small-spacing;
   padding: $base-spacing / 3;
   transition: border-color $base-duration $base-timing;
