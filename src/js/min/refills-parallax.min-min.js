@@ -1,0 +1,2 @@
+$(document).ready(function(){$("#js-parallax-window").length&&parallax()}),$(window).scroll(function(a){$("#js-parallax-window").length&&parallax()});
+//# sourceMappingURL=./refills-parallax.min-min.js.map
