@@ -1,3 +1,4 @@
+//Bourbon refills parallax
 $(document).ready(function() {
   if ($("#js-parallax-window").length) {
     parallax();

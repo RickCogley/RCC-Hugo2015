@@ -1,4 +1,4 @@
-// Avoid `console` errors in browsers that lack a console.
+// HTML5 boilerplate: Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
     var noop = function () {};
