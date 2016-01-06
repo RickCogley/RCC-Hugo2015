@@ -1,0 +1,457 @@
+/// Adobe font stack
+$camingodos: "camingodos-web", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+$rooney: "rooney-web", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+
+/***** 3rd Party Components *****/
+@import "../../bower_components/normalize-css/normalize.css";
+@import "bourbon";
+@import "base/grid-settings";
+@import "neat";
+@import "typeplate-sk/typeplate";
+@import "base/base";
+
+/***** Custom Mixins *****/
+@import "base/mixins";
+
+/***** Custom Layout Styles *****/
+@import "layout";
+
+/***** RCC Customizations *****/
+
+// headings
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $typl8-custom-header-font;
+}
+
+// lists (needed because bitters sets to none)
+
+ul {
+  // margin: 0;
+  // padding: 0;
+  @extend %default-ul;
+  // margin: 0em 0em .1em 0em;
+}
+ol {
+  @extend %default-ol;
+}
+
+ul > *:last-child, ul > *:last-child > *:last-child, ul > *:last-child > *:last-child > *:last-child {
+  margin: 0em 0em 1.4em 0em;
+}
+ol > *:last-child, ol > *:last-child > *:last-child , ol > *:last-child > *:last-child > *:last-child {
+  margin: 0em 0em 1.4em 0em;
+}
+
+// Top message with gradient
+
+.top-intro-side-image {
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $side-image-background-top: #006cab;
+  $side-image-background-bottom: #5DAC5D;
+  $side-image-content-background: #F9F9F9;
+  $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);
+
+  background: $side-image-content-background;
+
+  @include media($large-screen) {
+    @include row(table);
+  }
+
+  .images-wrapper {
+    @include background(url('/img/Cogley-Post-Omikuji-20140518-800-mono.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+    background-color: $side-image-background-top;
+    background-size: cover;
+    border-bottom: $side-image-border;
+    display: block;
+    min-height: 12em;
+    padding: 3em;
+
+    @include media($large-screen) {
+      @include span-columns(4);
+      background-position: bottom;
+      background-size: cover;
+      border-right: $side-image-border;
+    }
+  }
+
+  .side-image-content {
+    @include span-columns(12);
+    padding: 1em 1em 4em 1em;
+
+    @include media($large-screen) {
+      @include span-columns(8);
+      padding: 4em 4em 8em 4em;
+    }
+
+  /*  h1 {
+      margin-bottom: 0.9em;
+    }*/
+
+    h4 {
+      background: #bbb;
+      color: white;
+      display: inline-block;
+      font-size: 0.75em;
+      margin-bottom: 1.3em;
+      padding: 3px 8px;
+      text-transform: uppercase;
+    }
+
+/*    p {
+      color: $base-font-color;
+      line-height: $typl8-line-height;
+      margin-bottom: 3em;
+    }*/
+  }
+
+  @include reset-display();
+}
+
+// badges
+
+$badge-font-size: 0.75em !default;
+$medium-gray: #999 !default;
+$alert-color: #fff6bf !default;
+$error-color: #fbe3e4 !default;
+$notice-color: #e5edf8 !default;
+$success-color: #e6efc2 !default;
+
+@mixin badge($color: $medium-gray) {
+  background-color: $color;
+  border-radius: $badge-font-size * 5;
+  color: darken($color, 60%);
+  display: inline-block;
+  font-size: $badge-font-size;
+  line-height: 1;
+  padding: 0.4em 1.2em;
+}
+
+.badge {
+  @include badge;
+}
+
+.badge-alert {
+  @include badge($alert-color);
+}
+
+.badge-error {
+  @include badge($error-color);
+}
+
+.badge-notice {
+  @include badge($notice-color);
+}
+
+.badge-success {
+  @include badge($success-color);
+}
+
+// Bourbon mixin textures code, with mixin in _mixins
+
+.texture {
+  $texture-top-background: lighten(#006cab, 1%);
+  $texture-bottom-background: darken(#006cab, 10%);
+  height: 5em;
+  width: 100%;
+
+  .texture-normal {
+    // gradient color 1, gradient color 2, gradient angle, texture-number, 0=inverted or 1=normal
+    @include texture(180deg, $texture-top-background, $texture-bottom-background, 66, 1);
+    height: 5em;
+    width: 100%;
+  }
+
+  .texture-inverted {
+    // gradient color 1, gradient color 2, gradient angle, texture-number, 0=inverted or 1=normal
+    @include texture(180deg, $texture-top-background, $texture-bottom-background, 66, 0);
+    float: left;
+    height: 5em;
+    width: 100%;
+  }
+}
+
+// Top grid of posts
+
+@mixin grid-item-columns($columns) {
+  width: (100% / 10) * $columns;
+}
+
+.grid-items {
+  @include span-columns(10);
+  @include shift(1);
+  margin-top:88px;
+  margin-bottom:79px;
+
+  $action-color: #477DCA !default;
+  $base-background-color: white !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(900) !default;
+  $grid-items-background: $base-background-color;
+  $grid-item-background: desaturate($action-color, 30%);
+  $grid-item-colors:
+    desaturate($action-color, 30%),
+    #3581A5,
+    #5FBEBE,
+    #98C79A,
+    #A7A891,
+    #BDCC97,
+    #979EA0;
+  $grid-item-border-size: 9px;
+  $grid-item-columns: 3;
+  $grid-item-big-columns: 5;
+  $grid-item-color: white;
+  $grid-item-height: 14em;
+
+  @include clearfix;
+
+  .grid-item {
+    @include transition (all 0.2s ease-in-out);
+    background: $grid-item-background;
+    border-bottom: $grid-item-border-size solid $grid-items-background;
+    border-left: ($grid-item-border-size / 2) solid $grid-items-background;
+    border-right: ($grid-item-border-size / 2) solid $grid-items-background;
+    border-top: 0;
+    cursor: pointer;
+    float: left;
+    height: $grid-item-height;
+    overflow: hidden;
+    outline: none;
+    padding: 2em;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-columns);
+    }
+
+    @for $i from 1 through length($grid-item-colors) { // assign colors from $grid-item-colors list
+      &:nth-child(#{$i}) {
+        $background-from-list: nth($grid-item-colors, $i);
+        background-color: $background-from-list;
+        box-shadow: inset 0px 0px 1px 2px darken($background-from-list, 10%);
+
+        &:focus,
+        &:hover {
+          background-color: darken($background-from-list, 10%);
+          background-repeat: no-repeat;
+          background-position: top;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  .grid-item img {
+    display: block;
+    height: 3em;
+    margin: 0 auto 1em;
+  }
+
+  .grid-item h1 {
+    color: $grid-item-color;
+    font-size: 1.3em;
+    margin-bottom: 0.4em;
+  }
+
+  .grid-item p {
+    color: transparentize($grid-item-color, 0.3);
+    line-height: 1.5em;
+    margin: auto;
+
+    @include media($medium-screen) {
+      max-width: 70%;
+    }
+  }
+
+  .grid-item-big {
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-big-columns);
+    }
+
+    p {
+      @include media($medium-screen) {
+        max-width: 60%;
+      }
+    }
+  }
+
+  .grid-item-image {
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
+    background-color: $grid-item-background;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+// post detail top banner parallax
+// Based on http://codepen.io/skeurentjes/
+
+$parallax-window-height: 30em;
+$parallax-background-height: $parallax-window-height * 2;
+$parallax-background-img-1: url(/img/Cogley-Banner-Enoshima-Fuji-mono.png) repeat;
+$parallax-background-img-2: url(/img/Cogley-Banner-Hiratsuka-Beach-Windsurfers.png) repeat;
+
+.parallax-window {
+  max-height: $parallax-window-height;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.parallax-static-content {
+  // color: #9A9A8A;
+  color: #f7f6f1;
+  padding: 8em 0;
+  position: relative;
+  z-index: 9;
+}
+
+@mixin parallax-background($bannerimg: $parallax-background-img-1) {
+  background: $bannerimg;
+  background-position: top;
+  background-size: 1200px;
+  background-color: $light-beige;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 3;
+  width: 100%;
+}
+
+.parallax-background {
+  @include parallax-background;
+}
+
+.parallax-background-img-1 {
+  @include parallax-background($parallax-background-img-1);
+}
+
+.parallax-background-img-2 {
+  @include parallax-background($parallax-background-img-2);
+}
+
+// Ribbon for "new!" badge
+
+.ribbon-box {
+  @include size(100px);
+  border: none;
+  position: relative;
+  float: right;
+}
+
+.ribbon-wrapper {
+  $action-color: #477dca !default;
+  $ribbon-background: $action-color;
+  $ribbon-size: 85px;
+
+  @include size($ribbon-size);
+  overflow: hidden;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+
+  .ribbon {
+    @include transform(rotate(45deg));
+    background-color: $ribbon-background;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 0.8em;
+    left: -5px;
+    line-height: 1.5em;
+    padding: 2px 7px;
+    position: relative;
+    text-align: center;
+    top: 15px;
+    width: 120px;
+  }
+}
+
+// footer
+
+.footer {
+  $base-spacing: 1.5em !default;
+  // $action-color: #477DCA !default;
+  // $action-color: red !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(900) !default;
+  $footer-background: desaturate(darken($light-beige, 80%), 30%);
+  $footer-color: white;
+  $footer-link-color: transparentize($footer-color, 0.6);
+  $footer-disclaimer-color: transparentize($footer-color, 0.6);
+
+  background: $footer-background;
+  padding: ($base-spacing * 2) $gutter;
+  width: 100%;
+
+  .footer-logo {
+    margin-bottom: 2em;
+    text-align: center;
+
+    img {
+      height: 3em;
+    }
+  }
+
+  .footer-links {
+    @include display(flex);
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+    margin-bottom: $base-spacing;
+  }
+
+  ul {
+    @include flex-basis(13em);
+    @include flex-shrink(0);
+    margin-bottom: $base-spacing * 2;
+    padding: 0;
+  }
+
+  li {
+    line-height: 1.5em;
+    list-style: none;
+    text-align: center;
+  }
+
+  li a {
+    color: $footer-link-color;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: transparentize($footer-color, 0);
+    }
+  }
+
+  li h3 {
+    color: $footer-color;
+    font-size: 1em;
+    margin-bottom: 0.4em;
+  }
+
+  hr {
+    border: 1px solid transparentize($footer-disclaimer-color, 0.3);
+    margin: 0 auto $base-spacing;
+    width: 12em;
+  }
+
+  p {
+    color: $footer-disclaimer-color;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 35em;
+    text-align: center;
+  }
+}
