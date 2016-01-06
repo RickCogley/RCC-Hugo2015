@@ -29,10 +29,11 @@
 
   <!-- Load CSS -->
   <!--<link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/pure-min.css">-->
-  <link rel="stylesheet" href="/css/material.min.css">
-  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.cyan-deep_orange.min.css" />
-  <link rel="stylesheet" href="/css/mdlcustomstyles.min.css">
+  <!--<link rel="stylesheet" href="/css/material.min.css">-->
+  <!--<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.cyan-deep_orange.min.css" />-->
+  <!--<link rel="stylesheet" href="/css/mdlcustomstyles.min.css">-->
   <!--<link rel="stylesheet" href="/css/rickcogleyinfo.min.css{{with getenv "RCCCSS_HASH"}}?v={{.}}{{end}}">-->
+  <link rel="stylesheet" href="/css/styles-ck.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/topics.min.css{{with getenv "TOPICSRCCCSS_HASH"}}?v={{.}}{{end}}">
   <link rel="stylesheet" href="/css/prism.min.css{{with getenv "PRISMRCCCSS_HASH"}}?v={{.}}{{end}}">
@@ -41,17 +42,17 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <!--<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">-->
   <!--<![endif]-->
 
   <!-- MODERNIZR - should follow stylesheets -->
   <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
 
   <!-- JQUERY and UTILITIES -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-  <script src="/js/plugins.js"></script>
-  <script src="/js/main.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/vendor/jquery-2.1.4.min.js"><\/script>')</script>
+  <script src="/js/plugins-ck-min.js"></script>
+  <script src="/js/main-ck-min.js"></script>
 
   <!-- lightbox, gallery -->
   {{ if .Params.lightbox }}
