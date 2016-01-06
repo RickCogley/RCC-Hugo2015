@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="83px" height="24px" viewBox="0 0 83 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-placeholder</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="blog-list" sketch:type="MSArtboardGroup" transform="translate(-240.000000, -25.000000)" fill="#594C4F">
+            <g id="Navigation" sketch:type="MSLayerGroup">
+                <path d="M281.5,30.1649794 C285.875317,23.9834981 293.036983,23.9999181 301.131042,27.6808149 C310.887434,32.1176831 314.140209,35.667178 321.458954,29.4555622 C328.587248,23.4055868 310.25861,67.8631083 281.5,37.3855259 C252.74139,67.8631083 234.412752,23.4055868 241.541046,29.4555622 C248.859791,35.667178 252.112566,32.1176831 261.868958,27.6808149 C269.963017,23.9999181 277.124683,23.9834981 281.5,30.1649794 Z" id="logo-placeholder" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
