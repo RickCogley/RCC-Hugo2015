@@ -1863,7 +1863,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_layout.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -1879,7 +1879,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_base.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -1895,7 +1895,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_buttons.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -1911,7 +1911,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_forms.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -1927,7 +1927,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_grid-settings.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -1943,7 +1943,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_lists.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -1959,7 +1959,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_mixins.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -1975,7 +1975,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_tables.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -1991,7 +1991,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_typography.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -2007,7 +2007,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_variables.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -2023,7 +2023,23 @@
 		"outputAbbreviatedPath": "\/static\/css\/styles.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": 0
+		},
+	"\/scss\/typeplate-sk\/_typeplate-custom-vars.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/typeplate-sk\/_typeplate-custom-vars.scss",
+		"outputAbbreviatedPath": "\/static\/css\/_typeplate-custom-vars.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -2039,7 +2055,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_typeplate-extends.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -2055,7 +2071,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_typeplate-fonts.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -2071,7 +2087,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_typeplate-functions.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -2087,7 +2103,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_typeplate-helpers.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -2103,7 +2119,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_typeplate-mixins.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -2119,7 +2135,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_typeplate-styles.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -2135,7 +2151,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_typeplate-vars.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -2151,7 +2167,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/_typeplate.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -2167,7 +2183,7 @@
 		"outputAbbreviatedPath": "\/static\/css\/styles.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -2180,9 +2196,9 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "RCC-Bourbon-01",
-	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-cocaine"
+	"displayValue": "RCC src",
+	"displayValueWasSetByUser": 1,
+	"iconImageName": "meme-lotr"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 0,
@@ -2778,7 +2794,7 @@
 	"sassCreateSourceMap": 1,
 	"sassDebugStyle": 0,
 	"sassDecimalPrecision": 10,
-	"sassOutputStyle": 0,
+	"sassOutputStyle": 3,
 	"sassUseLibsass": 0,
 	"shouldRunAutoprefixer": 1,
 	"shouldRunBless": 1,
