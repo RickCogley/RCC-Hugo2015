@@ -1,0 +1,180 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  /*color: var(--darkbackgroundTextColor);*/
+  /*padding: 20px;*/
+  /*height: auto;*/
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures, contextual;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "alt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+
+}
+
+/*header {
+  text-align: center;
+  margin: 30px 0 60px;
+}*/
+
+body {
+  /*margin: 1em;*/
+  /*line-height: 1;*/
+  /*font-family: sans-serif;*/
+  /*background-color: var(--bodyBackgroundColor);*/
+  -webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	word-wrap: break-word;
+
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+	font-variant-ligatures: common-ligatures, contextual;
+	font-variant-numeric: oldstyle-nums, proportional-nums;
+	-moz-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+	-ms-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+	-webkit-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+	font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+	font-kerning: normal;
+	font-variant-ligatures: common-ligatures, contextual, discretionary-ligatures;
+	-moz-font-feature-settings: "kern", "liga", "clig", "calt", "dlig";
+	-ms-font-feature-settings: "kern", "liga", "clig", "calt", "dlig";
+	-webkit-font-feature-settings: "kern", "liga", "clig", "calt", "dlig";
+	font-feature-settings: "kern", "liga", "clig", "calt", "dlig";
+}
+
+h1 {
+  margin-top: var(--heading-1-margin-top);
+  margin-bottom: var(--heading-margin-bottom);
+}
+
+::selection {
+  background-color: rgba(0, 238, 255, .2);
+  opacity: 0;
+}
+
+/**
+*
+* =======================================================================
+ Hyphens
+* =======================================================================
+*/
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+  /* Accepted values: [ none | manual | auto ] */ /* http://meyerweb.com/eric/thoughts/2012/12/17/where-to-avoid-css-hyphenation */
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/**
+*
+* =======================================================================
+ Paragraphs and Indentation
+* =======================================================================
+*/
+/* bottom margin for paragraphs */
+/*p {
+  margin: auto auto 1.5em;
+}*/
+
+
+p {
+  text-rendering: optimizeLegibility;
+	font-kerning: normal;
+	font-variant-ligatures: common-ligatures, contextual;
+	font-variant-numeric: oldstyle-nums, proportional-nums;
+	-moz-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+	-ms-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+	-webkit-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+	font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+}
+p abbr,
+p span {
+  text-rendering: optimizeLegibility;
+	font-kerning: normal;
+	font-variant-ligatures: common-ligatures, contextual;
+	font-variant-numeric: oldstyle-nums, proportional-nums;
+	font-variant-caps: all-small-caps;
+	-moz-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+	-ms-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+	-webkit-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+	font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+}
+/* no top margin on subsequent paragraphs */
+p + p {
+  text-indent: var(--paragraph-indent);
+  margin-top: var(--paragraph-margin-top);
+}
+
+
+/**
+*
+* =======================================================================
+ Blockquote
+* =======================================================================
+*/
+
+blockquote {
+  font-family: var(--decorative-font-family);
+  font-weight: 100;
+  font-size: var(--blockquote-font-size);
+  margin: var(--blockquote-margin);
+}
+
+td {
+	font-kerning: normal;
+	font-variant-ligatures: common-ligatures, contextual;
+	font-variant-numeric: lining-nums, tabular-nums;
+	-moz-font-feature-settings: "kern", "liga", "clig", "calt", "lnum", "tnum";
+	-ms-font-feature-settings: "kern", "liga", "clig", "calt", "lnum", "tnum";
+	-webkit-font-feature-settings: "kern", "liga", "clig", "calt", "lnum", "tnum";
+	font-feature-settings: "kern", "liga", "clig", "calt", "lnum", "tnum";
+}
+.fraction {
+	font-kerning: normal;
+	font-variant-ligatures: common-ligatures, contextual;
+	font-variant-numeric: diagonal-fractions;
+	-moz-font-feature-settings: "kern", "liga", "clig", "calt", "frac";
+	-ms-font-feature-settings: "kern", "liga", "clig", "calt", "frac";
+	-webkit-font-feature-settings: "kern", "liga", "clig", "calt", "frac";
+	font-feature-settings: "kern", "liga", "clig", "calt", "frac";
+}
+.fn {
+	font-kerning: normal;
+	font-variant-ligatures: common-ligatures, contextual;
+	font-variant-position: sub;
+	-moz-font-feature-settings: "kern", "liga", "clig", "calt", "subs";
+	-ms-font-feature-settings: "kern", "liga", "clig", "calt", "subs";
+	-webkit-font-feature-settings: "kern", "liga", "clig", "calt", "subs";
+	font-feature-settings: "kern", "liga", "clig", "calt", "subs";
+}
+
+
+.bg-ricepaper {
+  background:
+     url("/app/ricepaper_v3.png") repeat;
+}
+
+.bg-lightpaperfibers {
+  background:
+     url("/app/lightpaperfibers.png") repeat;
+}
