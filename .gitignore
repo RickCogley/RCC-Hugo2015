@@ -4,4 +4,8 @@ public/
 *.markdown~
 *.md~
 .DS_Store
+src/scss/.sass-cache/
 
+node_modules/
+npm-debug.log
+bundle/
