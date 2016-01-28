@@ -1,0 +1,38 @@
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* =======================================================================================
+Example showing how to change the color/size of the icons:
+.icon-name {
+	font-size: 32px; // works because "width" & "height" were set using em units
+	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
+}
+======================================================================================== */
+
+.icon-Untitled-1 {
+	width: 0.4892578125em;
+}
+
+.icon-keyboard {
+	width: 1.125em;
+}
+
+.icon-markup {
+	width: 1.5em;
+}
+
+.icon-regexp {
+	width: 1.3125em;
+}
+
+.icon-code {
+	width: 1.25em;
+}
+
+.icon-youtube2 {
+	width: 2.5087890625em;
+}

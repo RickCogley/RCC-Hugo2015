@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["plugins.js"],"sourcesContent":["// http://unheap.com\n\n$(function() {\n  $('.browsehappy').click(function() {\n    $(this).slideUp();\n  });\n});\n"],"file":"plugins.js","sourceRoot":"/source/"}
