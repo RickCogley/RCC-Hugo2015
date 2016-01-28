@@ -1,0 +1,19 @@
+.navigation-wrapper {
+/*    @include clearfix;
+    @include outer-container;*/
+    position: relative;
+    z-index: 9999;
+}
+
+.logo {
+    float: left;
+    max-height: 2em;
+}
+
+.bg-gradient-greenblue {
+background-image: linear-gradient(-90deg, #18C961, #3B008F);
+}
+
+.bg-gradient-greenblue2 {
+  background-image: radial-gradient(circle at 2.01% 40.94%, #1A2980, transparent 100%),radial-gradient(circle at 97.99% 50.06%, #26D0CE, transparent 84%),radial-gradient(circle at 50.49% 58.94%, #03599c, transparent 100%),radial-gradient(circle at 50% 50%, #beff8c, #beff8c 100%);
+}
