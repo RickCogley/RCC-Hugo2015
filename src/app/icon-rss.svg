@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="26px" viewBox="0 0 25 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="blog-list" sketch:type="MSArtboardGroup" transform="translate(-940.000000, -1602.000000)" fill="#FFFFFF">
+            <g id="articles-default" sketch:type="MSLayerGroup" transform="translate(0.000000, 731.000000)">
+                <g id="Follow" transform="translate(323.000000, 805.000000)" sketch:type="MSShapeGroup">
+                    <g id="rss" transform="translate(601.051176, 50.000000)">
+                        <path d="M19.4313786,41.185952 C21.2592553,41.185952 22.7410421,39.6962413 22.7410421,37.8585899 C22.7410421,36.0209386 21.2592553,34.5312279 19.4313786,34.5312279 C17.6035019,34.5312279 16.1217151,36.0209386 16.1217151,37.8585899 C16.1217151,39.6962413 17.6035019,41.185952 19.4313786,41.185952 Z M32.118422,41.185952 L27.4296101,41.185952 C27.4296101,34.9070543 22.3667959,29.8170202 16.1217151,29.8170202 L16.1217151,25.1035403 C24.9567552,25.1035403 32.118422,32.3036859 32.118422,41.185952 Z M35.4280855,41.185952 C35.4280855,30.4660426 26.7845599,21.7759356 16.1217151,21.7759356 L16.1217151,16.9234315 C29.4499052,16.9234315 40.2544952,27.7862472 40.2544952,41.185952 L35.4280855,41.185952 Z" id="Oval"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

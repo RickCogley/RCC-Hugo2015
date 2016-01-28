@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="blog-list" sketch:type="MSArtboardGroup" transform="translate(-566.000000, -638.000000)" fill="#E3857D">
+            <g id="article-teaser" sketch:type="MSLayerGroup" transform="translate(406.000000, 160.000000)">
+                <g id="icon-arrow-read-on-+-Read-On" transform="translate(1.000000, 464.000000)" sketch:type="MSShapeGroup">
+                    <g id="icon-arrow" transform="translate(159.000000, 14.000000)">
+                        <path d="M10,1.0093689 C10,0.451909848 10.3397772,0.283147693 10.7721119,0.643426552 L15.2278881,4.35657345 C15.6543137,4.71192812 15.6602228,5.28314769 15.2278881,5.64342655 L10.7721119,9.35657345 C10.3456863,9.71192812 10,9.55664682 10,8.9906311 L10,6 L0.995397568,6 C0.445654671,6 0,5.55613518 0,5 L0,5 C0,4.44771525 0.455664396,4 0.995397568,4 L10,4 L10,1.0093689 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
