@@ -1,0 +1,474 @@
+/*
+ * Bassplate
+ * Boilerplate for Basscss with cssnext
+ * http://github.com/basscss/bassplate
+ *
+ * Remove or comment out unneeded modules and import your own files.
+ * Adjust global media queries and custom properties below.
+ *
+ */
+
+/* Basscss Modules (needs postcss-import to inline)*/
+
+@import 'basscss-base-reset';
+@import 'basscss-base-forms';
+@import 'basscss-base-tables';
+@import 'basscss-base-typography';
+@import 'basscss-color-base';
+@import 'basscss-color-forms';
+@import 'basscss-color-tables';
+@import 'basscss-btn';
+@import 'basscss-btn-primary';
+@import 'basscss-btn-outline';
+@import 'basscss-type-scale';
+@import 'basscss-utility-typography';
+@import 'basscss-utility-layout';
+@import 'basscss-align';
+@import 'basscss-white-space';
+@import 'basscss-positions';
+@import 'basscss-responsive-states';
+@import 'basscss-grid';
+@import 'flex-object';
+@import 'basscss-borders';
+@import 'basscss-colors';
+@import 'basscss-background-colors';
+
+/* Optional Basscss Modules (not included in Basscss by default) */
+/*
+
+@import 'basscss-color-forms-dark';
+@import 'basscss-input-range';
+@import 'basscss-progress';
+@import 'basscss-media-object';
+@import 'basscss-responsive-white-space';
+@import 'basscss-utility-headings';
+@import 'basscss-table-object';
+@import 'basscss-highlight-dark';
+@import 'basscss-highlight';
+*/
+@import 'basscss-background-images';
+@import 'basscss-border-colors';
+@import 'basscss-btn-sizes';
+@import 'basscss-ui-utility-groups';
+
+/* cssrecipes */
+
+@import 'cssrecipes-tooltip';
+
+
+/* Example custom file import */
+/*
+@import './color/borders';
+*/
+
+
+/* Default custom properties  */
+@import 'basscss-defaults';
+
+
+/* Custom media queries */
+
+@custom-media --breakpoint-sm (min-width: 40em);
+@custom-media --breakpoint-md (min-width: 52em);
+@custom-media --breakpoint-lg (min-width: 64em);
+
+/* Custom root properties */
+
+:root {
+  --font-family: 'calluna', 'Georgia', Times, serif;
+  --heading-font-family: 'calluna-sans', 'Helvetica Neue', Helvetica, sans-serif;
+  --heading-font-weight: 700;
+  --heading-line-height: 1.2;
+  --monospace-font-family: 'source-code-pro', Consolas, "Bitstream Vera Sans Mono", monaco, "Courier New", Courier, monospace;
+  --decorative-font-family: 'freight-sans-pro', 'Verdana', sans-serif;
+
+  --line-height: 1.48;
+  --body-font-size: 120%;
+  --heading-margin-top: 1.414em;
+  --heading-1-margin-top: 0;
+  --heading-margin-bottom: .5em;
+  --paragraph-margin-top: 0;
+  --paragraph-margin-bottom: var(--space-2);
+  --paragraph-indent: 1em;
+  --list-margin-top: 0;
+  --list-margin-bottom: var(--space-2);
+  --pre-font-size: inherit;
+  --pre-margin-top: 0;
+  --pre-margin-bottom: var(--space-2);
+
+  --blockquote-font-size: 1.5rem;
+  --blockquote-margin: 1.5em;
+
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+
+  --form-field-font-size: 1rem;
+  --form-field-height: 2.25rem;
+  --form-field-padding-y: .5rem;
+  --form-field-padding-x: .5rem;
+
+  --button-font-size: inherit;
+  --button-font-weight: bold;
+  --button-line-height: 1.125rem;
+  --button-padding-y: .5rem;
+  --button-padding-x: 1rem;
+
+  --container-width: 64em;
+
+  --h1: 3.998rem;
+  --h2: 2.827rem;
+  --h3: 1.999rem;
+  --h4: 1.414rem;
+  --h5: 1rem;
+  --h6: .707rem;
+
+  --small-text-size: .5rem;
+  --large-text-size: 1.999rem;
+  --big-title-text-size: 4rem;
+
+  --bold-font-weight: bold;
+  --light-font-weight: 200;
+
+
+  /*
+     Basic colors from colors.css
+     - Cool
+     - Warm
+     - Gray Scale
+  */
+
+  --aqua: #7fdbff;
+  --blue: #0074d9;
+  --navy: #001f3f;
+  --teal: #39cccc;
+  --green: #2ecc40;
+  --olive: #3d9970;
+  --lime: #01ff70;
+
+  --yellow: #ffdc00;
+  --orange: #ff851b;
+  --red: #ff4136;
+  --fuchsia: #f012be;
+  --purple: #b10dc9;
+  --maroon: #85144b;
+
+  --black: #111;
+  --gray: #aaa;
+  --silver: #ddd;
+  --white: #fff;
+
+  --darken-1: rgba(0,0,0,.0625);
+  --darken-2: rgba(0,0,0,.125);
+  --darken-3: rgba(0,0,0,.25);
+  --darken-4: rgba(0,0,0,.5);
+
+  --border-width: 1px;
+  --border-radius: 3px;
+  --border-color: var(--darken-2);
+  --hover-background-color: var(--darken-1);
+
+  --link-color: var(--teal);
+  --button-background-color: var(--blue);
+  /*--pre-background-color: var(--silver);*/
+
+  --trolleygray: #808080;
+  --davygray: #555555;
+  --taupegray: #8b8589;
+  --darkgray: #a9a9a9;
+  --dimgray: #696969;
+  --gray2: #808080;
+  --lightgray: #d3d3d3;
+  --charcoal: #222222;
+  --darkcharcoal: #444444;
+  --darkcyan: #00c6dc;
+  --cyan: #00ffff;
+  --slateblue: #477dca;
+  --washslateblue: #7dc3e0;
+
+  --colorforlinksdotcsshover: #7FDBFF;
+
+  --light-beige: #f7f6f1;
+  --darker-beige: #d3ceb3;
+
+  --rice-paper: #fdfcfb;
+  --rice-paper-light: #e3d5c7;
+  --rice-paper-medium: #c2a485;
+  --rice-paper-dark: #a67d53;
+
+  --darker-teal-1: #30bbbb;
+  --darker-teal-2: #2ba7a7;
+  --darker-teal-3: #269393;
+
+  .fill-darker-beige {
+    fill: var(--darker-beige);
+  }
+
+  .stroke-darker-beige {
+    stroke: var(--darker-beige);
+  }
+
+  .fill-rice-paper-light {
+    fill: var(--rice-paper-light);
+  }
+
+  .stroke-rice-paper-light {
+    stroke: var(--rice-paper-light);
+  }
+
+  background-color: var(--red);
+
+  --bodyBackgroundColor: var(--charcoal);
+  --darkbackgroundTextColor: var(--white);
+  --lightbackgroundTextColor: var(--darkcharcoal);
+  --headingTextColor: var(--charcoal);
+
+  --themeColor: var(--slateblue);
+  --accentColor: var(--cyan);
+
+  --side-image-background-top: var(--light-beige);
+  --side-image-background-bottom: var(--white);
+  --side-image-content-background: var(--light-beige);
+  --side-image-border: 1px solid var(--darken-1);
+
+  /* cssrecipes tooltip  */
+
+  --r-Tooltip-zIndex: 1000;
+  --r-Tooltip-backgroundColor: var(--yellow);
+  --r-Tooltip-textColor: var(--charcoal);
+  --r-Tooltip-margin: .5rem;
+  --r-Tooltip-arrow-size: .5rem;
+
+  /* Highlight.js colors
+  --hljs-comment: var(--gray);
+  --hljs-keyword: var(--black);
+  --hljs-number: var(--olive);
+  --hljs-string: var(--red);
+  --hljs-title: var(--red);
+  --hljs-type: var(--navy);
+  --hljs-tag: var(--navy);
+  --hljs-attribute: var(--olive);
+  --hljs-regexp: var(--olive);
+  --hljs-symbol: var(--purple);
+  --hljs-built-in: var(--navy);
+  --hljs-preprocessor: var(--gray);
+  --hljs-deletion: var(--fuchsia);
+  --hljs-addition: var(--lime);
+  --hljs-change: var(--navy);
+  --hljs-chunk: var(--silver);
+  */
+}
+/* END Custom root properties */
+
+.light {
+  font-weight: var(--light-font-weight, 300)
+}
+
+.sans {
+  font-family: var(--heading-font-family);
+}
+
+.deco {
+  font-family: var(--decorative-font-family);
+}
+
+.large {
+  font-size: var(--large-text-size);
+}
+
+.small {
+  font-size: var(--small-text-size);
+}
+
+.big-title {
+  font-size: var(--big-title-text-size);
+}
+
+.text-shadow {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bg-light-beige  {
+  background-color: var(--light-beige);
+}
+
+.bg-darker-beige  {
+  background-color: var(--darker-beige);
+}
+
+.darker-beige {
+  color: var(--darker-beige);
+}
+
+.rice-paper {
+  color: var(--rice-paper);
+}
+
+.rice-paper-light {
+  color: var(--rice-paper-light);
+}
+
+.rice-paper-medium {
+  color: var(--rice-paper-medium);
+}
+
+.rice-paper-dark {
+  color: var(--rice-paper-dark);
+}
+
+.bg-rice-paper-dark {
+  background-color: var(--rice-paper-dark);
+}
+
+.darker-teal-1 {
+  color: var(--darker-teal-1);
+}
+
+.darker-teal-2 {
+  color: var(--darker-teal-2);
+}
+
+.darker-teal-3 {
+  color: var(--darker-teal-3);
+}
+
+/* Links */
+
+a {
+  transition: color .4s;
+  color: #265C83;
+}
+
+a:link,
+a:visited { color: #265C83; }
+a:hover   { color: var(--teal); }
+a:active  {
+  transition: color .3s;
+  color: var(--orange);
+}
+/*a:focus:before, a:hover:before {
+  opacity: .75;
+  -webkit-transform: scaleX(.95);
+  transform: scaleX(.95);
+}
+a:before {
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: currentColor;
+  opacity: .25;
+  -webkit-transform: scaleX(.85) translateY(.085rem);
+  transform: scaleX(.85) translateY(.085rem);
+  transition: .2s
+}*/
+
+nav.rccnav a.btn:link, a.btn:visited {
+  color: var(--white);
+}
+nav.rccnav a.btn:hover {
+  color: var(--teal);
+}
+nav.rccnav a.btn:active  {
+  transition: color .3s;
+  color: var(--yellow);
+}
+
+div.rccpagination a:link, a:visited {
+  color: var(--teal);
+}
+div.rccpagination a:hover {
+  color: var(--fuchsia);
+}
+div.rccpagination a:active  {
+  transition: color .3s;
+  color: var(--orange);
+}
+
+span.socialicons a:link, a:visited {
+  color: var(--aqua);
+}
+span.socialicons a:hover {
+  color: var(--lime);
+}
+span.socialicons a:active  {
+  transition: color .3s;
+  color: var(--orange);
+}
+
+footer a:link, a:visited {
+  color: var(--teal);
+}
+footer a:hover {
+  color: var(--lime);
+}
+footer a:active  {
+  transition: color .3s;
+  color: var(--orange);
+}
+
+footer span.socialicons a:link, a:visited {
+  color: var(--darker-teal-3);
+}
+footer span.socialicons a:hover {
+  color: var(--lime);
+}
+footer span.socialicons a:active  {
+  transition: color .3s;
+  color: var(--orange);
+}
+
+.link { text-decoration: none; }
+
+
+/**
+ *
+ * =======================================================================
+   Word Wrap
+ * =======================================================================
+ */
+
+.break-word {
+  word-wrap: break-word;
+}
+
+.normal-wrap {
+  word-wrap: normal;
+}
+
+.inherit-wrap {
+  word-wrap: auto;
+}
+
+/* cssrecipes tooltip  */
+
+.r-Tooltip::before {
+
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+
+  color: var(--r-Tooltip-textColor);
+  background: var(--r-Tooltip-backgroundColor);
+  /*text-shadow: 0 -.1px 0 #000;*/
+  /*box-shadow: 4px 4px 8px rgba(0, 0, 0, .3);*/
+
+}
+
+/**
+*
+* =======================================================================
+ OpenType
+* =======================================================================
+*/
+.font-feature-smcp {
+  -webkit-font-feature-settings: "smcp";
+  -moz-font-feature-settings: "smcp";
+  -ms-font-feature-settings: "smcp";
+  font-feature-settings: "smcp";
+}
+.font-feature-typonum {
+  -webkit-font-feature-settings: 'onum';
+  -moz-font-feature-settings: 'onum';
+  -ms-font-feature-settings: 'onum';
+  font-feature-settings: 'onum';
+}
