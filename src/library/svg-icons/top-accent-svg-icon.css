@@ -1,0 +1,10 @@
+svg.top-accent-svg-icon {
+  color: var(--teal);
+  fill: currentColor;
+  /*width: 350px;*/
+  height: 250px;
+}
+
+svg.top-accent-svg-icon:hover {
+  filter: blur(3px);
+}

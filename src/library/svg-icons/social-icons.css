@@ -1,0 +1,20 @@
+.socialicons {
+  display: inline-block;
+  /*color: rgba(255, 255, 255, .95);*/
+  /*vertical-align: text-bottom;*/
+  /*margin: 0 .15em;*/
+  /*border-radius: .2em;*/
+  /*padding: .17em .4em .25em;*/
+  /*font-size: 95%;*/
+  /*line-height: 1;*/
+  /*background-color: rgba(0, 0, 0, .5);*/
+}
+.socialicons svg {
+  position: relative;
+  /*bottom: .02em;*/
+  /*display: inline-block;*/
+  /*vertical-align: middle;*/
+  width: .85em;
+  height: .85em;
+  fill: currentColor;
+}

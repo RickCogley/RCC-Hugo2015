@@ -1,0 +1,9 @@
+svg.latest-accent-svg-icon {
+  color: var(--rice-paper-light);
+  fill: currentColor;
+  height: 250px;
+}
+
+svg.latest-accent-svg-icon:hover {
+  filter: blur(3px);
+}

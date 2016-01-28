@@ -1,0 +1,107 @@
+/* Fills for SVG */
+
+.fill-navy {
+  fill: var(--navy);
+}
+.fill-blue {
+  fill: var(--blue);
+}
+.fill-aqua {
+  fill: var(--aqua);
+}
+.fill-teal {
+  fill: var(--teal);
+}
+.fill-olive {
+  fill: var(--olive);
+}
+.fill-green {
+  fill: var(--green);
+}
+.fill-lime {
+  fill: var(--lime);
+}
+.fill-yellow {
+  fill: var(--yellow);
+}
+.fill-orange {
+  fill: var(--orange);
+}
+.fill-red {
+  fill: var(--red);
+}
+.fill-fuchsia {
+  fill: var(--fuchsia);
+}
+.fill-purple {
+  fill: var(--purple);
+}
+.fill-maroon {
+  fill: var(--maroon);
+}
+.fill-white {
+  fill: var(--white);
+}
+.fill-gray {
+  fill: var(--gray);
+}
+.fill-silver {
+  fill: var(--silver);
+}
+.fill-black {
+  fill: var(--black);
+}
+
+/* Strokes for SVG */
+
+.stroke-navy {
+  stroke: var(--navy);
+}
+.stroke-blue {
+  stroke: var(--blue);
+}
+.stroke-aqua {
+  stroke: var(--aqua);
+}
+.stroke-teal {
+  stroke: var(--teal);
+}
+.stroke-olive {
+  stroke: var(--olive);
+}
+.stroke-green {
+  stroke: var(--green);
+}
+.stroke-lime {
+  stroke: var(--lime);
+}
+.stroke-yellow {
+  stroke: var(--yellow);
+}
+.stroke-orange {
+  stroke: var(--orange);
+}
+.stroke-red {
+  stroke: var(--red);
+}
+.stroke-fuchsia {
+  stroke: var(--fuchsia);
+}
+.stroke-purple {
+  stroke: var(--purple);
+}
+.stroke-maroon {
+  stroke: var(--maroon);
+}
+.stroke-white {
+  stroke: var(--white);
+}
+.stroke-gray {
+  stroke: var(--gray);
+}
+.stroke-silver {
+  stroke: var(--silver);
+}
+.stroke-black {
+  stroke: var(--black);
+}
