@@ -103,6 +103,9 @@
   --space-2: 1rem;
   --space-3: 2rem;
   --space-4: 4rem;
+  --space-5: 8rem;
+  --space-6: 16rem;
+  --space-7: 32rem;
 
   --form-field-font-size: 1rem;
   --form-field-height: 2.25rem;
@@ -472,3 +475,9 @@ footer span.socialicons a:active  {
   -ms-font-feature-settings: 'onum';
   font-feature-settings: 'onum';
 }
+
+/*Special-case Negative Margin*/
+
+.mxn5 { margin-left: -var(--space-5); margin-right: -var(--space-5); }
+.mxn6 { margin-left: -var(--space-6); margin-right: -var(--space-6); }
+.mxn7 { margin-left: -var(--space-7); margin-right: -var(--space-7); }
