@@ -171,10 +171,10 @@ td {
 
 .bg-ricepaper {
   background:
-     url("/app/ricepaper_v3.png") repeat;
+     url("/img/ricepaper_v3.png") repeat;
 }
 
 .bg-lightpaperfibers {
   background:
-     url("/app/lightpaperfibers.png") repeat;
+     url("/img/lightpaperfibers.png") repeat;
 }
