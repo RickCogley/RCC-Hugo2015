@@ -37,6 +37,8 @@ topics:
   - Tips
   - Productivity
   - SysAdmin
+postsummary: Have you been frustrated by OS X Mail.app crashing or hanging? This happens to me from time to time, even though I keep OS X updated to the latest version. Well, I found a fix that works for me anyway, and you might try it.
+postsvg: icon-origami-fish
 ---
 
 Have you been frustrated by OS X Mail.app crashing or hanging? This happens to me from time to time, even though I keep OS X updated to the latest version. Well, I found a fix that works for me anyway, and you might try it.

@@ -36,6 +36,8 @@ topics:
   - Tips
   - Productivity
   - SysAdmin
+postsummary: I wanted an easy way to generate passwords at the Mac command line, and found a relatively simple solution which lets you type ``genpass`` and then simply copy-paste the password from your clipboard, to whatever password box is requesting one.
+postsvg: icon-origami-fish
 ---
 
 I wanted an easy way to generate passwords at the Mac command line, and found a relatively simple solution which lets you type ``genpass`` and then simply copy-paste the password from your clipboard, to whatever password box is requesting one.

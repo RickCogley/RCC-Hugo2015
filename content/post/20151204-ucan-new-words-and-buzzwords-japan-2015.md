@@ -38,6 +38,8 @@ topics:
   - Japan
   - Culture
   - Humor
+postsummary: 'I love autumn in Japan for various reasons - the crisp weather, the excellent food, the approach of the holiday season. And new words and buzzwords!'
+postsvg: icon-origami-fish
 ---
 
 I love autumn in Japan for various reasons: the crisp weather, the excellent food, the approach of the holiday season. And "new words and buzzwords"!

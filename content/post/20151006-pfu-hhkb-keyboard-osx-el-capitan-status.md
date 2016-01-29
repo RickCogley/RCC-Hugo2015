@@ -38,6 +38,8 @@ topics:
   - Software
   - Tips
   - Troubleshooting
+postsummary: If you jumped on the OS X El Capitan upgrade, and you are a user of the PFU HHKB "Happy Hacking" keyboard with its buttery smooth Topre switches, you might have noticed it does not work. 
+postsvg: icon-origami-fish
 ---
 
 If you jumped on the OS X El Capitan upgrade, and you are a user of the PFU HHKB "Happy Hacking" keyboard with its buttery smooth Topre switches, you might have noticed it does not work. (**Note**: now fixed, see update section and if you install, you can disable the relevant part of SEIL if you were using it.)

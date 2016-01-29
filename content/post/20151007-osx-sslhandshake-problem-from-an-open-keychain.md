@@ -36,6 +36,8 @@ topics:
   - Tips
   - Troubleshooting
   - Security
+postsummary: I had a really odd problem, with SSL (``https://``) sites after having upgraded to _OS X El Capitan_. Chrome would not load SSL-protected websites (Safari was fine for the same ones), and then I got a blank screen in the Flowdock Mac app. By chance, I figured out how to fix it, and thought I would share what happened.
+postsvg: icon-origami-fish
 ---
 
 I had a really odd problem, with SSL (``https://``) sites after having upgraded to _OS X El Capitan_. Chrome would not load SSL-protected websites (Safari was fine for the same ones), and then I got a blank screen in the Flowdock Mac app. By chance, I figured out how to fix it, and thought I would share what happened.  

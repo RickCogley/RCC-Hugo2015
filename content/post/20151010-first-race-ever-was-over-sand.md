@@ -42,6 +42,8 @@ topics:
   - Personal
   - Japan
   - Culture
+postsummary: I have been running for a while, so I thought I would run in a race, my first ever. I signed up, then later got a pretty big surprise. 
+postsvg: icon-origami-fish
 ---
 
 I have been running for a while, so I thought I would run in a race, my first ever. I signed up, then later got a pretty big surprise.

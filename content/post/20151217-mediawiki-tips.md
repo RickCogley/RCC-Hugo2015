@@ -30,6 +30,8 @@ topics:
   - Tips
   - SysAdmin
   - Software
+postsummary: To jog my own memory for the next time, I assembled this _handy list of tips_ for setting up a MediaWiki site.
+postsvg: icon-origami-fish
 ---
 
 To jog my own memory for the next time, I assembled this handy list of tips for setting up a MediaWiki site.

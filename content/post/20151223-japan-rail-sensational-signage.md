@@ -33,6 +33,8 @@ topics:
   - Japan
   - Humor
   - Travel
+postsummary: Like Schrödinger’s cat or the USB “two flip” rule, it appears there’s a diabolical master plan by The Japan Rail Authorities to thwart any cursory examination of Their signage.
+postsvg: icon-origami-fish
 ---
 
 Like Schrödinger's cat or the USB "two flip" rule, it appears there's a diabolical master plan by The Japan Rail Authorities to thwart any cursory examination of Their signage.
