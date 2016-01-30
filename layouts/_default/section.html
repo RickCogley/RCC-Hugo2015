@@ -1,26 +1,23 @@
 {{ "<!-- ENTERING default section.html -->" | safeHTML }}
 {{ partial "header.html" . }}
 <body class="charcoal bg-teal">
-  {{ partial "bodytop.html" . }}
-  {{ partial "headerbanner1.html" . }}
-  {{ partial "listtop_default_section.html" . }}
-
-  <main class="m0 p4 bg-lightpaperfibers">
-
-    <h3 class="text-shadow h3-responsive sans m0 rice-paper-dark">Section: {{ .Title }}</h3>
-    {{ range .Data.Pages.GroupByDate "2006" }}
-    <h4>{{ .Key }}</h4>
-    <!-- ANOTHER WAY: <div style="margin-left: 2em" id="list"></div> -->
-    <ul>
-        {{ range .Pages }}
-            {{ .Render "li"}}
-        {{ end }}
-    </ul>
+{{ partial "bodytop.html" . }}
+{{ partial "headerbanner1.html" . }}
+{{ partial "listtop_default_section.html" . }}
+<main class="m0 p4 bg-lightpaperfibers">
+  <h3 class="text-shadow h3-responsive sans m0 rice-paper-dark">Section: {{ .Title }}</h3>
+  {{ range .Data.Pages.GroupByDate "2006" }}
+  <h4>{{ .Key }}</h4>
+  <!-- ANOTHER WAY: <div style="margin-left: 2em" id="list"></div> -->
+  <ul>
+    {{ range .Pages }}
+    {{ .Render "li"}}
     {{ end }}
-
-  </main>
-    {{ partial "footer.html" . }}
-    {{ partial "bodyend.html" . }}
+  </ul>
+  {{ end }}
+</main>
+{{ partial "footer.html" . }}
+{{ partial "bodyend.html" . }}
 </body>
 </html>
 {{ "<!-- LEAVING default section.html -->" | safeHTML }}
