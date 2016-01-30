@@ -1,38 +1,21 @@
 {{ "<!-- ENTERING partial listtop_default_terms.html -->" | safeHTML }}
-<div class="topgrid">
-    <div class="pure-g">
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-4-5">
-            <div class="l-box">
-                <h3>Welcome to the {{ .Title }} Section</h3>
-                <p>
-                    {{ if eq .Title "Topics" }}
-                      {{ .Site.Params.topicsblurb }}
-                      {{ partial "list_tags.html" . }}
-                    {{ end }}
-                    {{ if eq .Title "Tags" }}
-                      {{ .Site.Params.tagsblurb }}
-                      {{ partial "list_topics.html" . }}
-                    {{ end }}
-                </p>
-            </div>
-        </div>
+<section id="termstop" class="py2 px4 m0 border-bottom white bg-darkgrey border-darken-4">
+  {{ if eq .Title "Topics" }}
+        <img class="right p2 circle" src="/img/Cogley-SectionPhotos-Omikuji-Color.jpg" alt="Omikuji fortunes">
+  {{ end }}
+  {{ if eq .Title "Tags" }}
+        <img class="right p2 circle" src="/img/Cogley-TopPhotos-Fire-Color.jpg" alt="Fire sign">
+  {{ end }}
 
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
-            <div class="l-box">
-                <p>
-                {{ if eq .Title "Topics" }}
-                      <img class="pure-img" src="/img/Cogley-SectionPhotos-Omikuji-Color.jpg" alt="Omikuji fortunes">
-                {{ end }}
-                {{ if eq .Title "Tags" }}
-                      <img class="pure-img" src="/img/Cogley-TopPhotos-Fire-Color.jpg" alt="Fire sign">
-                {{ end }}
-                </p>
-            </div>
-        </div>
+  <h2 class="h2-responsive mt0 mb2">Welcome to the {{ .Title }} Section</h2>
+  <p>
+    {{ if eq .Title "Topics" }}
+      {{ .Site.Params.topicsblurb }}
+    {{ end }}
+    {{ if eq .Title "Tags" }}
+      {{ .Site.Params.tagsblurb }}
+    {{ end }}
+  </p>
 
-    <div class="pure-u-1">
-        <hr class="sepchar" /> 
-    </div>
-</div>
+</section>
 {{ "<!-- LEAVING partial listtop_default_terms.html -->" | safeHTML }}
-

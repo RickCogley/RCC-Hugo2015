@@ -1,8 +1,8 @@
 {{ "<!-- ENTERING partial list_tags.html -->" | safeHTML }}
-<p>
-    <em>Filter by</em> <a href="/tags">tag:</a> <span class="decorative-marker2">&#10033;</span>
+<p class="deco light">
+    <em>Also browse by</em> <a href="/tags">tag:</a> <span class="rice-paper-light">&#10033;</span>
     {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-        <a href="/tags/{{ $name | urlize }}">{{ $name }}</a><span class="decorative-marker2">&#10033;</span>
+        <a href="/tags/{{ $name | urlize }}">{{ $name }}</a><span class="rice-paper-light">&#10033;</span>
     {{ end }}
     <br>
 </p>
