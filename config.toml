@@ -48,7 +48,7 @@ paginate = 7
     authortwitter = "https://twitter.com/rickcogley"
 
     # Blurbs to pull onto taxo pages
-    postsblurb = "Wherein we catalog a most excellent list of pithy-yet-informative articles on tech, productivity, Japan, business and whatever else strikes our fancy. Please link the articles in your own postings."
+    postsblurb = "Wherein I catalog a most excellent list of pithy-yet-informative articles on tech, productivity, Japan, business and whatever else strikes my fancy. Please link the articles in your own postings."
     topicsblurb = "These are the high-level topics discussed on this site. Please link the articles in your own postings."
     tagsblurb = "These are the tags used to focus attention on the content of this site. Please link the articles in your own postings."
 
