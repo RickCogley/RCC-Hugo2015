@@ -39,3 +39,22 @@ h2 svg {
   height: .85em;
   fill: currentColor;
 }
+
+#nav-to-top svg {
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin: 0 .15em;
+  border-radius: .2em;
+  padding: .17em .4em .25em;
+  /*font-size: 85%;*/
+  line-height: 1;
+  /*color: rgba(255, 255, 255, .95);*/
+  /*background-color: rgba(0, 0, 0, .5);*/
+
+  position: relative;
+  bottom: .02em;
+  vertical-align: middle;
+  width: .95em;
+  height: .85em;
+  fill: currentColor;
+}
