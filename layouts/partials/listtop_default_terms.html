@@ -1,10 +1,12 @@
 {{ "<!-- ENTERING partial listtop_default_terms.html -->" | safeHTML }}
 <section id="termstop" class="py2 px4 m0 border-bottom white bg-darkgrey border-darken-4">
   {{ if eq .Title "Topics" }}
-        <img class="right p2 circle" src="/img/Cogley-SectionPhotos-Omikuji-Color.jpg" alt="Omikuji fortunes">
+        <img class="sm-show right p2 circle" src="/img/Cogley-SectionPhotos-Omikuji-Color.jpg" alt="Omikuji fortunes">
+        <img class="sm-hide center p2 circle" src="/img/Cogley-SectionPhotos-Omikuji-Color.jpg" alt="Omikuji fortunes">
   {{ end }}
   {{ if eq .Title "Tags" }}
-        <img class="right p2 circle" src="/img/Cogley-TopPhotos-Fire-Color.jpg" alt="Fire sign">
+        <img class="sm-show right p2 circle" src="/img/Cogley-TopPhotos-Fire-Color.jpg" alt="Fire sign">
+        <img class="sm-hide center p2 circle" src="/img/Cogley-TopPhotos-Fire-Color.jpg" alt="Fire sign">
   {{ end }}
 
   <h2 class="h2-responsive mt0 mb2">Welcome to the {{ .Title }} Section</h2>
