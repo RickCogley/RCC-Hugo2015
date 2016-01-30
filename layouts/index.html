@@ -1,3 +1,4 @@
+{{ "<!-- ENTERING index.html -->" | safeHTML }}
 {{ partial "header.html" . }}
 <body class="charcoal bg-teal">
 {{ partial "bodytop.html" . }}
@@ -7,12 +8,12 @@
 <main class="m0 p4 bg-lightpaperfibers">
   <section id="latest-post" class="p0 m0 center">
     <header class="mt3 mb1 py1 border-bottom">
-      <h2 class="big-title text-shadow h2-responsive sans m0 rice-paper-dark">The Latest, <span class="rice-paper-light italic">& Freshest</span><svg class="rice-paper-light"><use xlink:href="img/symbol-defs.svg#icon-feather2" /></svg></h2>
+      <h2 class="big-title text-shadow h2-responsive sans m0 rice-paper-dark">The Latest, <span class="rice-paper-light italic">& Freshest</span><svg class="rice-paper-light"><use xlink:href="/img/symbol-defs.svg#icon-feather2" /></svg></h2>
     </header>
     <div class="clearfix">
       {{ range first 1 .Site.Pages }}
       <div class="sm-col sm-col-12 md-col-2 lg-col-3 px2">
-        <svg class="latest-accent-svg-icon"><use xlink:href="img/symbol-defs.svg#{{ .Params.postsvg }}" /></svg>
+        <svg class="latest-accent-svg-icon"><use xlink:href="/img/symbol-defs.svg#{{ .Params.postsvg }}" /></svg>
       </div>
 
       <div class="sm-col-right sm-col-12 md-col-10 lg-col-9 px2 align-top left-align">
@@ -23,7 +24,18 @@
       <div class="right p0 m0">
         <p><a href="{{ .RelPermalink }}" class="deco">Read More&hellip;</a></p>
       </div>
-      <p class="deco italic m1">By <a href="/about">{{ .Params.author }}</a>, on {{ .Date.Format "2-Jan-2006" }}&nbsp;&nbsp;<svg><use xlink:href="img/symbol-defs.svg#icon-calendar-31" /></svg></p>
+      <p class="deco italic m1">By <a href="/about">{{ .Params.author }}</a>, on {{ .Date.Format "2-Jan-2006" }}
+        <br>In
+        {{ $Site := .Site }}
+        {{ if .Params.topics }}
+        <span class="posttopics">
+        {{ range .Params.topics }}
+            <a class="bold inline-block px1 rounded bg-topic-{{ . | urlize }} muted" href="{{ $Site.BaseURL}}/topics/{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+        </span>
+        {{ end }}
+      </p>
+
     </div>
     {{ end }}
     </div>
@@ -40,7 +52,7 @@
         <h3 class="h3-responsive m1"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         <p class="italic m1">{{ .Params.postsummary | markdownify }}</p>
         <div class="right p0 m0">
-          <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
+          <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="/img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
         </div>
         <p class="deco italic m1">By <a href="/about">{{ .Params.author }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
         {{ end }}
@@ -48,7 +60,7 @@
         <h3 class="h3-responsive m1"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         <p class="italic m1">{{ .Params.postsummary | markdownify }}</p>
         <div class="right p0 m0">
-          <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
+          <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="/img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
         </div>
         <p class="deco italic m1">By <a href="/about">{{ .Params.author }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
         {{ end }}
@@ -61,7 +73,7 @@
         <h3 class="h3-responsive m1"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         <p class="italic m1">{{ .Params.postsummary | markdownify }}</p>
         <div class="right p0 m0">
-          <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
+          <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="/img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
         </div>
         <p class="deco italic m1">By <a href="/about">{{ .Params.author }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
         {{ end }}
@@ -69,7 +81,7 @@
         <h3 class="h3-responsive m1"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         <p class="italic m1">{{ .Params.postsummary | markdownify }}</p>
         <div class="right p0 m0">
-          <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
+          <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="/img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
         </div>
         <p class="deco italic m1">By <a href="/about">{{ .Params.author }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
         {{ end }}
@@ -77,8 +89,8 @@
 
       <div class="sm-show">
         <div class="rccpagination sans btn btn-primary bg-darken-1">
-          <a href="/posts" class="left">
-            <svg><use xlink:href="img/symbol-defs.svg#icon-arrow-left" /></svg>
+          <a href="/post" class="left">
+            <svg><use xlink:href="/img/symbol-defs.svg#icon-arrow-left" /></svg>
             Older
           </a>
         </div>
@@ -91,7 +103,7 @@
         <h3 class="h3-responsive m1"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         <p class="italic m1">{{ .Params.postsummary | markdownify }}</p>
         <div class="right p0 m0">
-          <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
+          <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="/img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
         </div>
         <p class="deco italic m1">By <a href="/about">{{ .Params.author }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
         {{ end }}
@@ -99,7 +111,7 @@
         <h3 class="h3-responsive m1"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         <p class="italic m1">{{ .Params.postsummary | markdownify }}</p>
         <div class="right p0 m0">
-          <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
+          <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="/img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
         </div>
         <p class="deco italic m1">By <a href="/about">{{ .Params.author }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
         {{ end }}
@@ -108,7 +120,7 @@
         <div class="sm-hide">
           <div class="rccpagination sans btn btn-primary bg-darken-1">
             <a href="/posts" class="left">
-              <svg><use xlink:href="img/symbol-defs.svg#icon-arrow-left" /></svg>
+              <svg><use xlink:href="/img/symbol-defs.svg#icon-arrow-left" /></svg>
               Older
             </a>
           </div>
@@ -125,3 +137,4 @@
 
 </body>
 </html>
+{{ "<!-- LEAVING index.html -->" | safeHTML }}
