@@ -190,6 +190,57 @@
   --slateblue: #477dca;
   --washslateblue: #7dc3e0;
 
+  /* original topics colors are saturated - use muted to get a pastel look */
+  --topic-japan: #cc0808;
+  --topic-fitness: #fc4c02;
+  --topic-web: #dda92e;
+  --topic-social-media: #51b7ff;
+  --topic-marketing: #159818;
+  --topic-web-development: #3b4489;
+  --topic-analytics: #d69c11;
+  --topic-application-architecture: #578b96;
+  --topic-professional: #2d5b6b;
+  --topic-business: #9f4732;
+  --topic-humor: #c47a52;
+  --topic-productivity: #7c7d2a;
+  --topic-software: #1aa3a3;
+  --topic-service: #0da082;
+  --topic-troubleshooting: #a3a31a;
+  --topic-tips: #1aa35f;
+  --topic-design: #154196;
+  --topic-places: #0d6ed1;
+  --topic-popular: #ff9905;
+  --topic-process: #d17c00;
+  --topic-gadgets: #95c93d;
+  --topic-errata: red;
+  --topic-culture: #5b5e1b;
+  --topic-efficiency: #e23636;
+  --topic-sysadmin: #518cca;
+  --topic-upgrades: #ae432f;
+  --topic-photography: #f78f3f;
+  --topic-personal: #974908;
+  --topic-celebration: #cc1c31;
+  --topic-health: #ff5500;
+  --topic-cycling: #649046;
+  --topic-family: #c56d00;
+  --topic-food-and-drink: #173a0f;
+  --topic-music: #510000;
+  --topic-performance: #950096;
+  --topic-emergency: red;
+  --topic-disaster: #856cf4;
+  --topic-reviews: #4463b2;
+  --topic-featured: green;
+  --topic-weird: #5235b2;
+  --topic-technology: #db600e;
+  --topic-art: #209396;
+  --topic-street: #430647;
+  --topic-mobile: #4b5794;
+  --topic-language: #e58712;
+  --topic-security: #e1560a;
+  --topic-site: #666666;
+  --topic-travel: #d69c11;
+  --topic-analog: #5235b2;
+
   --colorforlinksdotcsshover: #7FDBFF;
 
   --light-beige: #f7f6f1;
@@ -336,6 +387,10 @@
   color: var(--darker-teal-3);
 }
 
+.bg-darkgrey {
+    background-color: var(--davygray);
+}
+
 /* Links */
 
 a {
@@ -399,6 +454,17 @@ span.socialicons a:active  {
   color: var(--orange);
 }
 
+span.posttopics a:link, a:visited {
+  color: var(--white);
+}
+span.posttopics a:hover {
+  color: var(--lime);
+}
+span.posttopics a:active  {
+  transition: color .3s;
+  color: var(--orange);
+}
+
 footer a:link, a:visited {
   color: var(--teal);
 }
@@ -417,6 +483,17 @@ footer span.socialicons a:hover {
   color: var(--lime);
 }
 footer span.socialicons a:active  {
+  transition: color .3s;
+  color: var(--orange);
+}
+
+section.bg-darkgrey a:link, a:visited {
+  color: var(--teal);
+}
+section.bg-darkgrey a:hover {
+  color: var(--lime);
+}
+section.bg-darkgrey a:active  {
   transition: color .3s;
   color: var(--orange);
 }
