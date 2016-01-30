@@ -1,14 +1,14 @@
 <article class="post">
-            <header class="post-header">
-            {{ if .Site.Params.thumbnail }}
-            <div class="post-avatar-wrapper">
-              <img class="post-avatar" alt="" src="{{ .Site.Params.thumbnail }}">
-            </div>
-            {{ end }}
-            <h1 class="post-title">
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h1>
-            </header>
+  <header class="post-header">
+  {{ if .Site.Params.thumbnail }}
+  <div class="post-avatar-wrapper">
+    <img class="post-avatar" alt="" src="{{ .Site.Params.thumbnail }}">
+  </div>
+  {{ end }}
+  <h1 class="post-title">
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </h1>
+  </header>
             <p class="post-meta">
             	{{ if eq .Params.showdate "true" }}
 		          <span class="post-date">
@@ -30,11 +30,10 @@
       					</div>
       				{{ end }}
             </p>
-            <div class="post-summary"> 
+            <div class="post-summary">
               {{ .Summary }}
             </div>
 			<footer class="read-more-link">
 				<a href="{{ .RelPermalink }}"><span class="read-more-separator">&#10087;</span>Read More...</a>
 			</footer>
 </article>
-
