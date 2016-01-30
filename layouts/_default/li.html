@@ -1,8 +1,8 @@
 {{ "<!-- ENTERING layouts/_default/li.html -->" | safeHTML }}
 <article class="post">
 <li>
-   <a href="{{ .Permalink }}">{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</a>
-      <div class="meta">{{ .Date.Format "Mon, 2 Jan, 2006" }}</div>
+   <a href="{{ .Permalink }}">{{ .Title }} {{ if eq .Draft true }} <span class="sans bold mx1 rounded yellow bg-navy">DRAFT</span>{{ end }}</a>
+      <div class="deco right">{{ .Date.Format "Mon, 2 Jan, 2006" }}</div>
 </li>
 </article>
 {{ "<!-- ENTERING layouts/_default/li.html -->" | safeHTML }}
