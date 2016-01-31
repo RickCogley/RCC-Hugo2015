@@ -42,9 +42,14 @@
             {{if isset .Params "gallery_id" }}
             {{ partial "gallery.html" . }}
             {{ end }}
-
-            <div class="deco p1 bg-rice-paper-light center">
-              <aside id="metafooter">
+            <aside id="authorinfofooter">
+              <div class="deco p2 rounded-top bg-darkgrey center">
+              <img class="p1 circle left" src="/img/rick-cogley-avatar-240x240.png" alt="Photo of Rick Cogley" width="100px"><p class="h3 caps white">About the Author</p>
+              <p class="white">I'm <a href="/about"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Rick Cogley</span></span></a>, and thanks for reading. I'm an experienced technologist, co-founder & -owner of <a href="http://www.esolia.com" target="_blank">eSolia Inc</a>. I'm from America originally, but have been helping people and companies succeed in Japan since 1987. I'm an avid jogger, lover of music and puzzles, and family man with a wonderful wife and daughters. I hope you'll share this post, comment on it, link to it, and maybe connect with me on other social sharing sites as well. Cheers!</p>
+              </div>
+            </aside>
+            <aside id="metainfofooter">
+              <div class="deco p2 rounded-bottom bg-rice-paper-light center">
                  {{ if eq .Params.showsocialsharing "true" }}
                      {{ partial "socialsharing.html" . }}
                  {{ end }}
@@ -65,27 +70,22 @@
                        {{ end }}
                      </div>
                  {{ end }}
-               </aside>
-             </div>
+               </div>
+             </aside>
+
           </div>
         </div>
       </div>
     </section>
+    <aside id="comments" class="m0 px4 bg-lightpaperfibers">
+    {{ if eq .Params.showcomment "true" }}
+      {{ template "_internal/disqus.html" . }}
+    {{ end }}
+    </aside>
   </article>
 <main>
 
-
-
-          <aside id="comments">
-          {{ if eq .Params.showcomment "true" }}
-            {{ template "_internal/disqus.html" . }}
-          {{ end }}
-          </aside>
-
-
-
-
-    {{ partial "footer.html" . }}
+  {{ partial "footer.html" . }}
   {{ partial "bodyend.html" . }}
 </body>
 </html>
