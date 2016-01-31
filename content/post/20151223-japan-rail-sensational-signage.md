@@ -38,10 +38,9 @@ postsvg: icon-origami-butterfly
 ---
 
 Like Schrödinger's cat or the USB "two flip" rule, it appears there's a diabolical master plan by The Japan Rail Authorities to thwart any cursory examination of Their signage.
-
 <!--more-->
 
-### Cogley's Axiom of Electronic Signage
+## Cogley's Axiom of Electronic Signage
 
 First take a look at what these nifty, dynamic LED signs look like:
 
@@ -60,11 +59,11 @@ The Japan Rail sign in the video has multiple pieces of useful information:
 
 They are really useful signs, and chock full of information, as you can see. They even switch between English and Japanese. My beef and the axiom is (and yeah, it's really a first-world problem) that:
 
-<blockquote>the information I need at that moment, is always last in the queue</blockquote>
+<blockquote>The information I need at that moment, is always last in the queue</blockquote>
 
 It never seems to fail.
 
-### We have it good in Japan
+## We have it good in Japan
 
 It's something you notice when you live in Japan and go out of the country for a visit overseas. In many countries, there are not so many signs, and people have a blasé attitude about them. Here, they are ubiquitous and fairly well-designed, and are combined with endless (incessant) announcements. This is what you become used to, living in Japan: good signs, announcements and punctuality (all joking aside, it's pretty great). So, you get a bit of signage and announcement withdrawal, going anywhere overseas!
 
