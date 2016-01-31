@@ -125,6 +125,14 @@ p + p {
   margin-top: var(--paragraph-margin-top);
 }
 
+/* style for first para in article assumes class post is on wrapper div */
+
+.post > p:first-of-type {
+    font-family: var(--decorative-font-family);
+    font-size: var(--large-text-size);
+    line-height: var(--line-height-2);
+    font-style: italic; 
+}
 
 /**
 *
