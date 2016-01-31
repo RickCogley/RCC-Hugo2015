@@ -18,7 +18,6 @@ images:
 showauthor: 'true'
 showcomment: 'true'
 showdate: 'true'
-showpaging: 'true'
 showreadingtime: 'true'
 showsocialsharing: 'true'
 showtoc: 'true'
@@ -44,14 +43,14 @@ I had a really odd problem, with SSL (``https://``) sites after having upgraded 
 
 <!--more-->
 
+## Problem Manifestation
+
+During and after the upgrade to _OS X El Capitan_, I did all the typical things I do, like checking through all the settings to make sure nothing is out of order. One of those includes checking that Time is being automatically set from the local NTS time server, because a mis-set clock will often cause trouble related to encryption.  
+
 <figure class="photo-inline-right">
   <a href="/img/Cogley-Post-OSX-Keychain-Add.png" title="" data-lightbox="set1" data-title="Adding a backup keychain in Keychain Access"><img class="photo300 pure-img" src="/img/Cogley-Post-OSX-Keychain-Add.png" alt="Screenshot showing the add keychain in OS X Keychain Access" ></a>
   <figcaption><em>Screenshot</em>: Adding a backup keychain</figcaption>
 </figure>
-
-During and after the upgrade to _OS X El Capitan_, I did all the typical things I do, like checking through all the settings to make sure nothing is out of order. One of those includes checking that Time is being automatically set from the local NTS time server, because a mis-set clock will often cause trouble related to encryption.  
-
-## Problem Manifestation
 
 I was getting those "this site is untrusted" errors in Chrome, oddly enough on major sites from Microsoft or Apple, since they certainly can afford to update their SSL certificates. Then I noticed that the [Flowdock](http://www.flowdock.com) Mac app would not display, just showing a grey, blank screen.
 
