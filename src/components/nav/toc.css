@@ -1,0 +1,6 @@
+.toc ul { list-style: none; margin: 0; padding: 0 5px;  }
+/*.toc ul li { display: inline; }*/
+#TableOfContents > ul > li > ul > li > ul li { margin-right: 8px; }
+#TableOfContents > ul > li > ul > li > a, #TableOfContents > ul > li > a   { font-weight: bold; background-color: var(--rice-paper-light); padding: 0 10px; margin: 0 2px; }
+#TableOfContents > ul > li > ul > li > a { font-style: italic; }
+.toc.compact ul > li > ul > li > ul  { display: none; }
