@@ -1,2 +1,7 @@
 {{ "<!-- ENTERING partial singletop.html -->" | safeHTML }}
+<header id="articleheroheader" role="banner" class="center px3 py4 white bg-darkgrey bg-cover bg-center"
+  {{ if .Params.banner }}style="background-image: url({{ .Params.banner }})"{{ end }} >
+  <h1 class="big-title text-shadow h0-responsive mt4 mb0">{{ .Title }}</h1>
+  <p class="h2 italic deco">{{ .Params.subtitle }}</p>
+</header>
 {{ "<!-- LEAVING partial singletop.html -->" | safeHTML }}
