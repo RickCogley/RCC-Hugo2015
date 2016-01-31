@@ -371,6 +371,14 @@
   color: var(--rice-paper-dark);
 }
 
+.bg-rice-paper-light {
+  background-color: var(--rice-paper-light);
+}
+
+.bg-rice-paper-medium {
+  background-color: var(--rice-paper-medium);
+}
+
 .bg-rice-paper-dark {
   background-color: var(--rice-paper-dark);
 }
