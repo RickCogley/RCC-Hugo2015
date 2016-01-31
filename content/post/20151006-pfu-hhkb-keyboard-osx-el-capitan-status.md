@@ -43,7 +43,6 @@ postsvg: icon-origami-fish
 ---
 
 If you jumped on the OS X El Capitan upgrade, and you are a user of the PFU HHKB "Happy Hacking" keyboard with its buttery smooth Topre switches, you might have noticed it does not work. (**Note**: now fixed, see update section and if you install, you can disable the relevant part of SEIL if you were using it.)
-
 <!--more-->
 
 ## HHKB OS X El Capitan Status
@@ -53,11 +52,11 @@ I noticed that my HHKB's don't work, after upgrading to OS X El Capitan. I use t
 > **System Integrity Protection** - A new security policy that applies to every running process, including privileged code and code that runs out of the sandbox. The policy extends additional protections to components on disk and at run-time, only allowing system binaries to be modified by the system installer and software updates. Code injection and runtime attachments to system binaries are no longer permitted.
 
 <figure class="sm-show col-4 mxn6 left fit">
-  <a href="/img/Cogley-Post-PFU-HHKB-Pro-JP.jpg" title="" data-lightbox="set1" data-title="PFU HHKP Pro JP Type-S keyboard"><img class="photo300 pure-img" src="/img/Cogley-Post-PFU-HHKB-Pro-JP.jpg" alt="Photo showing a PFU HHKP Pro JP Type-S keyboard" ></a>
+  <a href="/img/Cogley-Post-PFU-HHKB-Pro-JP.jpg" title="" data-lightbox="set1" data-title="PFU HHKP Pro JP Type-S keyboard"><img class="rounded border border-darken-1" src="/img/Cogley-Post-PFU-HHKB-Pro-JP.jpg" alt="Photo showing a PFU HHKP Pro JP Type-S keyboard" ></a>
   <figcaption><em>Photo</em>: Rick's PFU HHKB Pro JP keyboard</figcaption>
 </figure>
 <figure class="sm-hide col-12 fit">
-  <a href="/img/Cogley-Post-PFU-HHKB-Pro-JP.jpg" title="" data-lightbox="set1" data-title="PFU HHKP Pro JP Type-S keyboard"><img class="photo300 pure-img" src="/img/Cogley-Post-PFU-HHKB-Pro-JP.jpg" alt="Photo showing a PFU HHKP Pro JP Type-S keyboard" ></a>
+  <a href="/img/Cogley-Post-PFU-HHKB-Pro-JP.jpg" title="" data-lightbox="set1" data-title="PFU HHKP Pro JP Type-S keyboard"><img class="rounded border border-darken-1" src="/img/Cogley-Post-PFU-HHKB-Pro-JP.jpg" alt="Photo showing a PFU HHKP Pro JP Type-S keyboard" ></a>
   <figcaption><em>Photo</em>: Rick's PFU HHKB Pro JP keyboard</figcaption>
 </figure>
 
@@ -85,11 +84,11 @@ PFU states on their FAQ site that they should be able to release updated drivers
 ### 30 Oct 2015
 
 <figure class="sm-show col-4 mxn6 left fit">
-  <a href="/img/Cogley-Post-PFU-HHKB-fixed-on-El-Capitan-by-Seil-20151030.png" title="Screenshot showing the settings in Seil" data-lightbox="set1" data-title="Use Seil to Fix PFU HHKP Pro JP Type-S keyboard on El Capitan"><img class="photo300 pure-img" src="/img/Cogley-Post-PFU-HHKB-fixed-on-El-Capitan-by-Seil-20151030.png" alt="Screenshot showing the settings in Seil, to make a PFU HHKP Pro JP Type-S keyboard work in OS X El Capitan" ></a>
+  <a href="/img/Cogley-Post-PFU-HHKB-fixed-on-El-Capitan-by-Seil-20151030.png" title="Screenshot showing the settings in Seil" data-lightbox="set1" data-title="Use Seil to Fix PFU HHKP Pro JP Type-S keyboard on El Capitan"><img class="rounded border border-darken-1" src="/img/Cogley-Post-PFU-HHKB-fixed-on-El-Capitan-by-Seil-20151030.png" alt="Screenshot showing the settings in Seil, to make a PFU HHKP Pro JP Type-S keyboard work in OS X El Capitan" ></a>
   <figcaption><em>Screenshot</em>: Seil Settings for HHKB in El Capitan</figcaption>
 </figure>
 <figure class="sm-hide col-12 fit">
-  <a href="/img/Cogley-Post-PFU-HHKB-fixed-on-El-Capitan-by-Seil-20151030.png" title="Screenshot showing the settings in Seil" data-lightbox="set1" data-title="Use Seil to Fix PFU HHKP Pro JP Type-S keyboard on El Capitan"><img class="photo300 pure-img" src="/img/Cogley-Post-PFU-HHKB-fixed-on-El-Capitan-by-Seil-20151030.png" alt="Screenshot showing the settings in Seil, to make a PFU HHKP Pro JP Type-S keyboard work in OS X El Capitan" ></a>
+  <a href="/img/Cogley-Post-PFU-HHKB-fixed-on-El-Capitan-by-Seil-20151030.png" title="Screenshot showing the settings in Seil" data-lightbox="set1" data-title="Use Seil to Fix PFU HHKP Pro JP Type-S keyboard on El Capitan"><img class="rounded border border-darken-1" src="/img/Cogley-Post-PFU-HHKB-fixed-on-El-Capitan-by-Seil-20151030.png" alt="Screenshot showing the settings in Seil, to make a PFU HHKP Pro JP Type-S keyboard work in OS X El Capitan" ></a>
   <figcaption><em>Screenshot</em>: Seil Settings for HHKB in El Capitan</figcaption>
 </figure>
 
