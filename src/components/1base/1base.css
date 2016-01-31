@@ -444,7 +444,10 @@ a:before {
   transition: .2s
 }*/
 
-nav.rccnav a.btn:link, a.btn:visited {
+nav.rccnav a.btn:link {
+  color: var(--white);
+}
+nav.rccnav a.btn:visited {
   color: var(--white);
 }
 nav.rccnav a.btn:hover {
@@ -455,7 +458,10 @@ nav.rccnav a.btn:active  {
   color: var(--yellow);
 }
 
-div.rccpagination a:link, a:visited {
+div.rccpagination a:link {
+  color: var(--teal);
+}
+div.rccpagination a:visited {
   color: var(--teal);
 }
 div.rccpagination a:hover {
@@ -466,7 +472,10 @@ div.rccpagination a:active  {
   color: var(--orange);
 }
 
-span.socialicons a:link, a:visited {
+span.socialicons a:link {
+  color: var(--aqua);
+}
+span.socialicons a:visited {
   color: var(--aqua);
 }
 span.socialicons a:hover {
@@ -477,7 +486,10 @@ span.socialicons a:active  {
   color: var(--orange);
 }
 
-span.posttopics a:link, a:visited {
+span.posttopics a:link {
+  color: var(--white);
+}
+span.posttopics a:visited {
   color: var(--white);
 }
 span.posttopics a:hover {
@@ -488,7 +500,10 @@ span.posttopics a:active  {
   color: var(--orange);
 }
 
-footer a:link, a:visited {
+footer a:link {
+  color: var(--teal);
+}
+footer a:visited {
   color: var(--teal);
 }
 footer a:hover {
@@ -499,7 +514,10 @@ footer a:active  {
   color: var(--orange);
 }
 
-footer span.socialicons a:link, a:visited {
+footer span.socialicons a:link {
+  color: var(--darker-teal-3);
+}
+footer span.socialicons a:visited {
   color: var(--darker-teal-3);
 }
 footer span.socialicons a:hover {
@@ -510,8 +528,11 @@ footer span.socialicons a:active  {
   color: var(--orange);
 }
 
-section.bg-darkgrey a:link, a:visited {
+section.bg-darkgrey a:link {
   color: var(--teal);
+}
+section.bg-darkgrey a:visited {
+  color: var(--red);
 }
 section.bg-darkgrey a:hover {
   color: var(--lime);
@@ -521,13 +542,16 @@ section.bg-darkgrey a:active  {
   color: var(--orange);
 }
 
-div.bg-rice-paper-darkest a:link, a:visited {
-  color: var(--teal);
+div.bg-darkgrey a:link {
+  color: var(--red);
 }
-div.bg-rice-paper-darkest a:hover {
+div.bg-darkgrey a:visited {
+  color: var(--red);
+}
+div.bg-darkgrey a:hover {
   color: var(--lime);
 }
-div.bg-rice-paper-darkest a:active  {
+div.bg-darkgrey a:active  {
   transition: color .3s;
   color: var(--orange);
 }
