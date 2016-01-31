@@ -1,114 +1,80 @@
 {{ "<!-- ENTERING layouts/_default/single.html -->" | safeHTML }}
 {{ partial "header.html" . }}
-<body>
+<body class="charcoal bg-teal">
 {{ partial "bodytop.html" . }}
-    {{ if eq .Params.showtotop "true" }}
-        <div id="nav-to-top">
-            <span class="decorative-marker">&#8984;</span><a href="#top">To Top</a>
-        </div>
-    {{ end }}
-
-    <div id="layout" class="pure-g">
-    {{ partial "sidebar.html" . }}
-
-    {{ if .Params.banner }}
-    <div class="content-banner-image pure-u-1 pure-u-md-3-4" style="{{ if .Params.bannerheight }}height: {{ .Params.bannerheight }}px;{{ end }}">
-        <img src="{{ .Params.banner }}" class="pure-img" {{ if .Params.banneralt }}alt="{{ .Params.banneralt }}"{{ end }} style="{{ if .Params.bannerfill }}width: 100%;{{ end }}" />
-    </div>
-    {{ end }}
-
-    <div class="content pure-u-1 pure-u-md-3-4">
-        <a name="top"></a>
-
-
-      <main>
-         <div class="post">
-
-        <header id="header">
-
-        {{ partial "singletop.html" . }}
-
-        {{ if eq .Params.showtoc "true" }}
-            {{ if .TableOfContents }}
-            <div id="toc" class="pure-u-1 pure-u-md-1-4">
-                <small class="toc-label">Contents</small>
-                {{ .TableOfContents }}
-            </div>
-            {{ end }}
-        {{ end }}
-
-
-
-            <h1 class="post-title">
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h1>
-            <h3 class="post-subtitle">
-                {{ .Params.subtitle }}
-            </h3>
-            {{ if eq .Params.showdate "true" }}
-                <span class="post-date">
-                    <span class="post-date-day"><sup>{{ .Date.Format "2" }}</sup></span><span class="post-date-separator">/</span><span class="post-date-month">{{ .Date.Format "Jan" }}</span> <span class="post-date-year">{{ .Date.Format "2006" }}</span>
-                </span>
-                {{ end }}
-            {{ if eq .Params.showauthor "true" }}
-                {{ if .Params.author }}
-                    <span class="post-author-single">By <a class="post-author" {{ if .Params.authorlink }}href="{{ .Params.authorlink }}"{{ end }} target="_blank" rel="author">{{ .Params.author }}</a></span>
-                    {{ partial "authorsocial.html" . }}
-                {{ end }}
-            {{ end }}
-
-            {{ $Site := .Site }}
-            {{ if .Params.topics }}
-                <div class="post-topics">
-                {{ range .Params.topics }}
-                    <a class="post-topic post-topic-{{ . | urlize }}" href="{{ $Site.BaseURL}}/topics/{{ . | urlize }}">{{ . }}</a>
-                {{ end }}
-                </div>
-            {{ end }}
-
-            {{ if eq .Params.showsocialsharing "true" }}
-                {{ partial "socialsharing.html" . }}
-            {{ end }}
-
-          </header>
-
-            {{ if .Params.bannerinline }}
-                <img src="{{ .Params.bannerinline }}" class="pure-img content-banner-image-inline" />
-            {{ end }}
-
+{{ partial "headerbanner1.html" . }}
+<main role="main">
+  <article>
+    {{ partial "singletop.html" . }}
+    <section id="articletext" class="m0 px4 bg-lightpaperfibers">
+      <div id="articlelayout" class="py3">
+        <div id="flexsetup" class="sm-flex mxn2">
+          <div id="fauxsidebarcol" class="sm-col-4 px2">
+            <aside id="metasidebar" role="complementary">
+              <p class="deco bold h4">By <a href="/about">{{ .Params.author }}</a></p>
+              <span class="deco">
+              {{ .Date.Format "2-Jan-2006" }}
+              {{ $Site := .Site }}
+              {{ if .Params.topics }}
+              <span class="posttopics">
+              <br>
+              {{ range .Params.topics }}
+              <a class="bold inline-block px1 rounded bg-topic-{{ . | urlize }} muted" href="{{ $Site.BaseURL}}/topics/{{ . | urlize }}">{{ . }}</a>
+              {{ end }}
+              </span>
+              {{ end }}
+              </span>
+            </aside>
+            <aside id="TableOfContents" role="complementary">
+              {{ if eq .Params.showtoc "true" }}
+              {{ if .TableOfContents }}
+              <p class="deco bold h4 mt2">TOC</p>
+              <div class="toc deco">
+              {{ .TableOfContents }}
+              </div>
+              {{ end }}
+              {{ end }}
+            </aside>
+          </div>
+          <div id="mainarticlecol" class="post sm-col-8 px2">
             {{ .Content }}
 
             {{if isset .Params "gallery_id" }}
             {{ partial "gallery.html" . }}
             {{ end }}
 
+            <div class="deco p1 bg-rice-paper-light center">
+              <aside id="metafooter">
+                 {{ if eq .Params.showsocialsharing "true" }}
+                     {{ partial "socialsharing.html" . }}
+                 {{ end }}
+                 {{ partial "post/tag/list" . }}
+                 {{ if (not (isset .Params "hidepaging")) }}
+                     <div class="paging">
+                         {{ if .Prev }}
+                         <div class="paging-newer">
+                             <span class="bold">Next Newer: </span>
+                             <a class="paging-link" href="{{ .Prev.RelPermalink }}">{{ .Prev.Title }}</a>
+                         </div>
+                         {{ end }}
+                         {{ if .Next }}
+                         <div class="paging-older">
+                             <span class="bold">Next Older: </span>
+                             <a class="paging-link" href="{{ .Next.RelPermalink }}">{{ .Next.Title  }}</a>
+                         </div>
+                       {{ end }}
+                     </div>
+                 {{ end }}
+               </aside>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+<main>
 
-         <aside id="meta">
-            {{ if eq .Params.showsocialsharing "true" }}
-                {{ partial "socialsharing.html" . }}
-            {{ end }}
 
-            {{ partial "post/tag/list" . }}
-
-            {{ if eq .Params.showpaging  "true" }}
-                <div class="paging">
-                    <span class="paging-label">More Reading</span>
-                    {{ if .Prev }}
-                    <div class="paging-newer">
-                        <span class="dark-red">Newer</span><span class="decorative-marker">&#9879;</span>
-                        <a class="paging-link" href="{{ .Prev.RelPermalink }}">{{ .Prev.Title }}</a>
-                    </div>
-               {{ end }}
-
-                    {{ if .Next }}
-                    <div class="paging-older">
-                        <span class="dark-red">Older</span><span class="decorative-marker">&#9879;</span>
-                        <a class="paging-link" href="{{ .Next.RelPermalink }}">{{ .Next.Title  }}</a>
-                    </div>
-                  {{ end }}
-                </div>
-            {{ end }}
-          </aside>
 
           <aside id="comments">
           {{ if eq .Params.showcomment "true" }}
@@ -116,41 +82,10 @@
           {{ end }}
           </aside>
 
-          </div>
-          </main>
 
-      <footer>
-      {{ partial "footer.html" . }}
-      </footer>
-    </div>
-  </div>
-    {{ if eq .Params.showtotop "true" }}
-        <script type="text/javascript">
-            onscroll = function() {
-              var toTopVisible = false;
-              var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-              if (scrollTop > 1000) {
-                if (!toTopVisible) {
-                  document.getElementById('nav-to-top').style.display = 'block';
-                }
-              } else {
-                if (scrollTop < 1000 || toTopVisible) {
-                  document.getElementById('nav-to-top').style.display = 'none';
-                }
-              }
-            };
-        </script>
-    {{ end }}
 
-    {{ if .Params.socialsharing }}
-        <script type="text/javascript">
-            function popupShare(url) {
-                window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
-                return false;
-            }
-        </script>
-    {{ end }}
 
+    {{ partial "footer.html" . }}
   {{ partial "bodyend.html" . }}
 </body>
 </html>
