@@ -13,7 +13,10 @@
             <aside id="metasidebar" role="complementary">
               <p class="deco bold h4">By <a href="/about">{{ .Params.author }}</a></p>
               <span class="deco">
+              {{ if (not (isset .Params "hidesidebardate")) }}
               {{ .Date.Format "2-Jan-2006" }}
+              {{ end }}
+              {{ if (not (isset .Params "hidesidebartopics")) }}
               {{ $Site := .Site }}
               {{ if .Params.topics }}
               <span class="posttopics">
@@ -23,18 +26,19 @@
               {{ end }}
               </span>
               {{ end }}
+              {{ end }}
               </span>
             </aside>
+            {{ if (not (isset .Params "hidesidebartoc")) }}
             <aside id="TableOfContents" role="complementary">
-              {{ if eq .Params.showtoc "true" }}
               {{ if .TableOfContents }}
               <p class="deco bold h4 mt2">TOC</p>
               <div class="toc deco">
               {{ .TableOfContents }}
               </div>
               {{ end }}
-              {{ end }}
             </aside>
+            {{ end }}
           </div>
           <div id="mainarticlecol" class="post sm-col-8 px2">
             {{ .Content }}
@@ -42,15 +46,18 @@
             {{if isset .Params "gallery_id" }}
             {{ partial "gallery.html" . }}
             {{ end }}
+            {{ if (not (isset .Params "hideauthorinfofooter")) }}
             <aside id="authorinfofooter">
-              <div class="deco p2 rounded-top bg-darkgrey center">
+              <div class="deco mt3 p2 rounded-top bg-darkgrey center">
               <img class="p1 circle left" src="/img/rick-cogley-avatar-240x240.png" alt="Photo of Rick Cogley" width="100px"><p class="h3 caps white">About the Author</p>
               <p class="p1 white">I'm <a href="/about"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Rick Cogley</span></span></a>, and thanks for reading. I'm an experienced technologist, co-founder & -owner of <a href="http://www.esolia.com" target="_blank">eSolia Inc</a>. I'm from America originally, but have been helping people and companies succeed in Japan since 1987. I'm an avid jogger, lover of music and puzzles, and family man with a wonderful wife and daughters. I hope you'll share this post, comment on it, link to it, and maybe connect with me on other social sharing sites as well. Cheers!</p>
               </div>
             </aside>
+            {{ end }}
+            {{ if (not (isset .Params "hidemetainfofooter")) }}
             <aside id="metainfofooter">
               <div class="deco p2 rounded-bottom bg-rice-paper-light center">
-                 {{ if eq .Params.showsocialsharing "true" }}
+                 {{ if (not (isset .Params "hidesocialsharing")) }}
                      {{ partial "socialsharing.html" . }}
                  {{ end }}
                  {{ partial "post/tag/list" . }}
@@ -72,6 +79,7 @@
                  {{ end }}
                </div>
              </aside>
+             {{ end }}
 
           </div>
         </div>

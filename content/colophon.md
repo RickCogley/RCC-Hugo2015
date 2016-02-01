@@ -2,18 +2,11 @@
 author: Rick Cogley
 authorlink: /about
 authortwitter: 'https://twitter.com/rickcogley'
-date: 2015-05-14T09:45:19.000Z
-publishdate: 2012-01-10T00:05:19.000Z
+date: 2016-02-01T15:10:00+09:00
+publishdate: 2012-01-10T08:40:00+09:00
 description: Colophon page for Rick Cogley Central site.
+banner: /img/Cogley-Banner-Hashioki-1170x350-001-mono.JPG
 draft: false
-showauthor: 'true'
-showcomment: 'true'
-showdate: 'false'
-showpaging: 'true'
-showreadingtime: 'true'
-showsocialsharing: 'true'
-showtoc: 'true'
-showtotop: 'true'
 slug: colophon
 subtitle: On the shoulders of giants.
 weight: 9999
