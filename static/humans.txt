@@ -18,10 +18,9 @@
 
     Various Hugo Contributors: https://github.com/spf13/hugo/graphs/contributors
 
-    Hugo Theme Authors: @tmaiaroto, @halostatue
+    Fantastic developers sharing their work on github: @jxnblk (basscss), @jaydenseric (barebones), @ai, @moox, @ben-eb (postcss / cssnext / cssnano etc)
 
-    Alegreya Font Author: Juan Pablo del Peral
-    Contact: http://www.huertatipografica.com/about
+    Type faces by Jos Buivenga / Exljbris, https://exljbris.wordpress.com/about/, and Joshua Darden / Darden Studio https://www.dardenstudio.com/studio)
 
 /* TECHNOLOGY */
 
@@ -29,11 +28,11 @@
 
     Language Used by Hugo, go, http://golang.org/
 
-    Site Base: HTML5, CSS3, Javascript, Jquery, PureCSS http://purecss.io/
+    Site Base: HTML5, CSS3, Javascript, Jquery, Basscss, postcss, cssnext
 
-    Type Hosting: Google Web Fonts
+    Type Hosting: Adobe Typekit
 
-    Icons: Font Awesome, http://fortawesome.github.io/Font-Awesome/
+    Icons: Icomoon, https://icomoon.io/#home
 
     Site Repository: Github, https://github.com/RickCogley/RCC-Hugo2015
 
@@ -47,7 +46,7 @@
 
 /* SITE */
 
-	Last update: 2015/05/14
-	Language: English / Japanese
+	Last update: 2016/02/01
+	Language: English (and a little Japanese)
 	Doctype: HTML5
-	IDE: Panic Coda 2, Atom, iTerm2
+	IDE: Atom, node.js, npm, gulp.js, iTerm2
