@@ -1,6 +1,6 @@
 # Rick Cogley Central
 
-**I'll re-write the below later. I just did a fairly major update. Please see the [release notes](https://github.com/RickCogley/RCC-Hugo2015/releases/tag/v2.0) to see what happened.**
+**I'll re-write the below later. I just did a fairly major update. Please see the [release notes](https://github.com/RickCogley/RCC-Hugo2015/releases/tag/v2.0) for a quick summary, and my [Colophon Page](http://rick.cogley.info/colophon) for a little more detail about what I did.**
 
 * * *
 
