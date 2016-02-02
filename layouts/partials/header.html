@@ -53,10 +53,12 @@
   <script defer src="/bundle/bundle.js"></script>
 
   <!-- lightbox, gallery -->
-  {{ if .Params.lightbox }}
+  {{if .IsPage}}
+  {{ if (not (isset .Params "hidelightbox")) }}
   <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
   <link rel="stylesheet" type="text/css" href="/css/lightbox.min.css{{with getenv "LIGHTRCCCSS_HASH"}}?v={{.}}{{end}}">
   <script src="/js/lightbox.min.js"></script>
+  {{ end }}
   {{ end }}
 
   <!-- Icons -->
