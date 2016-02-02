@@ -1,6 +1,6 @@
 Languages for prism:
 
-css+clike+javascript+apacheconf+applescript+asciidoc+bash+batch+coffeescript+diff+docker+git+go+handlebars+http+java+json+makefile+markdown+powershell+scss+sql+stylus+textile+yaml
+markup+css+clike+javascript+apacheconf+applescript+asciidoc+bash+basic+batch+c+csharp+cpp+coffeescript+ruby+css-extras+diff+docker+git+go+haml+handlebars+http+ini+java+json+less+makefile+markdown+nginx+parser+pascal+perl+php+php-extras+powershell+processing+python+jsx+rest+roboconf+sass+scss+smalltalk+smarty+sql+stylus+swift+tcl+textile+typescript+vim+wiki+yaml
 
 <pre class="command-line" data-user="me" data-host="mine">
 <code class="language-bash">
