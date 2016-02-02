@@ -54,13 +54,12 @@ Here are the steps to install the script, if you are not familiar with ``git``.
 1. Download the [latest zip](https://github.com/RickCogley/jpassgen/archive/master.zip), move it from your ``~/Downloads`` to a more permanent location, and unzip it. I have mine in ``~/dev/jpassgen``.
 1. Install links to the scripts, in Terminal (assuming you installed in ``~/dev/jpassgen``):
 
-<pre class="command-line" data-user="me" data-host="mine">
-<code class="language-bash">
+{{< prism bash command-line >}}
 cd ~/dev/jpassgen
 ln -s ~/dev/jpassgen/genpass /usr/local/bin/genpass
 sudo ln -s ~/dev/jpassgen/genpass-dict-jp.txt /usr/share/dict/genpass-dict-jp
 Password: *****
-</code></pre>
+{{< /prism >}}
 
 You need to use ``sudo`` for the second ``ln`` command, because ``/usr/share/dict`` is a protected folder.
 
@@ -70,11 +69,10 @@ You need to use ``sudo`` for the second ``ln`` command, because ``/usr/share/dic
 
 Since ``genpass`` is static linked into a folder that's in the system path, you can run it from whereever. Just type ``genpass`` in the Terminal and press enter:
 
-<pre class="command-line" data-user="me" data-host="mine">
-<code class="language-bash">
+{{< prism bash command-line >}}
 genpass
 95+Roten-MOKUREI-Tsukiyo#77
-</code></pre>
+{{< /prism >}}
 
 In addition to displaying it on the command line, the script will copy the password to the clipboard using ``pbcopy``, so you can then paste the password where you need to after running ``genpass``.
 
@@ -82,11 +80,10 @@ In addition to displaying it on the command line, the script will copy the passw
 
 To uninstall, just use ``rm`` on the links from Terminal:
 
-<pre class="command-line" data-user="me" data-host="mine">
-<code class="language-bash">
+{{< prism bash command-line >}}
 rm /usr/local/bin/genpass
 sudo rm /usr/share/dict/genpass-dict-jp.txt
-</code></pre>
+{{< /prism >}}
 
 ## Tweaks
 
