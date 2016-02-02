@@ -1,20 +1,15 @@
+PRISM
+
 Languages for prism:
 
 markup+css+clike+javascript+apacheconf+applescript+asciidoc+bash+basic+batch+c+csharp+cpp+coffeescript+ruby+css-extras+diff+docker+git+go+haml+handlebars+http+ini+java+json+less+makefile+markdown+nginx+parser+pascal+perl+php+php-extras+powershell+processing+python+jsx+rest+roboconf+sass+scss+smalltalk+smarty+sql+stylus+swift+tcl+textile+typescript+vim+wiki+yaml
 
-<pre class="command-line" data-user="me" data-host="mine">
-<code class="language-bash">
-cd /usr/local/etc
-cp php.ini php.ini.bak
-vi php.ini
-</code></pre>
+Theme goes at bottom of prism.css before bundling:
+https://github.com/PrismJS/prism-themes/blob/master/themes/prism-ghcolors.css
 
-<pre class="command-line" data-user="root" data-host="mine">
-<code class="language-bash">
-cd /usr/local/etc
-cp php.ini php.ini.bak
-vi php.ini
-</code></pre>
+SHORTCODE
+
+prism:
 
 {{< prism textile >}}
 $wgSitename = "Acme Inc. Wiki";
@@ -24,9 +19,7 @@ $wgSitename = "Acme Inc. Wiki";
 asdf
 {{< /prism >}}
 
-
-
-Shortcode:
+figure:
 
 {{< figure1 link="/img/the.jpg" src="/img/the.jpg" type="Screenshot" title="blah" >}}
 
