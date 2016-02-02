@@ -1,7 +1,4 @@
 ---
-author: Rick Cogley
-authorlink: /about
-authortwitter: 'https://twitter.com/rickcogley'
 title: HHKB Keyboard Driver Status
 subtitle: ... on OS X El Capitan 10.11
 slug: pfu-hhkb-keyboard-osx-el-capitan-status
