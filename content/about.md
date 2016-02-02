@@ -1,7 +1,4 @@
 ---
-author: Rick Cogley
-authorlink: /about
-authortwitter: https://twitter.com/rickcogley
 date: 2016-02-01T15:10:00+09:00
 publishdate: 2012-01-10T09:05:19+09:00
 description: Biographical and Contact Info for Rick Cogley.
