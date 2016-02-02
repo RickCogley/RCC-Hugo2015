@@ -92,7 +92,7 @@
   --paragraph-indent: 1em;
   --list-margin-top: 0;
   --list-margin-bottom: var(--space-2);
-  --pre-font-size: inherit;
+  --pre-font-size: 90%;
   --pre-margin-top: 0;
   --pre-margin-bottom: var(--space-2);
 
