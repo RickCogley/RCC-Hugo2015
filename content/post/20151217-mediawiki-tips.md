@@ -39,14 +39,14 @@ MediaWiki's setup is quite well developed by now, and a lot of settings are done
 
 In `LocalSettings.php`, edit this value:
 
-{{< prism bash >}}$wgSitename = "Acme Inc. Wiki";
+{{< prism php >}}$wgSitename = "Acme Inc. Wiki";
 {{< /prism >}}
 
 ### Set the Logo
 
 Put the logo in `/resources/assets`, then in `LocalSettings.php`, edit this value:
 
-{{< prism bash >}}$wgLogo = "$wgResourceBasePath/resources/assets/mylogo.png";
+{{< prism php >}}$wgLogo = "$wgResourceBasePath/resources/assets/mylogo.png";
 {{< /prism >}}
 
 ### Set the wiki site URL
@@ -55,14 +55,14 @@ Put the logo in `/resources/assets`, then in `LocalSettings.php`, edit this valu
 
 In `LocalSettings.php`, edit this value:
 
-{{< prism bash >}}$wgServer = "http://wiki.mydomain.com";
+{{< prism php >}}$wgServer = "http://wiki.mydomain.com";
 {{< /prism >}}
 
 ### Set the email from: addresses
 
 In `LocalSettings.php`, edit these values:
 
-{{< prism bash >}}$wgEmergencyContact = "user@mydomain.com";
+{{< prism php >}}$wgEmergencyContact = "user@mydomain.com";
 $wgPasswordSender = "user@mydomain.com";
 {{< /prism >}}
 
@@ -70,7 +70,7 @@ $wgPasswordSender = "user@mydomain.com";
 
 In `LocalSettings.php`, edit these values:
 
-{{< prism bash >}}$wgRightsText = "copyright Taro Tanaka, all rights reserved";
+{{< prism php >}}$wgRightsText = "copyright Taro Tanaka, all rights reserved";
 unset( $wgFooterIcons['copyright'] );
 {{< /prism >}}
 
@@ -78,7 +78,7 @@ unset( $wgFooterIcons['copyright'] );
 
 In `LocalSettings.php`, edit these values:
 
-{{< prism bash >}}$wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'doc', 'xls', 'mpp', 'pdf', 'ppt', 'tiff', 'bmp', 'docx', 'xlsx', 'pptx', 'ps', 'mp3', 'odt', 'ods', 'odp', 'ogg', 'odg'
+{{< prism php >}}$wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'doc', 'xls', 'mpp', 'pdf', 'ppt', 'tiff', 'bmp', 'docx', 'xlsx', 'pptx', 'ps', 'mp3', 'odt', 'ods', 'odp', 'ogg', 'odg'
 );
 $wgMaxUploadSize = array(
 	'*' => 1024 * 1024 * 100, // 100 MB
@@ -88,7 +88,7 @@ $wgMaxUploadSize = array(
 
 Make these settings in your `php.ini`:
 
-{{< prism apacheconf >}}upload_max_filesize = 100M
+{{< prism ini >}}upload_max_filesize = 100M
 post_max_size = 100M
 {{< /prism >}}
 
@@ -120,7 +120,7 @@ In the `images` folder where uploads are stored, there is an `.htaccess` file, t
 
 In `LocalSettings.php`, edit these values to control the "WikiEditor" extension:
 
-{{< prism bash >}}$wgAllowUserJs = true;
+{{< prism php >}}$wgAllowUserJs = true;
 $wgUseSiteJs = true;
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
 $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
@@ -193,7 +193,7 @@ Then, you can display pages in a category by adding this code to an index page: 
 
 You can display lists of pages in the wiki using double curly brackets, and by specifying the namespace.
 
-{{< prism bash >}}{{Special:AllPages}}
+{{< prism wiki >}}{{Special:AllPages}}
 {{Special:AllPages|namespace=12}}
 {{< /prism >}}
 
