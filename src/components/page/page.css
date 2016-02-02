@@ -120,7 +120,7 @@ p span {
 	font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
 }
 /* no top margin on subsequent paragraphs */
-p + p {
+p + p, figure + p {
   text-indent: var(--paragraph-indent);
   margin-top: var(--paragraph-margin-top);
 }
@@ -131,7 +131,7 @@ p + p {
     font-family: var(--decorative-font-family);
     font-size: var(--large-text-size);
     line-height: var(--line-height-2);
-    font-style: italic; 
+    font-style: italic;
 }
 
 /**
