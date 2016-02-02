@@ -86,7 +86,7 @@
       </div>
     </section>
     <aside id="comments" class="m0 px4 bg-lightpaperfibers">
-    {{ if eq .Params.showcomment "true" }}
+    {{ if (not (isset .Params "hidecomments")) }}
       {{ template "_internal/disqus.html" . }}
     {{ end }}
     </aside>
