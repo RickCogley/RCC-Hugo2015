@@ -39,73 +39,64 @@ MediaWiki's setup is quite well developed by now, and a lot of settings are done
 
 In `LocalSettings.php`, edit this value:
 
-~~~bash
-$wgSitename = "Acme Inc. Wiki";
-~~~
+{{< prism bash >}}$wgSitename = "Acme Inc. Wiki";
+{{< /prism >}}
 
 ### Set the Logo
 
 Put the logo in `/resources/assets`, then in `LocalSettings.php`, edit this value:
 
-~~~bash
-$wgLogo = "$wgResourceBasePath/resources/assets/mylogo.png";
-~~~
+{{< prism bash >}}$wgLogo = "$wgResourceBasePath/resources/assets/mylogo.png";
+{{< /prism >}}
 
 ### Set the wiki site URL
 
 {{< figure1 link="/img/Cogley-Post-Mediawiki_Logo.png" src="/img/Cogley-Post-Mediawiki_Logo.png" type="Logo" title="WikiMedia" >}}
 
-
 In `LocalSettings.php`, edit this value:
 
-~~~bash
-$wgServer = "http://wiki.mydomain.com";
-~~~
+{{< prism bash >}}$wgServer = "http://wiki.mydomain.com";
+{{< /prism >}}
 
 ### Set the email from: addresses
 
 In `LocalSettings.php`, edit these values:
 
-~~~bash
-$wgEmergencyContact = "user@mydomain.com";
+{{< prism bash >}}$wgEmergencyContact = "user@mydomain.com";
 $wgPasswordSender = "user@mydomain.com";
-~~~
+{{< /prism >}}
 
 ### Set Copyright Text and Suppress Icon
 
 In `LocalSettings.php`, edit these values:
 
-~~~bash
-$wgRightsText = "copyright Taro Tanaka, all rights reserved";
+{{< prism bash >}}$wgRightsText = "copyright Taro Tanaka, all rights reserved";
 unset( $wgFooterIcons['copyright'] );
-~~~
+{{< /prism >}}
 
 ### Set Upload Size Limit
 
 In `LocalSettings.php`, edit these values:
 
-~~~bash
-$wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'doc', 'xls', 'mpp', 'pdf', 'ppt', 'tiff', 'bmp', 'docx', 'xlsx', 'pptx', 'ps', 'mp3', 'odt', 'ods', 'odp', 'ogg', 'odg'
+{{< prism bash >}}$wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'doc', 'xls', 'mpp', 'pdf', 'ppt', 'tiff', 'bmp', 'docx', 'xlsx', 'pptx', 'ps', 'mp3', 'odt', 'ods', 'odp', 'ogg', 'odg'
 );
 $wgMaxUploadSize = array(
 	'*' => 1024 * 1024 * 100, // 100 MB
 	'url' => 1024 * 1024 * 100, // 100 MB
 );
-~~~
+{{< /prism >}}
 
 Make these settings in your `php.ini`:
 
-~~~bash
-upload_max_filesize = 100M
+{{< prism apacheconf >}}upload_max_filesize = 100M
 post_max_size = 100M
-~~~
+{{< /prism >}}
 
 ### Protect "images" folder
 
 In the `images` folder where uploads are stored, there is an `.htaccess` file, to which you can add some lines to protect against security breaches (per the MediaWiki manual). Edit it as follows:
 
-~~~bash
-# Protect against bug 28235
+{{< prism apacheconf >}}# Protect against bug 28235
 	<IfModule rewrite_module>
 		RewriteEngine On
 		RewriteCond %{QUERY_STRING} \.[^\\/:*?\x22<>|%]+(#|\?|$) [nocase]
@@ -123,65 +114,63 @@ In the `images` folder where uploads are stored, there is an `.htaccess` file, t
 	<FilesMatch "\.ph(p[345]?s?|tml)$">
 	   SetHandler None
 	</FilesMatch>
-~~~
+{{< /prism >}}
 
 ### Set up Editor
 
 In `LocalSettings.php`, edit these values to control the "WikiEditor" extension:
 
-~~~bash
-$wgAllowUserJs = true;
+{{< prism bash >}}$wgAllowUserJs = true;
 $wgUseSiteJs = true;
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
 $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
 $wgDefaultUserOptions['wikieditor-preview'] = 1;
 $wgDefaultUserOptions['wikieditor-publish'] = 1;
-~~~
+{{< /prism >}}
 
 You need to add some javascript to get some aspects of the toolbar to work, and you do this by editing a special wiki page in the MediaWiki namespace. Search for this file and edit it to add javascript to load for every user: `MediaWiki:Common.js`
 
 For instance, this will add a strike-through button.
 
-~~~javascript
-/* Any JavaScript here will be loaded for all users on every page load. */
+{{< prism javascript >}}/* Any JavaScript here will be loaded for all users on every page load. */
 
-	var customizeToolbar = function() {
-		/* Your code goes here */
+var customizeToolbar = function() {
+  /* Your code goes here */
 
-	$('#wpTextbox1').wikiEditor('addToToolbar', {
-		section: 'advanced',
-		group: 'format',
-		tools: {
-			"strikethrough": {
-				label: 'Strike',
-				type: 'button',
-				icon: '//upload.wikimedia.org/wikipedia/commons/3/30/Btn_toolbar_rayer.png',
-				action: {
-					type: 'encapsulate',
-					options: {
-						pre: "<s>",
-						post: "</s>"
-					}
-				}
-			}
-		}
-	});
-	};
+  $('#wpTextbox1').wikiEditor('addToToolbar', {
+    section: 'advanced',
+    group: 'format',
+    tools: {
+      "strikethrough": {
+        label: 'Strike',
+        type: 'button',
+        icon: '//upload.wikimedia.org/wikipedia/commons/3/30/Btn_toolbar_rayer.png',
+        action: {
+          type: 'encapsulate',
+          options: {
+            pre: "<s>",
+            post: "</s>"
+          }
+        }
+      }
+    }
+  });
+};
 
-	/* Check if view is in edit mode and that the required modules are available. Then, customize the toolbar … */
-	if ( $.inArray( mw.config.get( 'wgAction' ), [ 'edit', 'submit' ] ) !== -1 ) {
-		mw.loader.using( 'user.options', function () {
-			// This can be the string "0" if the user disabled the preference ([[phab:T54542#555387]])
-			if ( mw.user.options.get( 'usebetatoolbar' ) == 1 ) {
-				$.when(
-					mw.loader.using( 'ext.wikiEditor.toolbar' ), $.ready
-				).then( customizeToolbar );
-			}
-		} );
-	}
-	// Add the customizations to LiquidThreads' edit toolbar, if available
-	mw.hook( 'ext.lqt.textareaCreated' ).add( customizeToolbar );
-~~~
+/* Check if view is in edit mode and that the required modules are available. Then, customize the toolbar … */
+if ($.inArray(mw.config.get('wgAction'), ['edit', 'submit']) !== -1) {
+  mw.loader.using('user.options', function() {
+    // This can be the string "0" if the user disabled the preference ([[phab:T54542#555387]])
+    if (mw.user.options.get('usebetatoolbar') == 1) {
+      $.when(
+        mw.loader.using('ext.wikiEditor.toolbar'), $.ready
+      ).then(customizeToolbar);
+    }
+  });
+}
+// Add the customizations to LiquidThreads' edit toolbar, if available
+mw.hook('ext.lqt.textareaCreated').add(customizeToolbar);
+{{< /prism >}}
 
 ### Convenient "Special Pages"
 
@@ -204,10 +193,9 @@ Then, you can display pages in a category by adding this code to an index page: 
 
 You can display lists of pages in the wiki using double curly brackets, and by specifying the namespace.
 
-~~~bash
-{{Special:AllPages}}
+{{< prism bash >}}{{Special:AllPages}}
 {{Special:AllPages|namespace=12}}
-~~~
+{{< /prism >}}
 
 To find the namespace number, you can visit `Special:AllPages`, drop the namespace list down, search, and note the namespace number in the URL.
 
