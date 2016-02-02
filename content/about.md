@@ -63,6 +63,9 @@ You can use the table of contents in the sidebar, to navigate to other sections 
 
 ## Professional
 ### My Firm eSolia
+
+{{< figure1 link="/img/eSolia-Chicklet-Color-1024px.png" src="/img/eSolia-Chicklet-Color-1024px.png" type="Logo" title="eSolia Inc." class="bg-white" >}}
+
 My firm is called "[eSolia Inc.](http://www.esolia.com)", and we specialize in multi-lingual IT management and support services. You can think of us as a "virtual IT department" for multinational firms entering or already in Japan, who want someone to help navigate and negotiate here. We stand on the side of our clients, making the most difficult projects succeed.
 
 ### Project Success
@@ -79,10 +82,15 @@ My goal is to develop eSolia into a global consultancy, focused on providing the
 ### Youth Music Activity
 As a teenager, I was a drumset player in a local wedding band, and because of the great support of my older band-mates (and parents!), I got to make a little money doing something I loved, rather than delivering papers (anything but that!). One of my private music teachers got me into Drum and Bugle Corps, which is a summer athletic musical activity (a _“spart”_) run by [Drum Corps International](http://www.dci.org) in which groups of 150 performers compete in stadiums in the US and Canada. I played snare drum for 5 years, starting in 1981 at 15 years old in the General Butler Vagabonds of Butler, PA, continuing on with the Defenders of Rockland, MA in 1982, and finishing with the 27th Lancers for three years, from 1983 through 1985, when I was 19.
 
+{{< figure1 link="/img/Cogley-Post-27th-Lancers-Snareline-1985.jpg" src="/img/Cogley-Post-27th-Lancers-Snareline-1985.jpg" type="Photo" title="The Hard-Hitting 27th Lancers Snareline, 1985" >}}
+
+
 Drum corps is a hard activity. Performers rehearse in hot and humid summer conditions all day, tour in busses, stay in sometimes-not-so-nice facilities like school gyms with nothing but cold showers, all for intense 12 minute shows in the evenings. The drum corps season culminates in a championship week in August, and every year yields shows that are just scintillating and unforgettable. As you progress through the season from May to August, you become able to concentrate so hard during a performance, that you get into a "flow" and time seems to stop. I never regret that hard work, because it was the crucible and made me what I am today. And big thanks to my parents and teachers, and to the many other adults who made it possible for me and my friends to march.
 
 ### How I Came to Japan
-While I was attending Allegheny College in Meadville, Pennsylvania, USA (B.Sc. Biology), my senior advisor Dr. Glenn Wurst gave me some ideas of what I could do after undergrad studies. One idea was to go to Japan to study, which piqued my interest, though I'd never even considered going overseas.
+While I was attending Allegheny College in Meadville, Pennsylvania, USA (B.Sc. Biology), my senior advisor Dr. Glenn Wurst gave me some ideas of what I could do after undergrad studies. One idea was to go to Japan to study, which piqued my interest, though I'd never even considered going overseas
+
+{{< figure1 link="/img/Cogley-Post-Kamakura-Tsurugaokahachiman-Ema-200706.jpg" src="/img/Cogley-Post-Kamakura-Tsurugaokahachiman-Ema-200706.jpg" type="Photo" title="Kamakura's Tsurugaoka Hachimangu is a Favorite Place" >}}
 
 Armed with 5 months of Japanese language study, two phone numbers, a tiny savings, and a great family with which to homestay (thank heavens!), my homestay mother called the numbers, got an angry lecture by one, and got me a meeting by the other. Thankfully, Dr. Sugiyama at the Biopharmakokinetics Dept allowed me into his program, and I studied there for a year.
 
