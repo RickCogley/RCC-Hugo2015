@@ -16,6 +16,16 @@ cp php.ini php.ini.bak
 vi php.ini
 </code></pre>
 
+{{< prism textile >}}
+$wgSitename = "Acme Inc. Wiki";
+{{< /prism >}}
+
+{{< prism lang [command-line root] >}}
+asdf
+{{< /prism >}}
+
+
+
 Shortcode:
 
 {{< figure1 link="/img/the.jpg" src="/img/the.jpg" type="Screenshot" title="blah" >}}
