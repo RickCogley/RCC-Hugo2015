@@ -1,12 +1,8 @@
 ---
-author: Rick Cogley
-authorlink: /about
-authortwitter: 'https://twitter.com/rickcogley'
 title: Generate Passwords from Japanese Romaji Words on Mac
 subtitle: Great for nihongo-learning Mac users
 slug: generate-passwords-from-japanese-romaji-words-on-mac
 banner: /img/Cogley-Banner-PapaBubble-Candy-2.jpg
-banneralt: 'Photo PapaBubble Candy, by Rick Cogley.'
 date: 2015-09-11T15:20:15+09:00
 publishdate: 2015-09-11T15:20:15+09:00
 description: 'Mac users, easily generate passwords using Japanese romaji, a post by Rick Cogley.'
@@ -15,14 +11,6 @@ images:
   - /img/Cogley-Post-Genpass.png
   - /img/Cogley-Banner-PapaBubble-Candy-2.jpg
   - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
-showauthor: 'true'
-showcomment: 'true'
-showdate: 'true'
-showpaging: 'true'
-showreadingtime: 'true'
-showsocialsharing: 'true'
-showtoc: 'true'
-showtotop: 'true'
 tags:
   - password
   - generate
@@ -43,11 +31,6 @@ postsvg: icon-origami-fish
 I wanted an easy way to generate passwords at the Mac command line, and found a relatively simple solution which lets you type ``genpass`` and then simply copy-paste the password from your clipboard, to whatever password box is requesting one.
 
 <!--more-->
-
-<figure class="photo-inline-right">
-  <img class="photo400 pure-img" src="/img/Cogley-Post-Genpass.png" alt="Screenshot of genpass being run">
-  <figcaption><em>Screenshot</em>: <code>genpass</code> being run in Terminal</figcaption>
-</figure>
 
 ## Background
 
@@ -71,23 +54,27 @@ Here are the steps to install the script, if you are not familiar with ``git``.
 1. Download the [latest zip](https://github.com/RickCogley/jpassgen/archive/master.zip), move it from your ``~/Downloads`` to a more permanent location, and unzip it. I have mine in ``~/dev/jpassgen``.
 1. Install links to the scripts, in Terminal (assuming you installed in ``~/dev/jpassgen``):
 
-~~~bash
+<pre class="command-line" data-user="me" data-host="mine">
+<code class="language-bash">
 cd ~/dev/jpassgen
 ln -s ~/dev/jpassgen/genpass /usr/local/bin/genpass
 sudo ln -s ~/dev/jpassgen/genpass-dict-jp.txt /usr/share/dict/genpass-dict-jp
 Password: *****
-~~~
+</code></pre>
 
 You need to use ``sudo`` for the second ``ln`` command, because ``/usr/share/dict`` is a protected folder.
 
 ## Usage
 
+{{< figure1 link="/img/Cogley-Post-Genpass.png" src="/img/Cogley-Post-Genpass.png" type="Screenshot" title="genpass being run in the OS X terminal" >}}
+
 Since ``genpass`` is static linked into a folder that's in the system path, you can run it from whereever. Just type ``genpass`` in the Terminal and press enter:
 
-~~~bash
-me@mine:~ > genpass
+<pre class="command-line" data-user="me" data-host="mine">
+<code class="language-bash">
+genpass
 95+Roten-MOKUREI-Tsukiyo#77
-~~~
+</code></pre>
 
 In addition to displaying it on the command line, the script will copy the password to the clipboard using ``pbcopy``, so you can then paste the password where you need to after running ``genpass``.
 
@@ -95,10 +82,11 @@ In addition to displaying it on the command line, the script will copy the passw
 
 To uninstall, just use ``rm`` on the links from Terminal:
 
-~~~bash
+<pre class="command-line" data-user="me" data-host="mine">
+<code class="language-bash">
 rm /usr/local/bin/genpass
 sudo rm /usr/share/dict/genpass-dict-jp.txt
-~~~
+</code></pre>
 
 ## Tweaks
 

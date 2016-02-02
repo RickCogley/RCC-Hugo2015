@@ -1,12 +1,8 @@
 ---
-author: Rick Cogley
-authorlink: /about
-authortwitter: 'https://twitter.com/rickcogley'
 title: Fix Apple OS X Mail Crashing and Hanging
 subtitle: ...by deleting Mail's Envelope Index
 slug: fix-apple-osx-mail-crash-and-hang
 banner: /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
-banneralt: 'Photo Hula Dancers at Shonan Mall, by Rick Cogley.'
 date: 2015-09-25T11:30:15+09:00
 publishdate: 2015-09-25T11:30:15+09:00
 description: 'Mac users, fix your Mail OS X crashes and hangs, a post by Rick Cogley.'
@@ -15,14 +11,6 @@ images:
   - /img/Cogley-Post-Apple-Mail-Message-Import.png
   - /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
   - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
-showauthor: 'true'
-showcomment: 'true'
-showdate: 'true'
-showpaging: 'true'
-showreadingtime: 'true'
-showsocialsharing: 'true'
-showtoc: 'true'
-showtotop: 'true'
 tags:
   - osx
   - email
@@ -51,10 +39,7 @@ Besides the strange bugs that seem to have plagued Mail.app on OS X from time to
 
 ## How to Fix a Hung or Crashed Mail.app
 
-<figure class="photo-inline-right">
-  <img class="photo400 pure-img" src="/img/Cogley-Post-Apple-Mail-Message-Import.png" alt="Screenshot of OS X Lion Mail Import">
-  <figcaption><em>Screenshot</em>: Mail Import Prompt</figcaption>
-</figure>
+{{< figure1 link="/img/Cogley-Post-Apple-Mail-Message-Import.png" src="/img/Cogley-Post-Apple-Mail-Message-Import.png" type="Screenshot" title="OS X Lion Mail Import" >}}
 
 I've found that deleting Mail.app's "envelope" index seems to alleviate crashing or hanging.
 

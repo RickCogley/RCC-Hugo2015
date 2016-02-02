@@ -1,12 +1,8 @@
 ---
-author: Rick Cogley
-authorlink: /about
-authortwitter: 'https://twitter.com/rickcogley'
 title: Odd SSL Problem caused by Old Open Keychain
 subtitle: ... on Apple OS X
 slug: osx-sslhandshake-problem-from-an-open-keychain
 banner: /img/Cogley-Banner-JR-Totsuka-Bridge-2-mono.jpg
-banneralt: Photo of Totsuka near Totsukana, monochrome, cloudy, by Rick Cogley.
 date: 2015-10-07T15:20:15+09:00
 publishdate: 2015-10-07T15:20:15+09:00
 description: 'An odd and esoteric problem with SSL, caused by an old open keychain, a post by Rick Cogley.'
@@ -15,14 +11,6 @@ images:
   - /img/Cogley-Post-OSX-Keychain-Add.png
   - /img/Cogley-Banner-JR-Totsuka-Bridge-2-mono.jpg
   - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
-showauthor: 'true'
-showcomment: 'true'
-showdate: 'true'
-showreadingtime: 'true'
-showsocialsharing: 'true'
-showtoc: 'true'
-showtotop: 'true'
-lightbox: 'true'
 tags:
   - osx
   - ssl
@@ -47,29 +35,26 @@ I had a really odd problem, with SSL (``https://``) sites after having upgraded 
 
 During and after the upgrade to _OS X El Capitan_, I did all the typical things I do, like checking through all the settings to make sure nothing is out of order. One of those includes checking that Time is being automatically set from the local NTS time server, because a mis-set clock will often cause trouble related to encryption.  
 
-<figure class="photo-inline-right">
-  <a href="/img/Cogley-Post-OSX-Keychain-Add.png" title="" data-lightbox="set1" data-title="Adding a backup keychain in Keychain Access"><img class="photo300 pure-img" src="/img/Cogley-Post-OSX-Keychain-Add.png" alt="Screenshot showing the add keychain in OS X Keychain Access" ></a>
-  <figcaption><em>Screenshot</em>: Adding a backup keychain</figcaption>
-</figure>
+{{< figure1 link="/img/Cogley-Post-OSX-Keychain-Add.png" src="/img/Cogley-Post-OSX-Keychain-Add.png" type="Screenshot" title="Add backup keychain, in OS X Keychain Access" >}}
 
 I was getting those "this site is untrusted" errors in Chrome, oddly enough on major sites from Microsoft or Apple, since they certainly can afford to update their SSL certificates. Then I noticed that the [Flowdock](http://www.flowdock.com) Mac app would not display, just showing a grey, blank screen.
 
 I looked at Console.app while following up with Flowdock support, and saw entries like:
 
-~~~bash
+~~~batch
 10/6/15 5:42:03.505 PM Flowdock[3255]: Failed to connect (goToSettings) outlet from (AppDelegate) to (NSMenuItem): missing setter or instance variable
 10/6/15 5:42:04.614 PM Flowdock[3255]: NSURLSession/NSURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9813)
 ~~~
 
 ... and ...
 
-~~~bash
+~~~batch
 10/6/15 5:44:02.839 PM Flowdock[3259]: Sparkle Error (continued): The certificate for this server is invalid. You might be connecting to a server that is pretending to be “s3.amazonaws.com” which could put your confidential information at risk.
 ~~~
 
 ... and ...
 
-~~~bash
+~~~batch
 10/6/15 5:55:39.447 PM Adobe Desktop Service[729]: CFNetwork SSLHandshake failed (-9807)
 ~~~
 

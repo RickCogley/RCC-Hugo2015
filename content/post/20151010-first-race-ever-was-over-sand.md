@@ -1,7 +1,4 @@
 ---
-author: Rick Cogley
-authorlink: /about
-authortwitter: 'https://twitter.com/rickcogley'
 title: Ran my first race ever, a 5K
 subtitle: ... but, it was over sand!
 slug: first-race-ever-was-a-5k-over-sand
@@ -16,15 +13,6 @@ images:
   - /img/Cogley-Post-First-Race-Old-Renault-20151010.jpg
   - /img/Cogley-Banner-Hiratsuka-Beach-Windsurfers.jpg
   - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
-showauthor: 'true'
-showcomment: 'true'
-showdate: 'true'
-showpaging: 'true'
-showreadingtime: 'true'
-showsocialsharing: 'true'
-showtoc: 'true'
-showtotop: 'true'
-lightbox: 'true'
 tags:
   - running
   - 5K
@@ -42,7 +30,7 @@ topics:
   - Personal
   - Japan
   - Culture
-postsummary: I have been running for a while, so I thought I would run in a race, my first ever. I signed up, then later got a pretty big surprise. 
+postsummary: I have been running for a while, so I thought I would run in a race, my first ever. I signed up, then later got a pretty big surprise.
 postsvg: icon-origami-fish
 ---
 
@@ -60,10 +48,7 @@ Well, I finally recovered, and meanwhile I had been reading about running, and l
 
 ## First race
 
-<figure class="photo-inline-right">
-  <a href="/img/Cogley-Post-First-Race-20151010.jpg" title="First Race!" data-lightbox="set1" data-title="First bib ever with number 315"><img class="photo300 pure-img" src="/img/Cogley-Post-First-Race-20151010.jpg" alt="Photo showing Rick and his first running race bib (zekken)" ></a>
-  <figcaption><em>Photo</em>: Capturing the first bib number</figcaption>
-</figure>
+{{< figure1 link="/img/Cogley-Post-First-Race-20151010.jpg" src="/img/Cogley-Post-First-Race-20151010.jpg" type="Photo" title="Rick and his first running race bib (zekken), number 315" >}}
 
 I figured I would like to try entering a short running race, despite never having done so in my whole life. I was nervous about trying it for whatever reason (excuses, excuses), but my family was supportive, and I decided it is more about trying to improve myself than to race against someone. So, I found the "3rd Shonan Hiratsuka Seaside Marathon" (第三回 湘南平塚 シーサイド マラソン) on [Runnet Japan](http://runnet.jp/), and signed up for the 5K version of the race.
 
@@ -94,10 +79,7 @@ Well, I decided to try it last weekend, a week before the race. It was hard, but
 
 ## Shonan Bellmare Hiratsuka Beach Park
 
-<figure class="photo-inline-right">
-  <a href="/img/Cogley-Post-First-Race-Old-Renault-20151010.jpg" title="Old Renault 4GTL" data-lightbox="set1" data-title="Old Renault 4GTL in the Park Parking Lot"><img class="photo300 pure-img" src="/img/Cogley-Post-First-Race-Old-Renault-20151010.jpg" alt="Photo showing an Old Renault 4GTL parked in the parking lot at the beach" ></a>
-  <figcaption><em>Photo</em>: Old Renault 4GTL</figcaption>
-</figure>
+{{< figure1 link="/img/Cogley-Post-First-Race-Old-Renault-20151010.jpg" src="/img/Cogley-Post-First-Race-Old-Renault-20151010.jpg" type="Photo" title="Old Renault 4GTL in the Park Parking Lot" >}}
 
 So today, I got up early, packed everything up, and got on the road. Route 1 was crowded up to Fujisawa, where the Shin-Shonan Bypass starts, then it was smooth the rest of the way. I got to the [Shonan Bellmare Hiratsuka Beach Park](http://www.city.hiratsuka.kanagawa.jp.e.di.hp.transer.com/suisei/beachpark.htm) parking area just as it was opening. I imagine that during peak time in the summer, it's impossible to park there. It's a nice little park and a great beach; worth a look, since it's relatively clean.
 

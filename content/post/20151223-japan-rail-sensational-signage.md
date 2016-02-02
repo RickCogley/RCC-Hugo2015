@@ -1,7 +1,4 @@
 ---
-author: Rick Cogley
-authorlink: /about
-authortwitter: 'https://twitter.com/rickcogley'
 title: Japan Rail Sensational Signage
 subtitle: ... you just can't get it anywhere else
 slug: japan-rail-sensational-signage
@@ -49,7 +46,7 @@ The Japan Rail sign in the video has multiple pieces of useful information:
 
 They are really useful signs, and chock full of information, as you can see. They even switch between English and Japanese. My beef and the axiom is (and yeah, it's really a first-world problem) that:
 
-<blockquote>The information I need at that moment, is always last in the queue</blockquote>
+>The information I need at that precise moment, is inevitably last in the display queue. O! The Hardship!
 
 It never seems to fail.
 
@@ -57,10 +54,7 @@ It never seems to fail.
 
 It's something you notice when you live in Japan and go out of the country for a visit overseas. In many countries, there are not so many signs, and people have a blasé attitude about them. Here, they are ubiquitous and fairly well-designed, and are combined with endless (incessant) announcements. This is what you become used to, living in Japan: good signs, announcements and punctuality (all joking aside, it's pretty great). So, you get a bit of signage and announcement withdrawal, going anywhere overseas!
 
-<figure class="photo-inline-right">
-  <a href="/img/Cogley-Post-JR-Signage-2015.jpg" title="Photo of Japan Rail electronic signage" data-lightbox="set1" data-title="Japan Rail electronic signage"><img class="photo300 pure-img" src="/img/Cogley-Post-JR-Signage-2015.jpg" alt="Photo of Japan Rail electronic signage" ></a>
-  <figcaption><em>Cogley Photo</em>: JR Electronic Sign</figcaption>
-</figure>
+{{< figure1 link="/img/Cogley-Post-JR-Signage-2015.jpg" src="/img/Cogley-Post-JR-Signage-2015.jpg" type="Photo" title="Japan Rail sign indicating the Shonan Shinjuku Line is bound for Kozu at 20:27" >}}
 
 Of course, good signage can deliver its message at a glance, but the problem with these signs is, 9 times out of 10, when _I_ glance, the information _I_ need is not there. It's something that has irked me for years, that when I look at the sign, the number of doors are always showing, but not the length of the train. Now, I just laugh about it, because invariably, the Signage Gods make me wait until the sign blinks its way to the number-of-cars view. It's really comical.
 

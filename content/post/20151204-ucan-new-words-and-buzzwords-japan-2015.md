@@ -1,12 +1,8 @@
 ---
-author: Rick Cogley
-authorlink: /about
-authortwitter: 'https://twitter.com/rickcogley'
 title: U-Can Japan New Words and Buzzwords
 subtitle: ... for 2015
 slug: ucan-new-words-and-buzzwords-japan-2015
 banner: /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
-banneralt: 'Photo of Hula Dancers at a mall in Japan, by Rick Cogley.'
 date: 2015-12-05T09:50:00+09:00
 publishdate: 2015-12-04T20:51:00+09:00
 description: 'U-Can Japan New Words and Buzzwords winners, a post by Rick Cogley.'
@@ -17,15 +13,6 @@ images:
   - /img/Cogley-Post-Mainichi-Shuzo-2015.jpg
   - /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
   - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
-showauthor: 'true'
-showcomment: 'true'
-showdate: 'true'
-showpaging: 'true'
-showreadingtime: 'true'
-showsocialsharing: 'true'
-showtoc: 'true'
-showtotop: 'true'
-lightbox: 'true'
 tags:
   - U-Can
   - Words
@@ -59,10 +46,7 @@ The 2015 Grand Prize winners were:
 
 ### Bakugai
 
-<figure class="photo-inline-right">
-  <a href="/img/Cogley-Post-Japan-New-Words-and-Buzzwords-20151204.jpg" title="Book Cover: Gendai Yougo no Kiso Chishiki" data-lightbox="set1" data-title="Book Cover: Gendai Yougo no Kiso Chishiki"><img class="photo300 pure-img" src="/img/Cogley-Post-Japan-New-Words-and-Buzzwords-20151204.jpg" alt="Screenshot of cover of Gendai Yougo no Kiso Chishiki" ></a>
-  <figcaption><em>Screenshot</em>: Gendai Yougo no Kiso Chishiki Cover</figcaption>
-</figure>
+{{< figure1 link="/img/Cogley-Post-Japan-New-Words-and-Buzzwords-20151204.jpg" src="/img/Cogley-Post-Japan-New-Words-and-Buzzwords-20151204.jpg" type="Book Cover" title="Gendai Yougo no Kiso Chishiki" >}}
 
 This means "explosive buying" (2), and was meant to describe the voracious buying done by visitors to Japan from China. Well-off Chinese come to Japan, buy suitcases, and fill them full of goodies to take back.
 
@@ -86,10 +70,7 @@ It's surely _emblematic_ of a larger, Olympic-sized corruption problem, though, 
 
 ### Goromaru Pozu
 
-<figure class="photo-inline-right">
-  <a href="/img/Cogley-Post-Goromaru-Pose-Howto-2015.png" title="Goromaru Pose Annotated" data-lightbox="set1" data-title="How to do the Goromaru Pose"><img class="photo300 pure-img" src="/img/Cogley-Post-Goromaru-Pose-Howto-2015.png" alt="Screenshot showing how to do the Goromaru Pose" ></a>
-  <figcaption><em>Screenshot</em>: Goromaru Pose Annotated</figcaption>
-</figure>
+{{< figure1 link="/img/Cogley-Post-Goromaru-Pose-Howto-2015.png" src="/img/Cogley-Post-Goromaru-Pose-Howto-2015.png" type="Screenshot" title="How to do the Goromaru Pose" >}}
 
 It was great to see Japan do well in the Rugby World Cup, and as it proceeded, we saw a lot of man-in-the-street interviews asking people if they knew how to do Ayumu Goromaru's famous pose. It was typically Japanese and always humorous that they had diagrams and demos showing people how to do the "Goromaru Pose" (5) correctly. Goromaru himself even played into it, testing people and making sure they knew.
 
@@ -103,10 +84,7 @@ Indeed, to quote another winning phrase, "Abe seiji wo yurusanai" (6) or "We wil
 
 ### Mainichi Shuzo!
 
-<figure class="photo-inline-right">
-  <a href="/img/Cogley-Post-Mainichi-Shuzo-2015.jpg" title="Book Cover: Mainichi Shuzo" data-lightbox="set1" data-title="Book Cover: Mainichi Shuzo"><img class="photo200 pure-img" src="/img/Cogley-Post-Mainichi-Shuzo-2015.jpg" alt="Book Cover: Mainichi Shuzo" ></a>
-  <figcaption><em>Screenshot</em>: Mainichi Shuzo Cover</figcaption>
-</figure>
+{{< figure1 link="/img/Cogley-Post-Mainichi-Shuzo-2015.jpg" src="/img/Cogley-Post-Mainichi-Shuzo-2015.jpg" type="Book Cover" title="Mainichi (daily) Shuzo" >}}
 
 Shuzo Matsuoka is a former tennis pro, who's been a fixture on Japanese TV for as long as I can remember. He's insanely "high tension" I'd say, but, he's a great coach, quite the charismatic personality, and especially knows how to motivate kids. I'm always impressed how he tailors his coaching perfectly to each kid he is coaching on TV.
 

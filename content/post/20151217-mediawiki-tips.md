@@ -1,7 +1,4 @@
 ---
-author: Rick Cogley
-authorlink: /about
-authortwitter: 'https://twitter.com/rickcogley'
 title: MediaWiki Tips
 subtitle: ... and notes to myself
 slug: mediawiki-tips
@@ -15,15 +12,6 @@ images:
   - /img/Cogley-Post-Mediawiki_Logo.png
   - /img/Cogley-Banner-PSU-1170x350-008-mono.jpg
   - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
-showauthor: 'true'
-showcomment: 'true'
-showdate: 'true'
-showpaging: 'true'
-showreadingtime: 'true'
-showsocialsharing: 'true'
-showtoc: 'false'
-showtotop: 'true'
-lightbox: 'true'
 tags:
   - MediaWiki
 topics:
@@ -45,11 +33,6 @@ To jog my own memory for the next time, I assembled this handy list of tips for 
 
 ## Setup
 
-<figure class="photo-inline-right">
-  <a href="/img/Cogley-Post-Mediawiki_Logo.png" title="Logo: WikiMedia" data-lightbox="set1" data-title="Logo: WikiMedia"><img class="photo300 pure-img" src="/img/Cogley-Post-Mediawiki_Logo.png" alt="Logo: WikiMedia" ></a>
-  <figcaption><em>Logo</em>: WikiMedia</figcaption>
-</figure>
-
 MediaWiki's setup is quite well developed by now, and a lot of settings are done automatically for you. At the end, it creates a ``LocalSettings.php`` which you download, and then place in the root of your site. After you do, refresh your browser and the settings will take hold.
 
 ### Change the Site Name
@@ -69,6 +52,9 @@ $wgLogo = "$wgResourceBasePath/resources/assets/mylogo.png";
 ~~~
 
 ### Set the wiki site URL
+
+{{< figure1 link="/img/Cogley-Post-Mediawiki_Logo.png" src="/img/Cogley-Post-Mediawiki_Logo.png" type="Logo" title="WikiMedia" >}}
+
 
 In `LocalSettings.php`, edit this value:
 
