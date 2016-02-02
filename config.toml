@@ -9,6 +9,7 @@ paginate = 7
 
 [author]
     name = "Rick Cogley"
+    biourl = "/about"
 
 [permalinks]
     # Optional. Change the permalink format for the 'post' content type.
