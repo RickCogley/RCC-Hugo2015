@@ -11,7 +11,7 @@
         <div id="flexsetup" class="sm-flex mxn2">
           <div id="fauxsidebarcol" class="sm-col-4 px2">
             <aside id="metasidebar" role="complementary">
-              <p class="deco bold h4">By <a href="/about">{{ .Params.author }}</a></p>
+              <p class="deco bold h4">By <a href="{{ .Site.Author.biourl }}">{{ .Site.Author.name }}</a></p>
               <span class="deco">
               {{ if (not (isset .Params "hidesidebardate")) }}
               {{ .Date.Format "2-Jan-2006" }}
