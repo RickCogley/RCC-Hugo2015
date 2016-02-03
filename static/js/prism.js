@@ -82,19 +82,19 @@ var _ = _self.Prism = {
 		insertBefore: function (inside, before, insert, root) {
 			root = root || _.languages;
 			var grammar = root[inside];
-			
+
 			if (arguments.length == 2) {
 				insert = arguments[1];
-				
+
 				for (var newToken in insert) {
 					if (insert.hasOwnProperty(newToken)) {
 						grammar[newToken] = insert[newToken];
 					}
 				}
-				
+
 				return grammar;
 			}
-			
+
 			var ret = {};
 
 			for (var token in grammar) {
@@ -114,7 +114,7 @@ var _ = _self.Prism = {
 					ret[token] = grammar[token];
 				}
 			}
-			
+
 			// Update references in other language definitions
 			_.languages.DFS(_.languages, function(key, value) {
 				if (value === root[inside] && key != inside) {
@@ -145,7 +145,7 @@ var _ = _self.Prism = {
 		}
 	},
 	plugins: {},
-	
+
 	highlightAll: function(async, callback) {
 		var elements = document.querySelectorAll('code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code');
 
@@ -511,7 +511,7 @@ if (Prism.languages.markup) {
 			alias: 'language-css'
 		}
 	});
-	
+
 	Prism.languages.insertBefore('inside', 'attr-value', {
 		'style-attr': {
 			pattern: /\s*style=("|').*?\1/i,
@@ -2194,19 +2194,19 @@ Prism.languages.perl = {
 	'string': [
 		// q/.../
 		/\b(?:q|qq|qx|qw)\s*([^a-zA-Z0-9\s\{\(\[<])(?:[^\\]|\\[\s\S])*?\1/,
-	
+
 		// q a...a
 		/\b(?:q|qq|qx|qw)\s+([a-zA-Z0-9])(?:[^\\]|\\[\s\S])*?\1/,
-	
+
 		// q(...)
 		/\b(?:q|qq|qx|qw)\s*\((?:[^()\\]|\\[\s\S])*\)/,
-	
+
 		// q{...}
 		/\b(?:q|qq|qx|qw)\s*\{(?:[^{}\\]|\\[\s\S])*\}/,
-	
+
 		// q[...]
 		/\b(?:q|qq|qx|qw)\s*\[(?:[^[\]\\]|\\[\s\S])*\]/,
-	
+
 		// q<...>
 		/\b(?:q|qq|qx|qw)\s*<(?:[^<>\\]|\\[\s\S])*>/,
 
@@ -2220,19 +2220,19 @@ Prism.languages.perl = {
 	'regex': [
 		// m/.../
 		/\b(?:m|qr)\s*([^a-zA-Z0-9\s\{\(\[<])(?:[^\\]|\\[\s\S])*?\1[msixpodualngc]*/,
-	
+
 		// m a...a
 		/\b(?:m|qr)\s+([a-zA-Z0-9])(?:[^\\]|\\.)*?\1[msixpodualngc]*/,
-	
+
 		// m(...)
 		/\b(?:m|qr)\s*\((?:[^()\\]|\\[\s\S])*\)[msixpodualngc]*/,
-	
+
 		// m{...}
 		/\b(?:m|qr)\s*\{(?:[^{}\\]|\\[\s\S])*\}[msixpodualngc]*/,
-	
+
 		// m[...]
 		/\b(?:m|qr)\s*\[(?:[^[\]\\]|\\[\s\S])*\][msixpodualngc]*/,
-	
+
 		// m<...>
 		/\b(?:m|qr)\s*<(?:[^<>\\]|\\[\s\S])*>[msixpodualngc]*/,
 
@@ -2243,37 +2243,37 @@ Prism.languages.perl = {
 			pattern: /(^|[^-]\b)(?:s|tr|y)\s*([^a-zA-Z0-9\s\{\(\[<])(?:[^\\]|\\[\s\S])*?\2(?:[^\\]|\\[\s\S])*?\2[msixpodualngcer]*/,
 			lookbehind: true
 		},
-	
+
 		// s a...a...a
 		{
 			pattern: /(^|[^-]\b)(?:s|tr|y)\s+([a-zA-Z0-9])(?:[^\\]|\\[\s\S])*?\2(?:[^\\]|\\[\s\S])*?\2[msixpodualngcer]*/,
 			lookbehind: true
 		},
-	
+
 		// s(...)(...)
 		{
 			pattern: /(^|[^-]\b)(?:s|tr|y)\s*\((?:[^()\\]|\\[\s\S])*\)\s*\((?:[^()\\]|\\[\s\S])*\)[msixpodualngcer]*/,
 			lookbehind: true
 		},
-	
+
 		// s{...}{...}
 		{
 			pattern: /(^|[^-]\b)(?:s|tr|y)\s*\{(?:[^{}\\]|\\[\s\S])*\}\s*\{(?:[^{}\\]|\\[\s\S])*\}[msixpodualngcer]*/,
 			lookbehind: true
 		},
-	
+
 		// s[...][...]
 		{
 			pattern: /(^|[^-]\b)(?:s|tr|y)\s*\[(?:[^[\]\\]|\\[\s\S])*\]\s*\[(?:[^[\]\\]|\\[\s\S])*\][msixpodualngcer]*/,
 			lookbehind: true
 		},
-	
+
 		// s<...><...>
 		{
 			pattern: /(^|[^-]\b)(?:s|tr|y)\s*<(?:[^<>\\]|\\[\s\S])*>\s*<(?:[^<>\\]|\\[\s\S])*>[msixpodualngcer]*/,
 			lookbehind: true
 		},
-	
+
 		// /.../
 		// The look-ahead tries to prevent two divisions on
 		// the same line from being highlighted as regex.
@@ -2967,7 +2967,7 @@ Prism.languages.smalltalk = {
 	var smarty_litteral_start = '{literal}';
 	var smarty_litteral_end = '{/literal}';
 	var smarty_litteral_mode = false;
-	
+
 	Prism.languages.smarty = Prism.languages.extend('markup', {
 		'smarty': {
 			pattern: smarty_pattern,
@@ -3083,7 +3083,7 @@ Prism.languages.smalltalk = {
 	});
 
 }(Prism));
-Prism.languages.sql= { 
+Prism.languages.sql= {
 	'comment': {
 		pattern: /(^|[^\\])(?:\/\*[\w\W]*?\*\/|(?:--|\/\/|#).*)/,
 		lookbehind: true
@@ -3733,7 +3733,7 @@ if (
 var url = /\b([a-z]{3,7}:\/\/|tel:)[\w\-+%~/.:#=?&amp;]+/,
     email = /\b\S+@[\w.]+[a-z]{2}/,
     linkMd = /\[([^\]]+)]\(([^)]+)\)/,
-    
+
 	// Tokens that may contain URLs and emails
     candidates = ['comment', 'url', 'attr-value', 'string'];
 
@@ -3772,20 +3772,20 @@ Prism.hooks.add('before-highlight', function(env) {
 Prism.hooks.add('wrap', function(env) {
 	if (/-link$/.test(env.type)) {
 		env.tag = 'a';
-		
+
 		var href = env.content;
-		
+
 		if (env.type == 'email-link' && href.indexOf('mailto:') != 0) {
 			href = 'mailto:' + href;
 		}
 		else if (env.type == 'md-link') {
 			// Markdown
 			var match = env.content.match(linkMd);
-			
+
 			href = match[2];
 			env.content = match[1];
 		}
-		
+
 		env.attributes.href = href;
 	}
 });
@@ -3824,7 +3824,7 @@ Prism.hooks.add('before-highlight', function(env) {
 
 		pre.parentNode.insertBefore(div, pre);
 	}
-	
+
 	div2.innerHTML = language;
 });
 
@@ -4101,4 +4101,3 @@ Prism.hooks.add('complete', function (env) {
 });
 
 }());
-
