@@ -1,7 +1,4 @@
 ---
-author: Rick Cogley
-authorlink: /about
-authortwitter: 'https://twitter.com/rickcogley'
 date: 2016-02-01T18:42:00+09:00
 publishdate: 2012-01-10T08:40:00+09:00
 description: Colophon page for Rick Cogley Central site.
@@ -10,7 +7,8 @@ draft: false
 slug: colophon
 subtitle: On the shoulders of giants.
 weight: 9999
-lightbox: 'true'
+hideprism: "true"
+hidepaging: "true"
 tags:
   - Colophon
   - Attributions
@@ -43,12 +41,6 @@ topics:
   - Web
   - Design
   - Process
-menu:
-  footer:
-    Name: Colophon
-    Weight: -20
-    Identifier: colophon
-    Url: /colophon
 ---
 
 As they say, we "[stand on the shoulders of giants](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants "Wikipedia article about etymology of standing on the shoulders of giants")", and this site is certainly no exception.
@@ -61,14 +53,7 @@ This release represents a major upgrade to my process and site. After a couple o
 
 ### Go Hugo
 
-<figure class="sm-show col-4 mxn12 left fit">
-  <a href="/img/hugo-logo.png" title="Hugo Logo" data-lightbox="set1" data-title="Hugo Logo"><img class="rounded border border-darken-1" src="/img/hugo-logo.png" alt="Logo of Hugo Static Site Generator"></a>
-  <figcaption><em>Logo</em>: Hugo SSG</figcaption>
-</figure>
-<figure class="sm-hide col-12 fit">
-  <a href="/img/hugo-logo.png" title="Hugo Logo" data-title="Hugo Logo"><img class="rounded border border-darken-1" src="/img/hugo-logo.png" alt="Logo of Hugo Static Site Generator" ></a>
-  <figcaption><em>Logo</em>: Hugo SSG</figcaption>
-</figure>
+{{< figure1 link="/img/hugo-logo.png" src="/img/hugo-logo.png" type="Logo" title="Hugo SSG" class="bg-white" >}}
 
 [Hugo](http://gohugo.io) is a Static Site Generator, which makes it simple to use html "templates" to merge your css, javascript, images and content written in the [Markdown](http://daringfireball.net/projects/markdown/) format, into a publishable website.
 
@@ -82,14 +67,7 @@ Hugo is downloadable as a single binary file, written in Go, which means it will
 
 ### Site Look
 
-<figure class="sm-show col-4 mxn12 left fit">
-  <a href="/img/basscss.png" title="Basscss Logo" data-lightbox="set1" data-title="Basscss Logo"><img class="rounded border border-darken-1 bg-rice-paper-light" src="/img/basscss.png" alt="Logo of Basscss"></a>
-  <figcaption><em>Logo</em>: Basscss</figcaption>
-</figure>
-<figure class="sm-hide col-12 fit bg-white">
-  <a href="/img/basscss.png" title="Basscss Logo" data-title="Basscss Logo"><img class="rounded border border-darken-1 bg-rice-paper-light" src="/img/basscss.png" alt="Logo of Basscss" ></a>
-  <figcaption><em>Logo</em>: Basscss</figcaption>
-</figure>
+{{< figure1 link="/img/basscss.png" src="/img/basscss.png" type="Logo" title="Basscss" class="bg-rice-paper-light" >}}
 
 The look of this site comes from a couple of different components.
 
@@ -99,14 +77,7 @@ First, the stylistic base of the site comes from a fantastic and comprehensive c
 
 It allows you to have consistency in your basic styles, responsiveness to support mobile users, and acts as a great starting point for any site.
 
-<figure class="sm-show col-4 mxn12 left fit">
-  <a href="/img/exljbris-calluna.png" title="Exljbris Calluna" data-lightbox="set1" data-title="Exljbris Calluna"><img class="rounded border border-darken-1" src="/img/exljbris-calluna.png" alt="Logo of Exljbris Calluna"></a>
-  <figcaption><em>Screenshot</em>: Exljbris Calluna</figcaption>
-</figure>
-<figure class="sm-hide col-12 fit">
-  <a href="/img/exljbris-calluna.png" title="Exljbris Calluna" data-title="Hugo Logo"><img class="rounded border border-darken-1" src="/img/exljbris-calluna.png" alt="Logo of Exljbris Calluna" ></a>
-  <figcaption><em>Screenshot</em>: Exljbris Calluna</figcaption>
-</figure>
+{{< figure1 link="/img/exljbris-calluna.png" src="/img/exljbris-calluna.png" type="Screenshot" title="Exljbris Calluna" >}}
 
 As for **Type Faces**, I had been using the excellent and beautiful [Alegreya](http://www.huertatipografica.com/about), but changed to the _Calluna Family_ and _Freight Sans_ faces, because they support more of the OpenType features I wanted to take advantage of. They're served via Adobe Typekit, and you can see the [Adobe Auto-generated Colophon](https://typekit.com/colophons/ihk8ryw) for more info on these.
 
@@ -118,14 +89,7 @@ The **photos** on this site are mine, unless otherwise noted. I enjoy photograph
 
 ## Hosting
 
-<figure class="sm-show col-4 mxn12 left fit">
-  <a href="/img/webfaction-logo.png" title="Webfaction" data-lightbox="set1" data-title="Webfaction"><img class="rounded border border-darken-1 bg-white" src="/img/webfaction-logo.png" alt="Logo of Webfaction"></a>
-  <figcaption><em>Logo</em>: Webfaction</figcaption>
-</figure>
-<figure class="sm-hide col-12 fit">
-  <a href="/img/webfaction-logo.png" title="Webfaction" data-title="Webfaction Logo"><img class="rounded border border-darken-1 bg-white" src="/img/webfaction-logo.png" alt="Logo of Webfaction" ></a>
-  <figcaption><em>Logo</em>: Webfaction</figcaption>
-</figure>
+{{< figure1 link="/img/webfaction-logo.png" src="/img/webfaction-logo.png" type="Logo" title="Webfaction" >}}
 
 This and a few other sites I manage, are hosted at the rock-solid [Webfaction](http://www.webfaction.com/?affiliate=rcogley). Great cost-performance for developers, in my opinion. I have not had trouble in years of use, and they respond very quickly to support requests.
 
@@ -137,14 +101,7 @@ The [repository](https://github.com/RickCogley/RCC-Hugo2015) for this site is ho
 
 ## Semantic Markup
 
-<figure class="sm-show col-4 mxn12 left fit">
-  <a href="/img/json-ld-logo.png" title="JSON-LD Logo" data-lightbox="set1" data-title="JSON-LD Logo"><img class="rounded border border-darken-1 bg-white" src="/img/json-ld-logo.png" alt="Logo of JSON-LD"></a>
-  <figcaption><em>Logo</em>: JSON-LD</figcaption>
-</figure>
-<figure class="sm-hide col-12 fit">
-  <a href="/img/json-ld-logo.png" title="JSON-LD Logo" data-title="JSON-LD Logo"><img class="rounded border border-darken-1 bg-white" src="/img/json-ld-logo.png" alt="Logo of JSON-LD" ></a>
-  <figcaption><em>Logo</em>: JSON-LD</figcaption>
-</figure>
+{{< figure1 link="/img/json-ld-logo.png" src="/img/json-ld-logo.png" type="Logo" title="JSON-LD" >}}
 
 Considering [Semantic HTML](http://en.wikipedia.org/wiki/Semantic_HTML "Semantic H.T.M.L. Wikipedia article link"), I'm using some now-well-accepted [Microdata](http://schema.org "Canonical site for Microdata, Schema.org") such as the [Person Schema](http://schema.org/Person "Microdata Person Schema"), and [Microformats 2](http://microformats.org/wiki/microformats2 "V2 of Microformats, improving ease-of-use for authors and implementers") such as [h-card](http://microformats.org/wiki/h-card "Microformats 2 update to hCard") with some others sprinkled in.
 
@@ -164,14 +121,7 @@ _Warm thanks and regards to:_
 
 [Jos Buivenga / Exljbris](https://exljbris.wordpress.com/about/) and [Joshua Darden / Darden Studio](https://www.dardenstudio.com/studio), for the beautiful type faces.
 
-<figure class="sm-show col-4 mxn12 left fit">
-  <a href="/img/humans-txt-large-logo2.png" title="Humans.txt Logo" data-lightbox="set1" data-title="Humans.txt Logo"><img class="rounded border border-darken-1 bg-white" src="/img/humans-txt-large-logo2.png" alt="Logo of Humans.txt"></a>
-  <figcaption><em>Logo</em>: Humans.txt</figcaption>
-</figure>
-<figure class="sm-hide col-12 fit">
-  <a href="/img/humans-txt-large-logo2.png" title="Humans.txt Logo" data-title="Humans.txt Logo"><img class="rounded border border-darken-1 bg-white" src="/img/humans-txt-large-logo2.png" alt="Logo of Humans.txt" ></a>
-  <figcaption><em>Logo</em>: Humans.txt</figcaption>
-</figure>
+{{< figure1 link="/img/humans-txt-large-logo2.png" src="/img/humans-txt-large-logo2.png" type="Logo" title="Humans.txt" >}}
 
 Lastly, I even have a [humans.txt](/humans.txt) file. [Humans.txt](http://humanstxt.org) is an attempt to standardize on a way of making a site colophon, in text format. If you [click](/humans.txt) it, you'll see some of the same information as on this page, in a simple text format.
 

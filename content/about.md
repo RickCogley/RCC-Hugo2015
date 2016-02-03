@@ -7,7 +7,8 @@ draft: false
 slug: about
 subtitle: My Biographical and Contact Info
 hideauthorinfofooter: "true"
-hidemetainfofooter: "true"
+hidepaging: "true"
+hideprism: "true"
 weight: 9999
 tags:
 - Bio
@@ -26,12 +27,6 @@ topics:
 type: aboutpage
 images:
 - /img/rick-cogley-avatar-240x240.png
-menu:
-  footer:
-    Name: "Bio"
-    Weight: -30
-    Identifier: "about"
-    Url: "/about"
 ---
 
 <div class="center">
