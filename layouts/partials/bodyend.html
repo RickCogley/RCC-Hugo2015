@@ -4,7 +4,11 @@
 <script data-no-instant>InstantClick.init();</script> -->
 
 <!-- PRISM HIGHLIGHTER -->
+{{if .IsPage}}
+{{ if (not (isset .Params "hideprism")) }}
 <script src="/js/prism.min.js{{with getenv "PRISMRCCJS_HASH"}}?v={{.}}{{end}}"></script>
+{{ end }}
+{{ end }}
 
 <!-- GOOGLE ANALYTICS -->
 {{ if not .Site.BuildDrafts }}
