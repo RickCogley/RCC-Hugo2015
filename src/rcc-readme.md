@@ -15,12 +15,11 @@ prism:
 $wgSitename = "Acme Inc. Wiki";
 {{< /prism >}}
 
-{{< prism lang [command-line root] >}}
+{{< prism lang [command-line root] >}}asdf
 asdf
 {{< /prism >}}
 
 figure:
 
-{{< figure1 link="/img/the.jpg" src="/img/the.jpg" type="Screenshot" title="blah" >}}
-
+{{< figure1 link="/img/the.jpg" src="/img/the.jpg" type="Screenshot" title="blah" style="" >}}
 add style="bg-white" etc if needed
