@@ -262,21 +262,21 @@
   --darker-teal-2: #2ba7a7;
   --darker-teal-3: #269393;
 
-  .fill-darker-beige {
-    fill: var(--darker-beige);
-  }
+.fill-darker-beige {
+fill: var(--darker-beige);
+}
 
-  .stroke-darker-beige {
-    stroke: var(--darker-beige);
-  }
+.stroke-darker-beige {
+stroke: var(--darker-beige);
+}
 
-  .fill-rice-paper-light {
-    fill: var(--rice-paper-light);
-  }
+.fill-rice-paper-light {
+fill: var(--rice-paper-light);
+}
 
-  .stroke-rice-paper-light {
-    stroke: var(--rice-paper-light);
-  }
+.stroke-rice-paper-light {
+stroke: var(--rice-paper-light);
+}
 
   background-color: var(--red);
 
