@@ -1,28 +1,32 @@
 {{ "<!-- ENTERING partial headerbanner1.html -->" | safeHTML }}
 <header role="banner" class="clearfix px4 m0 white bg-gradient-greenblue2">
-<div class="flex flex-center py4">
-  <div class="flex-auto">
-    <div class="h1 sans bold caps flex flex-center m0">RCC</div>
-    <nav role="navigation" class="rccnav mxn1 clearfix align-baseline">
-      {{ range .Site.Menus.main }}
-      <span class="r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="{{ .Pre }}">
-        <a href="{{ .URL }}" class="btn btn-primary px1 sans light bg-darken-2">{{ .Name }}</a>
-      </span>
-      {{ end }}
-    </nav>
+  <div class="flex flex-center py4">
+    <div class="flex-auto">
+      <div class="sm-hide r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="RCC Home">
+        <a href="{{ .Site.BaseURL }}"><img src="/img/rcc-logo-1.svg" width="40" class="m0 p1 bg-lighten-4 rounded"></a>
+      </div>
+      <div class="sm-show h1 sans bold caps flex flex-center m0">RCC</div>
+      <div class="sm-hide h2 sans bold caps flex flex-center m0">RCC</div>
+      <nav role="navigation" class="flex rccnav mxn1">
+        {{ range .Site.Menus.main }}
+        <span class="{{ .Post }} r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="{{ .Pre }}">
+          <a href="{{ .URL }}" class="btn btn-primary px1 sans light bg-darken-2">{{ .Name }}</a>
+        </span>
+        {{ end }}
+      </nav>
+    </div>
+    <div class="clearfix sm-hide px2"></div>
+    <div class="flex-center overflow-hidden px2 py1" role="search">
+      <form id="cse-search-box" action="http://google.com/cse">
+        <input type="hidden" name="cx" value="018195656038046585595:v0aqyxd648a" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" name="q" class="fit field white sans light rounded-left x-group-item bg-darken-2" placeholder="Google Custom Search" />
+        <input type="submit" name="sa" class="sm-show right white sans light btn btn-primary bg-lighten-2 rounded-right x-group-item" value="Search" />
+      </form>
+    </div>
+    <div class="sm-show r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="RCC Home">
+      <a href="{{ .Site.BaseURL }}"><img src="/img/rcc-logo-1.svg" width="40" class="m0 p1 bg-lighten-4 rounded"></a>
+    </div>
   </div>
-  <div class="clearfix sm-hide"></div>
-  <div class="overflow-hidden px2 py1" role="search">
-    <form id="cse-search-box" action="http://google.com/cse">
-      <input type="hidden" name="cx" value="018195656038046585595:v0aqyxd648a" />
-      <input type="hidden" name="ie" value="UTF-8" />
-      <input type="text" name="q" class="fit field white sans light rounded-left x-group-item bg-darken-2" placeholder="Google Custom Search" />
-      <input type="submit" name="sa" class="right white sans light btn btn-primary bg-lighten-2 rounded-right x-group-item" value="Search" />
-    </form>
-  </div>
-  <span class="r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="RCC Home">
-  <a href="{{ .Site.BaseURL }}"><img src="/img/rcc-logo-1.svg" width="40" class="m0 p1 bg-lighten-4 rounded"></a>
-  </span>
-</div>
 </header>
 {{ "<!-- LEAVING partial headerbanner1.html -->" | safeHTML }}
