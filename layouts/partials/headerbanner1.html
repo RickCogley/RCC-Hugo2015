@@ -3,25 +3,18 @@
   <div class="flex flex-center py4">
     <div class="flex-auto">
       <div class="sm-hide r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="RCC Home">
-        <a href="{{ .Site.BaseURL }}"><img src="/img/rcc-logo-1.svg" width="40" class="m0 p1 bg-lighten-4 rounded"></a>
+        <a href="{{ .Site.BaseURL }}"><img src="/img/rcc-logo-1.svg" width="40" class="m0 p1 bg-white rounded"></a>
       </div>
-      <div class="sm-hide h2 sans bold flex m0">RCC</div>
+      <!--<div class="sm-hide h2 sans bold flex m0">RCC</div>-->
       <div class="sm-show h1 sans bold caps flex flex-center m0">RCC</div>
       <nav role="navigation" class="sm-hide rccnav mxn1">
         {{ range .Site.Menus.main }}
-        <span class="{{ .Post }} r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="{{ .Pre }}">
-          <a href="{{ .URL }}" class="btn btn-primary px1 sans light bg-darken-2">{{ .Name }}</a>
-        </span>
+          <a href="{{ .URL }}" class="btn btn-primary px1 sans light bg-darken-2 {{ .Post }}">{{ .Name }}</a>
         {{ end }}
       </nav>
       <nav role="navigation" class="sm-show rccnav mxn1">
         {{ range .Site.Menus.main }}
-        <!--<span class="{{ .Post }} r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="{{ .Pre }}">
-          <a href="{{ .URL }}" class="btn btn-primary px1 sans light bg-darken-2">{{ .Name }}</a>
-        </span>-->
-
           <a href="{{ .URL }}" class="btn btn-primary px1 sans light bg-darken-2 r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="{{ .Pre }}">{{ .Name }}</a>
-
         {{ end }}
       </nav>
     </div>
