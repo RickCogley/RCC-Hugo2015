@@ -5,9 +5,16 @@
       <div class="sm-hide r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="RCC Home">
         <a href="{{ .Site.BaseURL }}"><img src="/img/rcc-logo-1.svg" width="40" class="m0 p1 bg-lighten-4 rounded"></a>
       </div>
+      <div class="sm-hide h2 sans bold caps flex m0">RCC</div>
       <div class="sm-show h1 sans bold caps flex flex-center m0">RCC</div>
-      <div class="sm-hide h2 sans bold caps flex flex-center m0">RCC</div>
-      <nav role="navigation" class="flex rccnav mxn1">
+      <nav role="navigation" class="sm-hide rccnav mxn1">
+        {{ range .Site.Menus.main }}
+        <span class="{{ .Post }} r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="{{ .Pre }}">
+          <a href="{{ .URL }}" class="btn btn-primary px1 sans light bg-darken-2">{{ .Name }}</a>
+        </span>
+        {{ end }}
+      </nav>
+      <nav role="navigation" class="sm-show flex rccnav mxn1">
         {{ range .Site.Menus.main }}
         <span class="{{ .Post }} r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="{{ .Pre }}">
           <a href="{{ .URL }}" class="btn btn-primary px1 sans light bg-darken-2">{{ .Name }}</a>
