@@ -24,7 +24,7 @@
       <div class="right p0 m0">
         <p><a href="{{ .RelPermalink }}" class="deco">Read More&hellip;</a></p>
       </div>
-      <p class="deco italic m1">By <a href="/about">{{ .Params.author }}</a>, on {{ .Date.Format "2-Jan-2006" }}
+      <p class="deco italic m1">By <a href="{{ .Site.Author.biourl }}">{{ .Site.Author.name }}</a>, on {{ .Date.Format "2-Jan-2006" }}
         <br>In
         {{ $Site := .Site }}
         {{ if .Params.topics }}
@@ -54,7 +54,7 @@
         <div class="right p0 m0">
           <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="/img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
         </div>
-        <p class="deco italic m1">By <a href="/about">{{ .Params.author }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
+        <p class="deco italic m1">By <a href="{{ .Site.Author.biourl }}">{{ .Site.Author.name }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
         {{ end }}
         {{ if (eq $index 2) }}
         <h3 class="h3-responsive m1"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
@@ -62,7 +62,7 @@
         <div class="right p0 m0">
           <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="/img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
         </div>
-        <p class="deco italic m1">By <a href="/about">{{ .Params.author }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
+        <p class="deco italic m1">By <a href="{{ .Site.Author.biourl }}">{{ .Site.Author.name }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
         {{ end }}
         {{ end }}
       </div>
@@ -75,7 +75,7 @@
         <div class="right p0 m0">
           <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="/img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
         </div>
-        <p class="deco italic m1">By <a href="/about">{{ .Params.author }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
+        <p class="deco italic m1">By <a href="{{ .Site.Author.biourl }}">{{ .Site.Author.name }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
         {{ end }}
         {{ if (eq $index 4) }}
         <h3 class="h3-responsive m1"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
@@ -83,7 +83,7 @@
         <div class="right p0 m0">
           <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="/img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
         </div>
-        <p class="deco italic m1">By <a href="/about">{{ .Params.author }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
+        <p class="deco italic m1">By <a href="{{ .Site.Author.biourl }}">{{ .Site.Author.name }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
         {{ end }}
         {{ end }}
 
@@ -105,7 +105,7 @@
         <div class="right p0 m0">
           <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="/img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
         </div>
-        <p class="deco italic m1">By <a href="/about">{{ .Params.author }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
+        <p class="deco italic m1">By <a href="{{ .Site.Author.biourl }}">{{ .Site.Author.name }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
         {{ end }}
         {{ if (eq $index 6) }}
         <h3 class="h3-responsive m1"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
@@ -113,7 +113,7 @@
         <div class="right p0 m0">
           <p><a href="{{ .RelPermalink }}" class="deco"><svg><use xlink:href="/img/symbol-defs.svg#icon-pointer-right" /></svg></a></p>
         </div>
-        <p class="deco italic m1">By <a href="/about">{{ .Params.author }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
+        <p class="deco italic m1">By <a href="{{ .Site.Author.biourl }}">{{ .Site.Author.name }}</a>, on {{ .Date.Format "2-Jan-2006" }}</p>
         {{ end }}
         {{ end }}
 
