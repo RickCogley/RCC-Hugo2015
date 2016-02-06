@@ -31,7 +31,7 @@ Like Schrödinger's cat or the USB "two flip" rule, it appears there's a diaboli
 
 First take a look at what these nifty, dynamic LED signs look like:
 
-<iframe src="https://player.vimeo.com/video/114845000" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+{{< vimeo 114845000 >}}
 
 The Japan Rail sign in the video has multiple pieces of useful information:
 
