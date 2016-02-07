@@ -44,6 +44,7 @@ gulp.task('css', function () {
   return gulp
     .src(globs.css)
     .pipe(sourcemaps.init())
+    .pipe(concat('bundle.css'))
     .pipe(postcss([
       atImport(),
       mqpacker(),
@@ -56,7 +57,6 @@ gulp.task('css', function () {
       reporter({ clearMessages: true })
     ]))
     .on('error', handle)
-    .pipe(concat('bundle.css'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('bundle'))
     .pipe(gulp.dest('../static/bundle'))
