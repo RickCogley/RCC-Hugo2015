@@ -23,3 +23,29 @@ figure:
 
 {{< figure1 link="/img/the.jpg" src="/img/the.jpg" type="Screenshot" title="blah" style="" >}}
 add style="bg-white" etc if needed
+
+
+TABLES
+
+do | don't
+---|---
+this|that
+one|another
+
+<div class="overflow-scroll">
+<table class="table-light overflow-hidden bg-rice-paper-light border rounded">
+<thead class="bg-darken-1">
+<tr>
+<th>do</th>
+<th>don&rsquo;t</th>
+</tr>
+</thead>
+</div>
+
+<tbody>
+<tr>
+<td>this</td>
+<td>that</td>
+</tr>
+</tbody>
+</table>
