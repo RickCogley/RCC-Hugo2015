@@ -558,6 +558,36 @@ div.bg-darkgrey a:active  {
 
 .link { text-decoration: none; }
 
+/* Default Tables (make default like table-light) */
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: var(--table-header-font-weight);
+}
+
+th,
+td {
+  padding: var(--table-cell-padding-y) var(--table-cell-padding-x);
+  line-height: inherit;
+  border-bottom-width: var(--border-width);
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color);
+}
+
+th { vertical-align: bottom }
+td { vertical-align: top }
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
 
 /**
  *
