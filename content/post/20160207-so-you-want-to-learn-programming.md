@@ -45,13 +45,13 @@ I see a _lot_ of people posting in support forums, strugging to make Windows "sp
 
 What do you need to get started? I would recommend a Mac or Linux system. Windows is possible and even needed if you're developing specifically for Windows, but for standards-based websites and opensource code, a lot of devs use Mac or Linux. If you use Windows in that case, it will be harder to get help in my opinion.
 
-You might also look into "cloud IDE" services, like [Codio](https://codio.com/), [Nitrous](https://www.nitrous.io/), [Codebox](https://www.codebox.io/), [Koding](https://koding.com/), [Codiad](http://codiad.com/), or [Cloud9](https://c9.io/). These provide an integrated development environment in a web browser, so that you can get started quickly, without worrying about what's on your machine. Some of these services offer free options.
+You might also look into "cloud {{<abbr IDE>}}" services, like [Codio](https://codio.com/), [Nitrous](https://www.nitrous.io/), [Codebox](https://www.codebox.io/), [Koding](https://koding.com/), [Codiad](http://codiad.com/), or [Cloud9](https://c9.io/). These provide an integrated development environment in a web browser, so that you can get started quickly, without worrying about what's on your machine. Some of these services offer free options.
 
 {{% aside1 %}}
 You'll observe that editor comparisons are like religious wars!
 {{% /aside1 %}}
 
-If you don't want to use a Cloud IDE, then at least get yourself a decent programmer's editor to use on your system, like Github's [Atom](https://atom.io/) or [Sublime Text](http://www.sublimetext.com/), or, for the hardcore, ``vi``, ``vim``, or ``emacs``. Don't just use TextEdit on Mac or, _gasp_, Notepad on Windows. Besides the basics of how to use whatever text editor you choose, there are a few common things to start learning about:
+If you don't want to use a Cloud {{<abbr IDE>}}, then at least get yourself a decent programmer's editor to use on your system, like Github's [Atom](https://atom.io/) or [Sublime Text](http://www.sublimetext.com/), or, for the hardcore, ``vi``, ``vim``, or ``emacs``. Don't just use TextEdit on Mac or, _gasp_, Notepad on Windows. Besides the basics of how to use whatever text editor you choose, there are a few common things to start learning about:
 
 {{< figure1 link="/img/editor-config-logo.png" src="/img/editor-config-logo.png" type="Logo" title="Editor Config" class="" >}}
 
@@ -66,6 +66,8 @@ By the way, there are indeed IDEs to use locally. IDEs are the editor, plus many
 
 One service I use and love is [Pinboard](https://pinboard.in/). It's minimalist, and just lets you keep bookmarks and notes, but it will help you stay organized. For instance, here's [my list for cloud IDEs](https://pinboard.in/u:rickcogley/t:JRC_Cloud_IDE/), and a [note about Mac Screenshot and Annotation Tools](https://notes.pinboard.in/u:rickcogley/notes/bcbd54b9d25db0d4cf18).
 
+Another Mac and iOS app that's _really_ slick is [Kapeli Dash](https://kapeli.com/dash). It's a real god-send, and makes documentation for just about everything software development-related available offline, as well as lets you store code snippets. You can get it for iOS, if you don't use a Mac.
+
 By the way, can you touch type? Now's a good time to start learning. Computer programming requires a lot of typing, and it's a huge pain if you cannot type. Take a month and [learn how](https://typing.io/). It will really serve you well, whatever career path you take.
 
 ### Simple Starter Steps
@@ -78,9 +80,9 @@ Below is one possible sequence you could take, to learn some basics while you bu
 
 {{< figure1 link="/img/html5-css3-js-logo.png" src="/img/html5-css3-js-logo.png" type="Logo" title="HTML5, CSS3, JS" class="bg-rice-paper-light" >}}
 
-Learn _HTML5_, _CSS3_ and basic _javascript_, and create a completely static and simple website. Of those three technologies, only javascript is an actual programming language. HTML is a markup language for specifying the structure of websites and pages, and CSS is another markup language for specifying the style of how something looks in the web browser.
+Learn _{{<abbr HTML5>}}_, _{{<abbr CSS3>}}_ and basic _{{<abbr javascript>}}_, and create a completely static and simple website. Of those three technologies, only {{<abbr javascript>}} is an actual programming language. {{<abbr HTML>}} is a markup language for specifying the structure of websites and pages, and {{<abbr CSS>}} is another markup language for specifying the style of how something looks in the web browser.
 
-There's tons of info about HTML on the Internet, but I think you should focus on HTML5. The [HTML5 boilerplate](https://html5boilerplate.com/) is a good starting point. Here is a [good basic tutorial](http://medialoot.com/blog/how-to-code-a-homepage-template-with-html5-and-css3/) for a manual site.
+There's tons of info about {{<abbr HTML>}} on the Internet, but I think you should focus on {{<abbr HTML5>}}. The [{{<abbr HTML5>}} boilerplate](https://html5boilerplate.com/) is a good starting point. Here is a [good basic tutorial](http://medialoot.com/blog/how-to-code-a-homepage-template-with-html5-and-css3/) for a manual site.
 
 When you build the page, don't copy paste the lines. Type in every line of code yourself (there's that touch typing again).
 
@@ -88,38 +90,42 @@ When you build the page, don't copy paste the lines. Type in every line of code 
 You might find hosting services that are cheap and offering "unlimited" space. There's no such thing, in reality. An **Amazon AWS S3** "bucket" is a good inexpensive (albeit a bit technical) possibility for hosting a static site, as well.
 {{% /aside1 %}}
 
-You can test a static page like this simply by opening the ``index.html`` in a browser. Just double click it. If you want to host the site for real, you'll need web space. A good option is [Webfaction](http://www.webfaction.com/?affiliate=rcogley), which allows you both shell and FTP access. At first, the easiest thing is to use Webfaction's dashboard to create a container for your site, setting it up per their documentation, and upload your files to your site's folder.
+You can test a static page like this simply by opening the ``index.html`` in a browser. Just double click it. If you want to host the site for real, you'll need web space. A good option is [Webfaction](http://www.webfaction.com/?affiliate=rcogley), which allows you both shell and {{<abbr FTP>}} access. At first, the easiest thing is to use Webfaction's dashboard to create a container for your site, setting it up per their documentation, and upload your files to your site's folder.
 
-Speaking of FTP, you can FTP from the terminal, but, most people use a GUI client like [Filezilla](https://filezilla-project.org/), [Panic Transmit](https://panic.com/transmit/) or [Cyberduck](https://cyberduck.io/?l=en). You enter your credentials in their interfaces, and use them to upload and set permissions for folders and files. You can also use ``rsync`` from your Terminal, which ends up being a lot quicker.  
+Speaking of {{<abbr FTP>}}, you can {{<abbr FTP>}} from the terminal, but, most people use a {{<abbr GUI>}} client like [Filezilla](https://filezilla-project.org/), [Panic Transmit](https://panic.com/transmit/) or [Cyberduck](https://cyberduck.io/?l=en). You enter your credentials in their interfaces, and use them to upload and set permissions for folders and files. You can also use ``rsync`` from your Terminal, which ends up being a lot quicker.  
 
 {{% aside1 %}}
 For experienced programmers, "hello world" examples are old hat. It's a tradition to have one, as the initial example for any language or system. Even if it's simple, you should go ahead and do it anyway.
 {{% /aside1 %}}
 
-Learn about Javascript basics, using Mozilla's ["Hello World"](https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/JavaScript_basics) example, and try the examples out on your test page or on a new page, like ``index2.html`` which you can store in the same folder as your other files.
+Learn about {{<abbr javascript>}} basics, using Mozilla's ["Hello World"](https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/JavaScript_basics) example, and try the examples out on your test page or on a new page, like ``index2.html`` which you can store in the same folder as your other files.
 
 Useful web services to help you build and test your code are [Codepen](http://codepen.io), [JSFiddle](https://jsfiddle.net/), and [JSBin](https://jsbin.com/?html,output).
 
 You'll get information overload as you browse, but <span class="sans bold px1 rounded white bg-rice-paper-dark regular"><em>For now:</em></span>
 
-* _Don't get into XHTML or any sort of older CSS version._
+* _Don't get into {{<abbr XHTML>}} or any sort of older {{<abbr CSS>}} version._
 * _Eschew any sort of automation - type it out & do it manually._
 * _Forget about CMS content management systems such as Wordpress or Drupal._
 * _Ignore the details of browser compatibility._
-* _Don't worry about "server-side" processing, as with PHP or ASPX._
+* _Don't worry about "server-side" processing, as with {{<abbr PHP>}} or {{<abbr ASPX>}}._
 * _Forget about anything like **react** or **angular** which are for building large web apps, not tiny sites._
 
 #### 2. Learn "Source Control"
 
 {{< figure1 link="/img/Cogley-Post-SmartGit-Log-History.png" src="/img/Cogley-Post-SmartGit-Log-History.png" type="Screenshot" title="SmartGit Log View" >}}
 
-Although there are [a large number](https://en.wikipedia.org/wiki/List_of_version_control_software) of source code version control systems, learn how to use the popular ``git`` at your command line, and get a free [Github](https://github.com/) account to use. Start with Github's [Hello World](https://guides.github.com/activities/hello-world/) tutorial to understand the basic flow, and then go through the [Pro Git](https://git-scm.com/book/en/v2) online book.
+Although there are [a large number](https://en.wikipedia.org/wiki/List_of_version_control_software) of source code version control systems, learn how to use the popular ``git`` at your command line, and get a free [Github](https://github.com/) account to use. Start with Github's [Hello World](https://guides.github.com/activities/hello-world/) tutorial to understand the basic flow, and then go through the [Pro Git](https://git-scm.com/book/en/v2) online book. Besides repositories, Github lets you store what they call "Gists", which are named collections of files or snippets. Browsers and editors often have plugins to help you work with Gists. When troubleshooting, and asking help in a forum, you can put a log or config file in a gist, and paste its URL.
 
 A good exercise is to redo your simple website from above, going through the steps again, but this time, checking every change into your repository, and pushing up to Github.
 
-Take the time to learn how to _comment your code_ in your HTML, CSS and Javascript files. The syntax for comments is different in each. Also, learn [how to write a good git commit message](http://chris.beams.io/posts/git-commit/). Software development is often collaborative, so be kind to your colleagues and to yourself.
+{{% aside1 %}}
+Good code self-describes _what_ it does. Good comments describe the _why_.
+{{% /aside1 %}}
 
-Note, you'll discover that there are several GUI clients for ``git``, namely [Github Desktop](https://desktop.github.com/) (free), [Syntevo SmartGit](http://www.syntevo.com/smartgit/) (commercial), and [Atlassian SourceTree](https://www.atlassian.com/software/sourcetree/overview) (free). You'll also discover [Bitbucket](https://bitbucket.org/), a Github alternative which I like because you can create private repositories for free (as of Feb 2016).
+Take the time to learn how to _comment your code_ in your {{<abbr HTML>}}, {{<abbr CSS>}} and {{<abbr javascript>}} files. The syntax for comments is different in each. Also, learn [how to write a good git commit message](http://chris.beams.io/posts/git-commit/). Software development is often collaborative, so be kind to your colleagues and to yourself.
+
+Note, you'll discover that there are several {{<abbr GUI>}} clients for ``git``, namely [Github Desktop](https://desktop.github.com/) (free), [Syntevo SmartGit](http://www.syntevo.com/smartgit/) (commercial), and [Atlassian SourceTree](https://www.atlassian.com/software/sourcetree/overview) (free). You'll also discover [Bitbucket](https://bitbucket.org/), a Github alternative which I like because you can create private repositories for free (as of Feb 2016).
 
 <span class="sans bold px1 rounded white bg-rice-paper-dark regular"><em>For now:</em></span>
 
@@ -127,16 +133,16 @@ Note, you'll discover that there are several GUI clients for ``git``, namely [Gi
 Mercurial "Hg" is a well-respected and polished version control system that is used by many companies.
 {{% /aside1 %}}
 
-* _Don't bother with other source control systems like CVS, Subversion, Bazaar or Mercurial (although they might be used as a standard at some companies)._
+* _Don't bother with other source control systems like {{<abbr CVS>}}, Subversion, Bazaar or Mercurial (although they might be used as a standard at some companies)._
 * _Don't skip this step. Bear down and learn the basics of git now._
-* _Lean toward using ``git`` on the command line, before you get used to a GUI client._
+* _Lean toward using ``git`` on the command line, before you get used to a {{<abbr GUI>}} client._
 * _Don't worry about learning **everything** about ``git`` because, it's a huge subject in and of itself. Just learn the basics, such as how to initialize a folder for use in git, how to add files and commit them to the repository, and how to push to a remote at Github._
 
 #### 3. Incorporate a CSS library
 
 {{< figure1 link="/img/basscss.png" src="/img/basscss.png" type="Logo" title="Basscss" class="bg-yellow" >}}
 
-Next, you could try incorporating a CSS library. [Basscss](http://www.basscss.com/) is one with great fundamentals that let you set a consistent style for your site, and will work well with any site. One way to use it, is to declare it in your ``<head>`` like so:
+Next, you could try incorporating a {{<abbr CSS>}} library. [Basscss](http://www.basscss.com/) is one with great fundamentals that let you set a consistent style for your site, and will work well with any site. One way to use it, is to declare it in your ``<head>`` like so:
 
 {{< prism html >}}
 &lt;head&gt;
@@ -163,15 +169,15 @@ That would make the ``div``'s background teal, and put padding on it.
 <span class="sans bold px1 rounded white bg-rice-paper-dark regular"><em>For now:</em></span>
 
 * _Avoid giant frameworks, and learn something minimalist. Basscss really helps you focus._
-* _Start with just declaring the basscss css from ``<head>`` even though there are other methods to use it._
+* _Start with just declaring the basscss {{<abbr CSS>}} from ``<head>`` even though there are other methods to use it._
 
 #### 4. Use a Static Site Generator
 
 {{< figure1 link="/img/hugo-logo.png" src="/img/hugo-logo.png" type="Logo" title="Hugo SSG" class="bg-white" >}}
 
-"Static Site Generators" or "SSGs" mean to make it easy to use html "templates" to merge your css, javascript, images and content into a publishable website. You run a command, the SSG does its merging magic, and _voilà!_ you have a folder which you can upload to your website folder. Once you have built a number of pages manually, you'll appreciate what an SSG brings, because it really makes short work of merging changes to a bunch of, say, blog posts.
+A "Static Site Generator" or "{{<abbr SSG>}}" means to make it easy to use {{<abbr HTML>}} "templates" to merge your {{<abbr CSS>}}, {{<abbr javascript>}}, images and content into a publishable website. You run a command, the {{<abbr SSG>}} does its merging magic, and _voilà!_ you have a folder which you can upload to your website folder. Once you have built a number of pages manually, you'll appreciate what an {{<abbr SSG>}} brings, because it really makes short work of merging changes to a bunch of, say, blog posts.
 
-[Hugo](http://gohugo.io) is quite probably the fastest SSG on the planet. Reading the website, we learn that:
+[Hugo](http://gohugo.io) is quite probably the fastest {{<abbr SSG>}} on the planet. Reading the website, we learn that:
 
 {{% aside1 %}}
 Github has an SSG called "[Jekyll](https://github.com/jekyll/jekyll)", which is built on the Ruby language. I moved away from a Ruby-based SSG to Hugo, due to its simplicity.
@@ -185,7 +191,7 @@ Hugo is downloadable as a single binary file, written in the Go language, which 
 
 {{< figure1 link="/img/Cogley-Post-Hugo-Flow-en.png" src="/img/Cogley-Post-Hugo-Flow-en.png" type="Flow" title="Hugo merging"  >}}
 
-Next, a good exercise would be to "templatize" and expand your site a bit, so that you can use Hugo to prep it for publishing. You could start with a simple "theme" for starters, and then adapt that to the design you've been working on. For example, in a Hugo template, you use Golang template codes to pull in aspects of your pages. You would write your content files with a "yaml frontmatter" header, within which you put "metadata" about the page, such as the date published or the title.
+Next, a good exercise would be to "templatize" and expand your site a bit, so that you can use Hugo to prep it for publishing. You could start with a simple "theme" for starters, and then adapt that to the design you've been working on. For example, in a Hugo template, you use Golang template codes to pull in aspects of your pages. You would write your content files with a {{<abbr YAML>}} "frontmatter" header, within which you put "metadata" about the page, such as the date published or the title.
 
 The frontmatter looks something like this:
 
@@ -235,16 +241,16 @@ If you've taken the time to do all the above macro steps, it might be a good tim
 
 1. Install ``Node.js`` as the modern base framework.
 1. Use ``npm`` to install ``node`` apps ``postcss`` and its plugins ``cssnext`` and ``autoprefixer`` etc.
-1. Use ``gulp`` to tie it all together, building compressed bundles of css and js to use in your site's ``<head>``.
+1. Use ``gulp`` to tie it all together, building compressed bundles of {{<abbr CSS>}} and {{<abbr js>}} to use in your site's ``<head>``.
 
 {{< figure1 link="/img/barebones.svg" src="/img/barebones.svg" type="Logo" title="Jayden Seric's Barebones" class="bg-white" >}}
 
-Basically you would run a ``gulp`` process that watches specific folders, and takes the css and javascript in those, concatenates separate files into fewer, compresses, adds browser prefixes and even lets you use css4, and so on. One solid base framework for this sort of setup is [Jayden Seric](http://jaydenseric.com/)'s "[Barebones](https://github.com/jaydenseric/Barebones)".
+Basically you would run a ``gulp`` process that watches specific folders, and takes the {{<abbr CSS>}} and {{<abbr javascript>}} in those, concatenates separate files into fewer, compresses, adds browser prefixes and even lets you use {{<abbr CSS4>}}, and so on. One solid base framework for this sort of setup is [Jayden Seric](http://jaydenseric.com/)'s "[Barebones](https://github.com/jaydenseric/Barebones)".
 
 I started by kicking the tires of [Barebones](https://github.com/jaydenseric/Barebones), weaved in some basscss, and did a little tweaking in my [``gulpfile.js``](https://github.com/RickCogley/RCC-Hugo2015/blob/master/src/gulpfile.js) to let me use the whole thing with Hugo. With this setup, to develop a site I:
 
 1. Create test ``index.html`` pages that reference my ``bundle.css`` and ``bundle.js``.
-2. Edit the html of the indexes, and the component css and javascript, after which gulp does its magic and compiles them to the bundle files.
+2. Edit the html of the indexes, and the component {{<abbr CSS>}} and {{<abbr javascript>}}, after which gulp does its magic and compiles them to the bundle files.
 3. Get the test pages basically looking right in the ``npm`` web server.
 4. Rinse and repeat.
 
@@ -252,7 +258,7 @@ I started by kicking the tires of [Barebones](https://github.com/jaydenseric/Bar
 
 Once the test pages are looking good with the structure and style I want, I convert to Hugo templates. Hugo templates reference the ``gulpfile``-generated bundle files, which are recompiled every change I make to the components. The Hugo web server is then showing me what the final site will look like. When I'm ready to publish, I use the ``hugo`` command to merge everything together, and make a published site folder for uploading.
 
-[Gulp.js](http://gulpjs.com/) is a well-developed and high performance system, that lets you "stream" your css and js files from one command to the next. The following code is part of my [``gulpfile.js``](https://github.com/RickCogley/RCC-Hugo2015/blob/master/src/gulpfile.js). You can see the ``gulp`` task "css" is pulling in all the css files, making source maps for better debugging, concatenating them into one file, running it through ``postcss`` to inline modules, autoprefix, convert css4 code, compress, and copy to the ``/bundle`` folders.   
+[Gulp.js](http://gulpjs.com/) is a well-developed and high performance system, that lets you "stream" your {{<abbr CSS>}} and {{<abbr js>}} files from one command to the next. The following code is part of my [``gulpfile.js``](https://github.com/RickCogley/RCC-Hugo2015/blob/master/src/gulpfile.js). You can see the ``gulp`` task "css" is pulling in all the css files, making source maps for better debugging, concatenating them into one file, running it through ``postcss`` to inline modules, autoprefix, convert {{<abbr CSS4>}} code, compress, and copy to the ``/bundle`` folders.   
 
 {{< prism javascript >}}gulp.task('css', function () {
   return gulp
