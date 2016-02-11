@@ -31,7 +31,7 @@ You're interested in 'programming' or 'coding', and don't quite know where to st
 
 ## How to start
 
-As for me, I started programming when I was a teen, tapping BASIC programs into my Texas Instruments [TI-99/4A](https://en.wikipedia.org/wiki/Texas_Instruments_TI-99/4A), connected to my TV. I didn't have the optional tape recorder for memory, so I got pretty fast at typing. I had to shut it down when it was dinner time, so necessity dictated the typing skill.
+As for me, I started programming when I was a teen, tapping {{<abbr BASIC>}} programs into my Texas Instruments [TI-99/4A](https://en.wikipedia.org/wiki/Texas_Instruments_TI-99/4A), connected to my TV. I didn't have the optional tape recorder for memory, so I got pretty fast at typing. I had to shut it down when it was dinner time, so necessity dictated the typing skill.
 
 First of all, let's think about what it is. If you're a university student going through a course of study with the aim of a career in software engineering, you're going to have a different path from someone who perhaps is self-taught. Some of the most famous and influentional software developers are self-taught, and thinking back, there used to be no formal course of study for software engineering anyway. Both paths however are valid, and those taking either can learn something from the other.
 
