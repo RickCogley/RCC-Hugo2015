@@ -24,6 +24,11 @@ figure:
 {{< figure1 link="/img/the.jpg" src="/img/the.jpg" type="Screenshot" title="blah" style="" >}}
 add style="bg-white" etc if needed
 
+aside:
+
+{{% aside1 %}}
+Lorem ipsum dolor _sit_ amet **oi**
+{{% /aside1 %}}
 
 TABLES
 
