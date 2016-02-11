@@ -14,7 +14,6 @@ html {
   -ms-font-feature-settings: "kern", "liga", "clig", "alt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-
 }
 
 /*header {
@@ -109,6 +108,17 @@ p {
 }
 p abbr,
 p span {
+  text-rendering: optimizeLegibility;
+	font-kerning: normal;
+	font-variant-ligatures: common-ligatures, contextual;
+	font-variant-numeric: oldstyle-nums, proportional-nums;
+	font-variant-caps: all-small-caps;
+	-moz-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+	-ms-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+	-webkit-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+	font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+}
+li abbr {
   text-rendering: optimizeLegibility;
 	font-kerning: normal;
 	font-variant-ligatures: common-ligatures, contextual;
