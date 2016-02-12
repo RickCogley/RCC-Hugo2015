@@ -85,6 +85,7 @@ API: Application Programming Interface
 APIC: Advanced Programmable Interrupt Controller
 APIPA: Automatic Private IP Addressing
 APL: A Programming Language
+AppCast: RSS feeds which make use of the enclosure tag which links to a binary file somewhere on the internet. cf Sparkle.
 APR: Apache Portable Runtime
 ARC: Advanced RISC Computing
 ARIN: American Registry for Internet Numbers
@@ -520,6 +521,7 @@ HTML: Hypertext Markup Language
 HTML5: Hyper Text Markup Language version 5
 HTTP: Hypertext Transfer Protocol
 HTTPd: Hypertext Transport Protocol Daemon
+HTTPS: Hypertext Transfer Protocol Secure
 HTX: HyperTransport eXpansion
 HURD: Hird of Unix-Replacing Daemons
 HVD: Holographic Versatile Disc
