@@ -191,7 +191,7 @@ Hugo is downloadable as a single binary file, written in the Go language, which 
 
 {{< figure1 link="/img/Cogley-Post-Hugo-Flow-en.png" src="/img/Cogley-Post-Hugo-Flow-en.png" type="Flow" title="Hugo merging"  >}}
 
-Next, a good exercise would be to "templatize" and expand your site a bit, so that you can use Hugo to prep it for publishing. You could start with a simple "theme" for starters, and then adapt that to the design you've been working on. For example, in a Hugo template, you use Golang template codes to pull in aspects of your pages. You would write your content files with a {{<abbr YAML>}} "frontmatter" header, within which you put "metadata" about the page, such as the date published or the title.
+Next, a good exercise would be to "templatize" and expand your site and use Hugo to prep it for publishing. You could start with a simple "theme" for starters, and then adapt that to the design you've been working on. For example, in a Hugo template, you use Golang template codes to pull in aspects of your pages. You would write your content files with a {{<abbr YAML>}} "frontmatter" header, within which you put "metadata" about the page, such as the date published or the title.
 
 The frontmatter looks something like this:
 
@@ -290,36 +290,38 @@ Once the test pages are looking good with the structure and style I want, I conv
 
 #### 6. Learn to code and compile
 
-Learn a bit about Go using [A Tour of Go](https://tour.golang.org/welcome/1).
+{{< figure1 link="/img/golang-logo.png" src="/img/golang-logo.png" type="Logo" title="Golang Gopher" class="" >}}
 
-https://gobyexample.com/
+There are many ways you could move from here, but I think you couldn't go wrong learning the compiled open source programming language "[Go](https://golang.org/)", backed by Google. Two of the luminaries who designed C in the first place - Ken Thompson and Rob Pike - working with Robert Griesemer, designed and released Golang in 2009 to be great at the type of problems Google faces. If you're interested in the cloud, Go is a modern language that works great in today's environment.
 
-http://www.toptal.com/go/go-programming-a-step-by-step-introductory-tutorial
+Start by working through [A Tour of Go](https://tour.golang.org/welcome/1), and referring to the [docs](https://golang.org/doc/). Try other tutorials like [Go By Example](https://gobyexample.com/) or [Go Programming Step by Step](http://www.toptal.com/go/go-programming-a-step-by-step-introductory-tutorial). Finally, here's an excellent tutorial on how to build a [web application](https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/) in Go. For reference, here's my pinboard on [Go Resources](https://pinboard.in/u:rickcogley/t:JRC_Golang/).
 
-Fork and compile a simple terminal app for passwords.
+Next you might find a couple of apps on Github, to fork and compile yourself. For example, a simple application to generate passwords on the command line, or, participate in the [Hugo](https://github.com/spf13/hugo) project!
 
-Follow this excellent [Go tutorial](https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/).
+<span class="sans bold px1 rounded white bg-rice-paper-dark regular"><em>For now:</em></span>
 
-[Go Resources](https://pinboard.in/u:rickcogley/t:JRC_Golang/)
+* _There are other compiled languages but, why go backward in time when you can start with something modern and well-supported like Go._
 
 ## How to Continue
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+So, as this post is long, the activities themselves also require a significant effort and time, to get through with any reasonable amount of success. What should you do next? A few ideas:
 
 ### Find Good Projects
 
-Ongoing learning
+You should find good projects to work on. Use Github advanced search to find popular open source projects with a lot of stars, or a lot of active participation. Participate, learn newly, apply what you already know. Popular projects are welcoming, have strong guidelines and codes of conduct, and have good support. Everyone is working for free, but, if you play your cards right and do what you can to participate in a positive way, you have a great chance of getting your questions answered.
 
-github advanced search
-stack overflow (can be hostile), treehouse, askadev, codementor
+There are massive amounts of information online, almost too much. Some good resources are (the sometimes-hostile-to-newbies) [Stack Overflow](http://stackoverflow.com), or [Treehouse](https://teamtreehouse.com) and [Codementor](https://www.codementor.io), and the concept of the [#Askadev](https://twitter.com/hashtag/askadev) hashtag.
+
+
 
 have a project
 not too much at once
 focus and apply what you learned before
 
-popular frameworks have good support and you have a chance of getting your questions answered
 
 ### Learn Software Dev
+
+12 factor apps
 
 Learn About the Art of Software Development
 
