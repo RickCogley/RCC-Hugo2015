@@ -245,7 +245,7 @@ If you've taken the time to do all the above macro steps, it might be a good tim
 
 {{< figure1 link="/img/barebones.svg" src="/img/barebones.svg" type="Logo" title="Jayden Seric's Barebones" class="bg-white" >}}
 
-Basically you would run a ``gulp`` process that watches specific folders, and takes the {{<abbr CSS>}} and {{<abbr javascript>}} in those, concatenates separate files into fewer, compresses, adds browser prefixes and even lets you use {{<abbr CSS4>}}, and so on. One solid base framework for this sort of setup is [Jayden Seric](http://jaydenseric.com/)'s "[Barebones](https://github.com/jaydenseric/Barebones)".
+Basically you would run a ``gulp`` process that watches specific folders, and takes the {{<abbr CSS>}} and {{<abbr javascript>}} in those, concatenates separate files into fewer, compresses, adds browser prefixes and even lets you use {{<abbr CSS4>}} and so on. One solid base framework for this sort of setup is [Jayden Seric](http://jaydenseric.com/)'s "[Barebones](https://github.com/jaydenseric/Barebones)".
 
 I started by kicking the tires of [Barebones](https://github.com/jaydenseric/Barebones), weaved in some basscss, and did a little tweaking in my [``gulpfile.js``](https://github.com/RickCogley/RCC-Hugo2015/blob/master/src/gulpfile.js) to let me use the whole thing with Hugo. With this setup, to develop a site I:
 
@@ -304,20 +304,17 @@ Next you might find a couple of apps on Github, to fork and compile yourself. Fo
 
 ## How to Continue
 
-So, as this post is long, the activities themselves also require a significant effort and time, to get through with any reasonable amount of success. What should you do next? A few ideas:
+So, as this post is long, the activities themselves also require a significant effort and time, to get through with any reasonable amount of success. What should you do next?
+
+A few ideas:
 
 ### Find Good Projects
 
-You should find good projects to work on. Use Github advanced search to find popular open source projects with a lot of stars, or a lot of active participation. Participate, learn newly, apply what you already know. Popular projects are welcoming, have strong guidelines and codes of conduct, and have good support. Everyone is working for free, but, if you play your cards right and do what you can to participate in a positive way, you have a great chance of getting your questions answered.
+You should find good projects to work on. Use Github advanced search to find popular open source projects with a lot of stars, or a lot of active participation. Participate, learn newly, apply what you already know. Popular projects are welcoming, have strong guidelines and codes of conduct, and have good support.
+
+In open source projects, most everyone is working for free, but, if you play your cards right and do what you can to participate in a positive way, you have a great chance of getting your questions answered. Just give back however you can.
 
 There are massive amounts of information online, almost too much. Some good resources are (the sometimes-hostile-to-newbies) [Stack Overflow](http://stackoverflow.com), or [Treehouse](https://teamtreehouse.com) and [Codementor](https://www.codementor.io), and the concept of the [#Askadev](https://twitter.com/hashtag/askadev) hashtag.
-
-
-
-have a project
-not too much at once
-focus and apply what you learned before
-
 
 ### Learn Software Dev
 
