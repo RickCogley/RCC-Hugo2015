@@ -610,16 +610,21 @@ tr:last-child td {
 
 /* cssrecipes tooltip  */
 
+.r-Tooltip {
+  position: relative;
+  /*display: inline-block;*/
+  display: inline;
+  transform: translate3d(0, 0, 0);
+}
 .r-Tooltip::before {
-
   font-family: var(--heading-font-family);
-  font-weight: 700;
-
+  font-weight: 600;
   color: var(--r-Tooltip-textColor);
   background: var(--r-Tooltip-backgroundColor);
   /*text-shadow: 0 -.1px 0 #000;*/
+  text-shadow: none;
   /*box-shadow: 4px 4px 8px rgba(0, 0, 0, .3);*/
-
+  box-shadow: none;
 }
 
 /**
