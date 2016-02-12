@@ -252,7 +252,7 @@ CSV: Comma-Separated Values
 CT: Computerized Tomography
 CTAN: Comprehensive TeX Archive Network
 CTCP: Client-To-Client Protocol
-CTFE-Compile Time Function Execution
+CTFE: Compile Time Function Execution
 CTI: Computer Telephony Integration
 CTL: Computational Tree Logic
 CTM: Close To Metal
@@ -332,7 +332,7 @@ DRAM: Dynamic Random-Access Memory
 DRI: Direct Rendering Infrastructure
 DRM: Digital Rights Management
 DRM: Direct Rendering Manager
-DSA–Digital Signature Algorithm
+DSA: Digital Signature Algorithm
 DSDL: Document Schema Definition Languages
 DSDM: Dynamic Systems Development Method
 DSL: Digital Subscriber Line
@@ -489,7 +489,7 @@ GUID: Globally Unique IDentifier
 GWT: Google Web Toolkit
 HA: High Availability
 HAL: Hardware Abstraction Layer
-HASP-Houston Automatic Spooling Priority
+HASP: Houston Automatic Spooling Priority
 HBA: Host Bus Adapter
 HCI: Human Computer Interaction
 HCL: Hardware Compatibility List
@@ -648,7 +648,7 @@ KRL: Knowledge Representation Language
 KVM: Keyboard, Video, Mouse
 L10N: Localization
 L2TP: Layer two Tunneling Protocol
-LACP-Link Aggregation Control Protocol
+LACP: Link Aggregation Control Protocol
 LAMP: Linux Apache MySQL PHP
 LAMP: Linux Apache MySQL Perl
 LAMP: Linux Apache MySQL Python
@@ -718,7 +718,7 @@ MDA: Monochrome Display Adapter
 MDD/MDSD: Model-Driven (Software) Development
 MDF: Main Distribution Frame
 MDI: Multiple Document Interface
-ME: [Windows] Millennium Edition
+ME: (Windows) Millennium Edition
 MF: Medium Frequency
 MFC: Microsoft Foundation Classes
 MFM: Modified Frequency Modulation
@@ -1035,7 +1035,7 @@ SCM: Software Configuration Management
 SCM: Source Code Management
 SCP: Secure Copy
 SCPI: Standard Commands for Programmable Instrumentation
-SCSA–Secure Content Storage Association
+SCSA: Secure Content Storage Association
 SCSI: Small Computer System Interface
 SCTP: Stream Control Transmission Protocol
 SD: Secure Digital
@@ -1231,7 +1231,7 @@ VoIP: Voice over Internet Protocol
 VPN: Virtual Private Network
 VPU: Visual Processing Unit
 VR: Virtual Reality
-VRAM-Video Random Access Memory
+VRAM: Video Random Access Memory
 VRML: Virtual Reality Modeling Language
 VSAM: Virtual Storage Access Method
 VSAT: Very Small Aperture Terminal
