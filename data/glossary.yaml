@@ -66,15 +66,10 @@ AI: Artificial Intelligence
 AIX: Advanced Interactive eXecutive
 Ajax: Asynchronous JavaScript and XML
 AL: Access List
-AL: Active Link
 ALAC: Apple Lossless Audio Codec
 ALGOL: Algorithmic Language
 ALSA: Advanced Linux Sound Architecture
 ALU: Arithmetic and Logical Unit
-AM: Access Method
-AM: Active Matrix
-AM: Active Monitor
-AM: Allied Mastercomputer
 AM: Amplitude Modulation
 AMD: Advanced Micro Devices
 AMOLED: Active-Matrix Organic Light-Emitting Diode
@@ -91,13 +86,11 @@ APIC: Advanced Programmable Interrupt Controller
 APIPA: Automatic Private IP Addressing
 APL: A Programming Language
 APR: Apache Portable Runtime
-ARC: Adaptive Replacement Cache
 ARC: Advanced RISC Computing
 ARIN: American Registry for Internet Numbers
 ARM: Advanced RISC Machines
 AROS: AROS Research Operating System
 ARP: Address Resolution Protocol
-ARPA: Address and Routing Parameter Area
 ARPA: Advanced Research Projects Agency
 ARPANET: Advanced Research Projects Agency Network
 AS: Access Server
@@ -109,15 +102,12 @@ ASLR: Address Space Layout Randomization
 ASM: Algorithmic State Machine
 ASMP: Asymmetric Multiprocessing
 ASN.1: Abstract Syntax Notation 1
-ASP: Active Server Pages
 ASP: Application Service Provider
 ASPX: Active Server Page Extended file for Microsoft ASP .NET
 ASR: Asynchronous Signal Routine
 ASSP: Application-Specific Standard Product
 AST: Abstract Syntax Tree
-AT: Access Time
 AT: Active Terminator
-AT: Advanced Technology
 ATA: Advanced Technology Attachment
 ATAG: Authoring Tool Accessibility Guidelines
 ATAPI: Advanced Technology Attachment Packet Interface
@@ -133,14 +123,12 @@ BAL: Basic Assembly Language
 BAM: Block Availability Map
 Bash: Bourne-again shell
 BASIC: Beginner's All-purpose Symbolic Instruction Code
-BASIC: Beginner's All-Purpose Symbolic Instruction Code
 BBP: Baseband Processor
 BBS: Bulletin Board System
 BCD: Binary Coded Decimal
 BCNF: Boyce–Codd normal form
 BEEP: Blocks Extensible Exchange Protocol
 BER: Bit Error Rate
-BFD: Bidirectional Forwarding Detection
 BFD: Binary File Descriptor
 BFS: Breadth-First Search
 BFT: Byzantine Fault Tolerant
@@ -163,7 +151,6 @@ BOOTP: Bootstrap Protocol
 BPDU: Bridge Protocol Data Unit
 BPEL: Business Process Execution Language
 BPL: Broadband over Power Lines
-BPM: Business Process Management
 BPM: Business Process Modeling
 bps: bits per second
 BRM: Business Reference Model
@@ -174,7 +161,6 @@ BSB: Backside Bus
 BSD: Berkeley Software Distribution
 BSoD: Blue Screen of Death
 BSS: Block Started by Symbol
-BT: BitTorrent
 BT: Bluetooth
 BW: Bandwidth
 BYOD: Bring Your Own Device
@@ -305,8 +291,8 @@ DES: Data Encryption Standard
 dev: development
 DFA: Deterministic Finite Automaton
 DFD: Data Flow Diagram
-DFS: Depth-First Search
 DFS: Distributed File System
+DFS: Depth-First Search
 DGD: Dworkin's Game Driver
 DHCP: Dynamic Host Configuration Protocol
 DHTML: Dynamic Hypertext Markup Language
@@ -663,8 +649,8 @@ KVM: Keyboard, Video, Mouse
 L10N: Localization
 L2TP: Layer two Tunneling Protocol
 LACP-Link Aggregation Control Protocol
-LAMP: Linux Apache MySQL Perl
 LAMP: Linux Apache MySQL PHP
+LAMP: Linux Apache MySQL Perl
 LAMP: Linux Apache MySQL Python
 LAN: Local Area Network
 LBA: Logical Block Addressing
@@ -771,8 +757,8 @@ MPL: Mozilla Public License
 MPLS: Multiprotocol Label Switching
 MPU: Microprocessor Unit
 MS-DOS: Microsoft DOS
-MS: Memory Stick
 MS: Microsoft
+MS: Memory Stick
 MSA: Mail Submission Agent
 MSB: Most Significant Bit
 MSDN: Microsoft Developer Network
@@ -789,7 +775,7 @@ MUD: Multi-User Dungeon
 MVC: Model-View-Controller
 MVP: Most Valuable Professional
 MVS: Multiple Virtual Storage
-MWC–Mobile World Congress
+MWC: Mobile World Congress
 MX: Mail exchange
 MXF: Material Exchange Format
 NACK: Negative ACKnowledgement
@@ -830,9 +816,9 @@ NPU: Network Processing Unit
 NS: Netscape
 NSA: National Security Agency
 NSPR: Netscape Portable Runtime
+NSS: Novell Storage Service
 NSS: Name Service Switch
 NSS: Network Security Services
-NSS: Novell Storage Service
 NT: New Technology
 NTFS: NT Filesystem
 NTLM: NT Lan Manager
@@ -945,7 +931,7 @@ PPP: Point-to-Point Protocol
 PPPoA: PPP over ATM
 PPPoE: PPP over Ethernet
 PPTP: Point-to-Point Tunneling Protocol
-PR-Pull Request
+PR: Pull Request
 PS: PostScript
 PS/2: Personal System/2
 PSA: Professional Services Automation
@@ -1001,8 +987,8 @@ RHEL: Red Hat Enterprise Linux
 RHL: Red Hat Linux
 RIA: Rich Internet Application
 RIAA: Recording Industry Association of America
-RIP: Raster Image Processor
 RIP: Routing Information Protocol
+RIP: Raster Image Processor
 RIR: Regional Internet registry
 RISC OS: Reduced Instruction Set Computer Operating System
 RISC: Reduced Instruction Set Computer
@@ -1266,7 +1252,7 @@ WDM: Wavelength-Division Multiplexing
 WebDAV: WWW Distributed Authoring and Versioning
 WEP: Wired Equivalent Privacy
 WFI: Wait For Interrupt
-WiFi -Wireless Fidelity
+WiFi: Wireless Fidelity
 WiMAX: Worldwide Interoperability for Microwave Access
 WinFS: Windows Future Storage
 WINS: Windows Internet Name Service
@@ -1296,7 +1282,6 @@ XCBL: XML Common Business Library
 XDM: X Window Display Manager
 XDMCP: X Display Manager Control Protocol
 XHTML: eXtensible Hypertext Markup Language
-XHTML: Extensible Hypertext Markup Language
 XILP: X Interactive ListProc
 XML: eXtensible Markup Language
 XMMS: X Multimedia System
@@ -1321,7 +1306,6 @@ XVGA: Extended Video Graphics Adapter
 Y2K: Year Two Thousand
 YAAF: Yet Another Application Framework
 YACC: Yet Another Compiler Compiler
-YAML: YAML Ain't Markup Language
 YAML: YAML Ain't Markup Language, a human-readable data serialization language
 YaST: Yet another Setup Tool
 ZCAV: Zone Constant Angular Velocity
