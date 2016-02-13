@@ -31,11 +31,13 @@ You're interested in 'programming' or 'coding', and don't quite know where to st
 
 ## How to start
 
-As for me, I started programming when I was a teen, tapping {{<abbr BASIC>}} programs into my Texas Instruments [TI-99/4A](https://en.wikipedia.org/wiki/Texas_Instruments_TI-99/4A), connected to my TV. I didn't have the optional tape recorder for memory, so I got pretty fast at typing. I had to shut it down when it was dinner time, so necessity dictated the typing skill.
+As for me, I started programming when I was a teen, tapping {{<abbr BASIC>}} programs into my Texas Instruments [TI-99/4A](https://en.wikipedia.org/wiki/Texas_Instruments_TI-99/4A), connected to my TV. I didn't have the optional tape recorder for memory, so I got pretty fast at typing. I had to shut it down when it was dinner time, so necessity dictated some typing skill.
 
-First of all, let's think about what it is. If you're a university student going through a course of study with the aim of a career in software engineering, you're going to have a different path from someone who perhaps is self-taught. Some of the most famous and influentional software developers are self-taught, and thinking back, there used to be no formal course of study for software engineering anyway. Both paths however are valid, and those taking either can learn something from the other.
+First of all, let's think about what this is. If you're a university student going through a course of study with the aim of a career in software engineering, you're going to have a different path from someone who is self-taught. Some of the most famous and influential software developers are self-taught, and thinking back, there used to be no formal course of study for software engineering anyway. Both paths are valid, and those taking either can learn something from the other.
 
-The following is one way you could learn, and you should take your time and work through it or other paths.
+The following admittedly-opinionated way, is one relatively inexpensive way you could learn to code. It starts simple and gets more complex, adding layers or more difficult-to-grok tasks, as it proceeds. It does not include all "how to" information on purpose; you can get that in many places elsewhere.
+
+Expect it to take a while. You can come back periodically to read and reflect. As you proceed, think on the difference between what might be called "component assembly", and formal software engineering where you're writing and compiling binaries.
 
 ### Preparation
 
@@ -51,28 +53,28 @@ You might also look into "cloud {{<abbr IDE>}}" services, like [Codio](https://c
 You'll observe that editor comparisons are like religious wars!
 {{% /aside1 %}}
 
-If you don't want to use a Cloud {{<abbr IDE>}}, then at least get yourself a decent programmer's editor to use on your system, like Github's [Atom](https://atom.io/) or [Sublime Text](http://www.sublimetext.com/), or, for the hardcore, ``vi``, ``vim``, or ``emacs``. Don't just use TextEdit on Mac or, _gasp_, Notepad on Windows. Besides the basics of how to use whatever text editor you choose, there are a few common things to start learning about:
+If you don't want to use a Cloud {{<abbr IDE>}}, then at least get yourself a decent programmer's editor to use on your system, like Github's [Atom](https://atom.io/) or [Sublime Text](http://www.sublimetext.com/), or, for the hardcore, ``vi``, ``vim``, or ``emacs``. Don't just use TextEdit on Mac or _—gasp—_ Notepad on Windows.
+
+Besides the basics of how to use whatever text editor you choose, there are a few common things to start learning about:
 
 {{< figure1 link="/img/editor-config-logo.png" src="/img/editor-config-logo.png" type="Logo" title="Editor Config" class="" >}}
 
-* Use [Editor Config](http://editorconfig.org/) for editor setting consistency. Not all editors support it, but it's really useful.
-* Use [Linters](https://en.wikipedia.org/wiki/Lint_(software)) to check your code syntax.
+* Use [Editor Config](http://editorconfig.org/) for editor setting consistency. Not all editors support it, but it's really useful, so you should use one that does.
+* Use [Linters](http://stackoverflow.com/questions/8503559/what-is-linting) to check your code for errors.
 * Save files in plain text, utf-8 format only.
 * Set your editor to use only unix-style LF (``\n``) line endings.
 * Use 2 spaces per indent, to show structure. Don't use tabs.
 * Use line length of 80 or less.
 
-By the way, there are indeed IDEs to use locally. IDEs are the editor, plus many other features like compilers and linters.
+By the way, there are indeed IDEs to use locally such as Eclipse, Xcode, Emacs, NetBeans. An IDE is not just the the source code editor, rather it's a complete development environment including build automation, linting, debugging, compiling and other features.
 
-One service I use and love is [Pinboard](https://pinboard.in/). It's minimalist, and just lets you keep bookmarks and notes, but it will help you stay organized. For instance, here's [my list for cloud IDEs](https://pinboard.in/u:rickcogley/t:JRC_Cloud_IDE/), and a [note about Mac Screenshot and Annotation Tools](https://notes.pinboard.in/u:rickcogley/notes/bcbd54b9d25db0d4cf18).
+You need a solid way to take notes, and keep organized. One service I use and love is [Pinboard](https://pinboard.in/). It's minimalist, and just lets you keep bookmarks and notes, but it will help you stay organized. For instance, here's [my list for cloud IDEs](https://pinboard.in/u:rickcogley/t:JRC_Cloud_IDE/), and a [note about Mac Screenshot and Annotation Tools](https://notes.pinboard.in/u:rickcogley/notes/bcbd54b9d25db0d4cf18). You might also use an app for journaling or writing, such as Mac [Ulysses](http://www.ulyssesapp.com/mac/), or [Evernote](https://evernote.com) in the cloud. Or, oddly enough, you could go Chatwin and use an analog [Moleskine](http://www.moleskine.com/en/moleskine-world).
 
-Another Mac and iOS app that's _really_ slick is [Kapeli Dash](https://kapeli.com/dash). It's a real god-send, and makes documentation for just about everything software development-related available offline, as well as lets you store code snippets. You can get it for iOS, if you don't use a Mac.
+One Mac and iOS app that's _really_ slick is [Kapeli Dash](https://kapeli.com/dash). It's a real god-send for programmers, and makes documentation for just about everything software development-related available offline, as well as lets you store code snippets. You can get it for iOS, if you don't use a Mac.
 
 By the way, can you touch type? Now's a good time to start learning. Computer programming requires a lot of typing, and it's a huge pain if you cannot type. Take a month and [learn how](https://typing.io/). It will really serve you well, whatever career path you take.
 
 ### Simple Starter Steps
-
-Like most endeavors, keeping it simple is going to be key. Assuming you're not going through a formal series of college courses for professional software development training, you need to take your time, and figure things out as you go along.
 
 Below is one possible sequence you could take, to learn some basics while you build something useful for yourself. This is not a step-by-step tutorial, but rather more of a set of "macro" steps. You'll need to search and find resources using Google, which you should take the time to [get good at](https://support.google.com/websearch/answer/2466433?hl=en) and then [even better at](http://www.techradar.com/how-to/internet/25-handy-google-search-tips-and-tricks-1260823). If you stick to the spirit of each major step, you'll get a pretty good foundation.
 
@@ -109,7 +111,7 @@ You'll get information overload as you browse, but <span class="sans bold px1 ro
 * _Forget about CMS content management systems such as Wordpress or Drupal._
 * _Ignore the details of browser compatibility._
 * _Don't worry about "server-side" processing, as with {{<abbr PHP>}} or {{<abbr ASPX>}}._
-* _Forget about anything like **react** or **angular** which are for building large web apps, not tiny sites._
+* _Forget about anything like **ember**, **react** or **angular** which are for building large web apps, not small, static sites._
 
 #### 2. Learn "Source Control"
 
