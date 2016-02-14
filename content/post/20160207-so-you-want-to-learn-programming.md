@@ -76,7 +76,7 @@ By the way, can you touch type? Now's a good time to start learning. Computer pr
 
 ### Simple Starter Steps
 
-Below is one possible sequence you could take, to learn some basics while you build something useful for yourself. This is not a step-by-step tutorial, but rather more of a set of "macro" steps. You'll need to search and find resources using Google, which you should take the time to [get good at](https://support.google.com/websearch/answer/2466433?hl=en) and then [even better at](http://www.techradar.com/how-to/internet/25-handy-google-search-tips-and-tricks-1260823). If you stick to the spirit of each major step, you'll get a pretty good foundation.
+So, get on with the steps already. Below is one possible sequence you could take, to learn some basics while you build something useful for yourself. Remember, this is not a step-by-step tutorial, but rather more of a set of "macro" steps. You'll need to search and find resources using Google, which you should take the time to [get good at](https://support.google.com/websearch/answer/2466433?hl=en) and then [even better at](http://www.techradar.com/how-to/internet/25-handy-google-search-tips-and-tricks-1260823). If you stick to the spirit of each major step, you'll get a pretty good foundation.
 
 #### 1. Build a Simple, Static Website
 
@@ -120,10 +120,6 @@ You'll get information overload as you browse, but <span class="sans bold px1 ro
 Although there are [a large number](https://en.wikipedia.org/wiki/List_of_version_control_software) of source code version control systems, learn how to use the popular ``git`` at your command line, and get a free [Github](https://github.com/) account to use. Start with Github's [Hello World](https://guides.github.com/activities/hello-world/) tutorial to understand the basic flow, and then go through the [Pro Git](https://git-scm.com/book/en/v2) online book. Besides repositories, Github lets you store what they call "Gists", which are named collections of files or snippets. Browsers and editors often have plugins to help you work with Gists. When troubleshooting, and asking help in a forum, you can put a log or config file in a gist, and paste its URL.
 
 A good exercise is to redo your simple website from above, going through the steps again, but this time, checking every change into your repository, and pushing up to Github.
-
-{{% aside1 %}}
-Good code self-describes _what_ it does. Good comments describe the _why_.
-{{% /aside1 %}}
 
 Take the time to learn how to _comment your code_ in your {{<abbr HTML>}}, {{<abbr CSS>}} and {{<abbr javascript>}} files. The syntax for comments is different in each. Also, learn [how to write a good git commit message](http://chris.beams.io/posts/git-commit/). Software development is often collaborative, so be kind to your colleagues and to yourself.
 
@@ -195,7 +191,7 @@ Hugo is downloadable as a single binary file, written in the Go language, which 
 
 Next, a good exercise would be to "templatize" and expand your site and use Hugo to prep it for publishing. You could start with a simple "theme" for starters, and then adapt that to the design you've been working on. For example, in a Hugo template, you use Golang template codes to pull in aspects of your pages. You would write your content files with a {{<abbr YAML>}} "frontmatter" header, within which you put "metadata" about the page, such as the date published or the title.
 
-The frontmatter looks something like this:
+The {{<abbr YAML>}} frontmatter, placed at the top of your Markdown content files, looks something like this:
 
 {{< prism markdown >}}
 ---
@@ -214,7 +210,7 @@ This is my **content**.
 As you work through this process, you may have a chance to participate in open source projects. Remember: courtesy, "don't be a jerk" and, "don't worry about jerks" either. People are participating for free, so do what you can do, to help and be patient. Check your privilege at the door.
 {{% /aside1 %}}
 
-Then your templates make reference to your pages' frontmatter sections by inserting codes like ``{{ .Title }}`` or ``{{ .Date }}``. Hugo replaces these with the actual values. Next is what my "single" template for this very site looks like. You can see I'm using basscss classes here.
+Then, your templates reference your pages' frontmatter sections via codes like ``{{ .Title }}`` or ``{{ .Date }}``. Hugo replaces these with the actual values, upon site generation. This is what my "single" template for this very site looks like. I'm using basscss classes here.
 
 {{< prism handlebars >}}
 {{ "&lt;!-- ENTERING layouts/_default/single.html --&gt;" | safeHTML }}
@@ -294,7 +290,7 @@ Once the test pages are looking good with the structure and style I want, I conv
 
 {{< figure1 link="/img/golang-logo.png" src="/img/golang-logo.png" type="Logo" title="Golang Gopher" class="" >}}
 
-There are many ways you could move from here, but I think you couldn't go wrong learning the compiled open source programming language "[Go](https://golang.org/)", backed by Google. Two of the luminaries who designed C in the first place - Ken Thompson and Rob Pike - working with Robert Griesemer, designed and released Golang in 2009 to be great at the type of problems Google faces. If you're interested in the cloud, Go is a modern language that works great in today's environment.
+There are many ways you could move from here, but I think you couldn't go wrong learning the compiled open source programming language "[Go](https://golang.org/)", backed by Google. Two of the luminaries who designed C in the first place - Ken Thompson and Rob Pike - working with Robert Griesemer, designed and released Golang in 2009 to be great at the type of problems Google faces. If you're interested in the cloud, Go is a modern language that works great for today's environments.
 
 Start by working through [A Tour of Go](https://tour.golang.org/welcome/1), and referring to the [docs](https://golang.org/doc/). Try other tutorials like [Go By Example](https://gobyexample.com/) or [Go Programming Step by Step](http://www.toptal.com/go/go-programming-a-step-by-step-introductory-tutorial). Finally, here's an excellent tutorial on how to build a [web application](https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/) in Go. For reference, here's my pinboard on [Go Resources](https://pinboard.in/u:rickcogley/t:JRC_Golang/).
 
@@ -306,7 +302,7 @@ Next you might find a couple of apps on Github, to fork and compile yourself. Fo
 
 ## How to Continue
 
-So, as this post is long, the activities themselves also require a significant effort and time, to get through with any reasonable amount of success. What should you do next?
+So, as this post is long, so the activities proposed require significant effort to get through. Once you get to a pretty good level, then, what should you do next?
 
 A few ideas:
 
@@ -316,89 +312,76 @@ You should find good projects to work on. Use Github advanced search to find pop
 
 In open source projects, most everyone is working for free, but, if you play your cards right and do what you can to participate in a positive way, you have a great chance of getting your questions answered. Just give back however you can.
 
-There are massive amounts of information online, almost too much. Some good resources are (the sometimes-hostile-to-newbies) [Stack Overflow](http://stackoverflow.com), or [Treehouse](https://teamtreehouse.com) and [Codementor](https://www.codementor.io), and the concept of the [#Askadev](https://twitter.com/hashtag/askadev) hashtag.
+Some good resources for learning are (the sometimes-hostile-to-newbies) [Stack Overflow](http://stackoverflow.com), or [Treehouse](https://teamtreehouse.com) and [Codementor](https://www.codementor.io), and the concept of the [#Askadev](https://twitter.com/hashtag/askadev) hashtag.
 
 ### Learn Software Dev
 
-12 factor apps
+To move from a coding style that might be called "assembly", into a more professional mindset, I think learning about professional software development itself is key: it's history, fundamentals, techniques, mechanics, back story. You've learned a bit of this already, if you've worked through the above steps.
 
-Learn About the Art of Software Development
+You should learn programming fundamentals, not buzzwords. This includes design patterns, architectural patterns, data structures, algorithms, optimization and some mathematics. You should also learn software development itself, including version control, unit testing, build automation, iterative development, system testing, end-to-end testing.
 
-c/c++ are the basis, then go and javascript these days
-but, since the designers of c made go, that tells you something
+You should learn how developers work together in teams, by studying team development techniques and ways of thinking like Agile, Scrum, XP, Pair-programming. Read about "waterfall" to get insight into why those came about.
 
-learn fundamentals, not buzzwords - algorithms, optimization, testing, mathematics, functional programming; not crap some marketer made up
+There are good, distilled "best practice" lists and general axioms, to help you write good programs, such as:
 
-learn programming fundamentals: design patterns, architectural patterns, data structures, algorithms
-learn software development: version control, unit testing, build automation, iterative development, agile/scrum/xp
+1. Adam Wiggins' [12 Factor Apps](http://12factor.net) ([ebook](http://12factor.net/12factor.epub))
+1. Rob Pike’s [5 rules of programming](http://users.ece.utexas.edu/~adnan/pike.html)
+1. Don Roberts' [Rule of three](http://jexp.de/papers/refactoring/refactoring/node13.html)
+1. Steve Mobley's [Programming Axioms](http://smobley.home.mindspring.com/Axioms.htm)
 
-Learn the rules:
-rob pike’s 5 rules of programming
-http://users.ece.utexas.edu/~adnan/pike.html
-rob's a big deal, and one of the founders of go
+This is what I like to keep in mind:
 
-http://users.ece.utexas.edu/~adnan/pike.html
+{{% aside1 %}}
+Good code self-describes _what_ it does. Good comments describe the _why_.
+{{% /aside1 %}}
 
-Learn agile
+* Apply Occam's razor - the simplest solution is best. Simplify and don't make it complex to try to be clever.
+* Always clarify and test your assumptions.
+* Did you spell it wrong? Computers are stupid, and do only what you tell them.
+* Say the problem out loud, write it out with pencil and paper and solve it that way. Once it's organized, you can commit it to code.
+* Write software for normal human beings, to solve a problem.
+* Tend toward the specific in programming (declare variables; never use dynamic typing)
+* Break things into functions.
+* Write good function names, variable names, parameter names to make your code easlier to understand in the first place. Add comments to help.
 
-simplify and never make your code complex for the sake of complexity or a cool factor (it’s not cool, you’re just a jerk). In other words, apply Occam’s razor - the simplest solution is almost always the best.
-always clarify and test your assumptions.
-solve the problem first by thinking and writing and talking out loud, then write the code
-did you spell it wrong? computers are stupid and do only what you tell them.
-if you have to do something complex, document it well
-write code for humans, to solve some problem
-even if your language lets you be vague, tend towards the specific (always declare variables, never use dynamic typing)
-break things down into functions, use good function names, variable names, parameter names, to make your code easier to understand in the first place. Add comments to help.
+### Learn from the Experts
 
+There are a few books and essays that should be on any software developer's bookshelf. Take the time, read, and invest in yourself. In no particular order:
 
-### For your Career
+1. Hofstadter—Gödel, Escher and Bach, an eternal golden braid "GEB"
+1. Richardson, Gwaltney—Ship It!
+1. Brooks—The mythical man-month
+1. Atwood—Coding Horror
+1. Martin—Clean Code / Clean Coder
+1. Kerievsky—Refactoring to Patterns
+1. Pirsig—Zen and the art of motorcycle maintenance
+1. Fowler—The Passionate Programmer
+1. Hunt, Thomas—Pragmatic Programmer
+1. Graham—[Hackers and Painters](http://www.paulgraham.com/hp.html)
+1. Abelson, Sussman—Structure and Interpretation of Computer Programs
 
-Meet people
+### Take Care of your Career
 
-See do teach
+In the end, if you're going to have a career in software development, you need to be in control of it and know how to navigate it. To me, that means:
 
-Politics - deal w/ it
-
-don’t get permission, just do it but do it well
-
-Fight your own battles
-
-you don’t have power or credibility starting out; you have to earn that
-your seniors might not be stupid
-don’t kill yourself for the job - exercise and take care of your body, long hours only sometimes. Focus daily.
-
-don't apologize for trying hard
-
-
-### Learn from Experts
-
-Code complete 2
-Coding horror
-Clean code
-Mythical man month
-
-1. Pragmatic Programmer
-2. Zen and the art of motorcycle maintenance
-3. The Passionate Programmer
-4. Clean Code/Clean Coder
-5. Working with Legacy Code
-6. The mythical man-month. (The saddest book I've read)
-7. Ship It! (I though it was superior to Release It!)
-8. Becoming a technical leader
-9. Refactoring to Patterns
-10. Structure and Interpretation of Computer Programs
-
-Honorable mentions:
-
-1- All the books from the pragmatic programmer bookshelf beside "Driving Technical Change" which was a piece of crap
-2- Hackers and painters
-3 -Gödel, Escher and Bach
+* Meet people and get connections. It's not always about about know-how, but rather about "know-who".
+* If you're working for yourself, learn how to write out a simple contract to get signed. Don't be weak in this area.
+* Learn to deal with politics. It's part of life and any organization.
+* Keep a journal and keep your goals clear.
+* If you really know how to do something or fix something, and it's not something with a big risk to the organization, just do it. If you're always asking permission, many times you won't get it, and if you proceed anyway, that brand is worse than if you had just done it without permission. Just don't be stupid.
+* You won't have power or credibility, usually until you're in your 30s. Learn what that means and how to work around it.
+* Your seniors in the organization might not actually be stupid. Give respect, and earn respect yourself.
+* Don't kill yourself for the job. Exercise and take care of your body daily. Do the long hours only sometimes.
+* "See, Do, Teach" is a good thing to remember. The teaching will help your understanding of a thing.
+* If you fail, so be it. Don't apologize for trying hard.
 
 ## In Summary
 
 * appreciate good docs now?
 
 Aside: what's the banner about?
+Hollerith Keypunch 
+https://en.wikipedia.org/wiki/Keypunch#/media/File:Card_puncher_-_NARA_-_513295.jpg
 
 <div class="sans italic center p2 black bg-lime muted rounded">
   Fries added to order
@@ -406,44 +389,8 @@ Aside: what's the banner about?
 
 ## SCRATCH
 
-* stack overflow (can be hostile), treehouse, askadev, codementor
-* c/c++ are the basis, then go and javascript these days
-* apply what you know to what you learn
-* learn programming fundamentals: design patterns, architectural patterns, data structures, algorithms
-* learn software development: version control, unit testing, build automation, iterative development, agile/scrum/xp
-* popular frameworks have good support and you have a chance of getting your questions answered
-* "cloud ide": koding, codeenvy
-* codepen or jsfiddle
-* use mac or linux
-* search github w/ advanced search to find good communities with good code to learn
-* simplify and never make your code complex for the sake of complexity or a cool factor (it's not cool, you're just a jerk). In other words, apply Occam's razor - the simplest solution is almost always the best.
-* always clarify and test your assumptions.
-* solve the problem first by thinking and writing and talking out loud, then write the code
-* did you spell it wrong? computers are stupid and do _only_ what you tell them.
-* if you have to do something complex, document it well
-* write code for humans, to solve some problem
-* even if your language lets you be vague, tend towards the specific (always declare variables, never use dynamic typing)
-* break things down into functions, use good function names, variable names, parameter names, to make your code easier to understand in the first place. Add comments to help.
-* source code control now, and make good commit messages
-* rob pike's 5 rules of programming
-* learn touch typing!
 * women in code - famous women programmers
-* have a project
 * not too much at once
-* comments
-* type it out, don't just copy
-* don't be a jerk in communities
-* don't worry about jerks in communities
-* meet people
-* see do teach
 * get the agreements right if doing for work
 * clear communication
 * learn on the job
-* get your resources organized
-* don't get permission, just do it but do it well
-* there are politics, deal w/ it
-* you don't have power or credibility starting out; you have to earn that
-* your seniors might not be stupid
-* don't kill yourself for the job - exercise and take care of your body, long hours only sometimes. Focus daily.
-* learn fundamentals, not buzzwords - algorithms, optimization, testing, mathematics, functional programming; not crap some marketer made up
-* don't apologize for trying hard
