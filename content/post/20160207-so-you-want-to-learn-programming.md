@@ -3,7 +3,7 @@ title: On Learning to Code
 subtitle: ... a beautiful endeavor
 slug: so-you-want-to-learn-to-code
 banner: /img/Cogley-Banner-Punch-Card-Operator-1400x450-mono.jpg
-date: 2016-02-15T16:12:00+09:00
+date: 2016-02-15T19:55:00+09:00
 publishdate: 2016-02-15T16:12:00+09:00
 description: 'An article about learning to code for beginner programmers, by Rick Cogley'
 draft: 'false'
@@ -163,12 +163,12 @@ Next, you could try incorporating a {{<abbr CSS>}} library. [Basscss](http://www
 {{< prism html >}}
 &lt;head&gt;
 ...
-&lt;link href=&quot;http://d2v52k3cl9vedd.cloudfront.net/basscss/7.1.1/basscss.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;https://npmcdn.com/basscss@8.0.0/css/basscss.min.css&quot; rel=&quot;stylesheet&quot;&gt;
 ...
 &lt;/head&gt;
 {{< /prism >}}
 
-_N.b.: that's how you do it with basscss version 7 as of 8th Feb 2016, but the next version 8 is coming out soon._
+_N.b.: that's how you do it with basscss version 8 as of 15th Feb 2016, but please confirm in the docs._
 
 {{% aside1 %}}
 There are some really comprehensive frameworks out there, as well, such as Foundation or Bootstrap. I would question whether you need such things, and try to figure things out on your own.
