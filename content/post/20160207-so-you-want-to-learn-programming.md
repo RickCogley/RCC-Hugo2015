@@ -3,12 +3,20 @@ title: On Learning to Code
 subtitle: ... a beautiful endeavor
 slug: so-you-want-to-learn-to-code
 banner: /img/Cogley-Banner-Punch-Card-Operator-1400x450-mono.jpg
-date: 2016-02-07T8:12:00+09:00
-publishdate: 2016-02-07T8:12:00+09:00
+date: 2016-02-15T16:12:00+09:00
+publishdate: 2016-02-15T16:12:00+09:00
 description: 'An article about learning to code for beginner programmers, by Rick Cogley'
-draft: 'true'
+draft: 'false'
 images:
-  - /img/Cogley-Post-JR-Signage-2015.jpg
+  - /img/Cogley-Post-Gulp-and-Hugo.png
+  - /img/Cogley-Post-Hugo-Flow-en.png
+  - /img/Cogley-Post-SmartGit-Log-History.png
+  - /img/barebones.svg
+  - /img/html5-css3-js-logo.png
+  - /img/editor-config-logo.png
+  - /img/hugo-logo.png
+  - /img/basscss.png
+  - /img/Node.js_logo.svg.png
   - /img/Cogley-Banner-Punch-Card-Operator-1400x450-mono.jpg
   - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
 tags:
@@ -17,6 +25,16 @@ tags:
   - dev
   - node.js
   - go
+  - golang
+  - editor
+  - static
+  - git
+  - css
+  - basscss
+  - SSG
+  - hugo
+  - gulp.js
+  - npm
 topics:
   - Software
   - Professional
@@ -35,7 +53,7 @@ As for me, I started programming when I was a teen, tapping {{<abbr BASIC>}} pro
 
 First of all, let's think about what this is. If you're a university student going through a course of study with the aim of a career in software engineering, you're going to have a different path from someone who is self-taught. Some of the most famous and influential software developers are self-taught, and thinking back, there used to be no formal course of study for software engineering anyway. Both paths are valid, and those taking either can learn something from the other.
 
-The following admittedly-opinionated way, is one relatively inexpensive way you could learn to code. It starts simple and gets more complex, adding layers or more difficult-to-grok tasks, as it proceeds. It does not include all "how to" information on purpose; you can get that in many places elsewhere.
+The following admittedly-opinionated path, is one relatively inexpensive way you could learn to code. It starts simple and gets more complex, adding layers or more difficult-to-grok tasks, as it proceeds. It does not include all "how to" information on purpose; you can get that in many places elsewhere.
 
 Expect it to take a while. You can come back periodically to read and reflect. As you proceed, think on the difference between what might be called "component assembly", and formal software engineering where you're writing and compiling binaries.
 
@@ -76,7 +94,7 @@ By the way, can you touch type? Now's a good time to start learning. Computer pr
 
 ### Simple Starter Steps
 
-So, get on with the steps already. Below is one possible sequence you could take, to learn some basics while you build something useful for yourself. Remember, this is not a step-by-step tutorial, but rather more of a set of "macro" steps. You'll need to search and find resources using Google, which you should take the time to [get good at](https://support.google.com/websearch/answer/2466433?hl=en) and then [even better at](http://www.techradar.com/how-to/internet/25-handy-google-search-tips-and-tricks-1260823). If you stick to the spirit of each major step, you'll get a pretty good foundation.
+So, shall we get on with the steps already? This is not a step-by-step tutorial, but rather more of a set of "macro" steps. You'll need to search and find resources using Google, which you should take the time to [get good at](https://support.google.com/websearch/answer/2466433?hl=en) and then [even better at](http://www.techradar.com/how-to/internet/25-handy-google-search-tips-and-tricks-1260823). If you stick to the spirit of each major step, you'll get a pretty good foundation.
 
 #### 1. Build a Simple, Static Website
 
@@ -104,7 +122,7 @@ Learn about {{<abbr javascript>}} basics, using Mozilla's ["Hello World"](https:
 
 Useful web services to help you build and test your code are [Codepen](http://codepen.io), [JSFiddle](https://jsfiddle.net/), and [JSBin](https://jsbin.com/?html,output).
 
-You'll get information overload as you browse, but <span class="sans bold px1 rounded white bg-rice-paper-dark regular"><em>For now:</em></span>
+You'll get information overload as you browse, but <span class="sans bold px1 rounded white bg-teal regular"><em>For now:</em></span>
 
 * _Don't get into {{<abbr XHTML>}} or any sort of older {{<abbr CSS>}} version._
 * _Eschew any sort of automation - type it out & do it manually._
@@ -125,7 +143,7 @@ Take the time to learn how to _comment your code_ in your {{<abbr HTML>}}, {{<ab
 
 Note, you'll discover that there are several {{<abbr GUI>}} clients for ``git``, namely [Github Desktop](https://desktop.github.com/) (free), [Syntevo SmartGit](http://www.syntevo.com/smartgit/) (commercial), and [Atlassian SourceTree](https://www.atlassian.com/software/sourcetree/overview) (free). You'll also discover [Bitbucket](https://bitbucket.org/), a Github alternative which I like because you can create private repositories for free (as of Feb 2016).
 
-<span class="sans bold px1 rounded white bg-rice-paper-dark regular"><em>For now:</em></span>
+<span class="sans bold px1 rounded white bg-teal regular"><em>For now:</em></span>
 
 {{% aside1 %}}
 Mercurial "Hg" is a well-respected and polished version control system that is used by many companies.
@@ -164,7 +182,7 @@ You then use it by assigning its classes to your ``html``, something like this:
 
 That would make the ``div``'s background teal, and put padding on it.  
 
-<span class="sans bold px1 rounded white bg-rice-paper-dark regular"><em>For now:</em></span>
+<span class="sans bold px1 rounded white bg-teal regular"><em>For now:</em></span>
 
 * _Avoid giant frameworks, and learn something minimalist. Basscss really helps you focus._
 * _Start with just declaring the basscss {{<abbr CSS>}} from ``<head>`` even though there are other methods to use it._
@@ -227,7 +245,7 @@ Then, your templates reference your pages' frontmatter sections via codes like `
 
 As before, the Hugo project folder becomes your git project folder, and you should make the effort to get used to doing the git commands as you proceed. It's quite good to be able to go back and look at every change you made, and see what changes or fixes were made.
 
-<span class="sans bold px1 rounded white bg-rice-paper-dark regular"><em>For now:</em></span>
+<span class="sans bold px1 rounded white bg-teal regular"><em>For now:</em></span>
 
 * _On your first pass through building a site in Hugo, don't try to use every single feature. Sometimes, just because you **can** pull a value from the config, a page, or a data file, does not mean you really need to._
 
@@ -281,7 +299,7 @@ Once the test pages are looking good with the structure and style I want, I conv
 })
 {{< /prism >}}
 
-<span class="sans bold px1 rounded white bg-rice-paper-dark regular"><em>For now:</em></span>
+<span class="sans bold px1 rounded white bg-teal regular"><em>For now:</em></span>
 
 * _Stick to gulp, since it's relatively easy to grok._
 * _Look at the diagram I made (click to embiggen) and see what's connected to what._
@@ -296,7 +314,7 @@ Start by working through [A Tour of Go](https://tour.golang.org/welcome/1), and 
 
 Next you might find a couple of apps on Github, to fork and compile yourself. For example, a simple application to generate passwords on the command line, or, participate in the [Hugo](https://github.com/spf13/hugo) project!
 
-<span class="sans bold px1 rounded white bg-rice-paper-dark regular"><em>For now:</em></span>
+<span class="sans bold px1 rounded white bg-teal regular"><em>For now:</em></span>
 
 * _There are other compiled languages but, why go backward in time when you can start with something modern and well-supported like Go._
 
@@ -316,20 +334,22 @@ Some good resources for learning are (the sometimes-hostile-to-newbies) [Stack O
 
 ### Learn Software Dev
 
-To move from a coding style that might be called "assembly", into a more professional mindset, I think learning about professional software development itself is key: it's history, fundamentals, techniques, mechanics, back story. You've learned a bit of this already, if you've worked through the above steps.
+There's more to software development than assembly of pre-existing parts. One important step in a career in software is to learn about professional software development itself: it's history, fundamentals, techniques, mechanics, back story. You've learned a bit of this already, if you've worked through the above steps.
 
-You should learn programming fundamentals, not buzzwords. This includes design patterns, architectural patterns, data structures, algorithms, optimization and some mathematics. You should also learn software development itself, including version control, unit testing, build automation, iterative development, system testing, end-to-end testing.
+You should learn programming fundamentals (not just buzzwords). This includes design patterns, architectural patterns, data structures, algorithms, optimization and some mathematics. You should also learn software development itself, including iterative development, version control, build automation, unit testing, system testing, end-to-end testing.
 
 You should learn how developers work together in teams, by studying team development techniques and ways of thinking like Agile, Scrum, XP, Pair-programming. Read about "waterfall" to get insight into why those came about.
 
-There are good, distilled "best practice" lists and general axioms, to help you write good programs, such as:
+There are good, distilled "best practice" lists and general axioms, to help you create good software, such as:
 
 1. Adam Wiggins' [12 Factor Apps](http://12factor.net) ([ebook](http://12factor.net/12factor.epub))
 1. Rob Pike’s [5 rules of programming](http://users.ece.utexas.edu/~adnan/pike.html)
 1. Don Roberts' [Rule of three](http://jexp.de/papers/refactoring/refactoring/node13.html)
 1. Steve Mobley's [Programming Axioms](http://smobley.home.mindspring.com/Axioms.htm)
+1. Steve Souders' [14 Rules for Faster-Loading Websites](http://stevesouders.com/hpws/rules.php)
+1. Simon Tatham's [How to Report Bugs Effectively](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html)
 
-This is what I like to keep in mind:
+This is what I like to keep in mind myself:
 
 {{% aside1 %}}
 Good code self-describes _what_ it does. Good comments describe the _why_.
@@ -346,23 +366,31 @@ Good code self-describes _what_ it does. Good comments describe the _why_.
 
 ### Learn from the Experts
 
-There are a few books and essays that should be on any software developer's bookshelf. Take the time, read, and invest in yourself. In no particular order:
+{{< figure1 link="/img/Cogley-Post-Ada_Lovelace_Portrait.jpg" src="/img/Cogley-Post-Ada_Lovelace_Portrait.jpg" type="Photo" title="Watercolor portrait of 1st programmer Ada Lovelace" class="" >}}
 
+There are some books and essays that should be on any software developer's bookshelf. Take the time, read, and invest in yourself. In no particular order:
+
+1. Isaacson—The Innovators (learn the importance of women in software)
 1. Hofstadter—Gödel, Escher and Bach, an eternal golden braid "GEB"
 1. Richardson, Gwaltney—Ship It!
 1. Brooks—The mythical man-month
+1. Raymond—[The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/)
 1. Atwood—Coding Horror
+1. Torvalds—Just for Fun
+1. Toole—Ada, the enchantress of numbers
 1. Martin—Clean Code / Clean Coder
 1. Kerievsky—Refactoring to Patterns
+1. Souders—High Performance Web Sites
 1. Pirsig—Zen and the art of motorcycle maintenance
 1. Fowler—The Passionate Programmer
 1. Hunt, Thomas—Pragmatic Programmer
 1. Graham—[Hackers and Painters](http://www.paulgraham.com/hp.html)
+1. Ladas—[Scrumban](http://www.lulu.com/shop/corey-ladas/scrumban-essays-on-kanban-systems-for-lean-software-development/paperback/product-4098141.html)
 1. Abelson, Sussman—Structure and Interpretation of Computer Programs
 
 ### Take Care of your Career
 
-In the end, if you're going to have a career in software development, you need to be in control of it and know how to navigate it. To me, that means:
+In the end, if you're going to have a career in software development, you need to be in control and know how to navigate it. To me, that means:
 
 * Meet people and get connections. It's not always about about know-how, but rather about "know-who".
 * If you're working for yourself, learn how to write out a simple contract to get signed. Don't be weak in this area.
@@ -377,20 +405,7 @@ In the end, if you're going to have a career in software development, you need t
 
 ## In Summary
 
-* appreciate good docs now?
+{{% aside1 %}}
+What's the [banner photo](https://en.wikipedia.org/wiki/Keypunch#/media/File:Card_puncher_-_NARA_-_513295.jpg) about? It's a Hollerith keypunch, to make holes in punch cards, one of the earliest forms of computer program.{{% /aside1 %}}
 
-Aside: what's the banner about?
-Hollerith Keypunch 
-https://en.wikipedia.org/wiki/Keypunch#/media/File:Card_puncher_-_NARA_-_513295.jpg
-
-<div class="sans italic center p2 black bg-lime muted rounded">
-  Fries added to order
-</div>
-
-## SCRATCH
-
-* women in code - famous women programmers
-* not too much at once
-* get the agreements right if doing for work
-* clear communication
-* learn on the job
+Well, if you made it this far, congrats! That was pretty long, but I think it contains some useful information that I wish I had had when I was just starting out. It's a fantastic time to be learning! Please share this, and let's discuss in the comments.
