@@ -1,12 +1,12 @@
 {{ "<!-- ENTERING partial headerbanner1.html -->" | safeHTML }}
 <header role="banner" class="clearfix px4 m0 white bg-gradient-greenblue2">
-  <div class="flex flex-center py4">
+  <div class="flex items-center py4">
     <div class="flex-auto">
       <div class="sm-hide r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="RCC Home">
         <a href="{{ .Site.BaseURL }}"><img src="/img/rcc-logo-1.svg" width="40" class="m0 p1 bg-white rounded"></a>
       </div>
       <!--<div class="sm-hide h2 sans bold flex m0">RCC</div>-->
-      <div class="sm-show h1 sans bold caps flex flex-center m0">RCC</div>
+      <div class="sm-show h1 sans bold caps flex items-center m0">RCC</div>
       <nav role="navigation" class="sm-hide rccnav mxn1">
         {{ range .Site.Menus.main }}
           <a href="{{ .URL }}" class="btn btn-primary px1 sans light bg-darken-2 {{ .Post }}">{{ .Name }}</a>
@@ -19,7 +19,7 @@
       </nav>
     </div>
     <div class="clearfix sm-hide px2"></div>
-    <div class="flex-center overflow-hidden px2 py1" role="search">
+    <div class="items-center overflow-hidden px2 py1" role="search">
       <form id="cse-search-box" action="http://google.com/cse">
         <input type="hidden" name="cx" value="018195656038046585595:v0aqyxd648a" />
         <input type="hidden" name="ie" value="UTF-8" />
