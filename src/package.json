@@ -60,7 +60,8 @@
     "basscss-input-range": "latest",
     "basscss-progress": "latest",
     "basscss-all": "latest",
-    "basscss-media-object": "latest"
+    "basscss-media-object": "latest",
+    "cssrecipes-tooltip": "latest"
   },
   "devDependencies": {
     "css-mqpacker": "^4.0.0",
