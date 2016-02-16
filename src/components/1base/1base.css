@@ -59,10 +59,6 @@
 */
 
 
-/* Default custom properties  */
-/*@import 'basscss-defaults';*/
-
-
 /* Custom media queries */
 
 @custom-media --breakpoint-sm (min-width: 40em);
@@ -72,10 +68,28 @@
 /* Custom root properties */
 
 :root {
-  --font-family: 'calluna', 'Georgia', Times, serif;
+    /*font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      'Roboto',
+      'Helvetica Neue',
+      Helvetica,
+      sans-serif;*/
+
+  --body-font-family: 'calluna', 'Georgia', Times, serif;
   --heading-font-family: 'calluna-sans', 'Helvetica Neue', Helvetica, sans-serif;
   --heading-font-weight: 700;
   --heading-line-height: 1.2;
+
+  /*font-family:
+    'Roboto Mono',
+    'Source Code Pro',
+    Menlo,
+    Consolas,
+    'Liberation Mono',
+    monospace;*/
+
   --monospace-font-family: 'source-code-pro', Consolas, "Bitstream Vera Sans Mono", monaco, "Courier New", Courier, monospace;
   --decorative-font-family: 'freight-sans-pro', 'Verdana', sans-serif;
 
@@ -259,23 +273,7 @@
   --darker-teal-2: #2ba7a7;
   --darker-teal-3: #269393;
 
-.fill-darker-beige {
-fill: var(--darker-beige);
-}
-
-.stroke-darker-beige {
-stroke: var(--darker-beige);
-}
-
-.fill-rice-paper-light {
-fill: var(--rice-paper-light);
-}
-
-.stroke-rice-paper-light {
-stroke: var(--rice-paper-light);
-}
-
-  background-color: var(--red);
+background-color: var(--teal);
 
   --bodyBackgroundColor: var(--charcoal);
   --darkbackgroundTextColor: var(--white);
@@ -317,7 +315,102 @@ stroke: var(--rice-paper-light);
   --hljs-chunk: var(--silver);
   */
 }
-/* END Custom root properties */
+/* END CUSTOM ROOT PROPERTIES */
+/* END CUSTOM ROOT PROPERTIES */
+/* END CUSTOM ROOT PROPERTIES */
+
+
+/* BEGIN BASIC OVERRIDES */
+
+/* Overrides for Basscss Basic */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  line-height: var(--line-height);
+  margin: 0;
+  color: var(--lightbackgroundTextColor);
+  background-color: var(--bodyBackgroundColor);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+a {
+  color: #265C83;
+  text-decoration: none;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  line-height: var(--heading-line-height);
+  margin-top: var(--heading-margin-top);
+  margin-bottom: var(--heading-margin-bottom);
+}
+
+h1 { font-size: var(--h1) }
+h2 { font-size: var(--h2) }
+h3 { font-size: var(--h3) }
+h4 { font-size: var(--h4) }
+h5 { font-size: var(--h5) }
+h6 { font-size: var(--h6) }
+
+p, dl, ol, ul, pre, blockquote {
+  margin-top: var(--paragraph-margin-top);
+  margin-bottom: var(--paragraph-margin-bottom);
+}
+
+code,
+pre,
+samp {
+  font-family: var(--monospace-font-family);
+}
+
+code, samp {
+  font-size: var(--pre-font-size);
+  padding: .125em;
+}
+
+pre {
+  font-size: var(--pre-font-size);
+  overflow: scroll;
+}
+
+blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-left: 0;
+}
+
+hr {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
+}
+
+abbr {
+    border-bottom: 1px double var(--silver);
+}
+
+/* END BASIC OVERRIDES */
+/* END BASIC OVERRIDES */
+/* END BASIC OVERRIDES */
 
 .light {
   font-weight: var(--light-font-weight, 300)
@@ -353,6 +446,22 @@ stroke: var(--rice-paper-light);
 
 .bg-darker-beige  {
   background-color: var(--darker-beige);
+}
+
+.fill-darker-beige {
+fill: var(--darker-beige);
+}
+
+.stroke-darker-beige {
+stroke: var(--darker-beige);
+}
+
+.fill-rice-paper-light {
+fill: var(--rice-paper-light);
+}
+
+.stroke-rice-paper-light {
+stroke: var(--rice-paper-light);
 }
 
 .darker-beige {
