@@ -76,7 +76,7 @@ paginate = 7
         name = "Topics"
         url = "/topics"
         pre = "All Topics"
-        post = "sm-show"
+        post = "xs-hide"
         identifier = "mainalltopics"
         weight = "3"
 
@@ -84,7 +84,7 @@ paginate = 7
         name = "Tags"
         url = "/tags"
         pre = "All Tags"
-        post = "sm-show"
+        post = "xs-hide"
         identifier = "mainalltags"
         weight = "4"
 
