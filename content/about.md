@@ -36,11 +36,11 @@ images:
 
 ## Quick Summary
 
-<figure class="sm-show col-3 right fit center">
+<figure class="xs-hide col-3 right fit center">
   <a href="/img/rick-cogley-avatar-240x240.png" title="Rick Cogley" data-lightbox="set1" data-title="Rick Cogley"><img class="circle border border-darken-1" src="/img/rick-cogley-avatar-240x240.png" alt="Photo of Rick Cogley" ></a>
   <figcaption>&mdash; <em>Rick Cogley</em></figcaption>
 </figure>
-<figure class="sm-hide col-12 fit center">
+<figure class="sm-hide md-hide lg-hide col-12 fit center">
   <a href="/img/rick-cogley-avatar-240x240.png" title="Rick Cogley" data-lightbox="set1" data-title="Rick Cogley"><img class="circle border border-darken-1" src="/img/rick-cogley-avatar-240x240.png" alt="Photo of Rick Cogley" ></a>
   <figcaption>&mdash; <em>Rick Cogley</em></figcaption>
 </figure>
