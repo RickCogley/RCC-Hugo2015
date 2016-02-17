@@ -662,6 +662,9 @@ tr:last-child td {
   box-shadow: none;
 }
 
+/*Vignette shadow from basscss bkln theme */
+.vignette { box-shadow: inset 0 0 64px rgba(64, 32, 0, .5) }
+
 /**
 *
 * =======================================================================
