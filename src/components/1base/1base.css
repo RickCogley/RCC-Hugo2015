@@ -1,21 +1,19 @@
 /*
- * Bassplate
- * Boilerplate for Basscss with cssnext
- * http://github.com/basscss/bassplate
- *
- * Remove or comment out unneeded modules and import your own files.
- * Adjust global media queries and custom properties below.
- *
+ * Originally Bassplate http://github.com/basscss/bassplate
  */
 
 /* Basscss base reset "basic" new in v8 */
-
-@import 'basscss-basic';
+/*@import 'basscss-basic';*/
+/*Instead use rccreset*/
+@import '../reset/rccreset.css';
 
 /* Basscss Modules (needs postcss-import to inline)*/
 
 @import 'basscss-type-scale';
 @import 'basscss-typography';
+
+@import 'basscss-forms';
+
 @import 'basscss-layout';
 @import 'basscss-align';
 @import 'basscss-margin';
@@ -35,7 +33,7 @@
 @import 'basscss-progress';
 */
 @import 'basscss-all';
-@import 'basscss-forms';
+
 @import 'basscss-responsive-margin';
 @import 'basscss-responsive-padding';
 @import 'basscss-btn';
@@ -325,89 +323,7 @@ background-color: var(--teal);
 
 /* Overrides for Basscss Basic */
 
-* {
-  box-sizing: border-box;
-}
 
-body {
-
-  font-family: var(--body-font-family);
-  font-size: var(--body-font-size);
-  line-height: var(--line-height);
-  margin: 0;
-  color: var(--lightbackgroundTextColor);
-  background-color: var(--bodyBackgroundColor);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-svg {
-  max-height: 100%;
-}
-
-a {
-  color: #265C83;
-  text-decoration: none;
-}
-
-h1, h2, h3,
-h4, h5, h6 {
-  font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
-  line-height: var(--heading-line-height);
-  margin-top: var(--heading-margin-top);
-  margin-bottom: var(--heading-margin-bottom);
-}
-
-h1 { font-size: var(--h1) }
-h2 { font-size: var(--h2) }
-h3 { font-size: var(--h3) }
-h4 { font-size: var(--h4) }
-h5 { font-size: var(--h5) }
-h6 { font-size: var(--h6) }
-
-p, dl, ol, ul, pre, blockquote {
-  margin-top: var(--paragraph-margin-top);
-  margin-bottom: var(--paragraph-margin-bottom);
-}
-
-code,
-pre,
-samp {
-  font-family: var(--monospace-font-family);
-}
-
-code, samp {
-  font-size: var(--pre-font-size);
-  padding: .125em;
-}
-
-pre {
-  font-size: var(--pre-font-size);
-  overflow: scroll;
-}
-
-blockquote {
-  font-size: 1.25rem;
-  font-style: italic;
-  margin-left: 0;
-}
-
-hr {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  border: 0;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ccc;
-}
-
-abbr {
-    border-bottom: 1px double var(--silver);
-}
 
 /* END BASIC OVERRIDES */
 /* END BASIC OVERRIDES */
