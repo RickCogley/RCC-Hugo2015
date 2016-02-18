@@ -14,8 +14,6 @@ This iteration represents a major upgrade to my process and site. After a couple
 
 ### Go Hugo
 
-{{< figure1 link="/img/hugo-logo.png" src="/img/hugo-logo.png" type="Logo" title="Hugo SSG" class="bg-white" >}}
-
 [Hugo](http://gohugo.io) is a Static Site Generator, which makes it simple to use html "templates" to merge your css, javascript, images and content written in the [Markdown](http://daringfireball.net/projects/markdown/) format, into a publishable website.
 
 About Hugo, we learn:
@@ -28,8 +26,6 @@ Hugo is downloadable as a single binary file, written in Go, which means it will
 
 ### Site Look
 
-{{< figure1 link="/img/basscss.png" src="/img/basscss.png" type="Logo" title="Basscss" class="bg-rice-paper-light" >}}
-
 The look of this site comes from a couple of different components.
 
 First, the stylistic base of the site comes from a fantastic and comprehensive css library called ["Basscss"](http://www.basscss.com/). **Basscss** is:
@@ -37,8 +33,6 @@ First, the stylistic base of the site comes from a fantastic and comprehensive c
 > A lightweight collection of base element styles and immutable utilities designed for speed, clarity, performance, and scalability.
 
 It allows you to have consistency in your basic styles, responsiveness to support mobile users, and acts as a great starting point for any site.
-
-{{< figure1 link="/img/exljbris-calluna.png" src="/img/exljbris-calluna.png" type="Screenshot" title="Exljbris Calluna" >}}
 
 As for **Type Faces**, I had been using the excellent and beautiful [Alegreya](http://www.huertatipografica.com/about), but changed to the _Calluna Family_ and _Freight Sans_ faces, because they support more of the OpenType features I wanted to take advantage of. They're served via Adobe Typekit, and you can see the [Adobe Auto-generated Colophon](https://typekit.com/colophons/ihk8ryw) for more info on these.
 
@@ -50,8 +44,6 @@ The **photos** on this site are mine, unless otherwise noted. I enjoy photograph
 
 ## Hosting
 
-{{< figure1 link="/img/webfaction-logo.png" src="/img/webfaction-logo.png" type="Logo" title="Webfaction" >}}
-
 This and a few other sites I manage, are hosted at the rock-solid [Webfaction](http://www.webfaction.com/?affiliate=rcogley). Great cost-performance for developers, in my opinion. I have not had trouble in years of use, and they respond very quickly to support requests.
 
 Comments are hosted on Disqus.
@@ -61,8 +53,6 @@ DNS is hosted on Amazon Web Services [Route53](https://aws.amazon.com/route53/),
 The [repository](https://github.com/RickCogley/RCC-Hugo2015) for this site is hosted at [Github](https://github.com).
 
 ## Semantic Markup
-
-{{< figure1 link="/img/json-ld-logo.png" src="/img/json-ld-logo.png" type="Logo" title="JSON-LD" >}}
 
 Considering [Semantic HTML](http://en.wikipedia.org/wiki/Semantic_HTML "Semantic H.T.M.L. Wikipedia article link"), I'm using some now-well-accepted [Microdata](http://schema.org "Canonical site for Microdata, Schema.org") such as the [Person Schema](http://schema.org/Person "Microdata Person Schema"), and [Microformats 2](http://microformats.org/wiki/microformats2 "V2 of Microformats, improving ease-of-use for authors and implementers") such as [h-card](http://microformats.org/wiki/h-card "Microformats 2 update to hCard") with some others sprinkled in.
 
@@ -81,8 +71,6 @@ _Warm thanks and regards to:_
 [@jxnblk](https://github.com/jxnblk) for the wonderful ["basscss"](http://www.basscss.com/) css foundation library.  
 
 [Jos Buivenga / Exljbris](https://exljbris.wordpress.com/about/) and [Joshua Darden / Darden Studio](https://www.dardenstudio.com/studio), for the beautiful type faces.
-
-{{< figure1 link="/img/humans-txt-large-logo2.png" src="/img/humans-txt-large-logo2.png" type="Logo" title="Humans.txt" >}}
 
 Lastly, I even have a [humans.txt](/humans.txt) file. [Humans.txt](http://humanstxt.org) is an attempt to standardize on a way of making a site colophon, in text format. If you [click](/humans.txt) it, you'll see some of the same information as on this page, in a simple text format.
 
