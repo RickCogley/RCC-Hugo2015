@@ -14,11 +14,12 @@
       </nav>
       <nav role="navigation" class="xs-hide rccnav mxn1">
         {{ range .Site.Menus.main }}
-          <a href="{{ .URL }}" class="btn btn-primary px1 sans light bg-darken-2 r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="{{ .Pre }}">{{ .Name }}</a>
+          <a href="{{ .URL }}" class="btn btn-narrow btn-primary sans light bg-darken-2">{{ .Name }}</a>
+          <!--<a href="{{ .URL }}" class="btn btn-narrow btn-primary sans light bg-darken-2 r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="{{ .Pre }}">{{ .Name }}</a>-->
         {{ end }}
       </nav>
     </div>
-    <div class="clearfix sm-hide md-hide lg-hide px2"></div>
+    <div class="clearfix sm-hide md-hide lg-hide px1"></div>
     <div class="items-center overflow-hidden px1 py1" role="search">
       <form id="cse-search-box" action="http://google.com/cse">
         <input type="hidden" name="cx" value="018195656038046585595:v0aqyxd648a" />
