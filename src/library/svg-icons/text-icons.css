@@ -16,8 +16,10 @@ p svg {
   position: relative;
   bottom: .02em;
   vertical-align: middle;
-  width: .95em;
-  height: .85em;
+  width: 1.8em;
+  height: 1.5em;
+  /*width: 100%;
+  height: 100%;*/
   fill: currentColor;
 }
 
@@ -35,8 +37,8 @@ h2 svg {
   position: relative;
   bottom: .02em;
   vertical-align: middle;
-  width: .95em;
-  height: .85em;
+  width: 1.95em;
+  height: 1.85em;
   fill: currentColor;
 }
 
@@ -54,7 +56,7 @@ h2 svg {
   position: relative;
   bottom: .02em;
   vertical-align: middle;
-  width: .95em;
-  height: .85em;
+  width: 1.95em;
+  height: 1.85em;
   fill: currentColor;
 }

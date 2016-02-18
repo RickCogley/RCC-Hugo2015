@@ -1,0 +1,85 @@
+/* Based on Basscss Basic */
+/* Base styles to be imported before everything else at top of 1base.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'calluna', 'Georgia', Times, serif;
+  font-size: 120%;
+  line-height: 1.48;
+  margin: 0;
+  color: #444444;
+  background-color: #222222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+a {
+  color: #265C83;
+  text-decoration: none;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: 'calluna-sans', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 1.414em;
+  margin-bottom: .5em;
+}
+
+h1 { font-size: 3.998rem }
+h2 { font-size: 2.827rem }
+h3 { font-size: 1.999rem }
+h4 { font-size: 1.414rem }
+h5 { font-size: 1rem }
+h6 { font-size: .707rem }
+
+p, dl, ol, ul, pre, blockquote {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+code,
+pre,
+samp {
+  font-family: 'source-code-pro', Consolas, "Bitstream Vera Sans Mono", monaco, "Courier New", Courier, monospace;
+}
+
+code, samp {
+  font-size: 90%;
+  padding: .125em;
+}
+
+pre {
+  font-size: 90%;
+  overflow: scroll;
+}
+
+blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-left: 0;
+}
+
+hr {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ddd;
+}
+
+abbr {
+    border-bottom: 1px dotted #ddd;
+}

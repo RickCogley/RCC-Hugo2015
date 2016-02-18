@@ -1,34 +1,34 @@
 {{ "<!-- ENTERING partial headerbanner1.html -->" | safeHTML }}
 <header role="banner" class="clearfix px4 m0 white bg-gradient-greenblue2">
-  <div class="flex flex-center py4">
+  <div class="flex items-center py4">
     <div class="flex-auto">
-      <div class="sm-hide r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="RCC Home">
+      <div class="sm-hide md-hide lg-hide r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="RCC Home">
         <a href="{{ .Site.BaseURL }}"><img src="/img/rcc-logo-1.svg" width="40" class="m0 p1 bg-white rounded"></a>
       </div>
-      <!--<div class="sm-hide h2 sans bold flex m0">RCC</div>-->
-      <div class="sm-show h1 sans bold caps flex flex-center m0">RCC</div>
-      <nav role="navigation" class="sm-hide rccnav mxn1">
+      <!--<div class="sm-hide md-hide lg-hide h2 sans bold flex m0">RCC</div>-->
+      <div class="xs-hide h1 sans bold caps flex items-center m0">RCC</div>
+      <nav role="navigation" class="sm-hide md-hide lg-hide rccnav mxn1">
         {{ range .Site.Menus.main }}
           <a href="{{ .URL }}" class="btn btn-primary px1 sans light bg-darken-2 {{ .Post }}">{{ .Name }}</a>
         {{ end }}
       </nav>
-      <nav role="navigation" class="sm-show rccnav mxn1">
+      <nav role="navigation" class="xs-hide rccnav mxn1">
         {{ range .Site.Menus.main }}
           <a href="{{ .URL }}" class="btn btn-primary px1 sans light bg-darken-2 r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="{{ .Pre }}">{{ .Name }}</a>
         {{ end }}
       </nav>
     </div>
-    <div class="clearfix sm-hide px2"></div>
-    <div class="flex-center overflow-hidden px2 py1" role="search">
+    <div class="clearfix sm-hide md-hide lg-hide px2"></div>
+    <div class="items-center overflow-hidden px1 py1" role="search">
       <form id="cse-search-box" action="http://google.com/cse">
         <input type="hidden" name="cx" value="018195656038046585595:v0aqyxd648a" />
         <input type="hidden" name="ie" value="UTF-8" />
-        <input type="text" name="q" class="fit field white sans light rounded-left x-group-item bg-darken-2" placeholder="Google Custom Search" />
-        <input type="submit" name="sa" class="sm-show right white sans light btn btn-primary bg-lighten-2 rounded-right x-group-item" value="Search" />
+        <input type="text" name="q" class="fit input inline-block white sans light rounded-left x-group-item border-darken-1 bg-darken-2" placeholder="Google Custom Search" />
+        <!--<input type="submit" name="sa" class="inline-block xs-hide right white sans light btn btn-primary bg-lighten-2 rounded-right x-group-item" value="Search" />-->
       </form>
     </div>
-    <div class="sm-show r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap" data-r-tooltip="RCC Home">
-      <a href="{{ .Site.BaseURL }}"><img src="/img/rcc-logo-1.svg" width="40" class="m0 p1 bg-lighten-4 rounded"></a>
+    <div class="xs-hide r-Tooltip r-Tooltip--bottom r-Tooltip--nowrap px2 pb1" data-r-tooltip="RCC Home">
+      <a href="{{ .Site.BaseURL }}"><img src="/img/rcc-logo-1.svg" width="45" class="m0 p1 bg-lighten-4 rounded"></a>
     </div>
   </div>
 </header>

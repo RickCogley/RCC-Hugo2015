@@ -1,69 +1,60 @@
 /*
- * Bassplate
- * Boilerplate for Basscss with cssnext
- * http://github.com/basscss/bassplate
- *
- * Remove or comment out unneeded modules and import your own files.
- * Adjust global media queries and custom properties below.
- *
+ * Originally Bassplate http://github.com/basscss/bassplate
  */
+
+/* Basscss base reset "basic" new in v8 */
+/*@import 'basscss-basic';*/
+/*Instead use rccreset*/
+@import '../reset/rccreset.css';
 
 /* Basscss Modules (needs postcss-import to inline)*/
 
-@import 'basscss-base-reset';
-@import 'basscss-base-forms';
-@import 'basscss-base-tables';
-@import 'basscss-base-typography';
-@import 'basscss-color-base';
-@import 'basscss-color-forms';
-@import 'basscss-color-tables';
-@import 'basscss-btn';
-@import 'basscss-btn-primary';
-@import 'basscss-btn-outline';
 @import 'basscss-type-scale';
-@import 'basscss-utility-typography';
-@import 'basscss-utility-layout';
+@import 'basscss-typography';
+
+@import 'basscss-forms';
+
+@import 'basscss-layout';
 @import 'basscss-align';
-@import 'basscss-white-space';
-@import 'basscss-positions';
-@import 'basscss-responsive-states';
+@import 'basscss-margin';
+@import 'basscss-padding';
 @import 'basscss-grid';
-@import 'flex-object';
-@import 'basscss-borders';
-@import 'basscss-colors';
-@import 'basscss-background-colors';
+@import 'basscss-flexbox';
+@import 'basscss-position';
+@import 'basscss-border';
+@import 'basscss-hide';
 
 /* Optional Basscss Modules (not included in Basscss by default) */
 /*
 
-@import 'basscss-color-forms-dark';
+/*
+@import 'basscss-media-object';
 @import 'basscss-input-range';
 @import 'basscss-progress';
-@import 'basscss-media-object';
-@import 'basscss-responsive-white-space';
-@import 'basscss-utility-headings';
-@import 'basscss-table-object';
-@import 'basscss-highlight-dark';
-@import 'basscss-highlight';
 */
-@import 'basscss-background-images';
-@import 'basscss-border-colors';
+@import 'basscss-all';
+
+@import 'basscss-responsive-margin';
+@import 'basscss-responsive-padding';
+@import 'basscss-btn';
+@import 'basscss-btn-primary';
+@import 'basscss-btn-outline';
 @import 'basscss-btn-sizes';
-@import 'basscss-ui-utility-groups';
+@import 'basscss-colors';
+@import 'basscss-background-colors';
+@import 'basscss-border-colors';
+@import 'basscss-background-images';
+@import 'basscss-darken';
+@import 'basscss-lighten';
 
 /* cssrecipes */
 
 @import 'cssrecipes-tooltip';
 
-
 /* Example custom file import */
 /*
 @import './color/borders';
 */
-
-
-/* Default custom properties  */
-@import 'basscss-defaults';
 
 
 /* Custom media queries */
@@ -75,10 +66,28 @@
 /* Custom root properties */
 
 :root {
-  --font-family: 'calluna', 'Georgia', Times, serif;
+    /*font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      'Roboto',
+      'Helvetica Neue',
+      Helvetica,
+      sans-serif;*/
+
+  --body-font-family: 'calluna', 'Georgia', Times, serif;
   --heading-font-family: 'calluna-sans', 'Helvetica Neue', Helvetica, sans-serif;
   --heading-font-weight: 700;
   --heading-line-height: 1.2;
+
+  /*font-family:
+    'Roboto Mono',
+    'Source Code Pro',
+    Menlo,
+    Consolas,
+    'Liberation Mono',
+    monospace;*/
+
   --monospace-font-family: 'source-code-pro', Consolas, "Bitstream Vera Sans Mono", monaco, "Courier New", Courier, monospace;
   --decorative-font-family: 'freight-sans-pro', 'Verdana', sans-serif;
 
@@ -117,6 +126,8 @@
   --form-field-padding-y: .5rem;
   --form-field-padding-x: .5rem;
 
+  --button-color: var(--white);
+  --button-background-color: var(--teal);
   --button-font-size: inherit;
   --button-font-weight: bold;
   --button-line-height: 1.125rem;
@@ -178,7 +189,6 @@
   --hover-background-color: var(--darken-1);
 
   --link-color: var(--teal);
-  --button-background-color: var(--blue);
   /*--pre-background-color: var(--silver);*/
 
   --trolleygray: #808080;
@@ -262,23 +272,7 @@
   --darker-teal-2: #2ba7a7;
   --darker-teal-3: #269393;
 
-.fill-darker-beige {
-fill: var(--darker-beige);
-}
-
-.stroke-darker-beige {
-stroke: var(--darker-beige);
-}
-
-.fill-rice-paper-light {
-fill: var(--rice-paper-light);
-}
-
-.stroke-rice-paper-light {
-stroke: var(--rice-paper-light);
-}
-
-  background-color: var(--red);
+background-color: var(--teal);
 
   --bodyBackgroundColor: var(--charcoal);
   --darkbackgroundTextColor: var(--white);
@@ -320,7 +314,20 @@ stroke: var(--rice-paper-light);
   --hljs-chunk: var(--silver);
   */
 }
-/* END Custom root properties */
+/* END CUSTOM ROOT PROPERTIES */
+/* END CUSTOM ROOT PROPERTIES */
+/* END CUSTOM ROOT PROPERTIES */
+
+
+/* BEGIN BASIC OVERRIDES */
+
+/* Overrides for Basscss Basic */
+
+
+
+/* END BASIC OVERRIDES */
+/* END BASIC OVERRIDES */
+/* END BASIC OVERRIDES */
 
 .light {
   font-weight: var(--light-font-weight, 300)
@@ -356,6 +363,22 @@ stroke: var(--rice-paper-light);
 
 .bg-darker-beige  {
   background-color: var(--darker-beige);
+}
+
+.fill-darker-beige {
+fill: var(--darker-beige);
+}
+
+.stroke-darker-beige {
+stroke: var(--darker-beige);
+}
+
+.fill-rice-paper-light {
+fill: var(--rice-paper-light);
+}
+
+.stroke-rice-paper-light {
+stroke: var(--rice-paper-light);
 }
 
 .darker-beige {
@@ -408,6 +431,18 @@ stroke: var(--rice-paper-light);
 
 .darker-teal-3 {
   color: var(--darker-teal-3);
+}
+
+.bg-darker-teal-1 {
+  background-color: var(--darker-teal-1);
+}
+
+.bg-darker-teal-2 {
+  background-color: var(--darker-teal-2);
+}
+
+.bg-darker-teal-3 {
+  background-color: var(--darker-teal-3);
 }
 
 .bg-darkgrey {
@@ -626,6 +661,9 @@ tr:last-child td {
   /*box-shadow: 4px 4px 8px rgba(0, 0, 0, .3);*/
   box-shadow: none;
 }
+
+/*Vignette shadow from basscss bkln theme */
+.vignette { box-shadow: inset 0 0 64px rgba(64, 32, 0, .5) }
 
 /**
 *
