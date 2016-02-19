@@ -243,10 +243,10 @@ CSI: Common System Interface
 CSP: Cloud Service Provider
 CSP: Communicating Sequential Processes
 CSRF: Cross-Site Request Forgery
-CSS: Cascading Style Sheets
 CSS: Closed Source Software
 CSS: Content-Scrambling System
 CSS: Cross-Site Scripting
+CSS: Cascading Style Sheets
 CSS3: Cascading Style Sheets version 3
 CSS4: Cascading Style Sheets version 4
 CSV: Comma-Separated Values
@@ -804,6 +804,7 @@ NIC: Network Interface Controller
 NIM: No Internal Message
 NIO: New I/O
 NIST: National Institute of Standards and Technology
+nix: Unix, Linux and other similar operating systems
 NLP: Natural Language Processing
 NLS: Native Language Support
 NMI: Non-Maskable Interrupt
