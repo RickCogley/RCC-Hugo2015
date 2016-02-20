@@ -3,7 +3,7 @@ title: Handling Hidden Files in OS X
 subtitle: In Finder, in Dialogs, in the Terminal
 slug: hidden-files-in-osx-finder-open-dialogs-and-terminal
 publishdate: 2016-02-19T18:59:00+09:00
-date: 2016-02-19T18:59:00+09:00
+date: 2016-02-20T20:37:00+09:00
 banner: /img/Cogley-Banner-Ballpit_in_Joboland-by-Karl-E-Jorgensen-1400x450-mono.jpg
 images:
   - /img/Cogley-Post-Finder-Showing-Invisible-Files.png
@@ -162,4 +162,6 @@ So now you have a couple of techniques for showing invisible files in OS X:
 
 These are verified to work in OS X 10.11.3 "El Capitan" and probably work fine for earlier versions too. Thanks for dropping by, and please share with others if you found this useful.
 
-<div class="sans white bg-navy p2 m2 rounded"><em>Acknowledgement: </em>Banner is cropped version of "Ballpit in Joboland by Karl E. Jorgensen"</div>
+{{% ack1 %}}
+The banner photo is a cropped version of "_Ballpit in Joboland_" by Karl E. Jorgensen. Original is [here](https://commons.wikimedia.org/wiki/File:Ballpit.jpg) on the Wikimedia commons. Thanks!
+{{% /ack1 %}}
