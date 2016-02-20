@@ -30,6 +30,12 @@ aside:
 Lorem ipsum dolor _sit_ amet **oi**
 {{% /aside1 %}}
 
+acknowledgement:
+
+{{% ack1 %}}
+Thanks to Lorem ipsum dolor _sit_ amet **oi**
+{{% /ack1 %}}
+
 TABLES
 
 do | don't
