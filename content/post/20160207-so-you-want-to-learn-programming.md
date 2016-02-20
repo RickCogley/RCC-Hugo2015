@@ -3,7 +3,7 @@ title: On Learning to Code
 subtitle: ... a beautiful endeavor
 slug: so-you-want-to-learn-to-code
 banner: /img/Cogley-Banner-Punch-Card-Operator-1400x450-mono.jpg
-date: 2016-02-15T19:55:00+09:00
+date: 2016-02-20T20:36:00+09:00
 publishdate: 2016-02-15T16:12:00+09:00
 description: 'An article about learning to code for beginner programmers, by Rick Cogley'
 draft: 'false'
@@ -180,7 +180,9 @@ You then use it by assigning its classes to your ``html``, something like this:
 &lt;div class=&quot;bg-teal p1&quot;&gt;&lt;/div&gt;
 {{< /prism >}}
 
-That would make the ``div``'s background teal, and put padding on it.  
+That would make the ``div``'s background teal, and put padding on it.
+
+While you're coding css, one of the most frustrating things is not being able to visualize how things are fitting together and impacting one another on your pages. Here's just the medicine for that ill: check out [Pesticide](http://pesticide.io/) from [Adam Morse](http://mrmrs.cc/).
 
 <span class="sans bold px1 rounded white bg-teal regular"><em>For now:</em></span>
 
@@ -405,7 +407,12 @@ In the end, if you're going to have a career in software development, you need t
 
 ## In Summary
 
-{{% aside1 %}}
-What's the [banner photo](https://en.wikipedia.org/wiki/Keypunch#/media/File:Card_puncher_-_NARA_-_513295.jpg) about? It's a Hollerith keypunch, to make holes in punch cards, one of the earliest forms of computer program.{{% /aside1 %}}
-
 Well, if you made it this far, congrats! That was pretty long, but I think it contains some useful information that I wish I had had when I was just starting out. It's a fantastic time to be learning! Please share this, and let's discuss in the comments.
+
+## Updates
+
+* **20 Feb 2016** - added acknowledgement for banner, hint about css debug with Pesticide.io.
+
+{{% ack1 %}}
+The banner photo is a cropped version of "_Woman posed with Hollerith Pantograph_" from the US Census Bureau, c. 1940. Original is [here](https://commons.wikimedia.org/wiki/File:Card_puncher_-_NARA_-_513295.jpg) on the Wikimedia commons. What a cool old piece of history!
+{{% /ack1 %}}
