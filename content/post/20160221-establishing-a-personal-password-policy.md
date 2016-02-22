@@ -15,11 +15,11 @@ tags: [encryption,passwords,mnemonic,memory,lastpass,1password,yubico,yubikey]
 draft: "true"
 aliases:
   - /articles/2013/02/18/establishing-a-personal-password-policy/
-postsummary: I suppose it is human nature to be a bit lazy about security, but if you are one of those people who uses the same password for every system you use, it's a good idea to stop that practice as soon as, well, now. Read on, for my take on a practical approach to password security.
+postsummary: If you are one of those people who uses the same password for every system you use, why would you do that?! You should stop that immediately, and read this post to learn about some reasonable personal security practices.
 postsvg: icon-origami-fish
 ---
 
-I suppose it is human nature to be a bit lazy about security, but if you are one of those people who uses the same password for every system you use, it's a good idea to stop that practice as soon as, well, now. Read on, for my take on a practical approach to password security.
+If you are one of those people who uses the same password for every system you use, why would you do that?! Stop it immediately, and read this post to learn about some reasonable personal security practices.
 
 <!--more-->
 
@@ -34,6 +34,8 @@ New:
 * use a yubikey to hold master in slot 2
 * known one, plus what7s in yubikey
 * don't send passwords in plaintext - use passlok
+* an aside to system devs - allow unicode in your passwords for pete's sake
+* use subaddressing me+whatever@gmail.com
 
 One thing is clear: "good security is inversely proportional to convenience and speed." If you start using a different password for every system, sure: it drives home for you that security is a bit of a pain. You have to memorize and maintain all those passwords. I think the benefit of doing so, though, outweighs the disadvantage. If every password is different, even if your _username_ is the same for each, it is harder for the bad guys to get access if a single system is hacked, because they cannot piggyback. Surely, even _one_ system being hacked could be a disaster, right?
 
@@ -79,7 +81,7 @@ You can increase the iterations to make an already nigh impossible to crack encr
 * store text in secure free-form notes, and, avoid sending passwords by email by sharing secure notes with friends.
 * prevent login to my LastPass from certain countries.
 * use two-factor authentication when I want to access my LastPass password store.
-* avoid [phishing](/articles/2013/02/14/how-to-spot-a-phisher/) attacks because LastPass will not fill passwords for a legitimate site, into a phishing site.
+* avoid [phishing](/post/how-to-spot-a-phisher/) attacks because LastPass will not fill passwords for a legitimate site, into a phishing site.
 * select URLs to never automatically log into.
 
 ### Add "What you have" to the mix...
