@@ -53,7 +53,8 @@ So I deleted the mail after taking a screenshot, and gave my friend a heads-up a
 
 This sort of scam is pretty rampant these days. Here's a couple more examples:
 
-* "[Spear Phishing](http://us.norton.com/spear-phishing-scam-not-sport/article)", where a friend asks for passwords or other credentials. Similarly, "Whaling" is Spear Phishing against high-value targets such as C-level executives or Government Officials.  "[TorrentLocker](https://blogs.sophos.com/2015/12/23/the-current-state-of-ransomware-torrentlocker/)" phishing scam combines phishing via official-looking email from the Royal Mail, with ransomware, where your files get locked, and you must pay a ransom with bitcoin.
+* "[Spear Phishing](http://us.norton.com/spear-phishing-scam-not-sport/article)", where a friend asks for passwords or other credentials. Similarly, "Whaling" is Spear Phishing against high-value targets such as C-level executives or Government Officials.  
+* "[TorrentLocker](https://blogs.sophos.com/2015/12/23/the-current-state-of-ransomware-torrentlocker/)" phishing scam combines phishing via official-looking email from the Royal Mail, with ransomware, where your files get locked, and you must pay a ransom with bitcoin.
 * You might receive a call from "tech support" from your Internet provider, telling you they need to connect to your computer, asking for your credit card info, or asking you to change your password for security reasons. Never comply with unsolicited tech support requests.
 * The "ore ore" scam in Japan. This is not even an online scam, but it involves your "son" calling, saying "it's me, it's me" and asking for money. A surprising number of elderly in Japan fall for this.
 
