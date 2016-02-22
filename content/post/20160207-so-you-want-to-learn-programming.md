@@ -3,7 +3,7 @@ title: On Learning to Code
 subtitle: ... a beautiful endeavor
 slug: so-you-want-to-learn-to-code
 banner: /img/Cogley-Banner-Punch-Card-Operator-1400x450-mono.jpg
-date: 2016-02-20T20:36:00+09:00
+date: 2016-02-22T21:36:00+09:00
 publishdate: 2016-02-15T16:12:00+09:00
 description: 'An article about learning to code for beginner programmers, by Rick Cogley'
 draft: 'false'
@@ -139,7 +139,7 @@ Although there are [a large number](https://en.wikipedia.org/wiki/List_of_versio
 
 A good exercise is to redo your simple website from above, going through the steps again, but this time, checking every change into your repository, and pushing up to Github.
 
-Take the time to learn how to _comment your code_ in your {{<abbr HTML>}}, {{<abbr CSS>}} and {{<abbr javascript>}} files. The syntax for comments is different in each. Also, learn [how to write a good git commit message](http://chris.beams.io/posts/git-commit/). Software development is often collaborative, so be kind to your colleagues and to yourself.
+Take the time to learn how to _comment your code_ in your {{<abbr HTML>}}, {{<abbr CSS>}} and {{<abbr javascript>}} files. The syntax for comments is different in each. Also, learn [how to write a good git commit message](http://chris.beams.io/posts/git-commit/), and keep in mind Thom Parkin's "[Gititudes](http://www.gititude.com/)". Software development is often collaborative, so be kind to your colleagues and to your future self.
 
 Note, you'll discover that there are several {{<abbr GUI>}} clients for ``git``, namely [Github Desktop](https://desktop.github.com/) (free), [Syntevo SmartGit](http://www.syntevo.com/smartgit/) (commercial), and [Atlassian SourceTree](https://www.atlassian.com/software/sourcetree/overview) (free). You'll also discover [Bitbucket](https://bitbucket.org/), a Github alternative which I like because you can create private repositories for free (as of Feb 2016).
 
