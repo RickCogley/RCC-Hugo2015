@@ -13,7 +13,7 @@ images:
 description: I got a Twitter DM from a friend, which turned out to be a phishing link and not a legit message. How to avoid and report phishing scams, by Rick Cogley.
 topics: [Tips, Security]
 tags: [twitter,phishing,secure,scam,bitcoin,ransomware,fake,torrentlocker]
-draft: "true"
+draft: "false"
 aliases:
   - /articles/2013/02/14/how-to-spot-a-phisher/
 postsummary: Phishing is a problem you hear about in the news, that "happens to other people". I like to think of myself as aware and immune, but I clicked a link that came in from a friend, and it was phishing site. Luckily I noticed in time. Here's some things you can look out for.
