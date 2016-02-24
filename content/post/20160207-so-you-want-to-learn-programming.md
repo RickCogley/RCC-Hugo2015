@@ -217,7 +217,6 @@ The {{<abbr YAML>}} frontmatter, placed at the top of your Markdown content file
 ---
 title: On Learning to Code
 subtitle: ... a beautiful endeavor
-slug: so-you-want-to-learn-to-code
 banner: /img/Cogley-Banner-Punch-Card-Operator-1400x450-mono.jpg
 date: 2016-02-07T8:12:00+09:00
 ---
