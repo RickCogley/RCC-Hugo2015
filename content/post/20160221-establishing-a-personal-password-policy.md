@@ -104,6 +104,8 @@ Speaking of which, you could always use a mnemonic method to remember your passw
 
 If you still feel more comfortable using a strong & random master password for your password manager vault, a couple of tricks are possible.
 
+{{< figure1 link="/img/Cogley-Post-YubiKey_Neo_and_Nano.jpg" src="/img/Cogley-Post-YubiKey_Neo_and_Nano.thumb.jpg" type="Photo" title="Yubikey Neo and Nano" class="" >}}
+
 You can purchase an inexpensive [Yubikey](https://www.yubico.com/products/yubikey-hardware/), and make it work for you. Paraphrasing the Yubico site:
 
 > A YubiKey is a small hardware device that offers two-factor authentication with a simple touch of a button. YubiKeys are built strong enough for the largest enterprises, while remaining simple enough for anyone to use. They support an unlimited number of applications without the need for drivers, client software, or batteries.
