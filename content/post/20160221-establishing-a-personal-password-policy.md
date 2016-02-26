@@ -180,6 +180,8 @@ New:
 
 * don't send passwords in plaintext - use passlok
 * USE EASY TO REMEMBER ONE IF YOU NEED TO FOR MOBILE ENTRY
+* encrypted volume
+* encrypted disk
 
 
 
