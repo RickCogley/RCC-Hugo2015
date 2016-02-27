@@ -14,6 +14,7 @@
 1NF: First Normal Form
 286: Intel 80286 processor
 2B1Q: 2 Binary 1 Quaternary
+2FA: Two-factor authentication
 2GL: Second-Generation Programming Language
 2NF: Second Normal Form
 386: Intel 80386 processor
@@ -175,6 +176,7 @@ CAPTCHA: Completely Automated Public Turing Test to tell Computers and Humans Ap
 CAQ: Computer-Aided Quality Assurance
 CASE: Computer-Aided Software Engineering
 CAT: Computer-Aided Translation
+CBC: Cipher Block Chaining
 cc: C Compiler
 CD-R: CD-Recordable
 CD-ROM: CD Read-Only Memory
@@ -508,6 +510,7 @@ HIRD: Hurd of Interfaces Representing Depth
 HLASM: High Level ASseMbler
 HLS: HTTP Live Streaming
 HMA: High Memory Area
+HMAC: keyed-Hash Message Authentication Code
 HP: Hewlett-Packard
 HPC: High-Performance Computing
 HPFS: High Performance File System
@@ -875,6 +878,7 @@ PAN: Personal Area Network
 PAP: Password Authentication Protocol
 PARC: Palo Alto Research Center
 PATA: Parallel ATA
+PBKDF2: Password-Based Key Derivation Function 2
 PBS: Portable Batch System
 PC DOS: Personal Computer Disc Operating System
 PC: Personal Computer
@@ -1088,7 +1092,6 @@ SMIL: Synchronized Multimedia Integration Language
 SMP: Supplementary Multilingual Plane
 SMP: Symmetric Multi-Processing
 SMS: Short Message Service
-SMS: System Management Server
 SMT: Simultaneous Multithreading
 SMTP: Simple Mail Transfer Protocol
 SNA: Systems Network Architecture
@@ -1155,6 +1158,7 @@ TLV: Type-length-value
 tmp: temporary
 TNC: Terminal Node Controller
 TNC: Threaded Neill-Concelman connector
+TOTP: Time-based One-time Password
 TPF: Transaction Processing Facility
 TROFF: Trace Off
 TRON: The Real-time Operating system Nucleus
