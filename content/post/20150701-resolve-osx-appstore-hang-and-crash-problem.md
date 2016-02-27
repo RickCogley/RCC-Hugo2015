@@ -1,12 +1,8 @@
 ---
-author: Rick Cogley
-authorlink: /about
-authortwitter: 'https://twitter.com/rickcogley'
-title: Resolve OS X AppStore Hanging and Crashing Problem
-subtitle: Delete the Apple App Store Cache
+title: Resolve Mac OS X AppStore Hanging and Crashing Problem
+subtitle: ...by deleting the Apple Appstore Cache
 slug: resolve-osx-appstore-hang-and-crash-problem
 banner: /img/Cogley-Banner-Daibutsu-Shop-mono.jpg
-banneralt: 'Photo of the shop behind the Daibutsu in Kamakura, by Rick Cogley.'
 date: 2015-07-01T03:48:40.000Z
 publishdate: 2015-07-01T03:48:40.000Z
 description: 'If your AppStore in OS X is hanging or crashing, resolve it this way, a post by Rick Cogley.'
@@ -15,16 +11,9 @@ images:
   - /img/Cogley-Post-AppStore-Crash.png
   - /img/Cogley-Banner-Daibutsu-Shop-mono.jpg
   - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
-showauthor: 'true'
-showcomment: 'true'
-showdate: 'true'
-showpaging: 'true'
-showreadingtime: 'true'
-showsocialsharing: 'true'
-showtoc: 'true'
-showtotop: 'true'
 tags:
   - osx
+  - mac
   - AppStore
   - crash
   - bug
@@ -37,17 +26,19 @@ topics:
   - Software
   - Tips
   - Troubleshooting
+postsummary: I hope Apple pours some of their riches into better Software QA some day, but if you are attempting to update to Mac OS X Yosemite 10.10.4 and your AppStore is crashing and hanging, here is how to fix it.
+postsvg: icon-origami-butterfly
 ---
 
-I hope Apple pours some of their riches into better Software QA some day, but if you are attempting to update to Yosemite 10.10.4 and your AppStore is crashing and hanging, here is how to fix it.
+I hope Apple pours some of their riches into better Software QA some day, but if you are attempting to update to Mac OS X Yosemite 10.10.4 and your AppStore is crashing and hanging, here is how to fix it.
 
 <!--more-->
 
 ## The Problem
 
-You're just going along minding your own business, trying to update to the latest shiny release of OS X (10.10.4 in this case), and alas, the only vehicle to do this is Apple's AppStore. But it's crashing. Left and right.
+You're just going along minding your own business, trying to update to the latest shiny release of Apple OS X (10.10.4 in this case), and alas, the only vehicle to do this is Apple's AppStore. But it's crashing. Left and right.
 
-Of course it is possible that Apple's servers are simply slammed right now, but this is a gigantic company that can afford bandwidth. In the case of updating to 10.10.4, it appears to be some battle between the AppStore servers themselves and the AppStore app on your Mac.
+Of course it is possible that Apple's servers are simply slammed right now, but this is a gigantic company that can afford bandwidth. In the case of updating to OS X 10.10.4, it appears to be some battle between the AppStore servers themselves and the AppStore app on your Mac.
 
 What we observe is the AppStore app showing a spinning beachball "forever", even between force quitting and restoring the AppStore app. When you click on the "Update" buttons, nothing happens. It just hangs.
 

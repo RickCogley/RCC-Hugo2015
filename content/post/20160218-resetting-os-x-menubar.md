@@ -1,5 +1,5 @@
 ---
-title: Resetting a Crashed OS X Menubar, Finder, Dock or Notifications System
+title: Resetting a Crashed Mac OS X Menubar, Finder, Dock or Notifications System
 subtitle: killall -KILL, baby
 slug: resetting-os-x-menubar-finder-notifications-or-dock
 publishdate: 2013-05-22T12:33:19+09:00
@@ -9,9 +9,9 @@ images:
   - /img/Cogley-Post-Mac-Force-Quit-Finder.png
   - /img/Cogley-Banner-Green-LEDs-1170x350-004-mono.jpg
   - /img/rick-cogley-avatar-240x240.png
-description: OS X Menubar, Notification Center, Dock or Finder crashed? Read this post by Rick Cogley on how to reset each from the Terminal.
+description: Mac OS X Menubar, Notification Center, Dock or Finder crashed? Read this post by Rick Cogley on how to reset each from the Terminal.
 topics: [Software, Tips, SysAdmin]
-tags: [OS X, osx, hung, crashed, menubar, notifications, killall, dock, finder, apple, 10.8, 10.9, 10.10, 10.11, 2016]
+tags: [OS X, osx, mac, hung, crashed, menubar, notifications, killall, dock, finder, apple, 10.8, 10.9, 10.10, 10.11, 2016]
 draft: "false"
 aliases:
   - /articles/2013/05/22/resetting-os-x-menubar/
@@ -60,5 +60,5 @@ So try these methods if you're running OS X and find yourself with a crashed Fin
 
 ## Updates
 
-* _18 Feb 2016_ - discovered the method for restarting Notification Center, and so I re-tested them all in OS X El Capitan. All still work fine.
+* _18 Feb 2016_ - discovered the method for restarting Notification Center, and so I re-tested them all in Apple OS X El Capitan. All still work fine.
 * _1 May 2015_ - original post referred to osx 10.8.3, and it's confirmed to work in 10.10.3.

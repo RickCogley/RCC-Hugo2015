@@ -1,39 +1,29 @@
 ---
-author: Rick Cogley
-authorlink: /about
-authortwitter: https://twitter.com/rickcogley
+title: Use Homebrew zsh Instead of the OSX Default
+subtitle: Keep your zsh up to date
+slug: use-homebrew-zsh-instead-of-the-osx-default
 banner: /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
-banneralt: Photo of Japanese hula dancers at Shonan Mall, Fujisawa Japan, by Rick Cogley.
 date: 2015-05-16T10:37:01+09:00
 publishdate: 2015-05-08T12:33:19+09:00
 description: How to use brew to get the latest zsh instead of the one that OS X installs, a post by Rick Cogley.
 draft: "false"
 images:
-- /img/homebrew.png
-- /img/rick-cogley-avatar-240x240.png
+  - /img/homebrew.png
+  - /img/rick-cogley-avatar-240x240.png
 publishdate: 2015-05-08T12:33:19+09:00
-showauthor: "true"
-showcomment: "true"
-showdate: "true"
-showpaging: "true"
-showreadingtime: "true"
-showsocialsharing: "true"
-showtoc: "true"
-showtotop: "true"
-title: Use Homebrew zsh Instead of the OSX Default
-slug: use-homebrew-zsh-instead-of-the-osx-default
-subtitle: Keep your zsh up to date
 tags:
-- brew
-- zsh
-- homebrew
-- upgrade
-- osx
-- mac
+  - brew
+  - zsh
+  - homebrew
+  - upgrade
+  - osx
+  - mac
 topics:
-- Tips
-- SysAdmin
-- Upgrades
+  - Tips
+  - SysAdmin
+  - Upgrades
+postsummary: The zsh shell that Apple provides in OS Yosemite is out of date, as of the time of this article in May 2015. It's trivial to install the latest version, available on homebrew, and here's a couple of steps you need to do to make that your default. Read on for the how.
+postsvg: icon-origami-fish
 ---
 
 The [zsh](http://zsh.sourceforge.net/) shell that Apple provides in OS Yosemite is out of date, as of the time of this article in May 2015. It's trivial to install the latest version, available on ``homebrew``, and here's a couple of steps you need to do to make that your default. Read on for how to do it.
@@ -42,21 +32,21 @@ The [zsh](http://zsh.sourceforge.net/) shell that Apple provides in OS Yosemite 
 
 ## Initial Confirmations
 
-Confirm the current zsh version: 
+Confirm the current zsh version:
 
 ~~~bash
 me@mysys ~ % zsh --version
 zsh 5.0.5 (x86_64-apple-darwin14.0)
 ~~~
 
-Confirm the location of zsh: 
+Confirm the location of zsh:
 
 ~~~bash
 me@mysys ~ % which zsh
 /bin/zsh
 ~~~
 
-Confirm the shells OS X knows about: 
+Confirm the shells OS X knows about:
 
 ~~~bash
 me@mysys ~ % cat /etc/shells
@@ -74,7 +64,7 @@ me@mysys ~ % cat /etc/shells
 
 ## Upgrade zsh with brew
 
-Use `brew install zsh` to install. 
+Use `brew install zsh` to install.
 
 ~~~bash
 rcogley@RickMBP ~ % brew install zsh
@@ -107,7 +97,7 @@ lrwxr-xr-x  1 rcogley  wheel  27 May 16 10:54 /usr/local/bin/zsh@ -> ../Cellar/z
 lrwxr-xr-x  1 rcogley  wheel  33 May 16 10:54 /usr/local/bin/zsh-5.0.7@ -> ../Cellar/zsh/5.0.7/bin/zsh-5.0.7
 ~~~
 
-But you can also use `brew` commands to confirm the details about the package: 
+But you can also use `brew` commands to confirm the details about the package:
 
 ~~~bash
 me@mysys ~ % brew list
@@ -145,14 +135,14 @@ Add the following to your zshrc to access the online help:
 
 ## Use the brew zsh
 
-To use the zsh brew installed, you need to edit `/etc/shells`. It's owned by root, so use sudo to edit it. Here's one way: 
+To use the zsh brew installed, you need to edit `/etc/shells`. It's owned by root, so use sudo to edit it. Here's one way:
 
 ~~~bash
 me@mysys ~ % sudo nano /etc/shells
 Password:
 ~~~
 
-Add the path to the `brew` zsh at the end, save (ctrl-o, ctrl-x), then confirm: 
+Add the path to the `brew` zsh at the end, save (ctrl-o, ctrl-x), then confirm:
 
 ~~~bash
 me@mysys ~ % cat /etc/shells
@@ -177,14 +167,14 @@ Changing shell for rcogley.
 Password for rcogley:
 ~~~
 
-If you run `which` again, you'll see the system is recognizing the one you installed: 
+If you run `which` again, you'll see the system is recognizing the one you installed:
 
 ~~~bash
 me@mysys ~ % which zsh
 /usr/local/bin/zsh
 ~~~
 
-And confirming the version shows: 
+And confirming the version shows:
 
 ~~~bash
 me@mysys ~ % zsh --version
@@ -193,5 +183,4 @@ zsh 5.0.7 (x86_64-apple-darwin14.0.0)
 
 Et voilà!
 
-{{< figure src="/img/homebrew.png" alt="Homebrew Logo" class="pure-img"  >}} 
-
+{{< figure src="/img/homebrew.png" alt="Homebrew Logo" class="pure-img"  >}}

@@ -13,6 +13,7 @@ images:
   - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
 tags:
   - osx
+  - mac
   - email
   - mail.app
   - crash
@@ -25,17 +26,17 @@ topics:
   - Tips
   - Productivity
   - SysAdmin
-postsummary: Have you been frustrated by OS X Mail.app crashing or hanging? This happens to me from time to time, even though I keep OS X updated to the latest version. Well, I found a fix that works for me anyway, and you might try it.
+postsummary: Have you been frustrated by Mac OS X Mail.app crashing or hanging? This happens to me from time to time, even though I keep OS X updated to the latest version. Well, I found a fix that works for me anyway, and you might try it.
 postsvg: icon-origami-fish
 ---
 
-Have you been frustrated by OS X Mail.app crashing or hanging? This happens to me from time to time, even though I keep OS X updated to the latest version. Well, I found a fix that works for me anyway, and you might try it.
+Have you been frustrated by Mac OS X Mail.app crashing or hanging? This happens to me from time to time, even though I keep OS X updated to the latest version. Well, I found a fix that works for me anyway, and you might try it.
 
 <!--more-->
 
 ## Background
 
-Besides the strange bugs that seem to have plagued Mail.app on OS X from time to time over the last several generations of OS X, and, the matter of Gmail's non-standard IMAP implementation, I've found something that seems to work for me, when Mail.app starts showing the spinner, indicating a hang or crash.
+Besides the strange bugs that seem to have plagued Mail.app on Apple OS X from time to time over the last several generations of OS X, and, the matter of Gmail's non-standard IMAP implementation, I've found something that seems to work for me, when Mail.app starts showing the spinner, indicating a hang or crash.
 
 ## How to Fix a Hung or Crashed Mail.app
 
@@ -72,4 +73,4 @@ rm -rf IMAP*
 
 You can make that re-download process go much faster by setting each account to _not_ download attachments. _N.b._, this is in Mail, Preferences, Accounts (select account), Advanced, uncheck "Automatically Download All Attachments".
 
-I hope this information helps someone with their OS X Mail.app troubles. Enjoy!
+I hope this information helps someone with their Mac OS X Mail.app troubles. Enjoy!

@@ -1,3 +1,5 @@
 {{ "<!-- ENTERING partial headend.html -->" | safeHTML }}
 {{ .Site.Params.headercommentblock | safeHTML }}
+{{ $postgitinfo := (index $.Site.Data.postgitinfo .Slug ) }}
+{{ (print "<!-- LATEST GIT UPDATE: " $postgitinfo " -->") | safeHTML }}
 {{ "<!-- LEAVING partial headend.html -->" | safeHTML }}

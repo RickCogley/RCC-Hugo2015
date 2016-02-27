@@ -13,6 +13,7 @@ images:
   - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
 tags:
   - osx
+  - mac
   - ssl
   - sslhandshake
   - 10.11
@@ -23,17 +24,17 @@ topics:
   - Tips
   - Troubleshooting
   - Security
-postsummary: I had a really odd problem, with SSL (``https://``) sites after having upgraded to _OS X El Capitan_. Chrome would not load SSL-protected websites (Safari was fine for the same ones), and then I got a blank screen in the Flowdock Mac app. By chance, I figured out how to fix it, and thought I would share what happened.
+postsummary: I had a really odd problem, with SSL (``https://``) sites after having upgraded to _Mac OS X El Capitan_. Chrome would not load SSL-protected websites (Safari was fine for the same ones), and then I got a blank screen in the Flowdock Mac app. By chance, I figured out how to fix it, and thought I would share what happened.
 postsvg: icon-origami-fish
 ---
 
-I had a really odd problem, with SSL (``https://``) sites after having upgraded to _OS X El Capitan_. Chrome would not load SSL-protected websites (Safari was fine for the same ones), and then I got a blank screen in the Flowdock Mac app. By chance, I figured out how to fix it, and thought I would share what happened.  
+I had a really odd problem, with SSL (``https://``) sites after having upgraded to _Apple OS X El Capitan_. Chrome would not load SSL-protected websites (Safari was fine for the same ones), and then I got a blank screen in the Flowdock Mac app. By chance, I figured out how to fix it, and thought I would share what happened.  
 
 <!--more-->
 
 ## Problem Manifestation
 
-During and after the upgrade to _OS X El Capitan_, I did all the typical things I do, like checking through all the settings to make sure nothing is out of order. One of those includes checking that Time is being automatically set from the local NTS time server, because a mis-set clock will often cause trouble related to encryption.  
+During and after the upgrade to _Mac OS X El Capitan_, I did all the typical things I do, like checking through all the settings to make sure nothing is out of order. One of those includes checking that Time is being automatically set from the local NTS time server, because a mis-set clock will often cause trouble related to encryption.  
 
 {{< figure1 link="/img/Cogley-Post-OSX-Keychain-Add.png" src="/img/Cogley-Post-OSX-Keychain-Add.png" type="Screenshot" title="Add backup keychain, in OS X Keychain Access" >}}
 
