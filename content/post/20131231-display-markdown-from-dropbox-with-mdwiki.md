@@ -86,6 +86,10 @@ You can tune this solution further. Here are a few ideas:
 * Make an index file, with links to your various Markdown files fed through the ``mdwiki.html``, because the Dropbox public URLs are a bit long and unwieldy. Then use an URL shortener like [bit.ly](http://bit.ly) to make a short URL for easy sharing.
 * If your Markdown filenames have spaces, use a ``%20`` to escape the space. For example if my file is ``Repository Managers.md``, I would need to enter ``Repository%20Managers.md`` in the URL.
 
+## A Commercial Alternative
+
+A good commercial alternative is [blot.im](https://blot.im/). It's 20 dollars per year, as of early 2016. That covers the cost of hosting (your files are kept in dropbox, but are generated and hosted off the blot server.) I think the themes look good, and it's taking typography seriously. 
+
 Did this help you? Let me know in the comments and **Happy New Year**!
 
 ## Updates
@@ -94,3 +98,7 @@ Did this help you? Let me know in the comments and **Happy New Year**!
 
 * Added link to the iPad editor OMZ Editorial.
 * Updated per: MDwiki Author [Timo Doerr](https://twitter.com/timodoerr) mentioned via Twitter that new Dropbox accounts have their Public folder _disabled_ by default. He cited [this article](http://techdows.com/2012/10/create-public-folder-dropbox-new-account.html) as to how to enable.
+
+**20160228** -
+
+* Added link to blot.im
