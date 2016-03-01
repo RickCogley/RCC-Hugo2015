@@ -3,7 +3,7 @@ title: "Establishing a Personal Password Policy"
 subtitle: The effort is worth it
 slug: establishing-a-personal-password-policy
 publishdate: 2016-02-27T10:50:00+09:00
-date: 2016-02-27T10:50:00+09:00
+date: 2016-03-01T10:05:00+09:00
 banner: /img/Cogley-Banner-Bletchley_Park_Bombe_by_Antoine_Taveneaux-1400x450-mono.jpg
 images:
   - /img/zetetic-codebook-logo-625x625.jpg
@@ -11,7 +11,7 @@ images:
   - /img/Cogley-Banner-Bletchley_Park_Bombe_by_Antoine_Taveneaux-1400x450-mono.jpg
 description: A basic personal password security policy, that is easy to implement, by Rick Cogley.
 topics: [Security, Tips]
-tags: [encryption,password,mnemonic,memory,lastpass,1password,yubico,yubikey,securid,2fa,two-factor,codebook,zetetic,random]
+tags: [encryption,password,mnemonic,memory,diceware,aes,passlok,yubico,yubikey,securid,2fa,two-factor,codebook,zetetic,random,mfa,pgp,subaddressing,ssh,rsa]
 draft: "false"
 aliases:
   - /articles/2013/02/18/establishing-a-personal-password-policy/
@@ -146,7 +146,7 @@ Either way, if you lose your Yubikey, you can rest easy, knowing that the _whole
 
 {{< figure1 link="/img/Cogley-Post-RSA_SecurID_SID800.jpg" src="/img/Cogley-Post-RSA_SecurID_SID800.thumb.jpg" type="Photo" title="RSA SecurID SID800" class="" >}}
 
-The next practical security tip is to _always enable_ two-factor authentication or {{<abbr 2FA>}}. {{<abbr 2FA>}} refers to a technique of combining something you know, your password, with a second factor, for better security. The second factor can involve a few different things, but usually something you possess, like the above Yubikey, an {{<abbr RSA>}} SecurID, or a software program on a mobile phone.
+The next practical security tip is to _always enable_ [multi-factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) or {{<abbr MFA>}}, whenever it is made available by a service. These days, it's likely to be the variant {{<abbr 2FA>}}, that refers to an authentication technique of combining something you know, your password, with a _second_ factor, for better security. The second factor can involve a few different things, but usually something you possess, like the above Yubikey, an {{<abbr RSA>}} SecurID, or a software program on a mobile phone.
 
 Here are some examples, of what systems might present as the second factor after you enter your username and password:
 
@@ -154,9 +154,13 @@ Here are some examples, of what systems might present as the second factor after
 
 1. **Google, Facebook, Dropbox, Github** - Entry of a {{<abbr TOTP>}}, or [Time-based one-time password](https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm) one time password, via an app like [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en), [Authy](https://www.authy.com/) or even [Codebook](https://discuss.zetetic.net/t/generate-2-step-verification-codes/40) itself.
 1. **Salesforce.com, and many custom applications** - Entry of a [Yubico OTP](https://www.yubico.com/products/services-software/personalization-tools/yubikey-otp/) code, for apps that support Yubikey, or an {{<abbr RSA>}} code, for apps that support that system.  
-1. **Linkedin, Apple, Amazon, Box** - Entry of a code which has been sent to your {{<abbr SMS>}} short-messaging or email.
+1. **Linkedin, Apple, Amazon, Box** - Entry of a code which has been sent to your {{<abbr SMS>}} short-messaging or email. This style is weaker, because the {{<abbr SMS>}} message could be intercepted.
 
 There are challenges with {{<abbr 2FA>}}, because the {{<abbr 2FA>}} system is not able to be used in all cases. For example, in the case of certain apps that you need to log into, like setting up iOS Mail.app to access your Gmail via {{<abbr IMAP>}}, you need to enter what's called an application-specific password. You can easily generate these on a per-app basis, and enter them instead of your regular password. They signal the {{<abbr 2FA>}} system to allow a bypass.
+
+{{% aside1 %}}
+_Three famous sister factors:_ something you **know** (a password), something you **have** (a keyfob), something you **are** (your fingerprint or retina scan).  
+{{% /aside1 %}}
 
 Most {{<abbr 2FA>}} systems also offer recovery codes, which can be used instead of your {{<abbr 2FA>}} system, in the case that you lose your mobile device or Yubikey. You can copy these to your password manager (Codebook has "note" fields which you can paste them into), and also print and store them in a secure place like a locked safe.
 
@@ -224,6 +228,7 @@ If you made it this far in this long post, kudos. There is indeed a learning cur
 
 ## Updates
 
+* **2016 Mar 1** - Add MFA, and an aside about something you know, have and are.
 * **2016 Feb** - Rewritten to capture my latest ideas.  
 
 {{% ack1 %}}
