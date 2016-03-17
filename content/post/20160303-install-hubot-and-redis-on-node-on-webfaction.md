@@ -101,7 +101,7 @@ cd myhubot
 yo hubot
 {{< /prism >}}
 
-Just accept the defaults that yeoman presents, because we can update them next.
+Just accept the defaults that yeoman presents, answering the questions, because you can always update the settings by editing the files.
 
 ### Edit package.json
 
@@ -129,7 +129,7 @@ You can add the ``hubot-hipchat`` line anywhere, but, mind the commas when you e
 
 The ``Procfile`` is for when you're running Hubot on Heroku, but change the adapter now to ``hipchat``, just in case of a future migration. For Hipchat, you would edit to look like:
 
-{{< prism yaml >}}web: bin/hubot -a flowdock
+{{< prism yaml >}}web: bin/hubot -a hipchat
 {{< /prism >}}
 
 ### Edit external-scripts.json
@@ -138,7 +138,7 @@ Edit the ``external-scripts.json`` file, to remove the ``hubot-heroku-keepalive`
 
 ### Set up environment variables
 
-Create the file ``webapps/hubot_01/myhubot/bin/.hubotrc``, and put your environment variables in it. You'll load it in the ``start`` script below. Put the port you copied from the web GUI setup, into the ``EXPRESS_PORT`` variable (replace the ``12345`` I have below with your actual port number).
+Create the file ``webapps/hubot_01/myhubot/bin/.hubotrc``, and put your environment variables in it. You'll load it in the ``start`` script I mention later in the post. Put the port you copied from the web GUI setup, into the ``EXPRESS_PORT`` variable (replace the ``12345`` with your actual port number).
 
 {{< prism bash>}}export PATH="/home/mywebfactionuser/webapps/hubot_01/bin/:$PATH"
 export PYTHON="python2.7"
@@ -167,7 +167,7 @@ export WOTD_PROVIDER="wordnik"
 export WORDNIK_API_KEY="1a2345678bc987654321ab1234"
 ~~~
 
-When needed, just edit the ``.hubotrc`` file again, and replace the values with your correct ones.
+When needed, just edit the ``.hubotrc`` file again, and replace the values with your correct ones. Read the docs for the plugins you want to use, since they may describe the variable the plugin requires.
 
 Now you can "source" (load) the variables like this:
 
@@ -241,7 +241,7 @@ May have to remove as follows:
 
 
 
-
+DONE
 Login to my.webfaction.com
 Add app hubot_01, with nodejs 4, no open port
 Note the assigned port
@@ -250,6 +250,7 @@ Note the assigned port
 npm install -g node-gyp
 npm install -g pm2
 [rcogley@web307 hubot_01]$ npm config set python /usr/local/bin/python2.7
+DONE
 
 [rcogley@web307 hubot_01]$ mkdir hubot
 [rcogley@web307 hubot_01]$ cd hubot
@@ -257,6 +258,7 @@ npm install -g pm2
 answer questions
 add hubot and adapter
 edit externalscript to remove heroku  
+DONE
 
 PORT=80 bin/hubot --adapter slack > hubot.log 2>&1 &
 16501
@@ -270,18 +272,27 @@ lrwxrwxrwx 1 rcogley rcogley    38 Dec 14  2013 npm -> ../lib/node_modules/npm/b
 
 
 
-Install Redis
+## Install Redis
 
-Login to your Webfaction shell
+Now install Redis to act as Hubot's "brain". Login to your Webfaction shell.
 
-ssh foouser@foouser.webfactional.com
-Download latest Redis from Redis download site.
+{{< prism bash command-line >}}ssh myuser@myuser.webfactional.com
+{{< /prism >}}
 
-> mkdir -p ~/src/
-> cd ~/src/
-> wget http://download.redis.io/releases/redis-2.6.16.tar.gz
-> tar -xzf redis-2.6.16.tar.gz
-> cd redis-2.6.16/
+Then download latest Redis their download site. Here's what it looks like for Redis version ``2.6.16``.
+
+{{< prism bash command-line >}}cd ~
+mkdir -p ~/src/
+cd ~/src/
+wget http://download.redis.io/releases/redis-2.6.16.tar.gz
+tar -xzf redis-2.6.16.tar.gz
+cd redis-2.6.16/
+{{< /prism >}}
+
+Assuming your Webfaction server is a 64-bit server (the command ``uname -m`` should return ``x86_64``), you then just run ``make`` from within the ``redis-2.6.16`` folder.
+
+
+
 Before the make, see is your server Linux 32 or 64 bit. The installation script does not handle 32 bit environments well, at least on Webfaction's CentOS 5 machines. The command for bits is uname -m. If Linux is 32 bit the result will be i686, if 64 bit then x86_64. See this answer for details.
 
 > uname -m
@@ -335,4 +346,6 @@ Hubot>
 
 {{% ack1 %}}
 The banner photo is a monochrome of 'Greeley Panorama' from Mars Rover Opportunity's Fifth Martian Winter. I thought a real robot would be appropriate for this post. Original can be found [here](https://commons.wikimedia.org/wiki/File:%27Greeley_Panorama%27_from_Opportunity%27s_Fifth_Martian_Winter.jpeg) on Wikimedia Commons.
+
+Thanks to Stack Overflow user "Akseli" for [this](http://stackoverflow.com/questions/18622630/setting-up-redis-on-webfaction) post on installing Redis on Webfaction.
 {{% /ack1 %}}
