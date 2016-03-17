@@ -35,7 +35,7 @@ There are several areas in OS X where you might need to display them, so I'll sh
 
 {{< figure1 link="/img/Cogley-Post-Finder-Showing-Invisible-Files.png" src="/img/Cogley-Post-Finder-Showing-Invisible-Files.thumb.png" type="Screenshot" title="Finder set to show invisible files" class="" >}}
 
-The standard way to show hidden files in the Finder, is to issue the command ``defaults write`` in Terminal. (_Scroll the code window to its right to see the rest of the command._)
+The standard way to show hidden files in the Finder, is to issue the command ``defaults write`` in Terminal. (_Scroll the code window to its right to see the rest of the command, if it's cut off._)
 
 {{< prism bash command-line >}}defaults write com.apple.finder AppleShowAllFiles TRUE
 killall -KILL Finder
@@ -127,7 +127,7 @@ If you want to toggle invisibility in a File, Open dialog, you can press:
 
 ``shift-cmd-.``
 
-... while the dialog is open. Just be sure you've switch the view into "list" mode. You can press ``cmd-2`` to do that from within the File, Open dialog, or, from Finder itself. Try ``cmd-1``, ``cmd-2`` and ``cmd-3``.
+... while the dialog is open. Just be sure you've switched the view into "list" mode. You can press ``cmd-2`` to do that from within the File, Open dialog, or, from Finder itself. Try ``cmd-1``, ``cmd-2`` and ``cmd-3``.
 
 ### Hidden files at the Terminal
 
@@ -161,6 +161,10 @@ So now you have a couple of techniques for showing invisible files in OS X:
 * List hidden files at the Terminal with ``ls -a`` or ``ls -la``.
 
 These are verified to work in OS X 10.11.3 "El Capitan" and probably work fine for earlier versions too. Thanks for dropping by, and please share with others if you found this useful.
+
+## Updates
+
+* **18 Mar 2016** - fix typos.
 
 {{% ack1 %}}
 The banner photo is a cropped version of "_Ballpit in Joboland_" by Karl E. Jorgensen. Original is [here](https://commons.wikimedia.org/wiki/File:Ballpit.jpg) on the Wikimedia commons. Thanks!
