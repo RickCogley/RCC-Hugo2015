@@ -16,9 +16,9 @@ japan-rail-sensational-signage: 38b8250 Use vimeo shortcode
 so-you-want-to-learn-to-code: 333d18b Remove slug example from middle
 mac-app-sparkle-framework-vulnerability: d27cffa Add another new path to search
 resetting-os-x-menubar-finder-notifications-or-dock: bebf301 Add Mac or Apple to OS X
-hidden-files-in-osx-finder-open-dialogs-and-terminal: b5b2d69 Update acknowledgement
+hidden-files-in-osx-finder-open-dialogs-and-terminal: eeb5558 Fix typos and edit for clarity in hidden files post
 establishing-a-personal-password-policy: c6d8f39 Add MFA, aside about what you know, have and are.
-install-hubot-and-redis-on-node-on-webfaction: e1ec332 Rename and small updates
+install-hubot-and-redis-on-node-on-webfaction: 2b0a4c7 update hubot and redis post
 run-a-tftp-server-on-mac-osx: cbc329b New post for tftp server on mac
 blinkenlights: 1622259 Banner filename updates after tweaking
 flickring-out: 142d41e Fix broken image in flickr post

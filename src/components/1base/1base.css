@@ -591,6 +591,20 @@ div.bg-darkgrey a:active  {
   color: var(--orange);
 }
 
+div.bg-navy a:link {
+  color: var(--aqua);
+}
+div.bg-navy a:visited {
+  color: var(--aqua);
+}
+div.bg-navy a:hover {
+  color: var(--lime);
+}
+div.bg-navy a:active  {
+  transition: color .3s;
+  color: var(--orange);
+}
+
 .link { text-decoration: none; }
 
 /* Default Tables (make default like table-light) */
