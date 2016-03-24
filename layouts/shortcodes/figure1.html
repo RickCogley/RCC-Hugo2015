@@ -1,5 +1,5 @@
 <!-- figure1 curlycurlyless figure1 link="/img/aaa.jpg" src="/img/aaa.jpg" type="photo" title="blah blah"  greatercurlycurly -->
-<figure class="xs-hide col-4 mxn12 left fit">
+<figure class="xs-hide col-3 mxn12 left fit">
   <a href="{{ .Get "link" }}" title="{{ .Get "title" }}" data-lightbox="set1" data-title="{{ .Get "title" }}"><img class="rounded center border border-darken-1 {{ with .Get "class" }}{{ . }}{{ end }}" src="{{ .Get "src" }}" alt="{{ .Get "type"  }} - {{ .Get "title" }}" ></a>
   <figcaption class="sans"><em>{{ .Get "type" }}</em>: {{ .Get "title" }}</figcaption>
 </figure>
