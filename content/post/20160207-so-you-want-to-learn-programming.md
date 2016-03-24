@@ -410,6 +410,7 @@ Well, if you made it this far, congrats! That was pretty long, but I think it co
 
 ## Updates
 
+* **24 Mar 2016** - added link to post on editor basics. 
 * **20 Feb 2016** - added acknowledgement for banner, hint about css debug with Pesticide.io.
 
 {{% ack1 %}}
