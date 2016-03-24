@@ -3,8 +3,8 @@ title: So, What's a Text Editor?
 subtitle: ...an introduction for newbies
 slug: text-editor-introduction
 banner: /img/Cogley-Banner-19th_century_work_bench-by-Jorge_Royan-1400x450-mono.jpg
-date: 2016-03-24T15:45:00+09:00
-publishdate: 2016-03-24T15:45:00+09:00
+date: 2016-03-24T15:54:00+09:00
+publishdate: 2016-03-24T15:54:00+09:00
 description: 'Learn about text editors and get some ideas for further research and learning, a post by Rick Cogley.'
 draft: 'false'
 images:
@@ -57,7 +57,7 @@ You might be looking for a text editor if you're in the following categories:
 You'll probably find this out anyway, but Mac, Windows and *{{<abbr nix>}} have text editors built in. In the case of Mac, it's "Text Edit" in the GUI (which ironically defaults to saving _rich_ text) and ``ed`` or ``vi`` in the Terminal.
 
 {{% aside1 %}}
-The ``ed`` editor is probably the prototypical editor, since it was used to build much of the software unix is based on to begin with. Try it out if you have a chance, and muse upon how hard core it was to build so much software using just this tool. 
+The ``ed`` editor is probably the prototypical editor, since it was used to build much of the software unix is based on to begin with. Try it out if you have a chance, and muse upon how hard core it was to build so much software using just this tool.
 {{% /aside1 %}}
 
 On Windows, you have "Notepad" and on *{{<abbr nix>}}, you usually have a default in the GUI, and various ones in the Terminal such as ``ed``, ``vi``, ``vim``, ``emacs`` or ``nano``. Since Macs are based on *{{<abbr nix>}}, there's a wide range of stuff available in the Terminal, which you can install via ``homebrew``.
