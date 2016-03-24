@@ -13,13 +13,14 @@ first-race-ever-was-a-5k-over-sand: 8175af6 Frontmatter cleanup
 ucan-new-words-and-buzzwords-japan-2015: 8175af6 Frontmatter cleanup
 mediawiki-tips: d0d81a2 update prism shortcode languages
 japan-rail-sensational-signage: 38b8250 Use vimeo shortcode
-so-you-want-to-learn-to-code: 333d18b Remove slug example from middle
+so-you-want-to-learn-to-code: e6b4c38 Added update
 mac-app-sparkle-framework-vulnerability: d27cffa Add another new path to search
 resetting-os-x-menubar-finder-notifications-or-dock: bebf301 Add Mac or Apple to OS X
 hidden-files-in-osx-finder-open-dialogs-and-terminal: eeb5558 Fix typos and edit for clarity in hidden files post
 establishing-a-personal-password-policy: c6d8f39 Add MFA, aside about what you know, have and are.
 install-hubot-and-redis-on-node-on-webfaction: 2b0a4c7 update hubot and redis post
 run-a-tftp-server-on-mac-osx: cbc329b New post for tftp server on mac
+text-editor-introduction: c8506a6 Update time
 blinkenlights: 1622259 Banner filename updates after tweaking
 flickring-out: 142d41e Fix broken image in flickr post
 golden-rule-for-open-source-projects: 5742a4e Add default description and keywords to RCC site
