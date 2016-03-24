@@ -3,7 +3,7 @@ title: On Learning to Code
 subtitle: ... a beautiful endeavor
 slug: so-you-want-to-learn-to-code
 banner: /img/Cogley-Banner-Punch-Card-Operator-1400x450-mono.jpg
-date: 2016-02-22T21:36:00+09:00
+date: 2016-03-24T15:00:00+09:00
 publishdate: 2016-02-15T16:12:00+09:00
 description: 'An article about learning to code for beginner programmers, by Rick Cogley'
 draft: 'false'
@@ -71,7 +71,7 @@ You might also look into "cloud {{<abbr IDE>}}" services, like [Codio](https://c
 You'll observe that editor comparisons are like religious wars!
 {{% /aside1 %}}
 
-If you don't want to use a Cloud {{<abbr IDE>}}, then at least get yourself a decent programmer's editor to use on your system, like Github's [Atom](https://atom.io/) or [Sublime Text](http://www.sublimetext.com/), or, for the hardcore, ``vi``, ``vim``, or ``emacs``. Don't just use TextEdit on Mac or _—gasp—_ Notepad on Windows.
+If you don't want to use a Cloud {{<abbr IDE>}}, then at least get yourself a decent [programmer's editor](/post/text-editor-introduction) to use on your system, like Github's [Atom](https://atom.io/) or [Sublime Text](http://www.sublimetext.com/), or, for the hardcore, ``vi``, ``vim``, or ``emacs``. Don't just use TextEdit on Mac or _—gasp—_ Notepad on Windows.
 
 Besides the basics of how to use whatever text editor you choose, there are a few common things to start learning about:
 
@@ -410,6 +410,7 @@ Well, if you made it this far, congrats! That was pretty long, but I think it co
 
 ## Updates
 
+* **24 Mar 2016** - added link to post on editor basics. 
 * **20 Feb 2016** - added acknowledgement for banner, hint about css debug with Pesticide.io.
 
 {{% ack1 %}}
