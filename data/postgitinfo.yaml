@@ -28,6 +28,6 @@ linkedin-finally-fixes-the-tokyo-location-bug: 1c9ebbc Linkedin posts, perms cha
 linkedin-listing-esolia-and-other-tokyo-companies-incorrectly: 1c9ebbc Linkedin posts, perms changes
 paper-life-from-shitamachi-tokyo: e36794b Migrate LIFE post, upgrade and date now
 salaryman-senryu-sarasen-2015: 5315a01 Post on sarasen 2015
-system-uptime-and-downtime-calculations-for-slas: 1622259 Banner filename updates after tweaking
+system-uptime-and-downtime-calculations-for-slas: d2f24f2 Cleanup uptime/downtime post
 trip-to-korea-in-feb-2015: db6ccb0 Launch prep and 3, 2, 1 GO!
 update-your-forked-repository-directly-on-github: 93449e2 Add diagram to image list
