@@ -3,7 +3,7 @@ mac-osx-terminal-ssh-connection-keepalive: df563a8 Rename, cleanup frontmatter
 display-markdown-from-dropbox-with-mdwiki: e496914 Add info about blot.im a commercial alternative
 suppress-the-softbank-you-got-a-mail-notification: cafd516 Rename, cleanup frontmatter
 upgrade-outdated-rsync-on-osx: 853e699 Rename, cleanup frontmatter
-use-homebrew-zsh-instead-of-the-osx-default: 126e27a Updates to using homebrew to install zsh post
+use-homebrew-zsh-instead-of-the-osx-default: 99e67cf Check on El Capitan, add considerations re upgrades
 resolve-osx-appstore-hang-and-crash-problem: 39c35d1 Rename, cleanup frontmatter
 generate-passwords-from-japanese-romaji-words-on-mac: d91083c Use prism shortcode
 fix-apple-osx-mail-crash-and-hang: afabf1e Add Mac or Apple to OS X string
