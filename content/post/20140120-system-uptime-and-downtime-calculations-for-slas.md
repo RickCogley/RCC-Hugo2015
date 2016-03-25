@@ -3,7 +3,7 @@ title: "System Up- & Downtime Calculations for SLAs"
 subtitle: Talk is cheap, when it comes to uptime guarantees
 slug: system-uptime-and-downtime-calculations-for-slas
 publishdate: 2014-01-20T12:33:19+09:00
-date: 2015-05-07T21:33:19+09:00
+date: 2015-06-07T21:33:19+09:00
 banner: /img/Cogley-Banner-Hashioki-1170x350-001-mono.JPG
 images:
   - /img/Cogley-Post-Do-Not-Unplug-Sign-2.jpg
