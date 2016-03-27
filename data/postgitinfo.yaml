@@ -1,6 +1,7 @@
 how-to-spot-a-phisher: 9fbe97e Typo
 mac-osx-terminal-ssh-connection-keepalive: df563a8 Rename, cleanup frontmatter
 display-markdown-from-dropbox-with-mdwiki: e496914 Add info about blot.im a commercial alternative
+system-uptime-and-downtime-calculations-for-slas: a720cf1 Update date, change filename for sorting
 suppress-the-softbank-you-got-a-mail-notification: cafd516 Rename, cleanup frontmatter
 upgrade-outdated-rsync-on-osx: 853e699 Rename, cleanup frontmatter
 use-homebrew-zsh-instead-of-the-osx-default: 99e67cf Check on El Capitan, add considerations re upgrades
@@ -28,6 +29,5 @@ linkedin-finally-fixes-the-tokyo-location-bug: 1c9ebbc Linkedin posts, perms cha
 linkedin-listing-esolia-and-other-tokyo-companies-incorrectly: 1c9ebbc Linkedin posts, perms changes
 paper-life-from-shitamachi-tokyo: e36794b Migrate LIFE post, upgrade and date now
 salaryman-senryu-sarasen-2015: 5315a01 Post on sarasen 2015
-system-uptime-and-downtime-calculations-for-slas: d2f24f2 Cleanup uptime/downtime post
 trip-to-korea-in-feb-2015: db6ccb0 Launch prep and 3, 2, 1 GO!
 update-your-forked-repository-directly-on-github: 93449e2 Add diagram to image list
