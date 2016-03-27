@@ -13,13 +13,13 @@ description: Post about the keyboard shortcut you can use to view headers of ema
 topics: [Tips,Software]
 tags: [Mail.app, keyboard shortcut, view source, email, headers, scam, phishing, trace, osx]
 draft: "true"
-postsummary: Want an easy way to see mail headers in Mail.app? They'll pop right up, and I promise you'll like it.
+postsummary: Want an easy way to see mail headers in Mail.app? Try this trick and they'll pop right up. I promise you'll like it.
 postsvg: icon-origami-butterfly
 aliases:
   - /articles/2013/01/30/view-source-in-mail-dot-app/
 ---
 
-Want an easy way to see mail headers in Mail.app? They'll pop right up, and I promise you'll like it.
+Want an easy way to see mail headers in Mail.app? Try this. They'll pop right up, and I promise you'll like it.
 
 <!--more-->
 
