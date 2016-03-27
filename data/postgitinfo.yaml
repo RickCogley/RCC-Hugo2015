@@ -22,6 +22,7 @@ establishing-a-personal-password-policy: c6d8f39 Add MFA, aside about what you k
 install-hubot-and-redis-on-node-on-webfaction: 2b0a4c7 update hubot and redis post
 run-a-tftp-server-on-mac-osx: cbc329b New post for tftp server on mac
 text-editor-introduction: c8506a6 Update time
+view-source-in-mail-dot-app: 639b39c Refresh post: mail message headers in mail.app
 blinkenlights: 1622259 Banner filename updates after tweaking
 flickring-out: 142d41e Fix broken image in flickr post
 golden-rule-for-open-source-projects: 5742a4e Add default description and keywords to RCC site
