@@ -2,8 +2,8 @@
 title: "View Source in Mail.app"
 subtitle: Get technical information about emails quickly.
 slug: view-source-in-mail-dot-app
-publishdate: 2016-03-27T09:11:00+09:00
-date: 2016-03-27T09:11:00+09:00
+publishdate: 2016-03-27T09:30:00+09:00
+date: 2016-03-27T09:30:00+09:00
 banner: /img/Cogley-Banner-JR_Totsuka_Near_Totsukana-Mono2.jpg
 images:
   - /img/Cogley-Post-Show-Mail-app-Headers.jpg
@@ -12,7 +12,7 @@ images:
 description: Post about the keyboard shortcut you can use to view headers of emails in OS X Mail.app, and how this is the same as view-source in Safari, by Rick Cogley.
 topics: [Tips,Software]
 tags: [Mail.app, keyboard shortcut, view source, email, headers, scam, phishing, trace, osx]
-draft: "true"
+draft: "false"
 postsummary: Want an easy way to see mail headers in Mail.app? Try this trick and they'll pop right up. I promise you'll like it.
 postsvg: icon-origami-butterfly
 aliases:
