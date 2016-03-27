@@ -3,7 +3,7 @@ title: So, What's a Text Editor?
 subtitle: ...an introduction for newbies
 slug: text-editor-introduction
 banner: /img/Cogley-Banner-19th_century_work_bench-by-Jorge_Royan-1400x450-mono.jpg
-date: 2016-03-24T15:54:00+09:00
+date: 2016-03-27T12:32:00+09:00
 publishdate: 2016-03-24T15:54:00+09:00
 description: 'Learn about text editors and get some ideas for further research and learning, a post by Rick Cogley.'
 draft: 'false'
@@ -31,6 +31,7 @@ tags:
   - notepad
   - eclipse
   - dash
+  - utf-8
 topics:
   - Software
   - Tips
@@ -66,7 +67,7 @@ On Windows, you have "Notepad" and on *{{<abbr nix>}}, you usually have a defaul
 
 Text editors almost always feature certain common aspects that you'll observe in one form or another, such as these:
 
-* Save text files in a specific format, such as {{<abbr UTF-8>}} or {{<abbr ASCII>}}.
+* Save text files in a specific encoding, such as {{<abbr UTF-8>}} (preferred) or Japanese "Shift JIS".
 * Control which line endings are used in a file, such as {{<abbr LF>}} which works for *{{<abbr nix>}}, or, {{<abbr CRLF>}} for Windows.
 * Display line numbers, and wrap each line at a certain number of spaces, in addition to giving feedback about file stats like number of words, line, characters and so on.
 * Replace tab characters with spaces, which is useful when the project you're working on requires that.
@@ -207,7 +208,7 @@ Besides the basics of how to use whatever text editor you choose, there are a fe
 
 * Use [Editor Config](http://editorconfig.org/) for editor setting consistency. Not all editors support it, but it's really useful, so you should use one that does.
 * Use [Linters](http://stackoverflow.com/questions/8503559/what-is-linting) to check your code for errors.
-* Save files in plain text, utf-8 format only.
+* Save files in plain text, utf-8 encoding only.
 * Set your editor to use only unix-style LF (``\n``) line endings.
 * Use 2 spaces per indent, to show structure. Don't use tabs.
 * Use line length of 80 or less.
@@ -219,6 +220,10 @@ I hope this information helps someone.
 ## Reference
 
 * See a massive [editor comparison](http://en.wikipedia.org/wiki/Comparison_of_text_editors) list on Wikipedia.
+
+## Updates
+
+* **27 Mar 2016** - _Vihan Bhargava_ on Google+ pointed out that {{<abbr ASCII>}} is not an encoding. Thank you Vihan for pointing this out. I was thinking {{<abbr ANSI>}} while typing {{<abbr ASCII>}}. But it is more proper to mention an encoding like ISO 8859-1 or Shift JIS, I think. Duly edited.
 
 {{% ack1 %}}
 The banner photo is a cropped, monochrome version of [19th century work bench with many tools, Auckland](https://commons.wikimedia.org/wiki/File:19th_century_work_bench_with_many_tools,_Auckland_-_0866.jpg) on Wikimedia Commons, by Jorge Royan.
