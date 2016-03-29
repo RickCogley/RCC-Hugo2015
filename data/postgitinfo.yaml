@@ -5,24 +5,24 @@ system-uptime-and-downtime-calculations-for-slas: a720cf1 Update date, change fi
 suppress-the-softbank-you-got-a-mail-notification: cafd516 Rename, cleanup frontmatter
 upgrade-outdated-rsync-on-osx: 853e699 Rename, cleanup frontmatter
 use-homebrew-zsh-instead-of-the-osx-default: 99e67cf Check on El Capitan, add considerations re upgrades
-resolve-osx-appstore-hang-and-crash-problem: 39c35d1 Rename, cleanup frontmatter
-generate-passwords-from-japanese-romaji-words-on-mac: d91083c Use prism shortcode
-fix-apple-osx-mail-crash-and-hang: afabf1e Add Mac or Apple to OS X string
-pfu-hhkb-keyboard-osx-el-capitan-status: 0360151 Remove author authorlink authortwitter
-osx-sslhandshake-problem-from-an-open-keychain: 51f9af5 Add Mac or Apple to OS X string
-first-race-ever-was-a-5k-over-sand: 8175af6 Frontmatter cleanup
-ucan-new-words-and-buzzwords-japan-2015: 8175af6 Frontmatter cleanup
-mediawiki-tips: d0d81a2 update prism shortcode languages
-japan-rail-sensational-signage: 38b8250 Use vimeo shortcode
-so-you-want-to-learn-to-code: e6b4c38 Added update
-mac-app-sparkle-framework-vulnerability: d27cffa Add another new path to search
+resolve-osx-appstore-hang-and-crash-problem: 5399567 Update avatar to come from local site not remote
+generate-passwords-from-japanese-romaji-words-on-mac: 5399567 Update avatar to come from local site not remote
+fix-apple-osx-mail-crash-and-hang: 5399567 Update avatar to come from local site not remote
+pfu-hhkb-keyboard-osx-el-capitan-status: 5399567 Update avatar to come from local site not remote
+osx-sslhandshake-problem-from-an-open-keychain: 5399567 Update avatar to come from local site not remote
+first-race-ever-was-a-5k-over-sand: 5399567 Update avatar to come from local site not remote
+ucan-new-words-and-buzzwords-japan-2015: 5399567 Update avatar to come from local site not remote
+mediawiki-tips: 5399567 Update avatar to come from local site not remote
+japan-rail-sensational-signage: 5399567 Update avatar to come from local site not remote
+so-you-want-to-learn-to-code: 5399567 Update avatar to come from local site not remote
+mac-app-sparkle-framework-vulnerability: 5399567 Update avatar to come from local site not remote
 resetting-os-x-menubar-finder-notifications-or-dock: bebf301 Add Mac or Apple to OS X
 hidden-files-in-osx-finder-open-dialogs-and-terminal: eeb5558 Fix typos and edit for clarity in hidden files post
 establishing-a-personal-password-policy: c6d8f39 Add MFA, aside about what you know, have and are.
-install-hubot-and-redis-on-node-on-webfaction: 2b0a4c7 update hubot and redis post
-run-a-tftp-server-on-mac-osx: cbc329b New post for tftp server on mac
-text-editor-introduction: 00fba98 Added correction regarding listing ASCII as encoding
+run-a-tftp-server-on-mac-osx: 5399567 Update avatar to come from local site not remote
+text-editor-introduction: 5399567 Update avatar to come from local site not remote
 view-source-in-mail-dot-app: 8b06184 Publish refreshed post view source in mail app
+install-node-and-hubot-on-webfaction: c2cbb59 Publish hubot post
 blinkenlights: 1622259 Banner filename updates after tweaking
 flickring-out: 142d41e Fix broken image in flickr post
 golden-rule-for-open-source-projects: 5742a4e Add default description and keywords to RCC site
@@ -31,4 +31,4 @@ linkedin-listing-esolia-and-other-tokyo-companies-incorrectly: 1c9ebbc Linkedin 
 paper-life-from-shitamachi-tokyo: e36794b Migrate LIFE post, upgrade and date now
 salaryman-senryu-sarasen-2015: 5315a01 Post on sarasen 2015
 trip-to-korea-in-feb-2015: db6ccb0 Launch prep and 3, 2, 1 GO!
-update-your-forked-repository-directly-on-github: 93449e2 Add diagram to image list
+update-your-forked-repository-directly-on-github: 5399567 Update avatar to come from local site not remote
