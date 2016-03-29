@@ -10,7 +10,7 @@ draft: 'false'
 images:
   - /img/Cogley-Post-hp-switch-tftp-ui.jpg
   - /img/Cogley-Banner-Switch-2-mono.jpg
-  - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
+  - /img/rick-cogley-avatar-240x240.png
 tags:
   - tftp
   - tftpd

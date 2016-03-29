@@ -10,7 +10,7 @@ draft: 'false'
 images:
   - /img/Cogley-Post-PFU-HHKB-Pro-JP.jpg
   - /img/Cogley-Banner-Train-Romance-Car-1170x350-003-mono.jpg
-  - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
+  - /img/rick-cogley-avatar-240x240.png
 tags:
   - osx
   - bug

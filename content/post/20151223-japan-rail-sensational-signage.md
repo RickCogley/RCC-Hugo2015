@@ -10,7 +10,7 @@ draft: 'false'
 images:
   - /img/Cogley-Post-JR-Signage-2015.jpg
   - /img/Cogley-Banner-Speeding-Train-mono.jpg
-  - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
+  - /img/rick-cogley-avatar-240x240.png
 tags:
   - JR
   - Signage

@@ -10,7 +10,7 @@ draft: 'false'
 images:
   - /img/Cogley-Post-Apple-Mail-Message-Import.png
   - /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
-  - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
+  - /img/rick-cogley-avatar-240x240.png
 tags:
   - osx
   - mac

@@ -10,7 +10,7 @@ draft: 'false'
 images:
   - /img/Cogley-Post-OSX-Keychain-Add.png
   - /img/Cogley-Banner-JR-Totsuka-Bridge-2-mono.jpg
-  - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
+  - /img/rick-cogley-avatar-240x240.png
 tags:
   - osx
   - mac

@@ -13,7 +13,7 @@ images:
   - /img/Cogley-Post-Github-Markdown-Editing.jpg
   - /img/editor-config-logo.png
   - /img/Cogley-Banner-19th_century_work_bench-by-Jorge_Royan-1400x450-mono.jpg
-  - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
+  - /img/rick-cogley-avatar-240x240.png
 tags:
   - text
   - editor

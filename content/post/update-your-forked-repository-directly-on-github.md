@@ -14,7 +14,7 @@ draft: 'false'
 images:
   - /img/Cogley-Post-git-fork-merge.svg
   - /img/Cogley-Banner-Enoshima-Fuji-mono.jpg
-  - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
+  - /img/rick-cogley-avatar-240x240.png
 showauthor: 'true'
 showcomment: 'true'
 showdate: 'true'
