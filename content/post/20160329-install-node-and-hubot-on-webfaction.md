@@ -1,17 +1,17 @@
 ---
-title: Install Node, Hubot and Redis
-subtitle: ...on Webfaction Hosting
-slug: install-hubot-and-redis-on-node-on-webfaction
+title: Install Hubot Chatbot on Webfaction
+subtitle: Get your chatops up and running inexpensively
+slug: install-node-and-hubot-on-webfaction
 banner: /img/Cogley-Banner-Greeley_Panorama_from_Opportunity_Rover_5th_Martian_Winter.mono.jpg
-date: 2016-02-29T13:00:00+09:00
-publishdate: 2016-02-29T13:00:00+09:00
-description: 'Installing Node.js, Hubot, and Redis for its brain, on Webfaction, a post by Rick Cogley.'
+date: 2016-03-29T12:00:00+09:00
+publishdate: 2016-03-29T12:00:00+09:00
+description: 'Installing Node.js and Hubot on Webfaction, a post by Rick Cogley.'
 draft: 'true'
 images:
   - /img/hubot.png
   - /img/Node.js_logo.svg.png
   - /img/Cogley-Banner-Greeley_Panorama_from_Opportunity_Rover_5th_Martian_Winter.mono.jpg
-  - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
+  - /img/rick-cogley-avatar-240x240.png
 tags:
   - Webfaction
   - Node
@@ -29,6 +29,19 @@ postsvg: icon-origami-butterfly
 If you're looking for a good way to run your Node.js-based Hubot chatbot, you can host it on Webfaction, a rock-solid hosting service, complete with Redis to act as its "brain". Read this post to find out how to do it.
 
 <!--more-->
+
+## Introduction
+
+[Hubot](https://hubot.github.com/) is a "chatbot" that was written by Github, originally for their internal use and later open sourced so others can use it. Chatbots are programs that you run as a separate server service, to interact with your chat rooms on services like Slack, Flowdock or Hipchat. They often serve as a kind of digital butler, to respond to searches within chat for images or information, to post about inbound trouble tickets, or to alert staff to server outages.
+
+Besides Hubot, there are many chatbots in various programming languages or for different purposes:
+
+* [Lita](https://www.lita.io/) and [Errbot](http://errbot.io/) are chatbots written in Ruby and Python respectively, similar in function to Hubot.
+* [Mitsuku](http://mitsuku.com/), is designed to act like a teenager from Leeds and famous on Kik.
+* Apple's [Siri](https://en.wikipedia.org/wiki/Siri) is a form of voice-activated chatbot for iPhone.
+* Tay was a short-lived chatbot by Microsoft, which people manipulated to make it respond in racist and other inappropriate ways. MS soon disabled it, but should have known better than to release Tay without safeguards.
+
+This post is about getting Hubot running on Webfaction, and having it interact with your HipChat rooms. It assumes some competence at the Terminal.
 
 ## Preparation
 
@@ -127,7 +140,7 @@ You can add the ``hubot-hipchat`` line anywhere, but, mind the commas when you e
 
 ### Edit Procfile
 
-The ``Procfile`` is for when you're running Hubot on Heroku, but change the adapter now to ``hipchat``, just in case of a future migration. For Hipchat, you would edit to look like:
+The ``Procfile`` is used when you're running Hubot on Heroku and is not needed for Webfaction. However, change the adapter now to ``hipchat``, just in case of a future migration. For Hipchat, you would edit to look like:
 
 {{< prism yaml >}}web: bin/hubot -a hipchat
 {{< /prism >}}
@@ -185,10 +198,13 @@ Just run:
 {{< prism bash command-line >}}npm install
 {{< /prism >}}
 
-# START and stop
+The ``npm`` will install everything according to your ``package.json``.
 
-~~~bash
-#!/bin/sh
+### Install Start and Stop Scripts for Hubot
+
+Create ``start`` and ``stop`` scripts in ``hubot_01/bin`` like these, and edit the ``mywebfactionuser`` to be your own user. Edit ``start`` to contain:
+
+{{< prism bash >}}#!/bin/sh
 mkdir -p /home/mywebfactionuser/webapps/hubot_01/run
 pid=$(/sbin/pidof /home/mywebfactionuser/webapps/hubot_01/bin/node)
 if echo "$pid" | grep -q " "; then
@@ -196,7 +212,7 @@ if echo "$pid" | grep -q " "; then
 fi
 if [ -n "$pid" ]; then
   user=$(ps -p $pid -o user | tail -n 1)
-  if [ $user = "sai" ]; then
+  if [ $user = "mywebfactionuser" ]; then
     exit 0
   fi
 fi
@@ -206,12 +222,11 @@ cd /home/mywebfactionuser/webapps/hubot_01/myhubot/
 nohup /home/mywebfactionuser/webapps/hubot_01/myhubot/bin/hubot > /dev/null 2>&1 &
 sleep 15
 /sbin/pidof /home/mywebfactionuser/webapps/hubot_01/bin/node > /home/mywebfactionuser/webapps/hubot_01/run/node.pid
-~~~
+{{< /prism >}}
 
-stop
+Then edit ``stop`` to contain:
 
-~~~bash
-#!/bin/sh
+{{< prism bash >}}#!/bin/sh
 mkdir -p /home/mywebfactionuser/webapps/hubot_01/run
 pid=$(/sbin/pidof /home/mywebfactionuser/webapps/hubot_01/bin/node)
 if echo "$pid" | grep -q " "; then
@@ -219,67 +234,18 @@ if echo "$pid" | grep -q " "; then
 fi
 if [ -n "$pid" ]; then
   user=$(ps -p $pid -o user | tail -n 1)
-  if [ $user = "sai" ]; then
+  if [ $user = "mywebfactionuser" ]; then
     kill "$pid"
     rm -f /home/mywebfactionuser/webapps/hubot_01/run/node.pid
   fi
 fi
-~~~
+{{< /prism >}}
 
-
-
-You can install easily on mac with yo. There aren't really any permission issues to worry about like on linux. The only Heroku specific item I have seen is a keepalive script that you can easily uninstall with npm npm uninstall hubot-heroku-keepalive --save I use the local hubot CLI to test my work first then I start it up with my slack adapter to test there.
-
-May have to remove as follows:
-[sai@web322 saiborg]$ rm -rf /home/sai/.npm/hubot-hipchat
-
-
-
-===================== THE ACTUAL END ==================
-
-
-
-
-
-DONE
-Login to my.webfaction.com
-Add app hubot_01, with nodejs 4, no open port
-Note the assigned port
-[rcogley@web307 hubot_01]$ export PATH=$PWD/bin/:$PATH
-[rcogley@web307 hubot_01]$ npm install -g yo generator-hubot
-npm install -g node-gyp
-npm install -g pm2
-[rcogley@web307 hubot_01]$ npm config set python /usr/local/bin/python2.7
-DONE
-
-[rcogley@web307 hubot_01]$ mkdir hubot
-[rcogley@web307 hubot_01]$ cd hubot
-[rcogley@web307 hubot]$ yo hubot
-answer questions
-add hubot and adapter
-edit externalscript to remove heroku  
-DONE
-
-PORT=80 bin/hubot --adapter slack > hubot.log 2>&1 &
-16501
-
-
-Problem? symlink to webapp node
-in ~/bin
-lrwxrwxrwx 1 rcogley rcogley    40 Dec 14  2013 node -> /home/rcogley/webapps/es_node01/bin/node
-lrwxrwxrwx 1 rcogley rcogley    38 Dec 14  2013 npm -> ../lib/node_modules/npm/bin/npm-cli.js
-
-
-
+Make them executable by doing ``chmod +x start`` and ``chmod +x stop``. Confirm that they work.
 
 ## Install Redis
 
-Now install Redis to act as Hubot's "brain". Login to your Webfaction shell.
-
-{{< prism bash command-line >}}ssh myuser@myuser.webfactional.com
-{{< /prism >}}
-
-Then download latest Redis their download site. Here's what it looks like for Redis version ``2.6.16``.
+Now install Redis to act as Hubot's "brain". Login to your Webfaction shell, then download the latest Redis from the official download site. Here's what it looks like for Redis version ``2.6.16``.
 
 {{< prism bash command-line >}}cd ~
 mkdir -p ~/src/
@@ -292,28 +258,12 @@ cd redis-2.6.16/
 Assuming your Webfaction server is a 64-bit server (the command ``uname -m`` should return ``x86_64``), you then just run ``make`` from within the ``redis-2.6.16`` folder.
 
 
-
-Before the make, see is your server Linux 32 or 64 bit. The installation script does not handle 32 bit environments well, at least on Webfaction's CentOS 5 machines. The command for bits is uname -m. If Linux is 32 bit the result will be i686, if 64 bit then x86_64. See this answer for details.
-
-> uname -m
-i686
-If your server is 64 bit (x86_64) then just simply make.
-
-> make
-But if your server is 32 bit (i686) then you must do little extra stuff. There is a command make 32bit but it produces an error. Edit a line in the installation script to make make 32bit to work.
-
-> nano ~/src/redis-2.6.16/src/Makefile
-Change the line 214 from this
-
-$(MAKE) CFLAGS="-m32" LDFLAGS="-m32"
-to this
-
-$(MAKE) CFLAGS="-m32 -march=i686" LDFLAGS="-m32 -march=i686"
-and save. Then run the make with 32bit flag.
-
-> cd ~/src/redis-2.6.16/  ## Note the dir, no trailing src/
-> make 32bit
 The executables were created into directory ~/src/redis-2.6.16/src/. The executables include redis-cli, redis-server, redis-benchmark and redis-sentinel.
+
+
+
+===================== THE ACTUAL END ==================
+
 
 Install Hubot
 Having done all our preparation the final step is relatively easy. First off we're going to install hubot as a global Node.js module
