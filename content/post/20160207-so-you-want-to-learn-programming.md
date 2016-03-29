@@ -18,7 +18,7 @@ images:
   - /img/basscss.png
   - /img/Node.js_logo.svg.png
   - /img/Cogley-Banner-Punch-Card-Operator-1400x450-mono.jpg
-  - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
+  - /img/rick-cogley-avatar-240x240.png
 tags:
   - coding
   - programming

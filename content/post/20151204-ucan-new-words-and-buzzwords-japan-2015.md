@@ -12,7 +12,7 @@ images:
   - /img/Cogley-Post-Goromaru-Pose-Howto-2015.png
   - /img/Cogley-Post-Mainichi-Shuzo-2015.jpg
   - /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
-  - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
+  - /img/rick-cogley-avatar-240x240.png
 tags:
   - U-Can
   - Words

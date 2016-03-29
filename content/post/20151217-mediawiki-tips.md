@@ -11,7 +11,7 @@ draft: 'false'
 images:
   - /img/Cogley-Post-Mediawiki_Logo.png
   - /img/Cogley-Banner-PSU-1170x350-008-mono.jpg
-  - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
+  - /img/rick-cogley-avatar-240x240.png
 tags:
   - MediaWiki
 topics:

@@ -10,7 +10,7 @@ draft: 'false'
 images:
   - /img/Cogley-Post-Genpass.png
   - /img/Cogley-Banner-PapaBubble-Candy-2.jpg
-  - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
+  - /img/rick-cogley-avatar-240x240.png
 tags:
   - password
   - generate

@@ -12,7 +12,7 @@ images:
   - /img/Cogley-Post-First-Race-20151010.jpg
   - /img/Cogley-Post-First-Race-Old-Renault-20151010.jpg
   - /img/Cogley-Banner-Hiratsuka-Beach-Windsurfers.jpg
-  - 'http://static.cogley.info/img/rick-cogley-avatar-240x240.png'
+  - /img/rick-cogley-avatar-240x240.png
 tags:
   - running
   - 5K
