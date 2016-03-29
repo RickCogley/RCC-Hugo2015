@@ -3,10 +3,10 @@ title: Install Hubot Chatbot on Webfaction
 subtitle: Get your chatops up and running inexpensively
 slug: install-node-and-hubot-on-webfaction
 banner: /img/Cogley-Banner-Greeley_Panorama_from_Opportunity_Rover_5th_Martian_Winter.mono.jpg
-date: 2016-03-29T12:00:00+09:00
-publishdate: 2016-03-29T12:00:00+09:00
-description: 'Installing Node.js and Hubot on Webfaction, a post by Rick Cogley.'
-draft: 'true'
+date: 2016-03-29T13:55:00+09:00
+publishdate: 2016-03-29T13:55:00+09:00
+description: 'Installing Node.js and Hubot chatbot on Webfaction hosting, a post by Rick Cogley.'
+draft: 'false'
 images:
   - /img/hubot.png
   - /img/Node.js_logo.svg.png
@@ -15,40 +15,46 @@ images:
 tags:
   - Webfaction
   - Node
-  - Redis
   - Hubot
   - Chatbot
+  - Chatops
+  - Yeoman
+  - Hipchat
+  - package.json
+  - npm
 topics:
   - Software
   - Tips
   - Sysadmin
-postsummary: If you're looking for a good way to run your Node.js-based Hubot chatbot, you can host it on Webfaction, a rock-solid hosting service, complete with Redis to act as its "brain". Read this post to find out how to do it.
+postsummary: If you're looking for a good way to run your Node.js-based Hubot chatbot, you can host it on Webfaction, a rock-solid hosting service. Read this post to find out how to do it.
 postsvg: icon-origami-butterfly
 ---
 
-If you're looking for a good way to run your Node.js-based Hubot chatbot, you can host it on Webfaction, a rock-solid hosting service, complete with Redis to act as its "brain". Read this post to find out how to do it.
+If you're looking for a good way to run your Node.js-based **Hubot** chatbot, you can host it on [Webfaction](http://www.webfaction.com/?affiliate=rcogley), a rock-solid hosting service. Read this post to find out how to do it.
 
 <!--more-->
 
 ## Introduction
 
-[Hubot](https://hubot.github.com/) is a "chatbot" that was written by Github, originally for their internal use and later open sourced so others can use it. Chatbots are programs that you run as a separate server service, to interact with your chat rooms on services like Slack, Flowdock or Hipchat. They often serve as a kind of digital butler, to respond to searches within chat for images or information, to post about inbound trouble tickets, or to alert staff to server outages.
+[Hubot](https://hubot.github.com/) is a "chatbot" that was written by Github, originally for their internal use and later open sourced so others can use it. Chatbots are programs that you run as a separate server service, to interact with your chat rooms on services like Slack, Flowdock or Hipchat.
+
+They often serve as a kind of digital butler, to respond to searches within chat for images or information, to post about inbound trouble tickets, or to alert staff to server outages.
 
 Besides Hubot, there are many chatbots in various programming languages or for different purposes:
 
 * [Lita](https://www.lita.io/) and [Errbot](http://errbot.io/) are chatbots written in Ruby and Python respectively, similar in function to Hubot.
-* [Mitsuku](http://mitsuku.com/), is designed to act like a teenager from Leeds and famous on Kik.
+* [Mitsuku](http://mitsuku.com/), is designed to act like a teenager from Leeds and is famous on Kik.
 * Apple's [Siri](https://en.wikipedia.org/wiki/Siri) is a form of voice-activated chatbot for iPhone.
 * Tay was a short-lived chatbot by Microsoft, which people manipulated to make it respond in racist and other inappropriate ways. MS soon disabled it, but should have known better than to release Tay without safeguards.
 
-This post is about getting Hubot running on Webfaction, and having it interact with your HipChat rooms. It assumes some competence at the Terminal.
+This post is about getting Hubot running on [Webfaction](http://www.webfaction.com/?affiliate=rcogley), and having it interact with your HipChat rooms. It assumes some competence at the Terminal and that you have a Webfaction account. Actually, this should work in a similar environment, in which you can host a Node.js app with its own port.  
 
 ## Preparation
 
-Hubot runs on Node.js, and Webfaction has a convenient one-click installer to help you prepare an "application" container based on Node. Prep it this way:
+Hubot runs on Node.js, and [Webfaction](http://www.webfaction.com/?affiliate=rcogley) has a convenient one-click installer to help you prepare an "application" container based on Node. Prep it this way:
 
 1. Login to your dashboard at [my.webfaction.com](http://my.webfaction.com) as always.
-1. Add a Node app, selecting ``nodejs 4`` and keeping the "open port" checkbox unselected, since it's not needed. I use ``hubot_01`` for the purposes of the app name in this tutorial. The web GUI assigns a port for the app to use, and you can use this later, so write it down.
+1. Add a Node app, selecting ``nodejs 4`` and keeping the "open port" checkbox unselected, since it's not needed. I use ``hubot_01`` for the purposes of the app name in this tutorial. The web GUI assigns a port for the app to use, and write it down for later use.
 1. Open an ``ssh`` connection to your Webfaction server.
 
 Next, cd into your app folder, add ``bin`` to your ``PATH``, verify ``npm`` version, and update ``npm`` itself to get the latest.
@@ -107,14 +113,16 @@ Create a Hipchat user for your Hubot to use for connecting to Hipchat rooms, in 
 
 {{< figure1 link="/img/hubot.png" src="/img/hubot.thumb.png" type="Logo" title="Github Hubot" class="" >}}
 
-Let's install Hubot now, and we'll assume you want to connect it to Hipchat, so we need to install the Hipchat adapter. Other adapters are a similar setup concept, although, your mileage may very. Also, the name you use for the folder, is the name that you'll use to call Hubot inside Hipchat. You installed yeoman above, so we'll use that to install Hubot, again in ``webapps/hubot_01``.
+Let's install Hubot now, and we'll assume you want to connect it to Hipchat, so we need to install the Hipchat adapter. Other adapters are a similar setup concept, although, your mileage may vary (because the adapters themselves are open source).
+
+Also, the name you use for the folder, is the name that you'll use to call Hubot inside Hipchat. You installed yeoman above, so we'll use that to install Hubot, again in ``webapps/hubot_01``.
 
 {{< prism bash command-line >}}mkdir myhubot
 cd myhubot
 yo hubot
 {{< /prism >}}
 
-Just accept the defaults that yeoman presents, answering the questions, because you can always update the settings by editing the files.
+Just accept the defaults that yeoman presents, answering the questions, because you can always update the settings by editing files.
 
 ### Edit package.json
 
@@ -151,7 +159,7 @@ Edit the ``external-scripts.json`` file, to remove the ``hubot-heroku-keepalive`
 
 ### Set up environment variables
 
-Create the file ``webapps/hubot_01/myhubot/bin/.hubotrc``, and put your environment variables in it. You'll load it in the ``start`` script I mention later in the post. Put the port you copied from the web GUI setup, into the ``EXPRESS_PORT`` variable (replace the ``12345`` with your actual port number).
+Create the file ``webapps/hubot_01/myhubot/bin/.hubotrc``, and put your environment variables in it. You'll load it in the ``start`` script I mention later in the post. Insert the port you copied from the web GUI setup, into the ``EXPRESS_PORT`` variable (replace the ``12345`` with your actual port number), and other information for the Hipchat login.
 
 {{< prism bash>}}export PATH="/home/mywebfactionuser/webapps/hubot_01/bin/:$PATH"
 export PYTHON="python2.7"
@@ -180,7 +188,7 @@ export WOTD_PROVIDER="wordnik"
 export WORDNIK_API_KEY="1a2345678bc987654321ab1234"
 ~~~
 
-When needed, just edit the ``.hubotrc`` file again, and replace the values with your correct ones. Read the docs for the plugins you want to use, since they may describe the variable the plugin requires.
+When needed, just edit the ``.hubotrc`` file again, and replace the values with your correct ones. Read the docs for the [plugins](https://github.com/hubot-scripts) you want to use, since they may describe the variable the plugin requires.
 
 Now you can "source" (load) the variables like this:
 
@@ -191,6 +199,10 @@ That's a period, followed by the path to the "rc" file with its ``export`` comma
 
 ### Install dependencies
 
+{{% aside1 %}}
+When you install using npm, I recommend that you always use the _local_ installation mode (without a -g), because you get better isolation between your Node.js apps. The modules get installed in an app-specific ``node_modules`` folder in the root of your Node.js project.
+{{% /aside1 %}}
+
 The Node Package Manager or "npm" has an ``install`` command, that checks your ``package.json``, and installs anything listed which is not already installed in ``node_modules``.
 
 Just run:
@@ -200,7 +212,7 @@ Just run:
 
 The ``npm`` will install everything according to your ``package.json``.
 
-### Install Start and Stop Scripts for Hubot
+### Install Start & Stop Scripts
 
 Create ``start`` and ``stop`` scripts in ``hubot_01/bin`` like these, and edit the ``mywebfactionuser`` to be your own user. Edit ``start`` to contain:
 
@@ -241,61 +253,12 @@ if [ -n "$pid" ]; then
 fi
 {{< /prism >}}
 
-Make them executable by doing ``chmod +x start`` and ``chmod +x stop``. Confirm that they work.
+Make the scripts executable by doing ``chmod +x start`` and ``chmod +x stop``. Confirm that they work. You should see the user appear in the Hipchat rooms. You might need to invite the user via its email address.
 
-## Install Redis
+## Options
 
-Now install Redis to act as Hubot's "brain". Login to your Webfaction shell, then download the latest Redis from the official download site. Here's what it looks like for Redis version ``2.6.16``.
-
-{{< prism bash command-line >}}cd ~
-mkdir -p ~/src/
-cd ~/src/
-wget http://download.redis.io/releases/redis-2.6.16.tar.gz
-tar -xzf redis-2.6.16.tar.gz
-cd redis-2.6.16/
-{{< /prism >}}
-
-Assuming your Webfaction server is a 64-bit server (the command ``uname -m`` should return ``x86_64``), you then just run ``make`` from within the ``redis-2.6.16`` folder.
-
-
-The executables were created into directory ~/src/redis-2.6.16/src/. The executables include redis-cli, redis-server, redis-benchmark and redis-sentinel.
-
-
-
-===================== THE ACTUAL END ==================
-
-
-Install Hubot
-Having done all our preparation the final step is relatively easy. First off we're going to install hubot as a global Node.js module
-
-npm install -g hubot
-Then pick where you want your new bot to reside. I've used my home directory for this guide. Move into that location and create a new hubot and install it.
-
-cd
-hubot --create hubot
-cd hubot
-npm install
-The final command above installs the bot with its dependencies and the standard package of scripts that you can use with hubot.
-
-Once this has completed, run the following command to check everything is working
-
-./bin/hubot
-Your new bot should start up and you can have a chat with it.
-
-Hubot> hubot ping
-Hubot> PONG
-Hubot> hubot image me success
-Hubot> http://www.drsunil.com/wp/wp-content/uploads/2013/06/success-on-mountain-top-shutterstock_115642099.jpg#.png
-Hubot>
-
-
-..but if I were you, I would *always* use "local" installation mode (without the -g) because it provides better isolation between your web apps.  Node's module search algorithm is very convenient for local, app-specific module installs (basically just put them inside a node_modules directory next to your .js file).
-
-
-
+You can also enable options like using Redis to act as Hubot's "brain", for persistent storage. Thanks to Stack Overflow user "Akseli" for [this post](http://stackoverflow.com/questions/18622630/setting-up-redis-on-webfaction) on installing Redis on Webfaction.
 
 {{% ack1 %}}
 The banner photo is a monochrome of 'Greeley Panorama' from Mars Rover Opportunity's Fifth Martian Winter. I thought a real robot would be appropriate for this post. Original can be found [here](https://commons.wikimedia.org/wiki/File:%27Greeley_Panorama%27_from_Opportunity%27s_Fifth_Martian_Winter.jpeg) on Wikimedia Commons.
-
-Thanks to Stack Overflow user "Akseli" for [this](http://stackoverflow.com/questions/18622630/setting-up-redis-on-webfaction) post on installing Redis on Webfaction.
 {{% /ack1 %}}
