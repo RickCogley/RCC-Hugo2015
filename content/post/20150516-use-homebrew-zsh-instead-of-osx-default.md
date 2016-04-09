@@ -3,11 +3,12 @@ title: Use Homebrew zsh Instead of the OS X Default
 subtitle: Keep your zsh up to date
 slug: use-homebrew-zsh-instead-of-the-osx-default
 banner: /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
-date: 2016-03-22T11:37:01+09:00
+date: 2016-04-09T13:20:00+09:00
 publishdate: 2015-05-08T12:33:19+09:00
 description: How to use brew to get the latest zsh instead of the one that Mac OS X installs, a post by Rick Cogley.
 draft: "false"
 images:
+  - /img/Cogley-Post-System-Preferences-User-Advanced-Options-for-Shell-Change.jpg
   - /img/homebrew.png
   - /img/rick-cogley-avatar-240x240.png
 publishdate: 2015-05-08T12:33:19+09:00
@@ -21,6 +22,8 @@ tags:
   - shell
   - oh-my-zsh
   - chsh
+  - dscl
+  - iterm2
 topics:
   - Tips
   - SysAdmin
@@ -47,19 +50,19 @@ Confirm the location of ``zsh``:
 /bin/zsh
 {{< /prism >}}
 
-Confirm the shells OS X knows about:
+{{% aside1 %}}
+OS X's ``dscl`` command is a command line utility for performing operations on the Directory Services database.
+{{% /aside1 %}}
 
-{{< prism bash command-line >}}cat /etc/shells
-  # List of acceptable shells for chpass(1).
-  # Ftpd will not allow users to connect who are not using
-  # one of these shells.
-   /bin/bash
-   /bin/csh
-   /bin/ksh
-   /bin/sh
-   /bin/tcsh
-   /bin/zsh
+Confirm the shell that's set for your user:
+
+{{< prism bash command-line >}}dscl . -read /Users/$USER UserShell
+UserShell: /bin/zsh
 {{< /prism >}}
+
+The `` . `` is short for ``localhost``, and the ``$USER`` variable expands to your username. 
+
+In a previous iteration of this post, I mentioned looking into ``/etc/shells`` to find out what shells your OS X knows about. It's not necessary to view or append this file, if you're setting your shell with ``dscl`` like we'll do below. It seems that ``/etc/shells`` is used to specify allowable user shells for users connecting via {{<abbr FTP>}}, and it used to need to be edited to include any new shells, that you were going to change to using ``chsh``. 
 
 ## Upgrade zsh with brew
 
@@ -132,35 +135,15 @@ And...
 
 ## Use the brew zsh
 
-To use the ``zsh`` that brew installed, you first need to edit `/etc/shells`. It's owned by root, so use sudo to edit it. Here's one way:
+{{< figure1 link="/img/Cogley-Post-System-Preferences-User-Advanced-Options-for-Shell-Change.jpg" src="/img/Cogley-Post-System-Preferences-User-Advanced-Options-for-Shell-Change.thumb.jpg" type="Screenshot" title="Ctrl-click your username to get Advanced Options, to select your shell." class="" >}}
 
-{{< prism bash command-line >}}sudo nano /etc/shells
+To use the ``zsh`` that brew installed, use ``dscl``. 
+
+{{< prism bash command-line >}}sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 Password: *********
 {{< /prism >}}
 
-Add the path to the `brew` zsh at the end, save (ctrl-o, ctrl-x if via nano), then confirm:
-
-{{< prism bash command-line >}}cat /etc/shells
-  # List of acceptable shells for chpass(1).
-  # Ftpd will not allow users to connect who are not using
-  # one of these shells.
-   /bin/bash
-   /bin/csh
-   /bin/ksh
-   /bin/sh
-   /bin/tcsh
-   /bin/zsh
-   /usr/local/bin/zsh
-{{< /prism >}}
-
-Now use `chsh` (change shell) to change to the `brew` version of ``zsh``:
-
-{{< prism bash command-line >}}chsh -s /usr/local/bin/zsh
-  Changing shell for rcogley.
-  Password for rcogley: *********
-{{< /prism >}}
-
-After that, restart your Terminal to have it take effect.
+After that, **restart your Terminal** to have it take effect. You can also use System Preferences. Open Users & Groups, ctrl-click your username, then select "Advanced Options". You can select your shell in there. 
 
 Now if you run `which` again, you'll see the system is recognizing the one you installed:
 
@@ -174,21 +157,48 @@ And confirming the version again shows:
   zsh 5.0.7 (x86_64-apple-darwin14.0.0)
 {{< /prism >}}
 
+{{% aside1 %}}
+In standard linux, and in previous versions of Mac OS X, you would add a new shell like ``/usr/local/bin/zsh`` to ``/etc/shells``, then use ``chsh -s /usr/local/bin/zsh`` to change to it. 
+{{% /aside1 %}}
+
 Et voilà! The ``zsh`` that is first in your path is now the upgraded version from ``brew``.
 
-Now you can confirm which shell you are running with a couple of different commands. First try echoing an environment variable (case matters):
+### Confirm You're Running Brew zsh
+
+Now you can confirm which shell you are running with a couple of different commands. 
+
+First, repeat the command you used above to confirm: 
+
+{{< prism bash command-line >}}dscl . -read /Users/$USER UserShell
+    UserShell: /usr/local/bin/zsh
+{{< /prism >}}
+
+That's the most precise way to confirm. Next, try echoing an environment variable (case matters):
 
 {{< prism bash command-line >}}echo $SHELL
     /usr/local/bin/zsh
 {{< /prism >}}
 
-Next, you can also check the name of the running process by doing ``echo $0``. It should return ``-zsh``.
+It should be the same result. Finally, check the name of the running process by doing ``echo $0``. It should return ``-zsh``.
+
+### Set Shell within Terminal App
+
+{{% aside1 %}}
+Get [iTerm 2](https://www.iterm2.com) if you haven't got it already. The [version 3 beta](https://www.iterm2.com/version3.html) is especially good, as of April 2016.
+{{% /aside1 %}}
+
+You can also set the shell within your terminal app, though I haven't tested this, and am not sure if there's any negative aspect to doing so. 
+
+* **OS X Terminal** - Preferences, General, "Shells Open With" and set the path to your preferred shell.
+* **iTerm 2** - Preferences, Profiles, General, Command.
+
+I believe what this does is to store the selection within a ``plist`` file for that app, and ignore the user shell. 
 
 ## Handling Upgrades
 
 There are a couple of considerations to keep in mind any time you upgrade OS X.
 
-First, the ``/etc/shells`` file might get reset, so check it to be sure.
+First, your shell might get reset, so check it to be sure.
 
 Secondly, OS X El Capitan (v 10.11) has a new security system called "System Integrity Protection", which is set up to be stricter with the security of ``/usr/local``, among other things. Since this is where ``brew`` keeps its files, you'll likely need to reset security on it by running the following command:
 
@@ -203,6 +213,8 @@ It's a matter for another post, but if you like ``zsh`` and want some cool tools
 
 ## Updates
 
+* **9 Apr 2016** - updated post to reflect more sure-fire way to set the zsh from the command line: use ``dscl``. Left information about ``/etc/shells`` and ``chsh`` in as an aside. Added information about selecting the shell in Terminal Preferences. 
+
 * **25 Mar 2016** - checked version of ``zsh`` in OS X 10.11.4 El Capitan. It's ``zsh 5.0.8 (x86_64-apple-darwin15.0)``, which is still out of date and in fact, an even more pronounced version lag compared to the ``v5.2`` now being distributed via ``brew``. Added how to check which shell you actually are using, and a couple points about handling upgrades.
 * **24 Mar 2016** - cleaned up the post a bit. Added restarting Terminal, per comments (thanks!). Added ack section. Added link to [Oh My Zsh!](http://ohmyz.sh/).
 
@@ -210,4 +222,6 @@ It's a matter for another post, but if you like ``zsh`` and want some cool tools
 The banner photo has nothing to do with zsh. It's a photo I took of hula dancers at Shonan Mall near Fujisawa, a number of years ago. See the original [here](https://www.flickr.com/photos/rickcogley/3580716109).
 
 Thanks to Kirk Beard and Adam in the comments, regarding restarting Terminal to have the ``chsh`` take effect.
+
+Thanks to Trent Lucier for pointing out to me that it can be set in your Terminal program's preferences. 
 {{% /ack1 %}}
