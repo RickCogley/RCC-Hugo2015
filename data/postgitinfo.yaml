@@ -4,7 +4,7 @@ display-markdown-from-dropbox-with-mdwiki: e496914 Add info about blot.im a comm
 system-uptime-and-downtime-calculations-for-slas: a720cf1 Update date, change filename for sorting
 suppress-the-softbank-you-got-a-mail-notification: cafd516 Rename, cleanup frontmatter
 upgrade-outdated-rsync-on-osx: 853e699 Rename, cleanup frontmatter
-use-homebrew-zsh-instead-of-the-osx-default: 99e67cf Check on El Capitan, add considerations re upgrades
+use-homebrew-zsh-instead-of-the-osx-default: c3484fe Update zsh post to use dscl over chsh
 resolve-osx-appstore-hang-and-crash-problem: 5399567 Update avatar to come from local site not remote
 generate-passwords-from-japanese-romaji-words-on-mac: 5399567 Update avatar to come from local site not remote
 fix-apple-osx-mail-crash-and-hang: 5399567 Update avatar to come from local site not remote
@@ -23,9 +23,9 @@ run-a-tftp-server-on-mac-osx: 5399567 Update avatar to come from local site not 
 text-editor-introduction: 5399567 Update avatar to come from local site not remote
 view-source-in-mail-dot-app: 8b06184 Publish refreshed post view source in mail app
 install-node-and-hubot-on-webfaction: c2cbb59 Publish hubot post
+golden-rule-for-open-source-projects: 5e6711b Various updates to foss post
 blinkenlights: 1622259 Banner filename updates after tweaking
 flickring-out: 142d41e Fix broken image in flickr post
-golden-rule-for-open-source-projects: 5742a4e Add default description and keywords to RCC site
 linkedin-finally-fixes-the-tokyo-location-bug: 1c9ebbc Linkedin posts, perms changes
 linkedin-listing-esolia-and-other-tokyo-companies-incorrectly: 1c9ebbc Linkedin posts, perms changes
 paper-life-from-shitamachi-tokyo: e36794b Migrate LIFE post, upgrade and date now
