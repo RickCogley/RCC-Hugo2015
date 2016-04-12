@@ -24,6 +24,7 @@ text-editor-introduction: 5399567 Update avatar to come from local site not remo
 view-source-in-mail-dot-app: 8b06184 Publish refreshed post view source in mail app
 install-node-and-hubot-on-webfaction: c2cbb59 Publish hubot post
 golden-rule-for-open-source-projects: 5e6711b Various updates to foss post
+setup-smarthost-in-linux-sendmail: 917881f Set smarthost / sendmail post to publish
 blinkenlights: 1622259 Banner filename updates after tweaking
 flickring-out: 142d41e Fix broken image in flickr post
 linkedin-finally-fixes-the-tokyo-location-bug: 1c9ebbc Linkedin posts, perms changes
