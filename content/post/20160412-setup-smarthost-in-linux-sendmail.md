@@ -6,7 +6,7 @@ banner: /img/Cogley-Banner-Pony_Express_Postmarks-1400x450-mono.jpg
 date: 2016-04-12T17:50:00+09:00
 publishdate: 2016-04-12T17:50:00+09:00
 description: How to set up sendmail on Linux, to use a smarthost, namely for gmail, a post by Rick Cogley.
-draft: 'true'
+draft: 'false'
 images:
   - /img/sendmail_logo.gif
   - /img/Cogley-Banner-Pony_Express_Postmarks-1400x450-mono.jpg
