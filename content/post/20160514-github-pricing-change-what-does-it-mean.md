@@ -8,7 +8,7 @@ publishdate: 2016-05-16T14:10:00+09:00
 description: Github changed their pricing policy, which raises prices for some. Wild speculation on what it means, a post by Rick Cogley.
 draft: 'false'
 images:
-  - /img/Cogley-Banner-Pony_Express_Postmarks-1400x450-mono.jpg
+  - /img/Cogley-Banner-Speeding-Train-mono.jpg 
   - /img/rick-cogley-avatar-240x240.png
 tags:
   - github
