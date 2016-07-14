@@ -3,7 +3,7 @@ title: Fix Apple OS X Mail Crashing and Hanging
 subtitle: ...by deleting Mail's Envelope Index
 slug: fix-apple-osx-mail-crash-and-hang
 banner: /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
-date: 2016-07-15T08:30:15+09:00
+date: 2016-07-15T08:45:15+09:00
 publishdate: 2015-09-25T11:30:15+09:00
 description: 'Mac users, fix your Mail OS X crashes and hangs, a post by Rick Cogley.'
 draft: 'false'
@@ -63,7 +63,7 @@ Finally, restart Mail.app and it will show a dialog box, similar to the vintage 
 
 You can also try:
 
-* Shut down Mail, delete all the locally stored mail, by deleting the IMAP folders in ``~/Library/Mail/V2``, and restart Mail. It will re-download all your emails in those accounts.
+* Shut down Mail, delete all the locally stored mail, by deleting the IMAP folders in ``~/Library/Mail/V2`` (or ``.../V3``), and restart Mail. It will re-download all your emails in those accounts.
 * Remove and restore the accounts themselves.  
 
 To delete the IMAP folders and all your downloaded mail, the command would be something like:
@@ -79,6 +79,6 @@ I hope this information helps someone with their Mac OS X Mail.app troubles. Enj
 
 
 {{% ack1 %}}
-The banner is my photo of a Hula dance troupe at Shonan Mall, Tsujido, Japan, a few years back. 
-Thanks to Jim Barcelona in the comments for the tip on the `V3` mail path in OS X El Capitan. 
+The banner is my photo of a Hula dance troupe at Shonan Mall, Tsujido, Japan, a few years back.   
+Thanks to Jim Barcelona in the comments for the tip on the ``V3`` mail path in OS X El Capitan. 
 {{% /ack1 %}}

@@ -7,7 +7,7 @@ upgrade-outdated-rsync-on-osx: 853e699 Rename, cleanup frontmatter
 use-homebrew-zsh-instead-of-the-osx-default: c3484fe Update zsh post to use dscl over chsh
 resolve-osx-appstore-hang-and-crash-problem: 5399567 Update avatar to come from local site not remote
 generate-passwords-from-japanese-romaji-words-on-mac: 5399567 Update avatar to come from local site not remote
-fix-apple-osx-mail-crash-and-hang: 5399567 Update avatar to come from local site not remote
+fix-apple-osx-mail-crash-and-hang: cf2d3b4 Added point from Jim Barcelona about V3 path on El Capitan
 pfu-hhkb-keyboard-osx-el-capitan-status: 5399567 Update avatar to come from local site not remote
 osx-sslhandshake-problem-from-an-open-keychain: 5399567 Update avatar to come from local site not remote
 first-race-ever-was-a-5k-over-sand: 5399567 Update avatar to come from local site not remote
