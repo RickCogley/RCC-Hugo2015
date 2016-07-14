@@ -3,7 +3,7 @@ title: Fix Apple OS X Mail Crashing and Hanging
 subtitle: ...by deleting Mail's Envelope Index
 slug: fix-apple-osx-mail-crash-and-hang
 banner: /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
-date: 2015-09-25T11:30:15+09:00
+date: 2016-07-15T08:30:15+09:00
 publishdate: 2015-09-25T11:30:15+09:00
 description: 'Mac users, fix your Mail OS X crashes and hangs, a post by Rick Cogley.'
 draft: 'false'
@@ -55,6 +55,8 @@ rm -rf Envelope\ Index*
 rm -rf ExternalUpdates.storedata*
 ~~~
 
+**N.b.**: _substitute V3 for V2 on OS X El Capitan._ 
+
 Finally, restart Mail.app and it will show a dialog box, similar to the vintage one shown above. It takes a few minutes, but Mail will rebuild the envelope index, and this generally fixes the problems I have had.
 
 ## What if it does not work?
@@ -74,3 +76,9 @@ rm -rf IMAP*
 You can make that re-download process go much faster by setting each account to _not_ download attachments. _N.b._, this is in Mail, Preferences, Accounts (select account), Advanced, uncheck "Automatically Download All Attachments".
 
 I hope this information helps someone with their Mac OS X Mail.app troubles. Enjoy!
+
+
+{{% ack1 %}}
+The banner is my photo of a Hula dance troupe at Shonan Mall, Tsujido, Japan, a few years back. 
+Thanks to Jim Barcelona in the comments for the tip on the `V3` mail path in OS X El Capitan. 
+{{% /ack1 %}}
