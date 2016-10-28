@@ -7,7 +7,7 @@ upgrade-outdated-rsync-on-osx: 853e699 Rename, cleanup frontmatter
 use-homebrew-zsh-instead-of-the-osx-default: c3484fe Update zsh post to use dscl over chsh
 resolve-osx-appstore-hang-and-crash-problem: 5399567 Update avatar to come from local site not remote
 generate-passwords-from-japanese-romaji-words-on-mac: 5399567 Update avatar to come from local site not remote
-fix-apple-osx-mail-crash-and-hang: d8cc5f3 Update to add path v3
+fix-apple-osx-mail-crash-and-hang: 8141dfb Updates for macos sierra
 pfu-hhkb-keyboard-osx-el-capitan-status: 5399567 Update avatar to come from local site not remote
 osx-sslhandshake-problem-from-an-open-keychain: 5399567 Update avatar to come from local site not remote
 first-race-ever-was-a-5k-over-sand: 5399567 Update avatar to come from local site not remote
@@ -26,7 +26,7 @@ install-node-and-hubot-on-webfaction: c2cbb59 Publish hubot post
 golden-rule-for-open-source-projects: 5e6711b Various updates to foss post
 setup-smarthost-in-linux-sendmail: 917881f Set smarthost / sendmail post to publish
 github-pricing-change-what-does-it-mean : 5cc3330 wrong banner in image list
-pick-me-up-in-yamanashi: 
+pick-me-up-in-yamanashi: 1226efb New post yamanashi trip to pick up Kylie
 blinkenlights: 1622259 Banner filename updates after tweaking
 flickring-out: 142d41e Fix broken image in flickr post
 linkedin-finally-fixes-the-tokyo-location-bug: 1c9ebbc Linkedin posts, perms changes
