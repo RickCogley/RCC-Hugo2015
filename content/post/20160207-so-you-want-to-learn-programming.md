@@ -163,7 +163,7 @@ Next, you could try incorporating a {{<abbr CSS>}} library. [Basscss](http://www
 {{< prism html >}}
 &lt;head&gt;
 ...
-&lt;link href=&quot;https://npmcdn.com/basscss@8.0.0/css/basscss.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;https://unpkg.com/basscss@8.0.0/css/basscss.min.css&quot; rel=&quot;stylesheet&quot;&gt;
 ...
 &lt;/head&gt;
 {{< /prism >}}
