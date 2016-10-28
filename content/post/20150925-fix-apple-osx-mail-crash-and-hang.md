@@ -3,7 +3,7 @@ title: Fix Apple OS X Mail Crashing and Hanging
 subtitle: ...by deleting Mail's Envelope Index
 slug: fix-apple-osx-mail-crash-and-hang
 banner: /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
-date: 2016-07-15T08:45:15+09:00
+date: 2016-10-28T16:15:15+09:00
 publishdate: 2015-09-25T11:30:15+09:00
 description: 'Mac users, fix your Mail OS X crashes and hangs, a post by Rick Cogley.'
 draft: 'false'
@@ -21,6 +21,9 @@ tags:
   - envelope
   - yosemite
   - imap
+  - macos
+  - sierra
+  - elcapitan
 topics:
   - Software
   - Tips
@@ -55,7 +58,7 @@ rm -rf Envelope\ Index*
 rm -rf ExternalUpdates.storedata*
 ~~~
 
-**N.b.**: _substitute V3 for V2 on OS X El Capitan._ 
+**N.b.**: _substitute V3 for V2 on OS X El Capitan, or V4 on macOS Sierra._ 
 
 Finally, restart Mail.app and it will show a dialog box, similar to the vintage one shown above. It takes a few minutes, but Mail will rebuild the envelope index, and this generally fixes the problems I have had.
 
@@ -80,5 +83,6 @@ I hope this information helps someone with their Mac OS X Mail.app troubles. Enj
 
 {{% ack1 %}}
 The banner is my photo of a Hula dance troupe at Shonan Mall, Tsujido, Japan, a few years back.   
-Thanks to Jim Barcelona in the comments for the tip on the ``V3`` mail path in OS X El Capitan. 
+Thanks to Jim Barcelona in the comments for the tip on the ``V3`` mail path in OS X El Capitan.
+Readers will note that the folder changed again for macOS Sierra.
 {{% /ack1 %}}
