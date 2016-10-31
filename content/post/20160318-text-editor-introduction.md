@@ -3,7 +3,7 @@ title: So, What's a Text Editor?
 subtitle: ...an introduction for newbies
 slug: text-editor-introduction
 banner: /img/Cogley-Banner-19th_century_work_bench-by-Jorge_Royan-1400x450-mono.jpg
-date: 2016-03-27T12:32:00+09:00
+date: 2016-11-01T07:19:00+09:00
 publishdate: 2016-03-24T15:54:00+09:00
 description: 'Learn about text editors and get some ideas for further research and learning, a post by Rick Cogley.'
 draft: 'false'
@@ -184,7 +184,6 @@ _Mac_ | [XCode](https://developer.apple.com/xcode/), for Cocoa, Cocoa Touch and 
 You might also look into "cloud {{<abbr IDE>}}" services such as the following:
 
 * [Codio](https://codio.com/)
-* [Nitrous](https://www.nitrous.io/)
 * [Codebox](https://www.codebox.io/)
 * [Koding](https://koding.com/)
 * [Codiad](http://codiad.com/)
@@ -223,6 +222,7 @@ I hope this information helps someone.
 
 ## Updates
 
+* 1 Nov 2016 - Nitrous is closing, so I've removed the link to their service.
 * **27 Mar 2016** - _Vihan Bhargava_ on Google+ pointed out that {{<abbr ASCII>}} is not an encoding. Thank you Vihan for pointing this out. I was thinking {{<abbr ANSI>}} while typing {{<abbr ASCII>}}. But it is more proper to mention an encoding like ISO 8859-1 or Shift JIS, I think. Duly edited.
 
 {{% ack1 %}}
