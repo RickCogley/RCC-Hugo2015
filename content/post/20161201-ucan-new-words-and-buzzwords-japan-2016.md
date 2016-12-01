@@ -104,6 +104,6 @@ Anyway, I hope you enjoyed the post. _Cogley-san-dazo_, signing off.
 4. ゲス不倫、げすふりん、_gesufurin_
 5. 保育園落ちた。日本死ね！、ほいくえんおちた にほんしね、_hoikuen ochita, nihon shine_
 6. 盛り土、もりど、_morido_
-7. 解散、かいさん、＿kaisan＿
+7. 解散、かいさん、_kaisan_
 8. 現代用語の基礎知識2016、げんだいようごのきそちしき、_Gendai Yougo no Kiso Chishiki_
 
