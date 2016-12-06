@@ -1,11 +1,11 @@
 ---
-title: U-Can Japan New Words and Buzzwords
-subtitle: ... for 2016
+title: U-Can Japan New Words and Buzzwords for 2016
+subtitle: An autumn tradition for Japanese speakers
 slug: ucan-new-words-and-buzzwords-japan-2016
 banner: /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
-date: 2016-12-01T22:00:00+09:00
+date: 2016-12-06T11:30:00+09:00
 publishdate: 2016-12-01T22:00:00+09:00
-description: 'U-Can Japan New Words and Buzzwords winners, a post by Rick Cogley.'
+description: 'U-Can Japan New Words and Buzzwords winners for 2016, a post by Rick Cogley.'
 draft: 'false'
 images:
   - /img/Cogley-Post-Japan-New-Words-and-Buzzwords-20161122.jpg
@@ -32,7 +32,7 @@ postsummary: 'Autumn in Japan is lovely for many reasons, crisp cool weather, ex
 postsvg: icon-origami-fish
 ---
 
-Autumn in Japan is lovely for many reasons, crisp cool weather, excellent food, a year winding down, but most of all new words and buzzwords!
+Autumn in Japan is lovely for many reasons, crisp cool weather, excellent food, a year winding down, but most of all new words and buzzwords! Here's a summary of the winner and a couple in the top ten for 2016. 
 
 <!--more-->
 
@@ -68,7 +68,7 @@ It prompted announcements on the trains, admonishing riders to not "walk and use
 
 ### PPAP
 
-Of course, comedian Pikotaro's "PPAP" made the top ten. "Pen-Pineapple-Apple-Pen" is one of those silly, catchy tunes or rhymes that just stick in your head. Just search for it and its various covers on Youtube. Surely it made an appearance at many, many fall school festivals nationwide. 
+Of course, comedian Pikotaro's "PPAP" made the top ten, even though it trended in late 2016. "Pen-Pineapple-Apple-Pen" is one of those silly, catchy tunes or rhymes that just stick in your head. Just search for it and its various covers on Youtube. Surely it made an appearance at many, many fall school festivals nationwide. 
 
 ### Gesu Furin
 
@@ -94,7 +94,7 @@ I thought nominee "minpaku" was important, because of the blackballing Airbnb re
 
 Nihongo learners, I hope you'll keep your eyes peeled for this competition every year. You can buy the book these phrases are gleaned from [at Amazon](http://amzn.asia/b57KF6B); it's called "現代用語の基礎知識2017", or "Basic Knowledge on Modern Phrases 2017" (8).
 
-Anyway, I hope you enjoyed the post. _Cogley-san-dazo_, signing off. 
+Anyway, I hope you enjoyed the post. _Cogley-san-dazo_, signing off in Dec 2016. Hope to see you again next year! 
 
 ## Reference for Nihongo Learners
 
