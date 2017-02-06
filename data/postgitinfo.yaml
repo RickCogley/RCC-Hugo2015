@@ -19,7 +19,7 @@ mac-app-sparkle-framework-vulnerability: 5399567 Update avatar to come from loca
 resetting-os-x-menubar-finder-notifications-or-dock: bebf301 Add Mac or Apple to OS X
 hidden-files-in-osx-finder-open-dialogs-and-terminal: eeb5558 Fix typos and edit for clarity in hidden files post
 establishing-a-personal-password-policy: c6d8f39 Add MFA, aside about what you know, have and are.
-run-a-tftp-server-on-mac-osx: 46410e6 Minor tweaks to tftp post
+run-a-tftp-server-on-mac-osx: bc81632 Added macOS to subtitle
 text-editor-introduction: 178f3d2 Removed nitrous
 view-source-in-mail-dot-app: 8b06184 Publish refreshed post view source in mail app
 install-node-and-hubot-on-webfaction: c2cbb59 Publish hubot post

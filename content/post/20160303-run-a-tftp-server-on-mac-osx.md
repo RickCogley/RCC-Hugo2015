@@ -137,7 +137,7 @@ sudo launchctl unload -F /System/Library/LaunchDaemons/tftp.plist
 sudo launchctl load -F /System/Library/LaunchDaemons/tftp.plist
 {{< /prism >}}
 
-_That being said_, please note that I tested a fresh macOS Sierra install directly on ``/private/tftpboot``
+_That being said_, please note that I tested a fresh macOS Sierra install directly on ``/private/tftpboot``, and tftp ``get`` and ``put`` from another Mac worked fine _without_ the symlink in place, so YMMV. I confirmed with ``csrutil status`` that SIP is indeed enabled on my fresh macOS. 
 
 {{% aside1 %}}
 Japanese Mac keyboards don't handle reverse solidus ``\``. To enter one you can press ``option-¥``.
