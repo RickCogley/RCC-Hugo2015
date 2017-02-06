@@ -3,9 +3,9 @@ title: Run a TFTP Server for Network Device Setups
 subtitle: ...on Mac OS X
 slug: run-a-tftp-server-on-mac-osx
 banner: /img/Cogley-Banner-Switch-2-mono.jpg
-date: 2016-03-03T19:48:00+09:00
+date: 2017-02-06T10:40:00+09:00
 publishdate: 2016-03-03T19:48:00+09:00
-description: 'Running a TFTP server on your Mac OSX, for network device setups, a post by Rick Cogley.'
+description: 'Running a TFTP server on your Mac OSX or macOS, for network device setups, a post by Rick Cogley.'
 draft: 'false'
 images:
   - /img/Cogley-Post-hp-switch-tftp-ui.jpg
@@ -24,6 +24,8 @@ tags:
   - el-capitan
   - firmware
   - upgrade
+  - macos
+  - sierra
 topics:
   - Software
   - Tips
@@ -32,7 +34,7 @@ postsummary: If you're working with networking devices such as switches, routers
 postsvg: icon-origami-fish
 ---
 
-If you're working with networking devices such as switches, routers or firewalls, to upgrade their firmware, you more often than not need a TFTP server. Here's how to use the one included with Mac OS X.
+If you're working with networking devices such as switches, routers or firewalls, to upgrade their firmware, you more often than not need a TFTP server. Here's how to use the one included with Mac OS X or macOS.
 
 <!--more-->
 
@@ -125,7 +127,7 @@ Now that the ``tftpd`` server is started, you need to put the firmware binary fi
 
 ### Symlink the tftpboot folder
 
-You used to be able to change the ``tftpboot`` path, but OS X El Capitan has stronger security via its SIP system which makes things more difficult. Just symlink the ``tftpboot`` to a folder you have full control over. You can do it like this:
+You used to be able to change the ``tftpboot`` path, but OS X El Capitan and later macOSs have stronger security via their "SIP" system which makes things more difficult. Just symlink the ``tftpboot`` to a folder you have full control over. You can do it like this:
 
 {{< prism bash command-line >}}cd /private/
 sudo rm -rf tftpboot
@@ -134,6 +136,8 @@ sudo ln -s /Users/myuser/tftpboot tftpboot
 sudo launchctl unload -F /System/Library/LaunchDaemons/tftp.plist
 sudo launchctl load -F /System/Library/LaunchDaemons/tftp.plist
 {{< /prism >}}
+
+_That being said_, please note that I tested a fresh macOS Sierra install directly on ``/private/tftpboot``
 
 {{% aside1 %}}
 Japanese Mac keyboards don't handle reverse solidus ``\``. To enter one you can press ``option-¥``.
@@ -167,6 +171,10 @@ Click the screenshot to see what it looks like on an HP switch.
 
 Sometimes you want to save a file _from_ the device, _to_ your ``tftp`` server. The ``tftp`` protocol is dumb and requires no authentication, so you need to specify in advance what the received filename will be. Use ``touch`` to do that.
 
+{{% aside1 %}}
+Be sure to get the name exactly right, as mis-spellings are a common cause of errors here.
+{{% /aside1 %}}
+
 {{< prism bash command-line >}}touch ~/tftpboot/catalyst.conf
 chmod 766 ~/tftpboot/catalyst.conf
 {{< /prism >}}
@@ -181,7 +189,7 @@ Be sure to unload the service when you're not using it:
 netstat -na |grep \*.69
 {{< /prism >}}
 
-The ``netstat`` command should return nothing.
+The aforementioned ``netstat`` command should return nothing.
 
 ## Alternatives
 
