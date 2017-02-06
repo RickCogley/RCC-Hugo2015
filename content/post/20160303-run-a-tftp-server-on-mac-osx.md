@@ -1,9 +1,9 @@
 ---
 title: Run a TFTP Server for Network Device Setups
-subtitle: ...on Mac OS X
+subtitle: ...on Mac OS X or macOS
 slug: run-a-tftp-server-on-mac-osx
 banner: /img/Cogley-Banner-Switch-2-mono.jpg
-date: 2017-02-06T10:40:00+09:00
+date: 2017-02-06T10:50:00+09:00
 publishdate: 2016-03-03T19:48:00+09:00
 description: 'Running a TFTP server on your Mac OSX or macOS, for network device setups, a post by Rick Cogley.'
 draft: 'false'
