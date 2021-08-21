@@ -11,7 +11,7 @@
       <h2 class="big-title text-shadow h2-responsive sans m0 rice-paper-dark">The Latest, <span class="rice-paper-light italic">& Freshest</span><svg class="rice-paper-light"><use xlink:href="/img/symbol-defs.svg#icon-feather2" /></svg></h2>
     </header>
     <div class="clearfix">
-      {{ range first 1 .Site.Pages }}
+      {{ range $index, $element := first 1 (where .Site.Pages "Section" "post") }}
       <div class="xs-hide sm-col sm-col-12 md-col-2 lg-col-3 px2">
         <svg class="latest-accent-svg-icon"><use xlink:href="/img/symbol-defs.svg#{{ .Params.postsvg }}" /></svg>
       </div>
