@@ -1,0 +1,55 @@
+{
+  "name": "rick-cogley-info-1",
+  "hooks": {
+    "prebuild": [
+      "hugo --gc --minify"
+    ],
+    "clean": [
+      "up prune -s production -r 10"
+    ]
+  },
+  "stages": {
+    "staging": {
+      "domain": "staging.rick.cogley.info"
+    },
+    "production": {
+      "domain": "rick.cogley.info",
+      "lambda": {
+        "warm": true,
+        "endpoint": "regional",
+        "accelerate": true,
+        "memory": 1024
+      }
+    }
+  },
+  "type": "static",
+  "static":{
+    "dir": "public"
+  },
+  "headers": {
+    "/*": {
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Referrer-Policy": "strict-origin",
+      "X-Content-Type-Options": "nosniff",
+      "X-Powered-By": "Apex"
+    }
+  },
+  "tags": {
+    "Owner": "RickCogley",
+    "AppName": "RickCogleyInfo",
+    "PoweredBy": "ApexUp"
+  },
+  "profile": "apex-up-esolia",
+  "regions": [
+    "ap-northeast-1"
+  ],
+  "error_pages": {
+    "enable": true,
+    "variables": {
+      "support_email": "rick@cogley.jp",
+      "color": "#228ae6"
+    }
+  }
+}
+

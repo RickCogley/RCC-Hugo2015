@@ -1,0 +1,40 @@
+# Workflow to build and deploy site to AWS using Apex Up
+name: deploy-staging
+on:
+  push:
+    branches: [ staging ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+          submodules: true  # Fetch Hugo themes
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+          hugo-version: 'latest'
+    - name: Check
+      run: |
+          which hugo
+    - name: Build Site Public with Hugo
+      env:
+          PRODBTOKEN15331: ${{ secrets.PRODBTOKEN15331 }}
+      run: |
+          HUGOBASEURL="https://staging.rick.cogley.info"
+          hugo --gc --minify --baseURL=$HUGOBASEURL
+    - name: Deploy via Apex Up
+      env:
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          UP_CONFIG: ${{ secrets.UP_CONFIG }}
+      uses: apex/actions/up@v0.5.1
+      with:
+        stage: staging
+    - name: Check folder contents
+      run: |
+          ls
+          echo "====== PUBLIC ======"
+          ls public
