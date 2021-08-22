@@ -1,3 +1,5 @@
+![deploy-production](https://github.com/RickCogley/rcc-hugo2015/workflows/deploy-production/badge.svg?branch=master)
+
 # Rick Cogley Central
 
 Please see the latest [release notes](https://github.com/RickCogley/RCC-Hugo2015/releases/tag/v2.1.0) for a quick summary of the absolute latest.
