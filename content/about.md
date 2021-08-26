@@ -1,5 +1,5 @@
 ---
-date: 2016-02-01T15:10:00+09:00
+date: 2021-08-26T11:43:10+09:00
 publishdate: 2012-01-10T09:05:19+09:00
 description: Biographical and Contact Info for Rick Cogley.
 banner: /img/Cogley-Banner-Hula-Dancers-1170x350-002-mono.jpg
@@ -49,7 +49,7 @@ I'm an experienced technology manager, a company founder and owner, avid photogr
 
 <!--more-->
 
-I'm from the US, but I've been in Japan since 1987, which is 29 years as of 2016 (wow). I love to help people and companies succeed here in Japan, and I'm always escorting visitors around to see the sights.
+I'm American, but I've been in Japan since 1987, which is 34 years as of 2021 (wow). I love to help people and companies succeed here in Japan, and I'm always escorting visitors around to see the sights.
 
 You can use the table of contents in the sidebar, to navigate to other sections of this page.
 
