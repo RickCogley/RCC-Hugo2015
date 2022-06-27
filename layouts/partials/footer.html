@@ -65,19 +65,18 @@
 	<div class="bg-darken-1">
 		<div class="m1 mx-auto">
 			<div class="center">
-
-				<span class="email-octopus-success-message"></span>
-				<span class="email-octopus-error-message"></span>
-				<form method="post" action="https://emailoctopus.com/lists/64dbf442-b268-11e5-b4ea-0a4287b2e8c5/members/external-add" class="email-octopus-form clearfix m1 pt2">
+				<form action="https://send.esolia.pro/subscribe" method="POST" accept-charset="utf-8" class="email-octopus-form clearfix m1 pt2">
 					<label>Get Email Updates: </label>
-					<input type="email" name="emailAddress" class="col-4 email-octopus-email-address input bg-teal bg-lighten-1 border border-darken-1 rounded-left x-group-item inline-block" placeholder="Your Email Address">
-					<button type="submit" class="btn btn-primary bg-lighten-2 rounded-right x-group-item inline-block">Subscribe</button>
-					<span class="email-octopus-form-row-honeypot">
-						<label>Protecting against bot signups - leave this field blank</label>
-						<input type="text" name="hp64dbf442-b268-11e5-b4ea-0a4287b2e8c5" autocomplete="off">
-					</span>
-
-				</form>
+					  <label for="email" type="email" >Email</label>
+					  <input type="email" name="email" id="email" class="col-4 email-octopus-email-address input bg-teal bg-lighten-1 border border-darken-1 rounded-left x-group-item inline-block" placeholder="Your Email Address" />
+					<div style="display:none;">
+						<label for="hp">HP</label><br/>
+						<input type="text" name="hp" id="hp"/>
+					  </div>
+					  <input type="hidden" name="list" value="JNgharfgBeGGPPqpNDToEQ"/>
+					  <input type="hidden" name="subform" value="yes"/>
+					  <button type="submit" class="btn btn-primary bg-lighten-2 rounded-right x-group-item inline-block">Subscribe</button>
+				  </form>
 			</div>
 		</div>
 	</div>
