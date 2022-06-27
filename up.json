@@ -10,7 +10,10 @@
   },
   "stages": {
     "staging": {
-      "domain": "staging.rick.cogley.info"
+      "domain": "staging.rick.cogley.info",
+      "lambda": {
+        "runtime": "nodejs16.x"
+      }
     },
     "production": {
       "domain": "rick.cogley.info",
@@ -18,7 +21,8 @@
         "warm": true,
         "endpoint": "regional",
         "accelerate": true,
-        "memory": 1024
+        "memory": 1024,
+        "runtime": "nodejs16.x"
       }
     }
   },
