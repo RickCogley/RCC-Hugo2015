@@ -7,6 +7,17 @@ disqusShortname = "rickcogley" # Optional, enable Disqus integration
 MetaDataFormat = "yaml"
 paginate = 7
 
+[security]
+  enableInlineShortcodes = false
+  [security.exec]
+    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
+    osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
+  [security.funcs]
+    getenv = ['^HUGO_', '^RCC']
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']
+
 [author]
     name = "Rick Cogley"
     biourl = "/about"
