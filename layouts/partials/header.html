@@ -10,7 +10,7 @@
   <meta name="keywords" content="{{if .IsPage}}{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}{{else}}{{.Site.Params.keywords}}{{end}}">
   {{ if .Params.author }}<meta name="author" content="{{ .Params.author }}">{{ end }}
   <link href="http://gmpg.org/xfn/11" rel="profile">
-  {{ .Hugo.Generator }}
+  {{ hugo.Generator }}
   <link rel="canonical" href="{{ .Permalink }}">
   {{ range .AlternativeOutputFormats -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
