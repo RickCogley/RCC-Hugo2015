@@ -2,7 +2,7 @@
   "name": "rick-cogley-info-1",
   "hooks": {
     "prebuild": [
-      "hugo --gc --minify --ignoreCache"
+      "hugo --gc --minify --ignoreCache --forceSyncStatic"
     ],
     "clean": [
       "up prune -s production -r 10"
