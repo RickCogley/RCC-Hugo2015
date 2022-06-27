@@ -24,7 +24,7 @@ jobs:
           PRODBTOKEN15331: ${{ secrets.PRODBTOKEN15331 }}
       run: |
           HUGOBASEURL="https://rick.cogley.info"
-          hugo --gc --minify --baseURL=$HUGOBASEURL
+          hugo --gc --minify --ignoreCache --baseURL=$HUGOBASEURL
     - name: Deploy via Apex Up
       env:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
