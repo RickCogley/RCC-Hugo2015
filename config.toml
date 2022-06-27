@@ -13,7 +13,7 @@ paginate = 7
     allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
     osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
   [security.funcs]
-    getenv = ['^HUGO_', '^RCC']
+    getenv = ['^HUGO_', '^RCC', '^TOPICS']
   [security.http]
     methods = ['(?i)GET|POST']
     urls = ['.*']
