@@ -32,7 +32,7 @@ app.use(async (ctx) => {
     });
   } catch {
     ctx.response.status = 404;
-    ctx.response.body = "404 File not found";
+    ctx.response.body = "404 File not found. You can search here: https://cse.google.com/cse?cx=018195656038046585595%3Av0aqyxd648a&ie=UTF-8&q=japan";
   }
 });
 
