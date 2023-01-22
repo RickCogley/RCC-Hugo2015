@@ -1,4 +1,4 @@
-![deploy-production](https://github.com/RickCogley/rcc-hugo2015/workflows/deploy-production/badge.svg?branch=master)
+![deploy](https://github.com/RickCogley/rcc-hugo2015/workflows/deploy/badge.svg?branch=master)
 
 # Rick Cogley Central
 
@@ -46,7 +46,7 @@ The **photos** on this site are mine, unless otherwise noted. I enjoy photograph
 
 ## Hosting
 
-This and a few other sites I manage, are hosted at the rock-solid [Webfaction](http://www.webfaction.com/?affiliate=rcogley). Great cost-performance for developers, in my opinion. I have not had trouble in years of use, and they respond very quickly to support requests.
+This site is hosted on Deno Deploy using a github action. 
 
 Comments are hosted on Disqus.
 
