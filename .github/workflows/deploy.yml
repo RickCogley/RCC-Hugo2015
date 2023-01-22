@@ -54,7 +54,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: rick-cogley-info # the name of the project on Deno Deploy
-          entrypoint: https://deno.land/std@0.140.0/http/file_server.ts # wraps the static output files
+          entrypoint: index.ts # wraps the static output files
           root: public # Where the built HTML/CSS/JS files are located.
 
       - name: Check folder contents and output
