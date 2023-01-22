@@ -46,7 +46,7 @@ The **photos** on this site are mine, unless otherwise noted. I enjoy photograph
 
 ## Hosting
 
-This site is hosted on Deno Deploy using a github action. 
+This site is hosted on [Deno Deploy](https://deno.com/deploy) using a github action. 
 
 Comments are hosted on Disqus.
 
